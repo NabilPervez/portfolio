@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import projectData from "../data/projects.json";
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 
 export default function PortfolioPage() {
     // Transform data to match component interface
@@ -23,6 +24,33 @@ export default function PortfolioPage() {
             className="min-h-screen bg-background pt-32 pb-24 px-4 md:px-8"
         >
             <div className="w-full">
+
+                {/* Header with Behance Button */}
+                <div className="flex justify-between items-end mb-12 px-4 md:px-0">
+                    <div>
+                        <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-2">Projects</span>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">Selected Work</h1>
+                    </div>
+                    <Link
+                        href="https://www.behance.net/aoecreative"
+                        target="_blank"
+                        className="hidden md:inline-flex px-6 py-3 border border-black/10 rounded-full text-sm font-medium hover:bg-[#1769FF] hover:text-white hover:border-[#1769FF] transition-all items-center gap-2 group"
+                    >
+                        Behance Portfolio <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                </div>
+
+                {/* Mobile Behance Button (Visible only on mobile) */}
+                <div className="md:hidden mb-8 px-4">
+                    <Link
+                        href="https://www.behance.net/aoecreative"
+                        target="_blank"
+                        className="flex w-full justify-center px-6 py-3 border border-black/10 rounded-full text-sm font-medium bg-[#1769FF] text-white transition-all items-center gap-2"
+                    >
+                        Behance Portfolio <ExternalLink className="w-4 h-4" />
+                    </Link>
+                </div>
+
                 {/* Grid - 2 Column Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     {projects.map((project) => (

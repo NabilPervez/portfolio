@@ -8,6 +8,7 @@ import clientsData from "./data/clients.json";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Image from "next/image";
 import { BentoGrid } from "@/components/BentoGrid";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -227,6 +228,25 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section - Carousel */}
+      <section className="py-24 bg-gray-50 border-t border-gray-200 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12 flex flex-col items-center text-center">
+          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">What People Say</span>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">Testimonials</h2>
+        </div>
+
+        {/* Full Width Carousel */}
+        <div className="w-full">
+          <div className="max-w-[1400px] mx-auto">
+            {/* Actually BentoGrid is above, this is TestimonialCarousel */}
+            <div className="mt-12">
+              {/* Dynamic Import or direct usage if client component */}
+              <TestimonialCarousel />
+            </div>
           </div>
         </div>
       </section>

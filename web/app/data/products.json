@@ -1,0 +1,65 @@
+[
+    {
+        "id": "kinkeep",
+        "title": "KinKeep",
+        "description": "Personal Relationship Management. Organize your social life and keep in touch with those who matter.",
+        "url": "https://kinkeepmarketing.netlify.app/",
+        "image": "/images/products/kinkeep.png"
+    },
+    {
+        "id": "barakaboost",
+        "title": "Baraka Boost",
+        "description": "Build Your Jannah. A productivity and spiritual growth platform designed to boost your daily blessings.",
+        "url": "https://barakaboostmarketing.netlify.app/",
+        "image": "/images/products/barakaboost.png"
+    },
+    {
+        "id": "muhasabah",
+        "title": "Muhasabah",
+        "description": "Digital Islamic Bullet Journal. Track your spiritual habits, daily prayers, and reflections in a beautiful interface.",
+        "url": "https://muhasabah.netlify.app/",
+        "image": "/images/products/muhasabah.png"
+    },
+    {
+        "id": "learnthenamesofallah",
+        "title": "Asmaul Husna",
+        "description": "Learn the 99 Names of Allah. An interactive educational tool to understand and memorize the divine names.",
+        "url": "https://learnthenamesofallah.netlify.app/",
+        "image": "/images/products/asmaulhusna.png"
+    },
+    {
+        "id": "ayahecho",
+        "title": "Ayah Echo",
+        "description": "Quranic Reflection & Memorization. Deepen your connection with the Quran through repeated listening and reflection.",
+        "url": "https://ayahecho.netlify.app/",
+        "image": "/images/products/ayahecho.png"
+    },
+    {
+        "id": "thejourneyhome",
+        "title": "The Journey Home",
+        "description": "You Are Returning. A digital experience exploring the spiritual journey of life and the return to the Divine.",
+        "url": "https://thejourneyhome.netlify.app/",
+        "image": "/images/products/journeyhome.png"
+    },
+    {
+        "id": "infinityloader",
+        "title": "Infinity Loader",
+        "description": "A sleek, infinite loading animation component providing a captivating visual waiting experience.",
+        "url": "https://infinity-loader.netlify.app/",
+        "image": "/images/products/infinity.png"
+    },
+    {
+        "id": "podomopower",
+        "title": "Podomo Power",
+        "description": "Islamic Focus Timer. Combine the Pomodoro technique with spiritual reminders to maximize productivity.",
+        "url": "https://podomopower.netlify.app/",
+        "image": "/images/products/podomo.png"
+    },
+    {
+        "id": "zaman",
+        "title": "Zaman",
+        "description": "Islamic Daily Companion. Your all-in-one dashboard for prayer times, daily wisdom, and spiritual tracking.",
+        "url": "https://zamanhomepage.netlify.app/",
+        "image": "/images/products/zaman.png"
+    }
+]

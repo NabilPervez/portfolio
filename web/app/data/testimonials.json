@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "quote": "The question is not 'Is Mr. Pervez good enough to work with us?' Rather, the question is 'Is my organization and project worthy of Mr. Pervez's attention?' Think carefully.",
+        "author": "Dylan Kahn",
+        "role": "Founder, SunSpear Games"
+    },
+    {
+        "id": 2,
+        "quote": "If there's one thing I can say about Nabil and his presence in a company, it's that he's an X-Factor. He immediately improves the team he's working with and knows how to make their best qualities shine through.",
+        "author": "Dustin Steiner",
+        "role": "Senior Associate, Public Relations"
+    },
+    {
+        "id": 3,
+        "quote": "Nabil is an incredible technologist, with a particular gift for identifying business opportunities within a shifting digital landscape. He creates value within any team by helping them work better with technology.",
+        "author": "Eric Swayne",
+        "role": "Analytics Leader & Solution Architect"
+    },
+    {
+        "id": 4,
+        "quote": "Organized, fast, clear communicator. I always look forward to meetings with Nabil leads because I know we're going to get shit done.",
+        "author": "Colter Hochstetler",
+        "role": "Director of Game, SunSpear Games"
+    },
+    {
+        "id": 5,
+        "quote": "I highly recommend Nabil for any company that values consistent execution, clear communication, and a strong culture.",
+        "author": "Kevin Wagner",
+        "role": "CEO, SunSpear Games"
+    },
+    {
+        "id": 6,
+        "quote": "Nabil seamlessly blends professionalism with an informal style, making collaboration both efficient and enjoyable. Being managed by Nabil was a pleasure.",
+        "author": "Dávid Dolyák",
+        "role": "UX/UI & Software Development"
+    },
+    {
+        "id": 7,
+        "quote": "Hustle might be his middle name. I would add Nabil into my leadership structure without a second thought.",
+        "author": "Trenton Pierson",
+        "role": "Therapeutic Counselor"
+    },
+    {
+        "id": 8,
+        "quote": "Nabil's strategic marketing approach consistently achieved impressive results aligned with business objectives. His leadership played a pivotal role in many project successes.",
+        "author": "Christopher Dykes",
+        "role": "Freelance Motion Designer"
+    },
+    {
+        "id": 9,
+        "quote": "Nabil is a well-connected and eloquent speaker... He's a joy to talk with and is an asset to any team.",
+        "author": "Godswill Ugwa Jr.",
+        "role": "Community Manager, VIZ Media"
+    },
+    {
+        "id": 10,
+        "quote": "I have been consistently impressed by his remarkable skills, dedication, and management abilities. He has consistently demonstrated an ability to manage complex projects.",
+        "author": "Markel Lee",
+        "role": "Creative Director, AOE Creative"
+    }
+]

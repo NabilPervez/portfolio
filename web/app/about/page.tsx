@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 
 export const metadata = {
     title: "About | Nabil Pervez",
@@ -121,23 +122,6 @@ const expertise = [
     "Cloud Engineering", "Full Stack Development", "Vendor Management"
 ];
 
-const testimonials = [
-    {
-        quote: "Nabil is an absolute pleasure to work with. Professional, caring and a hard worker. Nabil is phenomenal at seeing needs before they arise and setting goals to help drive a team forward.",
-        author: "Trenton Pierson",
-        role: "Therapeutic Counselor"
-    },
-    {
-        quote: "If there's one thing I can say about Nabil and his presence in a company, it's that he's an X-Factor. He immediately improves the team he's working with and knows how to make their best qualities shine through.",
-        author: "Dustin Steiner",
-        role: "Senior Associate, Public Relations"
-    },
-    {
-        quote: "Organized, fast, clear communicator. I always look forward to meetings with Nabil leads because I know we're going to get shit done.",
-        author: "Colter Hochstetler",
-        role: "Founder, SunSpear Games"
-    }
-];
 
 const clients = [
     "Riot Games", "Blizzard Activision", "Nacon", "LEGO", "Paramount Pictures", "Amazon", "Red Bull", "Coca-Cola"
@@ -245,16 +229,9 @@ export default function AboutPage() {
                     <p>
                         I focus on mentoring and coaching, having fostered cultures of learning that resulted in measurable efficiency increases. Colleagues and direct reports have noted my ability to "immediately improve the team" and my "supportive approach."
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                        {testimonials.map((t, i) => (
-                            <div key={i} className="bg-white p-6 shadow-sm border border-gray-100">
-                                <p className="italic text-secondary mb-4">"{t.quote}"</p>
-                                <div>
-                                    <p className="font-bold text-foreground text-sm">{t.author}</p>
-                                    <p className="text-gray-400 text-xs uppercase tracking-wide">{t.role}</p>
-                                </div>
-                            </div>
-                        ))}
+
+                    <div className="mt-12 -mx-12 md:-mx-0">
+                        <TestimonialCarousel />
                     </div>
                 </div>
             </div>
