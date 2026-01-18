@@ -2,9 +2,10 @@
 
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
 import { FadeIn } from "@/components/FadeIn";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface ProjectDetailProps {
     project: {
@@ -27,10 +28,12 @@ interface ProjectDetailProps {
 }
 
 export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
-    // ... helper ...
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+    // Helper to determine if a string contains HTML
     const isHtml = (str: string) => /<[a-z][\s\S]*>/i.test(str);
 
-    // ... renderSection ...
+    // Helper to render a section
     const renderSection = (title: string, content: string) => {
         if (!content) return null;
         return (
@@ -82,7 +85,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                             transition={{ delay: 0.2 }}
                         >
                             <p className="text-gold font-bold uppercase tracking-widest mb-4 text-sm md:text-base">{category}</p>
-                            <h1 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold text-foreground leading-[1] mb-6 max-w-4xl">
+                            <h1 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-[1] mb-6 max-w-4xl drop-shadow-lg">
                                 {project.title}
                             </h1>
                         </motion.div>
@@ -139,16 +142,41 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                     {/* Carousel Container */}
                     <div className="flex overflow-x-auto gap-6 px-6 md:px-12 pb-8 scrollbar-hide snap-x snap-mandatory">
                         {project.images.map((img, idx) => (
-                            <div key={idx} className="relative flex-none w-[85vw] md:w-[60vw] aspect-video bg-white shadow-xl rounded-sm overflow-hidden snap-center border border-gray-200">
+                            <div
+                                key={idx}
+                                className="relative flex-none w-[85vw] md:w-[60vw] aspect-video bg-white shadow-xl rounded-sm overflow-hidden snap-center border border-gray-200 cursor-zoom-in"
+                                onClick={() => setSelectedImage(img)}
+                            >
                                 <ImageWithFallback
                                     src={img}
                                     alt={`${project.title} - Visual ${idx + 1}`}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover hover:scale-105 transition-transform duration-500"
                                 />
                             </div>
                         ))}
                     </div>
+                </div>
+            )}
+
+            {/* Lightbox Overlay */}
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 cursor-zoom-out"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div className="relative w-full max-w-7xl h-auto max-h-[90vh] aspect-video">
+                        <ImageWithFallback
+                            src={selectedImage}
+                            alt="Project Detail View"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+
+                    <button className="absolute top-8 right-8 text-white hover:text-gold transition-colors">
+                        <X className="w-8 h-8" />
+                    </button>
                 </div>
             )}
 

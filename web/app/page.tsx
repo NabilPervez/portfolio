@@ -31,6 +31,10 @@ const specializations = [
   { title: "Product Management", description: "Leading cross-functional teams to build and ship exceptional digital products and games." },
   { title: "Creative Direction", description: "Guiding visual and interactive experiences from concept to award-winning execution." },
   { title: "Marketing Campaigns", description: "Designing and executing go-to-market strategies that drive engagement and growth." },
+  { title: "Agile Leadership", description: "Ensuring on-time delivery through Agile methodologies and clear barrier-busting communication." },
+  { title: "User Research", description: "Uncovering user needs and behaviors to inform product decisions and design tailored solutions." },
+  { title: "Data Analysis", description: "Leveraging analytics to measure performance, identify trends, and drive data-informed improvements." },
+  { title: "Go-to-Market", description: "Orchestrating successful product launches with integrated marketing and sales strategies." },
 ];
 
 export default function Home() {
@@ -71,7 +75,7 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
           >
             <div className="md:col-span-8">
-              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold mt-24 md:mt-0">
+              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold mt-48 md:mt-0">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
               <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-foreground mb-8">
@@ -196,10 +200,6 @@ export default function Home() {
                 <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
               </div>
             ))}
-            <div className="group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30">
-              <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">Project Management</h4>
-              <p className="text-secondary text-sm leading-relaxed">Ensuring on-time delivery through Agile methodologies and clear barrier-busting communication.</p>
-            </div>
           </div>
         </div>
       </section>

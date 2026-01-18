@@ -29,18 +29,15 @@ export default function ProductsPage() {
                         className="group block bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
                     >
                         {/* Image Area - Placeholder or Actual if available */}
-                        <div className="relative h-64 bg-gray-50 overflow-hidden">
-                            <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-300">
-                                {/* Fallback visual if image fails or is placeholder */}
-                                <span className="text-4xl font-display font-bold opacity-20">{prod.title[0]}</span>
+                        {/* Icon Area - Replaced Image */}
+                        <div className="relative h-64 bg-gray-50 overflow-hidden flex items-center justify-center group-hover:bg-gray-100 transition-colors">
+                            <div className="relative z-10 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 group-hover:scale-110 transition-transform duration-500">
+                                {/* Use a generic icon or map based on title if possible, for now generic App/Box icon */}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-gold">
+                                    <rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" />
+                                </svg>
                             </div>
-                            <ImageWithFallback
-                                src={prod.image || "/images/placeholder-product.jpg"} // Ensure you handle this fallback
-                                alt={prod.title}
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+
                             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
                                 <ExternalLink className="w-4 h-4 text-foreground" />
                             </div>
