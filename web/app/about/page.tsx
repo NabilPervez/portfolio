@@ -10,51 +10,107 @@ export const metadata = {
 const workHistory = [
     {
         year: "2024 - Present",
-        role: "Chief Marketing Officer",
-        company: "Devhouse Agency",
-        description: "Leading marketing strategy and brand development for a video game studio. Managed day-to-day operations, boosted social media visibility by 30%, and facilitated contract negotiations."
+        role: "Founder, Principal Consultant",
+        company: "Nabil Pervez Consulting (NPC)",
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Consulted on brand marketing, strategy, RFPs, and operations for agencies and businesses.</li>
+                <li>Measured and analyzed business processes, identified gaps, and suggested improvements to align solutions with organizational goals.</li>
+                <li>Developed and delivered high-quality, customer-facing deliverables and presentations.</li>
+                <li>Engaged in a full solution lifecycle, from initial scoping to post-implementation support.</li>
+                <li>Led the process of scope of work creation, contract negotiation, billing, and reconciliation for new partnerships and RFPs.</li>
+            </ul>
+        )
     },
     {
         year: "2024 - Present",
-        role: "Founder, Principal Consultant",
-        company: "Nabil Pervez Consulting (NPC)",
-        description: "providing strategic consulting on brand marketing, RFPs, and operations. Developing high-quality deliverables and managing full solution lifecycles."
+        role: "Chief Marketing Officer",
+        company: "Devhouse Agency (Video Game Studio)",
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Managed the day-to-day marketing operations and administration for the agency, focused on driving brand growth and recognition.</li>
+                <li>Developed and implemented processes... boosting social media visibility by 30% and improving SEO performance by 20%.</li>
+                <li>Facilitated the process of scope of work creation, contract negotiation, billing, and reconciliation for new partnerships and RFPs.</li>
+                <li>Led brand positioning and executed customer-centric marketing campaigns, achieving a 15% increase in engagement and customer satisfaction.</li>
+                <li>Acted as brand manager, producer, and video editor for a self published video game - Our Tribe Above All (OTAA).</li>
+            </ul>
+        )
     },
     {
         year: "2018 - 2024",
-        role: "Co-Founder, CTO, Senior Product Manager",
+        role: "Co-Founder, Chief Technical Officer, Senior Product Manager",
         company: "AOE Creative",
-        description: "Led multidisciplinary teams of up to 30 people. Managed a portfolio of over $5M for global clients. Contributed to 20% YOY revenue growth and reduced customer churn by 30%."
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Leadership:</strong> Led multidisciplinary teams of 30+ (designers, marketers, developers) to launch digital products, websites, SaaS, mobile apps, and marketing campaigns.</li>
+                <li><strong>Growth:</strong> Contributed to a 20% YOY revenue growth by upselling and cross-selling, generating an additional $1M in annual revenue.</li>
+                <li><strong>Impact:</strong> Managed a portfolio of over $5M for global clients like Riot Games, LEGO, Coca-Cola, Paramount Pictures, and Activision Blizzard.</li>
+                <li><strong>Results:</strong> Reduced customer churn rate by 30% over three years through proactive support and customer success strategies.</li>
+                <li><strong>Strategy:</strong> Utilized Agile methodologies to define roadmaps, sprint planning, and product requirements, improving productivity by 20%.</li>
+            </ul>
+        )
     },
     {
         year: "2017 - 2018",
         role: "Marketing Project Manager",
         company: "Infinite Esports",
-        description: "Directed award-winning marketing campaigns boosting impressions by 10M+. Managed cross-functional teams for events attracting 10K+ attendees."
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Directed the marketing efforts of an award-winning campaign that boosted brand visibility and engagement by 10M+ impressions.</li>
+                <li>Created and executed distinctive events, including block parties and pop-up shops, each attracting 10K+ attendees.</li>
+                <li>Spearheaded initiatives resulting in a 25% increase in social media followers and a 20% rise in event participation.</li>
+                <li>Led the project management team, overseeing daily standups and sprint planning to ensure adherence to Agile methodologies.</li>
+            </ul>
+        )
     },
     {
         year: "2016 - 2017",
         role: "Marketing Project Manager",
         company: "PVP Live",
-        description: "Developed marketing strategies increasing MAU to 3M+. Led project management and collaborated with cross-functional teams to launch esports tournaments."
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Developed comprehensive marketing strategies to increase monthly active users (MAU) to 3M+ and enhance social media following.</li>
+                <li>Scouted and signed an influencer roster, implementing targeted marketing that generated massive community engagement.</li>
+                <li>Collaborated with cross-functional teams to launch successful esports tournaments and leagues.</li>
+                <li>Implemented strategies that drove a 15% increase in sales and a 20% boost in overall revenue.</li>
+            </ul>
+        )
     },
     {
         year: "2014 - 2015",
         role: "Technical Support Engineer",
         company: "MutualMind",
-        description: "Led the ITSM team, achieving 95% first-contact resolution. Optimized support workflows saving $50K annually."
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Provided expert support across multiple operating systems (Windows, macOS, Linux) while leading the ITSM team.</li>
+                <li>Achieved a 95% first-contact resolution rate and boosted customer satisfaction scores by 20%.</li>
+                <li>Conducted training sessions increasing client self-sufficiency; optimized workflows saving the company $50K annually.</li>
+            </ul>
+        )
     },
     {
         year: "2012 - 2014",
         role: "Functional Analyst",
         company: "T-Mobile",
-        description: "Led the ITSM team, reducing average ticket resolution time from 24 to 8 hours."
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Led the ITSM team, achieving 98% SLA compliance by streamlining support processes.</li>
+                <li>Decreased average ticket resolution time from 24 hours to 8 hours, resulting in a 50% increase in customer satisfaction scores.</li>
+                <li>Developed training programs that improved support, reducing onboarding time for new hires by 20%.</li>
+            </ul>
+        )
     },
     {
         year: "2011 - 2012",
         role: "Service Desk Analyst",
         company: "Fujitsu",
-        description: "Administered user accounts and managed endpoint security, reducing support ticket volume by 20%."
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Administered user accounts in Active Directory, improving access efficiency.</li>
+                <li>Managed endpoint security and firewall maintenance, resulting in a 15% reduction in security incidents.</li>
+                <li>Provided timely support achieving a 90% first-contact resolution rate.</li>
+            </ul>
+        )
     }
 ];
 

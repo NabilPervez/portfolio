@@ -7,6 +7,7 @@ import { useRef } from "react";
 import clientsData from "./data/clients.json";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Image from "next/image";
+import { BentoGrid } from "@/components/BentoGrid";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -72,15 +73,15 @@ export default function Home() {
               <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
-              <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-foreground mb-8">
-                I create <br />
-                <span className="text-gold">digital solutions</span> <br />
-                through innovating.
+              <motion.h2 variants={fadeInUp as any} className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] text-foreground mb-8">
+                I am a huge nerd for everything involving <br />
+                <span className="text-gold">technology, development, design</span>, marketing, and products - and the people that master all these crafts.
               </motion.h2>
 
-              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-secondary max-w-xl leading-relaxed mb-10">
-                Accomplished product manager - specialized in branding.<br />
-                Honored with multiple awards and boasting over a decade of expertise.
+              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-secondary max-w-2xl leading-relaxed mb-10">
+                I&apos;ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
+                <br /><br />
+                My unique ability to bridge the gap between technical complexity and creative vision allows me to translate these different languages &quot;nerd&quot; into &quot;business success&quot;.
               </motion.p>
 
               <motion.div variants={fadeInUp as any} className="flex flex-wrap gap-4">
@@ -137,27 +138,47 @@ export default function Home() {
       {/* Nerd Translator Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end mb-12">
             <div>
-              <h3 className="text-4xl md:text-6xl font-display font-bold mb-8 leading-[1.1]">
+              <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">The "Bento Grid" Approach</span>
+              <h3 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">
                 I&apos;m Nabil - I&apos;m a <br />
                 <span className="text-gold">Nerd Translator</span>.
               </h3>
             </div>
-            <div className="space-y-6">
-              <p className="text-xl text-secondary font-light leading-relaxed">
-                I&apos;ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
-              </p>
-              <p className="text-secondary leading-relaxed">
-                My unique ability to bridge the gap between technical complexity and creative vision allows me to translate "nerd" into "business success".
-              </p>
-            </div>
+            <p className="text-lg text-secondary font-light leading-relaxed max-w-lg md:text-right">
+              Since you are using a Bento Grid design, you can break this copy into specific "Skill Cards" that visually prove you speak everyone&apos;s language.
+            </p>
+          </div>
+
+          {/* Bento Grid */}
+          <BentoGrid />
+
+        </div>
+      </section>
+
+      {/* The Integration Section */}
+      <section className="py-24 bg-background border-y border-gray-100">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-6">The Intersection</span>
+          <h3 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-8">The Integration</h3>
+
+          <div className="space-y-8 text-xl md:text-2xl font-light leading-relaxed text-secondary">
+            <p>
+              &quot;Most projects fail at the intersection. The designers want art, the developers want efficiency, and the business wants ROI.&quot;
+            </p>
+            <p className="font-medium text-foreground">
+              I live at that intersection.
+            </p>
+            <p>
+              I am the translator who ensures your creative vision survives the technical build, and your business goals aren&apos;t lost in the code. I make the complex simple, and the simple powerful.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Specializations Section */}
-      <section className="py-24 bg-gray-50 border-y border-gray-200">
+      <section className="py-24 bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="mb-16">
             <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">My Core Skills</span>
@@ -184,16 +205,26 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
             {clientsData.slice(0, 8).map((client, i) => (
-              <div key={i} className="group bg-gray-50 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center p-6 hover:shadow-lg transition-all duration-300">
-                <div className="relative w-full h-12 mb-4">
+              <div key={i} className="group relative bg-gray-900 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-lg">
+                {/* Full Card Image Background */}
+                <div className="absolute inset-0 w-full h-full opacity-50 group-hover:opacity-30 transition-opacity duration-500">
                   <ImageWithFallback
                     src={client.logo}
                     alt={client.name}
                     fill
-                    className="object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-110 group-hover:scale-100"
                   />
                 </div>
-                <span className="text-sm font-bold uppercase tracking-widest text-gray-400 group-hover:text-foreground transition-colors">{client.name}</span>
+
+                {/* Overlay for text readability */}
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-300" />
+
+                {/* Text Centered Large Bold */}
+                <div className="relative z-10 p-4 text-center">
+                  <span className="text-xl md:text-2xl font-display font-bold text-white uppercase tracking-wider group-hover:text-gold transition-colors duration-300 shadow-black drop-shadow-md">
+                    {client.name}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
