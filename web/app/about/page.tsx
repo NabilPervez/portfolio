@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
+import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
 
 export const metadata = {
     title: "About | Nabil Pervez",
@@ -225,15 +226,17 @@ export default function AboutPage() {
             {/* Core Competencies - Grid */}
             <div className="mb-32 animate-fade-in-up [animation-delay:400ms]">
                 <h2 className="text-3xl font-display font-bold mb-10">Core Competencies</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {expertise.map((skill, i) => (
-                        <div key={i} className="p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30 flex items-center justify-center text-center group">
+                <MobileAutoCarousel
+                    items={expertise}
+                    desktopGridClassName="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4"
+                    renderItem={(skill) => (
+                        <div className="h-full p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30 flex items-center justify-center text-center group">
                             <span className="font-medium text-secondary group-hover:text-foreground transition-colors">
                                 {skill}
                             </span>
                         </div>
-                    ))}
-                </div>
+                    )}
+                />
             </div>
 
             {/* Leadership & Teams */}
@@ -260,29 +263,35 @@ export default function AboutPage() {
             {/* Past Clients */}
             <div className="mb-32 animate-fade-in-up [animation-delay:600ms]">
                 <h2 className="text-3xl font-display font-bold mb-10">Past Clients</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    {clients.map((client, i) => (
-                        <div key={i} className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all">
+                <MobileAutoCarousel
+                    items={clients}
+                    desktopGridClassName="hidden md:grid grid-cols-2 md:grid-cols-4 gap-8"
+                    renderItem={(client) => (
+                        <div className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all w-full">
                             <span className="text-lg font-display font-bold text-gray-400 uppercase tracking-wider">{client}</span>
                         </div>
-                    ))}
-                </div>
+                    )}
+                />
             </div>
 
             {/* Timeline Section */}
             <div className="max-w-4xl border-t border-gray-200 pt-24 animate-fade-in-up [animation-delay:400ms]">
                 <h2 className="text-3xl md:text-4xl font-display font-bold mb-16">The Journey</h2>
 
-                <div className="space-y-16">
+                <div className="space-y-8">
                     {workHistory.map((job, index) => (
-                        <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-12 group">
-                            <div className="md:col-span-3">
-                                <span className="text-sm font-medium text-gray-400 tracking-wider uppercase">{job.year}</span>
-                            </div>
-                            <div className="md:col-span-9">
-                                <h3 className="text-2xl font-display font-medium mb-1 group-hover:underline underline-offset-4 decoration-1">{job.company}</h3>
-                                <p className="text-secondary font-medium mb-4">{job.role}</p>
-                                <p className="text-secondary/80 font-light leading-relaxed max-w-2xl">{job.description}</p>
+                        <div key={index} className="group bg-white p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30">
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+                                <div className="md:col-span-3">
+                                    <span className="text-sm font-medium text-gold tracking-wider uppercase bg-gold/5 px-3 py-1 rounded-full">{job.year}</span>
+                                </div>
+                                <div className="md:col-span-9">
+                                    <h3 className="text-2xl font-display font-medium mb-2 group-hover:text-gold transition-colors">{job.company}</h3>
+                                    <p className="text-foreground font-medium mb-4 text-lg">{job.role}</p>
+                                    <div className="text-secondary font-light leading-relaxed">
+                                        {job.description}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}

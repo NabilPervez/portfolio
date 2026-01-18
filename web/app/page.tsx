@@ -9,6 +9,7 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Image from "next/image";
 import { BentoGrid } from "@/components/BentoGrid";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
+import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -193,14 +194,16 @@ export default function Home() {
             <h3 className="text-4xl md:text-5xl font-display font-semibold text-foreground">What I Specialize In</h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {specializations.map((spec, idx) => (
-              <div key={idx} className="group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30">
+          <MobileAutoCarousel
+            items={specializations}
+            desktopGridClassName="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            renderItem={(spec) => (
+              <div className="h-full group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30 rounded-sm">
                 <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">{spec.title}</h4>
                 <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
               </div>
-            ))}
-          </div>
+            )}
+          />
         </div>
       </section>
 
@@ -211,9 +214,12 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">My Previous Clients</h2>
             <p className="text-secondary max-w-2xl mx-auto">Trusted by industry leaders.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
-            {clientsData.slice(0, 8).map((client, i) => (
-              <div key={i} className="group relative bg-gray-900 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-lg">
+
+          <MobileAutoCarousel
+            items={clientsData.slice(0, 8)}
+            desktopGridClassName="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            renderItem={(client) => (
+              <div className="group relative bg-gray-900 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-lg w-full">
                 {/* Full Card Image Background */}
                 <div className="absolute inset-0 w-full h-full opacity-50 group-hover:opacity-30 transition-opacity duration-500">
                   <ImageWithFallback
@@ -234,8 +240,8 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            ))}
-          </div>
+            )}
+          />
         </div>
       </section>
 
