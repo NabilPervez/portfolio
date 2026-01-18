@@ -71,13 +71,13 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
           >
             <div className="md:col-span-8">
-              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold">
+              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold mt-24 md:mt-0">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
               <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-foreground mb-8">
                 I create <br />
                 <span className="text-gold">digital solutions</span> <br />
-                through innovating.
+                through <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-purple-800 to-blue-900 animate-gradient-x">innovation</span>.
               </motion.h2>
 
               <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-secondary max-w-xl leading-relaxed mb-10">
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end mb-12">
             <div>
-              <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">The "Bento Grid" Approach</span>
+              <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">Who Am I</span>
               <h3 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">
                 I&apos;m Nabil - I&apos;m a <br />
                 <span className="text-gold">Nerd Translator</span>.
@@ -149,13 +149,7 @@ export default function Home() {
             </div>
             <div className="text-lg text-secondary font-light leading-relaxed max-w-lg md:text-right space-y-6">
               <p>
-                I am a huge nerd for everything involving <strong>technology, development, design, marketing, and products</strong> - and the people that master all these crafts.
-              </p>
-              <p>
-                I&apos;ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
-              </p>
-              <p>
-                My unique ability to bridge the gap between <strong>technical complexity</strong> and <strong>creative vision</strong> allows me to translate these different languages &quot;nerd&quot; into &quot;business success&quot;.
+                My unique ability to bridge the gap between <strong>technical complexity</strong> and <strong>creative vision</strong> allows me to translate these different languages (marketing, design, development) into &quot;business success&quot;.
               </p>
             </div>
           </div>
@@ -174,7 +168,8 @@ export default function Home() {
 
           <div className="space-y-8 text-xl md:text-2xl font-light leading-relaxed text-secondary">
             <p>
-              &quot;Most projects fail at the intersection. The designers want art, the developers want efficiency, and the business wants ROI.&quot;
+              &quot;The designers want art, the developers want efficiency, and the business wants ROI.
+              Most projects fail at the intersection because of a failure to communicate expectations&quot;
             </p>
             <p className="font-medium text-foreground">
               I live at that intersection.
@@ -201,6 +196,10 @@ export default function Home() {
                 <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
               </div>
             ))}
+            <div className="group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30">
+              <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">Project Management</h4>
+              <p className="text-secondary text-sm leading-relaxed">Ensuring on-time delivery through Agile methodologies and clear barrier-busting communication.</p>
+            </div>
           </div>
         </div>
       </section>

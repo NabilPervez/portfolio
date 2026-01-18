@@ -26,10 +26,8 @@ export function BentoGrid() {
                 <div className="relative z-10 h-full flex flex-col justify-between">
                     <div className="mb-6">
                         <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 text-gold border border-gray-100">
-                            <div className="flex">
-                                <Code size={16} />
-                                <PenTool size={16} className="-ml-1" />
-                            </div>
+                            {/* Replaced composite icon with single Code icon as requested implicitly by providing SVG definition for Code */}
+                            <Code size={24} />
                         </div>
                         <h4 className="text-2xl font-display font-bold text-foreground mb-2">The Linguist</h4>
                         <p className="text-secondary text-lg leading-relaxed font-light">
@@ -64,7 +62,7 @@ export function BentoGrid() {
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
                 <div className="relative z-10">
                     <p className="text-2xl md:text-3xl font-display font-light">
-                        <span className="font-bold text-gold">Technical Complexity</span> × <span className="font-bold text-gold">Creative Vision</span> = <span className="underline decoration-gold/50 underline-offset-4">Business Success</span>.
+                        <span className="font-bold text-gold text-nowrap">(Technical Complexity</span> × <span className="font-bold text-gold text-nowrap">Creative Vision)</span> + <span className="font-bold text-white text-nowrap">Tailored Communication</span> = <span className="underline decoration-gold/50 underline-offset-4 text-nowrap">Business Success</span>.
                     </p>
                 </div>
             </motion.div>

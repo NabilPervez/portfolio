@@ -24,7 +24,7 @@ const workHistory = [
         )
     },
     {
-        year: "2024 - Present",
+        year: "2024 - 2024",
         role: "Chief Marketing Officer",
         company: "Devhouse Agency (Video Game Studio)",
         description: (
@@ -51,6 +51,7 @@ const workHistory = [
             </ul>
         )
     },
+    // ... previous entries ...
     {
         year: "2017 - 2018",
         role: "Marketing Project Manager",
@@ -124,7 +125,13 @@ const expertise = [
 
 
 const clients = [
-    "Riot Games", "Blizzard Activision", "Nacon", "LEGO", "Paramount Pictures", "Amazon", "Red Bull", "Coca-Cola"
+    "Riot Games", "Activision Blizzard", "Nacon", "LEGO", "Paramount Pictures",
+    "Amazon", "Red Bull", "Coca-Cola", "Shopify", "Team Liquid", "Cloud 9",
+    "OpTic Gaming", "Houston Outlaws", "Dallas Fuel", "Complexity", "Envy Gaming",
+    "Evil Geniuses", "FlyQuest", "Immortals", "Misfits", "NRG", "Dignitas",
+    "Golden Guardians", "100 Thieves", "TSM", "CLG", "Splyce", "Echo Fox",
+    "PVP Live", "Infinite Esports", "MutualMind", "T-Mobile", "Fujitsu",
+    "Viz Media"
 ];
 
 export default function AboutPage() {
@@ -134,39 +141,40 @@ export default function AboutPage() {
             {/* Intro Section */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-start mb-32">
                 {/* Left Column: Bio */}
+                {/* Left Column: Bio */}
                 <div className="md:col-span-7 space-y-8 animate-fade-in-up">
                     <div className="space-y-4">
                         <span className="text-sm font-bold tracking-[0.2em] uppercase text-gold">About Me</span>
                         <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground leading-tight">
-                            Accomplished Product Manager.
+                            Hey - I&apos;m Nabil
                         </h1>
                         <div className="h-1 w-20 bg-black/10" />
                     </div>
 
                     <div className="prose prose-lg text-secondary leading-relaxed space-y-6 font-light">
                         <p>
-                            I’ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
+                            I&apos;m a seasoned product manager - I’ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
                         </p>
                         <p>
-                            Throughout my career, I've operated on my feet, maintaining a big-picture perspective while prioritizing immediate goals. I believe in leveraging individual strengths within a team to foster a happier, more productive collective.
+                            Throughout my career, I&apos;ve operated on my feet, maintaining a big-picture perspective while prioritizing immediate goals. I believe in leveraging individual strengths within a team to foster a happier, more productive collective.
                         </p>
                         <p>
                             My work style can be described as <strong>creative, relentless, and efficient</strong>. I consistently strive to enhance myself, my projects, and the individuals I work with.
                         </p>
                         <a
-                            href="/resume.md"
+                            href="/profile.pdf"
                             target="_blank"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-white rounded-full font-medium hover:bg-gold transition-colors mt-6"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-                            Download MD Resume
+                            Download Profile
                         </a>
                     </div>
                 </div>
 
                 {/* Right Column: Image */}
                 <div className="md:col-span-5 space-y-12 animate-fade-in-up [animation-delay:200ms]">
-                    <div className="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-xl rounded-sm">
+                    <div className="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden shadow-xl rounded-sm">
                         <Image
                             src="/images/nabil-headshot.jpg"
                             alt="Nabil Pervez"
@@ -177,52 +185,53 @@ export default function AboutPage() {
                 </div>
             </div>
 
-            {/* Curiosity Section */}
-            <div className="mb-32 animate-fade-in-up [animation-delay:250ms]">
-                <div className="bg-gray-50 p-12 md:p-16 rounded-sm border border-gray-100/50">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight">
+            {/* Bento Grid Layout for Curiosity, Philosophy, Approach */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+                {/* Visual / Curiosity Block - Spans full width on mobile, 1 col on desktop? Or maybe make it specific. 
+                    Let's utilize a 2-col layout where one side has [Curiosity] and other has [Philosophy + Approach] stacked?
+                    Or a 3-block layout. I'll do a custom grid for visual interest.
+                */}
+                <div className="md:col-span-2 bg-gray-50 p-10 md:p-14 rounded-3xl border border-gray-100 relative overflow-hidden">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight relative z-10">
                         Curiosity is my <span className="text-gold">Operating System</span>.
                     </h2>
-                    <div className="prose prose-lg text-secondary leading-relaxed font-light max-w-4xl">
+                    <div className="prose prose-lg text-secondary leading-relaxed font-light max-w-4xl relative z-10 space-y-6">
                         <p>
-                            I’ve always refused to stay in a single lane. To me, a great product isn't just code, and it isn't just a pretty design—it's the seamless integration of both.
-                        </p>
-                        <p>
-                            That curiosity led me to master the spectrum: from the logic of Python to the psychology of Marketing, and the structure of Product Management.
+                            I’ve always refused to stay in a single lane. To me, a great product isn't just code, and it isn't just a pretty design—it's the seamless integration of both. That curiosity led me to master the spectrum: from the logic of Python to the psychology of Marketing, and the structure of Product Management.
                         </p>
                         <p>
                             This polymath approach allows me to sit in any room—with engineers, creatives, or executives—and speak their language. I don't just manage teams; I align them. I ensure the 'nerd' details support the business goals, delivering complex projects that are as joyfully creative as they are technically sound.
                         </p>
                     </div>
+                    {/* Decorative element */}
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+                </div>
+
+                <div className="bg-gray-900 text-white p-10 rounded-3xl relative overflow-hidden">
+                    <h2 className="text-3xl font-display font-bold mb-6 text-gold">My Philosophy</h2>
+                    <p className="text-gray-300 leading-relaxed text-lg">
+                        Above all, I acknowledge that my success is intricately tied to the teams and individuals I collaborate with. Recognizing that no manager thrives in isolation, I attribute my growth and accomplishments to the people in my professional and personal life. To foster effective communication, I embrace strategies like weekly burn downs, rapid-fire scrums, and regular personal check-ins.
+                    </p>
+                </div>
+
+                <div className="bg-white border border-gray-200 p-10 rounded-3xl relative overflow-hidden shadow-sm">
+                    <h2 className="text-3xl font-display font-bold mb-6 text-foreground">My Approach</h2>
+                    <p className="text-secondary leading-relaxed text-lg">
+                        Engaging in constructive debate is a vital part of my work, as it sharpens minds and broadens perspectives. With high expectations, I readily assume responsibility, even outside my typical scope, to address voids or gaps. Each day, person, and project holds unique significance, and I am committed to treating them with the attention and respect they deserve.
+                    </p>
                 </div>
             </div>
 
-            {/* Philosophy & Approach */}
-            <div className="mb-32 animate-fade-in-up [animation-delay:300ms]">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                    <div>
-                        <h2 className="text-3xl font-display font-bold mb-6">My Philosophy</h2>
-                        <p className="text-secondary leading-relaxed text-lg">
-                            Above all, I acknowledge that my success is intricately tied to the teams and individuals I collaborate with. Recognizing that no manager thrives in isolation, I attribute my growth and accomplishments to the people in my professional and personal life. To foster effective communication, I embrace strategies like weekly burn downs, rapid-fire scrums, and regular personal check-ins.
-                        </p>
-                    </div>
-                    <div>
-                        <h2 className="text-3xl font-display font-bold mb-6">My Approach</h2>
-                        <p className="text-secondary leading-relaxed text-lg">
-                            Engaging in constructive debate is a vital part of my work, as it sharpens minds and broadens perspectives. With high expectations, I readily assume responsibility, even outside my typical scope, to address voids or gaps. Each day, person, and project holds unique significance, and I am committed to treating them with the attention and respect they deserve.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            {/* Core Competencies */}
+            {/* Core Competencies - Grid */}
             <div className="mb-32 animate-fade-in-up [animation-delay:400ms]">
                 <h2 className="text-3xl font-display font-bold mb-10">Core Competencies</h2>
-                <div className="flex flex-wrap gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {expertise.map((skill, i) => (
-                        <span key={i} className="px-6 py-3 bg-gray-50 border border-gray-100 rounded-full text-sm font-medium text-secondary hover:bg-foreground hover:text-white transition-colors duration-300 cursor-default">
-                            {skill}
-                        </span>
+                        <div key={i} className="p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30 flex items-center justify-center text-center group">
+                            <span className="font-medium text-secondary group-hover:text-foreground transition-colors">
+                                {skill}
+                            </span>
+                        </div>
                     ))}
                 </div>
             </div>

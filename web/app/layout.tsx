@@ -33,6 +33,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
+            // ... kept as is, but tool requires valid replacement. I'll replace the closing tag area.
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
@@ -50,6 +51,18 @@ export default function RootLayout({
                 "https://www.behance.net/aoecreative"
               ]
             })
+          }}
+        />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMBSNPSZCT"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EMBSNPSZCT');
+            `,
           }}
         />
       </head>
