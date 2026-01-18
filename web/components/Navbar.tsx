@@ -128,6 +128,33 @@ export function Navbar() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-presentation"><path d="M2 3h20" /><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" /><path d="M7 21h10" /></svg>
                     </Link>
                 </div>
+
+                {/* Mobile CTAs */}
+                <div className="flex flex-col gap-4 w-full px-12 max-w-sm mt-4">
+                    <Link
+                        href="https://nabilpervezconsulting.com/"
+                        target="_blank"
+                        onClick={() => setIsOpen(false)}
+                        className="px-6 py-3 border border-white/20 rounded-full text-center font-medium hover:bg-gold hover:text-white hover:border-gold transition-all"
+                    >
+                        Consulting
+                    </Link>
+                    <Link
+                        href="mailto:nabilpervezconsulting@gmail.com"
+                        onClick={() => setIsOpen(false)}
+                        className="px-6 py-3 border border-white/20 rounded-full text-center font-medium hover:bg-gold hover:text-white hover:border-gold transition-all"
+                    >
+                        Contact
+                    </Link>
+                    <Link
+                        href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-"
+                        target="_blank"
+                        onClick={() => setIsOpen(false)}
+                        className="px-6 py-3 bg-white text-black rounded-full text-center font-bold hover:bg-gold hover:text-white transition-all"
+                    >
+                        Book Me
+                    </Link>
+                </div>
             </motion.div>
         </>
     );
