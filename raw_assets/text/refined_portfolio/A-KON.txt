@@ -1,0 +1,11 @@
+The Scope
+A-KON, one of the longest-running anime conventions, approached us with a need for a modernized digital presence. My role focused on project management, design consulting, and updating their website to better serve their massive attendee base.
+
+The Challenge
+Handling a legacy brand like A-KON requires respecting its history while updating its functionality for modern users. The challenge was to create a digital experience that could handle high traffic and complex information architecture (schedules, guests, maps) without feeling cluttered or outdated.
+
+The Solution
+We streamlined the user experience, focusing on mobile-responsiveness and ease of access to critical information. I managed the design and development teams to ensure the new site reflected the vibrant energy of the convention while remaining highly functional for attendees on the go.
+
+The Outcome
+The refreshed website provided a seamless experience for thousands of attendees, reducing friction in finding event details and enhancing the overall convention experience.

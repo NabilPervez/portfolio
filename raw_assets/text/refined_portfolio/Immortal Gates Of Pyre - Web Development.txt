@@ -1,0 +1,11 @@
+The Scope
+Sunspear Games needed a comprehensive website for their upcoming RTS, "Immortal: Gates Of Pyre." I led both the design and development phases, acting as the bridge between the client, designers, and developers. My role included project management, design consulting, and defining the site's flow and functionality.
+
+The Challenge
+The website needed to launch in parallel with their Kickstarter to provide a central hub for information that the crowdfunding platform couldn't offer. It had to explain game mechanics, deep-dive into the lore, and keep fans updated—all while being scalable enough to support a growing roster of characters comparable to industry giants like League of Legends.
+
+The Solution
+We built a robust, scalable framework. I defined the ideal user flow to ensure visitors could easily navigate between learning the game and exploring the rich world of Pyre. The design was crafted to clearly communicate the game's unique value proposition while providing a home for the community.
+
+The Outcome
+The site launched successfully alongside the Kickstarter, serving as the perfect complement to the campaign. It effectively answered user questions, educated players on mechanics, and solidified the game's identity. The platform stands as a scalable foundation for the game's future growth.

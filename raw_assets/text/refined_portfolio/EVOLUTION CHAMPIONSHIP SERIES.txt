@@ -1,0 +1,11 @@
+The Scope
+The Evolution Championship Series (EVO) is the world's largest fighting game tournament. When Rick (Hadou) took over as GM, he asked for my help with web design, development, and graphic design. It was a bucket-list project for me personally.
+
+The Challenge
+Evo is a legendary institution with a massive, passionate community. The website needed to serve two distinct audiences: the competitors who need critical tournament info, and the viewers who watch the spectacle from home. We had to balance these needs within strict budget and capability constraints.
+
+The Solution
+Leveraging my deep understanding of the fighting game community, I led the design and development teams to create a modernized web presence. We focused on updating the user experience to be intuitive for both player registration and spectator viewing.
+
+The Outcome
+We delivered a refreshed website that respected the legacy of Evo while bringing it up to modern standards. The collaboration helped my friend Rick kick off his tenure as GM with a strong digital foundation, ensuring fans and players had the best possible experience.

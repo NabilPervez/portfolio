@@ -1,0 +1,28 @@
+TITLE: Immortal: Gates Of Pyre - Web Development
+TYPE: portfolio
+====================
+
+Building The Framework
+The Sunspear Games team approached us to design a full website for their upcoming game Immortal: Gates Of Pyre. They wanted to not only have a website that clearly explained their game, they wanted to also touch on lore while keeping their fans up to date with news and updates.
+
+It was especially important that this launched in parallel with their Kickstarter so fans would have a place to go to for additional information and clarity that the Kickstarter platform might not provide.I lead the project on both the design and development side. My means to do was effectively communicate with the client, our designers, and the web developers everyone's goals and intended functionality of the website.
+
+This included me leading the idea of what would be the ideal flow for the user and understanding the goal of each page.
+
+We built the website with the intention to be able to scale effectively as Immortal continues to add to the roster to have a cast comparable to League of Legends
+Scope
+
+ 	Project Management
+ 	Design Consulting
+ 	Video Development Consulting
+ 	Website Consulting
+
+DesktopMobile
+Project Outcome
+Successful Launch
+
+The website launched as the perfect compliment to the successful Kickstarter.
+
+It answered a lot of users questions, taught them to play the game, and gave them a strong sense of what makes Immortal different.
+
+See for yourself at gatesofpyre.com

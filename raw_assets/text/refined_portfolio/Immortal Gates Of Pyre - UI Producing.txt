@@ -1,0 +1,11 @@
+The Scope
+Sunspear Games approached AOE Creative to design the User Interface (UI) for "Immortal: Gates Of Pyre." I led the design team, overseeing the project management and UI/UX consulting for everything from the in-game HUD to the client menus.
+
+The Challenge
+The scope was massive with tight turnarounds for various alpha and beta releases. The UI needed to be intuitive and beautiful, but also highly performant. We had to ensure the design didn't tax hardware resources or negatively impact the game's frame rate—a critical factor for an RTS.
+
+The Solution
+I facilitated tight collaboration between our design team and Sunspear's developers. We iterated relentlessly, balancing aesthetic desires with technical constraints. We focused on creating a "functional beauty" that enhanced gameplay without distracting from it.
+
+The Outcome
+After months of revisions and testing, we delivered a finalized UI/UX package for the HUD, menus, and game client. The result is a seamless interface that players currently use, successfully merging the game's rich visual identity with professional-grade usability.

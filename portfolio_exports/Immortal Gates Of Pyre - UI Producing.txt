@@ -1,0 +1,23 @@
+TITLE: Immortal: Gates Of Pyre - UI Producing
+TYPE: portfolio
+====================
+
+Unifying Look And Functionality
+While working through design for the overall look and feel for Immortal: Gates of Pyre, AOE was approached by SSG to create the look and feel of the UI for the game.
+
+The scope was pretty large and with tight turnarounds on multiple components to help with implementation for different alphas and betas.My role was to lead the design team with the goal of finding a functional, intuitive, and beautiful UI that Sunspear was looking for.
+
+While also working with the Sunspear development team to build something that is efficient use of hardware resources and does not affect the games frame rate.
+
+This involved solid communication between the design and SSG team.
+Scope
+
+ 	Project Management
+ 	Design Consulting
+ 	UI / UX Consulting
+
+Below are examples of different UI iterations created for Immortal Gates Of Pyre.Character SelectIn-Game HUD ExamplesLoading ScreensClientGUI IconsAbilities
+Project Outcome
+Implemented
+
+After many months and revisions, we finalized the UI / UX for the in-game HUD, menus, and client for Immortal: Gates Of Pyre.
