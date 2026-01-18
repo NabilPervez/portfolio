@@ -20,13 +20,17 @@ interface ProjectDetailProps {
         };
         images?: string[];
     };
+    nextProject?: {
+        slug: string;
+        title: string;
+    };
 }
 
-export function ProjectDetail({ project }: ProjectDetailProps) {
-    // Helper to check if string contains HTML
+export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
+    // ... helper ...
     const isHtml = (str: string) => /<[a-z][\s\S]*>/i.test(str);
 
-    // Split content into paragraphs for better visual rhythm or render HTML
+    // ... renderSection ...
     const renderSection = (title: string, content: string) => {
         if (!content) return null;
         return (
@@ -150,9 +154,18 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
             {/* Next Project Nav */}
             <div className="max-w-7xl mx-auto px-6 md:px-12 mt-24 flex justify-end">
-                <Link href="/portfolio" className="group inline-flex items-center gap-4 text-3xl md:text-5xl font-display font-bold text-gray-300 hover:text-foreground transition-colors">
-                    Next Project <ArrowLeft className="w-8 h-8 rotate-180 group-hover:translate-x-2 transition-transform" />
-                </Link>
+                {nextProject ? (
+                    <div className="text-right">
+                        <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Next Case Study</p>
+                        <Link href={`/portfolio/${nextProject.slug}`} className="group inline-flex items-center gap-4 text-3xl md:text-5xl font-display font-bold text-foreground hover:text-gold transition-colors">
+                            {nextProject.title} <ArrowLeft className="w-8 h-8 rotate-180 group-hover:translate-x-2 transition-transform" />
+                        </Link>
+                    </div>
+                ) : (
+                    <Link href="/portfolio" className="group inline-flex items-center gap-4 text-3xl md:text-5xl font-display font-bold text-gray-300 hover:text-foreground transition-colors">
+                        All Projects <ArrowLeft className="w-8 h-8 rotate-180 group-hover:translate-x-2 transition-transform" />
+                    </Link>
+                )}
             </div>
 
         </FadeIn>

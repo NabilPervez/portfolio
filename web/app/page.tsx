@@ -74,15 +74,15 @@ export default function Home() {
               <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
-              <motion.h2 variants={fadeInUp as any} className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] text-foreground mb-8">
-                I am a huge nerd for everything involving <br />
-                <span className="text-gold">technology, development, design</span>, marketing, and products - and the people that master all these crafts.
+              <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-foreground mb-8">
+                I create <br />
+                <span className="text-gold">digital solutions</span> <br />
+                through innovating.
               </motion.h2>
 
-              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-secondary max-w-2xl leading-relaxed mb-10">
-                I&apos;ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
-                <br /><br />
-                My unique ability to bridge the gap between technical complexity and creative vision allows me to translate these different languages &quot;nerd&quot; into &quot;business success&quot;.
+              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-secondary max-w-xl leading-relaxed mb-10">
+                Accomplished product manager - specialized in branding.<br />
+                Honored with multiple awards and boasting over a decade of expertise.
               </motion.p>
 
               <motion.div variants={fadeInUp as any} className="flex flex-wrap gap-4">
@@ -147,9 +147,17 @@ export default function Home() {
                 <span className="text-gold">Nerd Translator</span>.
               </h3>
             </div>
-            <p className="text-lg text-secondary font-light leading-relaxed max-w-lg md:text-right">
-              Since you are using a Bento Grid design, you can break this copy into specific "Skill Cards" that visually prove you speak everyone&apos;s language.
-            </p>
+            <div className="text-lg text-secondary font-light leading-relaxed max-w-lg md:text-right space-y-6">
+              <p>
+                I am a huge nerd for everything involving <strong>technology, development, design, marketing, and products</strong> - and the people that master all these crafts.
+              </p>
+              <p>
+                I&apos;ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
+              </p>
+              <p>
+                My unique ability to bridge the gap between <strong>technical complexity</strong> and <strong>creative vision</strong> allows me to translate these different languages &quot;nerd&quot; into &quot;business success&quot;.
+              </p>
+            </div>
           </div>
 
           {/* Bento Grid */}

@@ -58,6 +58,13 @@ export function Navbar() {
                                 Consulting
                             </Link>
                             <Link
+                                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-"
+                                target="_blank"
+                                className="px-6 py-2 bg-foreground text-background rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
+                            >
+                                Book Me
+                            </Link>
+                            <Link
                                 href="mailto:nabilpervezconsulting@gmail.com"
                                 className="px-6 py-2 border border-black/10 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
                             >

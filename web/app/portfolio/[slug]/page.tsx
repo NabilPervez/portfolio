@@ -22,5 +22,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         notFound();
     }
 
-    return <ProjectDetail project={project} />;
+    // Get next project index for loop navigation
+    const currentIndex = projectData.findIndex((p) => p.slug === resolvedParams.slug);
+    const nextIndex = (currentIndex + 1) % projectData.length;
+    const nextProject = projectData[nextIndex];
+
+    return <ProjectDetail project={project} nextProject={{ slug: nextProject.slug, title: nextProject.title }} />;
 }
