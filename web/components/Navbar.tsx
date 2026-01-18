@@ -48,12 +48,21 @@ export function Navbar() {
                                 </Link>
                             );
                         })}
-                        <Link
-                            href="mailto:nabilpervezconsulting@gmail.com"
-                            className="px-6 py-2 border border-white/30 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
-                        >
-                            Contact
-                        </Link>
+                        <div className="flex items-center gap-4">
+                            <Link
+                                href="https://nabilpervezconsulting.com/"
+                                target="_blank"
+                                className="px-6 py-2 border border-black/10 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
+                            >
+                                Consulting
+                            </Link>
+                            <Link
+                                href="mailto:nabilpervezconsulting@gmail.com"
+                                className="px-6 py-2 border border-black/10 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
+                            >
+                                Contact
+                            </Link>
+                        </div>
                     </nav>
 
                     {/* Mobile Menu Button - Using mix-blend-difference allows visible white text on both white/black backgrounds */}
