@@ -195,15 +195,15 @@ export default function Home() {
           </div>
 
           <MobileAutoCarousel
-            items={specializations}
             desktopGridClassName="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-            renderItem={(spec) => (
-              <div className="h-full group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30 rounded-sm">
+          >
+            {specializations.map((spec, idx) => (
+              <div key={idx} className="h-full group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30 rounded-sm">
                 <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">{spec.title}</h4>
                 <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
               </div>
-            )}
-          />
+            ))}
+          </MobileAutoCarousel>
         </div>
       </section>
 
@@ -216,10 +216,10 @@ export default function Home() {
           </div>
 
           <MobileAutoCarousel
-            items={clientsData.slice(0, 8)}
             desktopGridClassName="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-            renderItem={(client) => (
-              <div className="group relative bg-gray-900 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-lg w-full">
+          >
+            {clientsData.slice(0, 8).map((client, i) => (
+              <div key={i} className="group relative bg-gray-900 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-lg w-full">
                 {/* Full Card Image Background */}
                 <div className="absolute inset-0 w-full h-full opacity-50 group-hover:opacity-30 transition-opacity duration-500">
                   <ImageWithFallback
@@ -240,8 +240,8 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            )}
-          />
+            ))}
+          </MobileAutoCarousel>
         </div>
       </section>
 

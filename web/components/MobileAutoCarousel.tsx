@@ -1,20 +1,18 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, Children } from "react";
 
-interface MobileAutoCarouselProps<T> {
-    items: T[];
-    renderItem: (item: T, index: number) => React.ReactNode;
+interface MobileAutoCarouselProps {
+    children: React.ReactNode;
     desktopGridClassName?: string; // Class for the desktop grid layout (e.g., "hidden md:grid ...")
     mobileItemClassName?: string;  // Class for individual items on mobile
 }
 
-export function MobileAutoCarousel<T>({
-    items,
-    renderItem,
+export function MobileAutoCarousel({
+    children,
     desktopGridClassName = "hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8",
     mobileItemClassName = "min-w-[85vw] snap-center"
-}: MobileAutoCarouselProps<T>) {
+}: MobileAutoCarouselProps) {
     const scrollRef = useRef<HTMLDivElement>(null);
     const [isPaused, setIsPaused] = useState(false);
 
@@ -22,30 +20,6 @@ export function MobileAutoCarousel<T>({
     useEffect(() => {
         const scrollContainer = scrollRef.current;
         if (!scrollContainer) return;
-
-        let scrollAmount = 0;
-        const scrollSpeed = 2; // Pixels per frame approx
-        let animationFrameId: number;
-
-        const scroll = () => {
-            if (!isPaused && scrollContainer) {
-                // If we reached the end, snap back to start (infinite loop illusion is harder without duplicating items, 
-                // so we will just scroll back to start or bounce. 
-                // User asked for "rotates through", implying loop.
-                // Simple shuffle loop: check remaining scroll width.
-
-                if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 1) {
-                    scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
-                } else {
-                    // For smooth continuous auto-scroll, we might just increment scroll. 
-                    // But "Carousel" usually implies page-by-page or item-by-item.
-                    // Let's do a simple interval based scroll to next snap point maybe?
-                    // Actually, a slow continuous drift is "premium". 
-                    // But user said "swiped and rotates through".
-                    // Let's implement a timer that scrolls to the next item every few seconds.
-                }
-            }
-        };
 
         // Let's use an interval for snapping to next item
         const interval = setInterval(() => {
@@ -79,20 +53,16 @@ export function MobileAutoCarousel<T>({
                 onTouchStart={() => setIsPaused(true)}
                 onTouchEnd={() => setTimeout(() => setIsPaused(false), 5000)} // Resume after 5s
             >
-                {items.map((item, i) => (
+                {Children.map(children, (child, i) => (
                     <div key={i} className={mobileItemClassName}>
-                        {renderItem(item, i)}
+                        {child}
                     </div>
                 ))}
             </div>
 
             {/* Desktop View - Grid */}
             <div className={desktopGridClassName}>
-                {items.map((item, i) => (
-                    <React.Fragment key={i}>
-                        {renderItem(item, i)}
-                    </React.Fragment>
-                ))}
+                {children}
             </div>
         </>
     );

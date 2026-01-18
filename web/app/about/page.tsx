@@ -227,16 +227,16 @@ export default function AboutPage() {
             <div className="mb-32 animate-fade-in-up [animation-delay:400ms]">
                 <h2 className="text-3xl font-display font-bold mb-10">Core Competencies</h2>
                 <MobileAutoCarousel
-                    items={expertise}
                     desktopGridClassName="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4"
-                    renderItem={(skill) => (
-                        <div className="h-full p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30 flex items-center justify-center text-center group">
+                >
+                    {expertise.map((skill, i) => (
+                        <div key={i} className="h-full p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30 flex items-center justify-center text-center group">
                             <span className="font-medium text-secondary group-hover:text-foreground transition-colors">
                                 {skill}
                             </span>
                         </div>
-                    )}
-                />
+                    ))}
+                </MobileAutoCarousel>
             </div>
 
             {/* Leadership & Teams */}
@@ -264,14 +264,14 @@ export default function AboutPage() {
             <div className="mb-32 animate-fade-in-up [animation-delay:600ms]">
                 <h2 className="text-3xl font-display font-bold mb-10">Past Clients</h2>
                 <MobileAutoCarousel
-                    items={clients}
                     desktopGridClassName="hidden md:grid grid-cols-2 md:grid-cols-4 gap-8"
-                    renderItem={(client) => (
-                        <div className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all w-full">
+                >
+                    {clients.map((client, i) => (
+                        <div key={i} className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all w-full">
                             <span className="text-lg font-display font-bold text-gray-400 uppercase tracking-wider">{client}</span>
                         </div>
-                    )}
-                />
+                    ))}
+                </MobileAutoCarousel>
             </div>
 
             {/* Timeline Section */}
