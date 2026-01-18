@@ -20,21 +20,13 @@ export default function PortfolioPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="min-h-screen bg-background pt-32 pb-24 px-6 md:px-12"
+            className="min-h-screen bg-background pt-32 pb-24 px-4 md:px-8"
         >
-            <div className="max-w-7xl mx-auto">
-                {/* Header */}
-                <div className="mb-24">
-                    <h1 className="text-6xl md:text-9xl font-display font-bold text-foreground mb-8 tracking-tighter leading-tight">
-                        <span className="text-gold">Portfolio</span>
-                    </h1>
-                    <div className="h-px w-full bg-gray-200 mt-12 mb-12" />
-                </div>
-
+            <div className="w-full">
                 {/* Grid - 2 Column Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     {projects.map((project) => (
-                        <Link href={`/portfolio/${project.slug}`} key={project.slug} className="group block relative h-[400px] md:h-[500px] overflow-hidden bg-gray-100 border border-gray-200 shadow-sm">
+                        <Link href={`/portfolio/${project.slug}`} key={project.slug} className="group block relative h-[50vh] min-h-[400px] overflow-hidden bg-gray-100 border border-gray-200 shadow-sm w-full">
                             <ImageWithFallback
                                 src={project.image}
                                 alt={project.title}

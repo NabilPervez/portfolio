@@ -129,6 +129,26 @@ export default function AboutPage() {
                 </div>
             </div>
 
+            {/* Curiosity Section */}
+            <div className="mb-32 animate-fade-in-up [animation-delay:250ms]">
+                <div className="bg-gray-50 p-12 md:p-16 rounded-sm border border-gray-100/50">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight">
+                        Curiosity is my <span className="text-gold">Operating System</span>.
+                    </h2>
+                    <div className="prose prose-lg text-secondary leading-relaxed font-light max-w-4xl">
+                        <p>
+                            I’ve always refused to stay in a single lane. To me, a great product isn't just code, and it isn't just a pretty design—it's the seamless integration of both.
+                        </p>
+                        <p>
+                            That curiosity led me to master the spectrum: from the logic of Python to the psychology of Marketing, and the structure of Product Management.
+                        </p>
+                        <p>
+                            This polymath approach allows me to sit in any room—with engineers, creatives, or executives—and speak their language. I don't just manage teams; I align them. I ensure the 'nerd' details support the business goals, delivering complex projects that are as joyfully creative as they are technically sound.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             {/* Philosophy & Approach */}
             <div className="mb-32 animate-fade-in-up [animation-delay:300ms]">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

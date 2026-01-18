@@ -1,9 +1,11 @@
+"use client";
 import { notFound } from "next/navigation";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import projectData from "../../data/projects.json";
 import { FadeIn } from "@/components/FadeIn";
+import { motion } from "framer-motion";
 
 // Force static generation for these paths
 export async function generateStaticParams() {
@@ -33,7 +35,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         if (!content) return null;
         return (
             <div className="mb-16">
-                <h3 className="text-sm font-bold uppercase tracking-widest mb-6 text-foreground">{title}</h3>
+                <h3 className="text-sm font-bold uppercase tracking-widest mb-6 text-foreground text-opacity-40">{title}</h3>
                 {isHtml(content) ? (
                     <div className="prose prose-lg prose-neutral max-w-none text-secondary font-light leading-relaxed dangerously-scope" dangerouslySetInnerHTML={{ __html: content }} />
                 ) : (
@@ -50,106 +52,113 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const category = project.tags && project.tags.length > 0 ? project.tags[0] : "Project";
 
     return (
-        <FadeIn className="min-h-screen bg-background text-foreground">
+        <FadeIn className="min-h-screen bg-background text-foreground pb-24">
 
-            {/* Wrapper */}
-            <div className="max-w-[1600px] mx-auto px-6 md:px-12 pt-32 pb-24">
+            {/* Top Navigation Back Button */}
+            <div className="absolute top-24 left-6 md:left-12 z-50">
+                <Link href="/portfolio" className="inline-flex items-center gap-2 p-3 bg-white/90 backdrop-blur-md border border-gray-200 rounded-full text-sm font-medium shadow-sm hover:bg-black hover:text-white transition-all group">
+                    <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                </Link>
+            </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+            {/* Hero Section - Full Width Image */}
+            <div className="relative w-full h-[60vh] md:h-[70vh] bg-gray-100 overflow-hidden">
+                <ImageWithFallback
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
 
-                    {/* Sticky Sidebar (Project Info) */}
-                    <div className="lg:col-span-4 lg:sticky lg:top-32 h-auto lg:h-[calc(100vh-8rem)] flex flex-col z-20">
-                        {/* Back Button */}
-                        <Link href="/portfolio" className="inline-flex items-center gap-2 text-sm text-secondary hover:text-gold mb-12 transition-colors group">
-                            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back into Grid
-                        </Link>
-
-                        {/* Glassy Background Panel for Sticky Content */}
-                        <div className="bg-white/80 backdrop-blur-md border border-white/20 p-8 shadow-sm rounded-sm">
-                            <div className="mb-8">
-                                <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground leading-[1.1] mb-4">
-                                    {project.title}
-                                </h1>
-                                <p className="text-lg text-gold font-medium uppercase tracking-widest">{category}</p>
-                            </div>
-
-                            <div className="space-y-6 pt-6 border-t border-gray-100">
-                                <div>
-                                    <span className="block text-xs uppercase tracking-widest text-gray-400 mb-2">Scope</span>
-                                    {isHtml(project.content.scope) ? (
-                                        <div className="prose prose-sm text-base font-medium prose-ul:list-disc prose-ul:pl-4 prose-li:mb-1" dangerouslySetInnerHTML={{ __html: project.content.scope }} />
-                                    ) : (
-                                        <span className="text-base font-medium">{project.content.scope ? project.content.scope : "Strategy & Execution"}</span>
-                                    )}
-                                </div>
-                                <div>
-                                    <span className="block text-xs uppercase tracking-widest text-gray-400 mb-2">Tags</span>
-                                    <div className="flex flex-wrap gap-2">
-                                        {project.tags.map(tag => (
-                                            <span key={tag} className="text-xs font-bold uppercase tracking-wider text-midnight bg-gold/20 px-2 py-1 rounded-sm">{tag}</span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                {/* Hero Title Overlay */}
+                <div className="absolute bottom-0 left-0 w-full p-6 md:p-12">
+                    <div className="max-w-7xl mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <p className="text-gold font-bold uppercase tracking-widest mb-4 text-sm md:text-base">{category}</p>
+                            <h1 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold text-foreground leading-[1] mb-6 max-w-4xl">
+                                {project.title}
+                            </h1>
+                        </motion.div>
                     </div>
-
-                    {/* Main Content (Scrollable) */}
-                    <div className="lg:col-span-8 space-y-24">
-                        {/* Hero Image - No Filter */}
-                        <div className="relative w-full aspect-video bg-gray-100 overflow-hidden shadow-lg border border-black/5">
-                            <ImageWithFallback
-                                src={project.image}
-                                alt={project.title}
-                                fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 60vw"
-                                className="object-cover"
-                                priority
-                            />
-                        </div>
-
-                        {/* Brief / Challenge */}
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-12">
-                            {renderSection("The Challenge", project.content.challenge)}
-                        </div>
-
-                        {/* Solution / Outcome */}
-                        <div className="grid grid-cols-1 gap-12">
-                            {renderSection("The Solution", project.content.solution)}
-                            {renderSection("The Outcome", project.content.outcome || "")}
-                        </div>
-
-                        {/* Gallery Section - MOVED TO BOTTOM */}
-                        {project.images && project.images.length > 0 && (
-                            <div className="space-y-8 pt-12 border-t border-gray-100">
-                                <h3 className="text-sm font-bold uppercase tracking-widest mb-6 text-foreground">Visuals</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    {project.images.map((img, idx) => (
-                                        <div key={idx} className={`relative w-full bg-gray-100 overflow-hidden ${idx % 3 === 0 ? 'md:col-span-2 aspect-video' : 'aspect-[4/3]'}`}>
-                                            <ImageWithFallback
-                                                src={img}
-                                                alt={`${project.title || 'Project'} - Image ${idx + 1}`}
-                                                fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                className="object-cover hover:scale-105 transition-transform duration-700"
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-
-                        {/* Next Project Nav (Simplified) */}
-                        <div className="border-t border-gray-200 pt-12 flex justify-end">
-                            <Link href="/portfolio" className="text-2xl font-display font-bold hover:underline decoration-1 underline-offset-8">
-                                Next Project &rarr;
-                            </Link>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
+
+            {/* Main Content Wrapper */}
+            <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 md:mt-24">
+
+                {/* Project Meta Data Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24 border-b border-gray-200 pb-16">
+                    {/* Tags */}
+                    <div className="md:col-span-4">
+                        <span className="block text-xs uppercase tracking-widest text-gray-400 mb-4">Role / Services</span>
+                        <div className="flex flex-wrap gap-2">
+                            {project.tags.map(tag => (
+                                <span key={tag} className="text-xs font-medium uppercase tracking-wider text-secondary border border-gray-200 px-3 py-1.5 rounded-full">{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Scope */}
+                    <div className="md:col-span-8">
+                        <span className="block text-xs uppercase tracking-widest text-gray-400 mb-4">The Scope</span>
+                        <div className="text-lg md:text-xl font-light leading-relaxed text-secondary">
+                            {isHtml(project.content.scope) ? (
+                                <div dangerouslySetInnerHTML={{ __html: project.content.scope }} />
+                            ) : (
+                                <p>{project.content.scope || "Strategy & Execution"}</p>
+                            )}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Narrative Content */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div className="lg:col-span-8 lg:col-start-3">
+                        {renderSection("The Challenge", project.content.challenge)}
+                        {renderSection("The Solution", project.content.solution)}
+                        {renderSection("The Outcome", project.content.outcome || "")}
+                    </div>
+                </div>
+
+            </div>
+
+            {/* Horizontal Scroll Gallery */}
+            {project.images && project.images.length > 0 && (
+                <div className="mt-24 py-12 bg-gray-50 border-y border-gray-100 overflow-hidden">
+                    <div className="px-6 md:px-12 mb-8">
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-foreground">Project Visuals</h3>
+                    </div>
+
+                    {/* Carousel Container */}
+                    <div className="flex overflow-x-auto gap-6 px-6 md:px-12 pb-8 scrollbar-hide snap-x snap-mandatory">
+                        {project.images.map((img, idx) => (
+                            <div key={idx} className="relative flex-none w-[85vw] md:w-[60vw] aspect-video bg-white shadow-xl rounded-sm overflow-hidden snap-center border border-gray-200">
+                                <ImageWithFallback
+                                    src={img}
+                                    alt={`${project.title} - Visual ${idx + 1}`}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            {/* Next Project Nav */}
+            <div className="max-w-7xl mx-auto px-6 md:px-12 mt-24 flex justify-end">
+                <Link href="/portfolio" className="group inline-flex items-center gap-4 text-3xl md:text-5xl font-display font-bold text-gray-300 hover:text-foreground transition-colors">
+                    Next Project <ArrowLeft className="w-8 h-8 rotate-180 group-hover:translate-x-2 transition-transform" />
+                </Link>
+            </div>
+
         </FadeIn>
     );
 }
