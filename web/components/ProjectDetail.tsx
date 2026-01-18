@@ -123,7 +123,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
 
                     {/* Behance Embed */}
                     {project.behanceId && (
-                        <div className="w-full mb-24 flex justify-center">
+                        <div className="col-span-1 md:col-span-12 w-full mb-12 flex justify-center">
                             <iframe
                                 src={`https://www.behance.net/embed/project/${project.behanceId}?ilo0=1`}
                                 height="100%"
@@ -133,7 +133,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                                 frameBorder="0"
                                 allow="clipboard-write"
                                 referrerPolicy="strict-origin-when-cross-origin"
-                                className="w-full min-h-[800px] border border-gray-200 rounded-sm shadow-sm"
+                                className="w-full min-h-[1200px] border border-gray-200 rounded-sm shadow-sm"
                             ></iframe>
                         </div>
                     )}
