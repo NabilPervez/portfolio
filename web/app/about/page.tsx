@@ -159,7 +159,7 @@ export default function AboutPage() {
                             Throughout my career, I&apos;ve operated on my feet, maintaining a big-picture perspective while prioritizing immediate goals. I believe in leveraging individual strengths within a team to foster a happier, more productive collective.
                         </p>
                         <p>
-                            My work style can be described as <strong>creative, relentless, and efficient</strong>. I consistently strive to enhance myself, my projects, and the individuals I work with.
+                            My work style can be described as <strong className="text-gold">creative, relentless, and efficient</strong>. I consistently strive to enhance myself, my projects, and the individuals I work with.
                         </p>
                         <a
                             href="/profile.pdf"
@@ -193,7 +193,7 @@ export default function AboutPage() {
                 */}
                 <div className="md:col-span-2 bg-gray-50 p-10 md:p-14 rounded-3xl border border-gray-100 relative overflow-hidden">
                     <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight relative z-10">
-                        Curiosity is my <span className="text-gold">Operating System</span>.
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-purple-800 to-blue-900 animate-gradient-x">Curiosity</span> is my <span className="text-gold">Operating System</span>.
                     </h2>
                     <div className="prose prose-lg text-secondary leading-relaxed font-light max-w-4xl relative z-10 space-y-6">
                         <p>
@@ -246,10 +246,14 @@ export default function AboutPage() {
                     <p>
                         I focus on mentoring and coaching, having fostered cultures of learning that resulted in measurable efficiency increases. Colleagues and direct reports have noted my ability to "immediately improve the team" and my "supportive approach."
                     </p>
+                </div>
+            </div>
 
-                    <div className="mt-12 -mx-12 md:-mx-0">
-                        <TestimonialCarousel />
-                    </div>
+            {/* Testimonials */}
+            <div className="mb-32 animate-fade-in-up [animation-delay:550ms]">
+                <h2 className="text-3xl font-display font-bold mb-10">What People Say</h2>
+                <div className="-mx-6 md:-mx-0">
+                    <TestimonialCarousel />
                 </div>
             </div>
 
