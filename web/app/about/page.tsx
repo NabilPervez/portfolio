@@ -25,20 +25,6 @@ const workHistory = [
         )
     },
     {
-        year: "2024 - 2024",
-        role: "Chief Marketing Officer",
-        company: "Devhouse Agency (Video Game Studio)",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Managed the day-to-day marketing operations and administration for the agency, focused on driving brand growth and recognition.</li>
-                <li>Developed and implemented processes... boosting social media visibility by 30% and improving SEO performance by 20%.</li>
-                <li>Facilitated the process of scope of work creation, contract negotiation, billing, and reconciliation for new partnerships and RFPs.</li>
-                <li>Led brand positioning and executed customer-centric marketing campaigns, achieving a 15% increase in engagement and customer satisfaction.</li>
-                <li>Acted as brand manager, producer, and video editor for a self published video game - Our Tribe Above All (OTAA).</li>
-            </ul>
-        )
-    },
-    {
         year: "2018 - 2024",
         role: "Co-Founder, Chief Technical Officer, Senior Product Manager",
         company: "AOE Creative",
@@ -49,6 +35,20 @@ const workHistory = [
                 <li><strong>Impact:</strong> Managed a portfolio of over $5M for global clients like Riot Games, LEGO, Coca-Cola, Paramount Pictures, and Activision Blizzard.</li>
                 <li><strong>Results:</strong> Reduced customer churn rate by 30% over three years through proactive support and customer success strategies.</li>
                 <li><strong>Strategy:</strong> Utilized Agile methodologies to define roadmaps, sprint planning, and product requirements, improving productivity by 20%.</li>
+            </ul>
+        )
+    },
+    {
+        year: "2024 - 2024",
+        role: "Chief Marketing Officer",
+        company: "Devhouse Agency (Video Game Studio)",
+        description: (
+            <ul className="list-disc pl-5 space-y-2">
+                <li>Managed the day-to-day marketing operations and administration for the agency, focused on driving brand growth and recognition.</li>
+                <li>Developed and implemented processes... boosting social media visibility by 30% and improving SEO performance by 20%.</li>
+                <li>Facilitated the process of scope of work creation, contract negotiation, billing, and reconciliation for new partnerships and RFPs.</li>
+                <li>Led brand positioning and executed customer-centric marketing campaigns, achieving a 15% increase in engagement and customer satisfaction.</li>
+                <li>Acted as brand manager, producer, and video editor for a self published video game - Our Tribe Above All (OTAA).</li>
             </ul>
         )
     },
@@ -276,7 +276,7 @@ export default function AboutPage() {
 
             {/* Timeline Section */}
             <div className="max-w-4xl border-t border-gray-200 pt-24 animate-fade-in-up [animation-delay:400ms]">
-                <h2 className="text-3xl md:text-4xl font-display font-bold mb-16">The Journey</h2>
+                <h2 className="text-3xl md:text-4xl font-display font-bold mb-16">My Career</h2>
 
                 <div className="space-y-8">
                     {workHistory.map((job, index) => (

@@ -558,8 +558,8 @@
       "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Unitprod_a.png",
       "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Units_b.png"
     ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Cancel_a.png",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop-1.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg"
   },
   {
     "id": "immortal-gates-of-pyre-lorebook-videos",
@@ -577,8 +577,8 @@
       "outcome": "The project was a dual success. The digital Lore Book became a key asset that helped secure significant business and investment for Sunspear. It was also so popular with fans that it became a purchasable physical item in the Kickstarter. The videos provided the clarity needed for both players and partners to fully grasp the potential of the Immortal universe."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-GameCover-Art-PWELOVE.jpg",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-GameCover-Art-PWELOVE.jpg"
   },
   {
     "id": "immortal-gates-of-pyre-video-producing",
@@ -596,8 +596,8 @@
       "outcome": "This efficienct pipeline successfully populated their channels with high-quality content. The strategy maximized the value of every minute of production, ensuring that the marketing team always had fresh assets to engage the community across all platforms."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg"
   },
   {
     "id": "fancurve",
@@ -747,7 +747,7 @@
       "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
       "/images/portfolio/the-story-mob/the-story-mob-Story.png"
     ],
-    "image": "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
+    "image": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
     "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png"
   },
   {
@@ -837,8 +837,8 @@
       "/images/portfolio/a-kon/e7f0c5148098403.62d82935e790c.png",
       "/images/portfolio/a-kon/fafef3148098403.62d85c40355ab.gif"
     ],
-    "image": "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png",
-    "heroImage": "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png"
+    "image": "/images/portfolio/a-kon/a-kon-Aimi-Header.png",
+    "heroImage": "/images/portfolio/a-kon/a-kon-Aimi-Header.png"
   },
   {
     "id": "aoe-creative-website",
@@ -942,7 +942,7 @@
   },
   {
     "id": "lego_27",
-    "title": "LEGO_27",
+    "title": "LEGO",
     "slug": "lego_27",
     "tags": [
       "Strategy",
@@ -969,8 +969,8 @@
       "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
       "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
     ],
-    "image": "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
-    "heroImage": "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png"
+    "image": "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
+    "heroImage": "/images/portfolio/lego_27/406806126553707.615376f58f116.png"
   },
   {
     "id": "liquid",
@@ -1007,8 +1007,8 @@
       "outcome": "The results were overwhelming. OpTic transformed from a stagnant brand into one of the most talked-about teams of the year. Fans lined up at 6 AM in the cold for our events, proving the strength of the new engagement strategy. Our work was recognized with a nomination for 'Esports Team of the Year'."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/optic-gaming.png",
+    "heroImage": "/images/portfolio/optic-gaming.png"
   },
   {
     "id": "stay-plugged-in",
@@ -1055,8 +1055,8 @@
       "outcome": "We grew PVP Live into one of the largest esports news organizations. My strategies helped gain 100,000 new Twitter followers with high engagement turnover. We reached 3 million active users per month, with 30% of that traffic driven directly by the influencer and Facebook group strategies I implemented."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/pvp-live.jpg",
+    "heroImage": "/images/portfolio/pvp-live.jpg"
   },
   {
     "id": "paramount-players",
@@ -1073,8 +1073,22 @@
       "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
       "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
     },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "images": [
+      "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
+      "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.gif",
+      "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.png",
+      "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
+      "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.png",
+      "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
+      "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.gif",
+      "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
+      "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
+      "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.gif",
+      "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.png",
+      "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.png",
+      "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
+    ],
+    "image": "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
+    "heroImage": "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png"
   }
 ]

@@ -208,5 +208,149 @@
             "Marketing"
         ],
         "logo": "/images/portfolio/stay-plugged-in/spi-logo.jpg"
+    },
+    {
+        "name": "Shopify",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Misfits",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "NRG",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Dignitas",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Golden Guardians",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "100 Thieves",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "TSM",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "CLG",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Splyce",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Echo Fox",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Dallas Fuel",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Complexity",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Envy Gaming",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Evil Geniuses",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "T-Mobile",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
+    },
+    {
+        "name": "Fujitsu",
+        "description": "Providing strategic guidance and brand development.",
+        "tags": [
+            "Strategy",
+            "Branding"
+        ],
+        "logo": "/images/portfolio/default.jpg"
     }
 ]
