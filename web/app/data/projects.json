@@ -1045,24 +1045,5 @@
     ],
     "image": "/images/portfolio/tourney-locator/tourney-locator-LTC.png",
     "heroImage": "/images/portfolio/tourney-locator/tourney-locator-LTC.png"
-  },
-  {
-    "id": "liquid",
-    "title": "Team Liquid",
-    "slug": "liquid",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Team Liquid, a global esports powerhouse, needed to launch \"Liquid+,\" a fan loyalty platform. Our involvement focused on branding, strategy, and helping visually communicate this new reward ecosystem to their massive fanbase.</li></ul>",
-      "challenge": "The challenge was to create a brand identity for a sub-product that felt distinct yet undeniably \"Team Liquid.\" It needed to explain a complex reward system simply and excite fans about earning points for engagement.",
-      "solution": "We worked to develop a visual language for Liquid+ that highlighted the value of fandom. This involved branding discussions and strategy on how to position the platform as a value-add for the community, not just a data play.",
-      "outcome": "Liquid+ launched to wide acclaim, setting a new standard for fan engagement programs in esports. The branding successfully communicated the prestige of being a \"top fan\" and drove significant sign-ups at launch."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
   }
 ]
