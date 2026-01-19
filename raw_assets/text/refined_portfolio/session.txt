@@ -1,0 +1,12 @@
+CLIENT CASE STUDY
+Pulling A 180 On Design
+
+THE CHALLENGE
+The unique aspect of this project was creating a high-quality marketing key art piece for Session: Skate Sim without direct access to the game's dev engine. This condition required us to screenshot poses and scenery directly from the game, aiming to produce a final artwork that not only resembled the in-game visuals but also elevated them to a near-realistic level.
+
+THE SOLUTION
+Leveraging the extracted screenshots as a foundational base, we employed extensive photomanipulation, texture enhancement techniques, and 3D Modeling to upgrade the assets to a more realistic level. This method effectively mirrored and enriched the game’s aesthetic, fulfilling the objective of creating a high-quality marketing key art piece, while adeptly navigating the project's technical constraints.
+
+CONTACT US
+
+

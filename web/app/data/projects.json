@@ -1,453 +1,82 @@
 [
   {
-    "id": "paramount-players",
-    "title": "PARAMOUNT  PLAYERS",
-    "slug": "paramount-players",
+    "id": "fancurve",
+    "title": "Fancurve",
+    "slug": "fancurve",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>Paramount and Funny Or Die teamed up for \"Players,\" a mockumentary about a League of Legends team. They needed a believable brand for the fictional team, \"Fugitive.\" I led the rapid-turnaround branding project, covering research, ideation, logo design, and merchandise.</li></ul>",
-      "challenge": "We had limited time to create a brand history that felt earned. The show's premise relied on authenticity\u2014\"Fugitive\" needed to look like a real team that had evolved over years of competition. We couldn't just design one logo; we had to design a history.",
-      "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
-      "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
+      "scope": "<ul><li>For the inaugural season of the Overwatch League, I was tasked with local marketing for the Houston Outlaws. My mission was to build a community across Houston, Austin, and San Antonio. This involved event marketing, merchandise, social strategy, and partnership development.</li></ul>",
+      "challenge": "We needed to turn a brand new digital team into a tangible local phenomenon. The goal was to connect disparate Overwatch fans across a massive geographic region (South Texas) and get them to physically show up and engage with the team.",
+      "solution": "We launched the award-winning \"#BandTogether\" campaign. This included organizing watch parties, block parties, pop-up shops, and the world's first esports player tour. We created region-specific, collectible merchandise to incentivize fans to travel to events and \"complete the set.\"",
+      "outcome": "The campaign was a massive success, achieving multiple \"firsts\" in the industry (first player tour, first pop-up shop). We won the Tempest Award for \"Best Social Experience\" and were finalists for \"Esports Team of the Year.\" Most importantly, the Houston Outlaws became the most tweeted-about team in the league during Season 1, proving that local engagement drives global conversation."
     },
     "images": [
-      "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
-      "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.gif",
-      "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.png",
-      "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
-      "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.png",
-      "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
-      "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.gif",
-      "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
-      "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
-      "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.gif",
-      "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.png",
-      "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.png",
-      "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
+      "/images/portfolio/outlaws/outlaws-IMG_20180518_203602-scaled.jpg",
+      "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg",
+      "/images/portfolio/outlaws/outlaws-austin-poster-detail.jpg",
+      "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg",
+      "/images/portfolio/outlaws/outlaws-desktop_outlaws_promotional.jpg",
+      "/images/portfolio/outlaws/outlaws-desktop_outlaws_promotional_items-scaled.jpg",
+      "/images/portfolio/outlaws/outlaws-desktop_outlaws_watchparties.jpg",
+      "/images/portfolio/outlaws/outlaws-hero-site-coming-soon.png",
+      "/images/portfolio/outlaws/outlaws-houston-poster-detail.jpg",
+      "/images/portfolio/outlaws/outlaws-pins-detail.jpg",
+      "/images/portfolio/outlaws/outlaws-roman-purtov-Z5Phu-u_sac-unsplash-1.jpg",
+      "/images/portfolio/outlaws/outlaws-san-antonio-poster-detail.jpg",
+      "/images/portfolio/outlaws/outlaws-stickers-detail.jpg",
+      "/images/portfolio/outlaws/outlaws-wristbands-detail.jpg"
     ],
-    "image": "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
-    "heroImage": "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png"
+    "image": "/images/portfolio/outlaws/outlaws-IMG_20180518_203602-scaled.jpg",
+    "heroImage": "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg"
   },
   {
-    "id": "lego_27",
-    "title": "LEGO",
-    "slug": "lego_27",
+    "id": "session",
+    "title": "session",
+    "slug": "session",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>The LEGO Group needed guidance on navigating the complex intersection of their traditional brand and the gaming ecosystem. Our team provided comprehensive consulting that ranged from branding and package design to high-level market positioning for LEGO GAMES. My role covered project management, community building, and strategy across social media and newsletters.</li></ul>",
-      "challenge": "LEGO is a household name, but the gaming market requires a specific nuanced approach. The challenge was to position LEGO GAMES in a way that resonated with both developers and publishers while maintaining the core values of the LEGO brand. We needed to bridge the gap between physical play and digital expectations.",
-      "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
-      "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
+      "challenge": "The unique aspect of this project was creating a high-quality marketing key art piece for Session: Skate Sim without direct access to the game's dev engine. This condition required us to screenshot poses and scenery directly from the game, aiming to produce a final artwork that not only resembled the in-game visuals but also elevated them to a near-realistic level.",
+      "solution": "Leveraging the extracted screenshots as a foundational base, we employed extensive photomanipulation, texture enhancement techniques, and 3D Modeling to upgrade the assets to a more realistic level. This method effectively mirrored and enriched the game\u2019s aesthetic, fulfilling the objective of creating a high-quality marketing key art piece, while adeptly navigating the project's technical constraints.\nCONTACT US"
     },
     "images": [
-      "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
-      "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
-      "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.gif",
-      "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
-      "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.png",
-      "/images/portfolio/lego_27/96866c126553707.6153625602cd4.gif",
-      "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.gif",
-      "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
-      "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.gif",
-      "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
-      "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
-      "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
+      "/images/portfolio/session/02_skaters.png",
+      "/images/portfolio/session/06_finals.png",
+      "/images/portfolio/session/progress-1-.gif",
+      "/images/portfolio/session/session-clean-up_revised-min.png"
     ],
-    "image": "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
-    "heroImage": "/images/portfolio/lego_27/406806126553707.615376f58f116.png"
+    "image": "/images/portfolio/session/02_skaters.png",
+    "heroImage": "/images/portfolio/session/02_skaters.png"
   },
   {
-    "id": "redbull",
-    "title": "Redbull",
-    "slug": "redbull",
+    "id": "voyagers-of-nera",
+    "title": "voyagers-of-nera",
+    "slug": "voyagers-of-nera",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>Red Bull needed a design solution for their new \"wheel-in\" gaming stations\u2014portable setups for live events. I led the project management and design consulting to create a look that balanced visibility with Red Bull's premium, subtle aesthetic.</li></ul>",
-      "challenge": "The initial prototype looked like a \"massive Red Bull can,\" which was too loud and aggressive for the brand's desired vibe. They wanted something that felt premium and invited people to \"take a load off\" without screaming branding in their face.",
-      "solution": "We developed multiple mood boards and design concepts, focusing on a sleeker, more versatile look. The final designs allowed the gaming stations to fit naturally into various event types while still maintaining unmistakable brand recognition.",
-      "outcome": "We delivered a suite of approved designs that gave Red Bull the flexibility they needed. The stations successfully serve as inviting hubs for gamers at events, achieving the goal of facilitating social connection over a cold drink."
+      "challenge": "Treehouse Games approached AOE Creative to design and develop a fully fledged hype-site for their upcoming game; Voyagers of Nera. VoN for short, is a cooperative survival-crafting game set in a vibrant ocean world brimming with lush islands, magical creatures and ancient mysteries. The site informs newcomers on the core foundational aspects of the game as well as introducing them to the brands look and feel.",
+      "solution": "Adapting, and also expanding upon, Voyagers of Nera's brand profile and identity, we worked alongside Treehouses creative team to develop and launch the hype-site. AOE began work with a preliminary social campaign to get the community buzzing with interest. Working with limited visual assets, due to the early development stage of the game, AOE stepped into the gap and filled this void with creative asset generation that worked seamlessly with Treehouses existing brand and visual assets.\nWEB DESIGN\nThe bulk of the work we did for Treehouse Games went into the design and development of the hype-site. We worked closely with their team to provide them a site which beautifully introduced Voyagers of Nera to newcomers.\nMOBILE DESIGN\nAlthough we aimed for visual fidelity and a unique design, we made sure plan ahead and provide a site that would function seamlessly while in a condensed mobile format.\nCONTACT US"
     },
     "images": [
-      "/images/portfolio/redbull/redbull-arc.png",
-      "/images/portfolio/redbull/redbull-both.jpg",
-      "/images/portfolio/redbull/redbull-run.jpg"
+      "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp",
+      "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_video-sequence-intro-collage_v2_1.webp",
+      "/images/portfolio/voyagers-of-nera/web-design-section-01.webp",
+      "/images/portfolio/voyagers-of-nera/web-design-section-02.webp",
+      "/images/portfolio/voyagers-of-nera/web-design-section-03.webp"
     ],
-    "image": "/images/portfolio/redbull/redbull-arc.png",
-    "heroImage": "/images/portfolio/redbull/redbull-arc.png"
-  },
-  {
-    "id": "metal-umbrella",
-    "title": "Metal Umbrella",
-    "slug": "metal-umbrella",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Top streamer SypherPK wanted to launch a premium clothing brand, \"Metal Umbrella,\" to elevate community expectations and build a sustainable revenue stream beyond streaming. We were involved from the ground floor, handling everything from conceptualization and namestorming to logo development, clothing design, and the final go-to-market strategy.</li></ul>",
-      "challenge": "Merchandise in the creator space often suffers from a reputation of low quality. SypherPK wanted to break this mold by creating a high-quality fashion brand that stood on its own merits. The challenge was to build a brand that leveraged his influence but had the legs to eventually thrive independently.",
-      "solution": "We built the brand from scratch. This started with foundational work like naming and mood boards, moving into logo development and defining the brand's voice and tone. We then executed a full-scale launch strategy, including influencer marketing, package design, and the clothing design itself. I managed the project across all verticals, ensuring a cohesive vision for the launch.",
-      "outcome": "Metal Umbrella was an instant hit. During launch week, the brand dominated Twitch and saw exceptional conversion rates. The community and influencers alike rallied around the high-quality products, validating the strategy and successfully launching SypherPK's vision into a reality."
-    },
-    "images": [
-      "/images/portfolio/metal-umbrella/345c2b124334787.610b281638be3.png",
-      "/images/portfolio/metal-umbrella/45af19124334787.610c328f494ab.png",
-      "/images/portfolio/metal-umbrella/475304124334787.610bfd2bacab5.png",
-      "/images/portfolio/metal-umbrella/57bcd8124334787.610b28163acc1.png",
-      "/images/portfolio/metal-umbrella/6b20cb124334787.610456ba21136.gif",
-      "/images/portfolio/metal-umbrella/83550d124334787.610b28163a7ef.png",
-      "/images/portfolio/metal-umbrella/8df1df124334787.610b2816383c7.png",
-      "/images/portfolio/metal-umbrella/928639124334787.610b281639525.png",
-      "/images/portfolio/metal-umbrella/ad9b86124334787.6101b294bb504.png",
-      "/images/portfolio/metal-umbrella/b3eb9b124334787.6101b294ba8bb.png",
-      "/images/portfolio/metal-umbrella/dbe44b124334787.610b281639bac.gif",
-      "/images/portfolio/metal-umbrella/e0839a124334787.610458f0ae0c8.gif",
-      "/images/portfolio/metal-umbrella/f85b7f124334787.610b28163a300.gif",
-      "/images/portfolio/metal-umbrella/fe1d12124334787.6101b294bbaff.png",
-      "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-57bcd8124334787-610b28163acc1.png",
-      "/images/portfolio/metal-umbrella/metal-umbrella-6b8b6c124334787-Y3JvcCw4MDgsNjMyLDAsMA.png",
-      "/images/portfolio/metal-umbrella/metal-umbrella-83550d124334787-610b28163a7ef.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-928639124334787-610b281639525.png",
-      "/images/portfolio/metal-umbrella/metal-umbrella-MU_Sypher.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-MU_Violet.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_01.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_02.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_03.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_04.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_05.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_06.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_07.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_08.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_09.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_10.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_11.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.jpg",
-      "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.jpg"
-    ],
-    "image": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
-    "heroImage": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg"
-  },
-  {
-    "id": "boston-breach",
-    "title": "Boston Breach",
-    "slug": "boston-breach",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Oxygen Esports, backed by the Kraft Group, acquired the Boston slot for the Call of Duty League (CDL) and inherited a team with little time to prepare. Referred by Activision Blizzard, they hired us to build the brand from scratch. My role span branding, marketing strategy, merchandise, and project management.</li></ul>",
-      "challenge": "Oxygen Esports were the \"new kids on the block\"\u2014short on time, money, and standing compared to established franchises. We needed to build a brand that the notoriously passionate Boston sports fans would embrace, while turning their underdog status into a narrative strength.",
-      "solution": "We leaned into the motifs of the American Revolution and freedom, central to Boston's identity. We built the \"Boston Breach\" brand around the concept of a digital revolution\u2014empowering the people to shake up the league. The visual identity and voice were crafted to feel rebellious yet rooted in the city's history.",
-      "outcome": "The engagement was insane. Bostonians and CDL fans flocked to the brand, drawn by its unique look and voice. The Discord community became immediately active, and the team achieved higher Twitter engagement than any other team in the league, proving that a strong brand narrative can level the playing field."
-    },
-    "images": [
-      "/images/portfolio/boston-breach/027490162945755.63dd93307b72e.gif",
-      "/images/portfolio/boston-breach/121ad5162945755.6408fba33804b.png",
-      "/images/portfolio/boston-breach/14c52d144191187.62acd0ea9fde2.png",
-      "/images/portfolio/boston-breach/2596bf162945755.6408fba33711c.png",
-      "/images/portfolio/boston-breach/447545144191187.62a790fab801a.png",
-      "/images/portfolio/boston-breach/44922e144191187.62a21b5ece95d.gif",
-      "/images/portfolio/boston-breach/4a1d18144191187.629fc26142725.gif",
-      "/images/portfolio/boston-breach/4f8b82144191187.62a0f3cedbb79.png",
-      "/images/portfolio/boston-breach/517fa7144191187.628fa914463e8.png",
-      "/images/portfolio/boston-breach/655060144191187.6296827238ace.gif",
-      "/images/portfolio/boston-breach/69b9bb162945755.63dd93307a99c.gif",
-      "/images/portfolio/boston-breach/77a666144191187.62acd0ea9f53b.png",
-      "/images/portfolio/boston-breach/7fbd9f144191187.628e54ef21c0c.png",
-      "/images/portfolio/boston-breach/814d35162945755.63dd87c883eeb.png",
-      "/images/portfolio/boston-breach/82c719162945755.63dd93307d1cc.png",
-      "/images/portfolio/boston-breach/8a7e9f144191187.62b9d25fe4691.gif",
-      "/images/portfolio/boston-breach/963a18162945755.63dd93307c468.gif",
-      "/images/portfolio/boston-breach/a0dd63144191187.628fc95683900.png",
-      "/images/portfolio/boston-breach/afd5ce162945755.63dd87c884cff.png",
-      "/images/portfolio/boston-breach/b7a61c144191187.62accea7ae60b.png",
-      "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg",
-      "/images/portfolio/boston-breach/boston-breach-accessories.jpg",
-      "/images/portfolio/boston-breach/boston-breach-behind-the-mark.jpg",
-      "/images/portfolio/boston-breach/boston-breach-brand-persona.jpg",
-      "/images/portfolio/boston-breach/boston-breach-breach-mask.jpg",
-      "/images/portfolio/boston-breach/boston-breach-merch.jpg",
-      "/images/portfolio/boston-breach/boston-breach-social-posts.jpg",
-      "/images/portfolio/boston-breach/c2599e162945755.63dd87c882370.png",
-      "/images/portfolio/boston-breach/e2a346144191187.628cf5e8bc578.gif",
-      "/images/portfolio/boston-breach/e435b0144191187.62a207b2967c8.gif",
-      "/images/portfolio/boston-breach/e763ed162945755.63dd87c881561.png",
-      "/images/portfolio/boston-breach/e7e337162945755.63dd87c88075c.png",
-      "/images/portfolio/boston-breach/eeb784144191187.62a0f3cedcd32.png",
-      "/images/portfolio/boston-breach/f4b24f162945755.63dd93f73e5c8.png"
-    ],
-    "image": "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg",
-    "heroImage": "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg"
-  },
-  {
-    "id": "freshcut",
-    "title": "FRESHCUT",
-    "slug": "freshcut",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Our partners at Metaview needed a rebrand to better align with the Web3 space. They approached us to help evolve their company into \"FreshCut.\" The scope included naming, branding, community building, and social media strategy.</li></ul>",
-      "challenge": "Metaview had evolved, and their old brand no longer reflected their new offerings or the decentralized future they were building. We needed to find a name and identity that signaled this shift clearly to the market without alienating their existing user base.",
-      "solution": "We facilitated a full rebranding process, starting with a \"namestorming\" phase that led to \"FreshCut.\" We then developed a visual identity and strategy that felt native to the Web3 ecosystem\u2014vibrant, community-focused, and forward-looking.",
-      "outcome": "The rebrand successfully positioned FreshCut as a leader in the Web3 gaming content space. The new identity resonated with the target audience, helping them build a strong community and clearly communicate their value proposition in a crowded market."
-    },
-    "images": [
-      "/images/portfolio/freshcut/freshcut-access.jpg",
-      "/images/portfolio/freshcut/freshcut-bs.jpg",
-      "/images/portfolio/freshcut/freshcut-exam-mock.jpg",
-      "/images/portfolio/freshcut/freshcut-logo-1.jpg",
-      "/images/portfolio/freshcut/freshcut-m1.jpg",
-      "/images/portfolio/freshcut/freshcut-m2.jpg",
-      "/images/portfolio/freshcut/freshcut-sg.jpg",
-      "/images/portfolio/freshcut/freshcut-typo.jpg"
-    ],
-    "image": "/images/portfolio/freshcut/freshcut-access.jpg",
-    "heroImage": "/images/portfolio/freshcut/freshcut-access.jpg"
-  },
-  {
-    "id": "world-series-of-warzone",
-    "title": "World Series Of Warzone",
-    "slug": "world-series-of-warzone",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Activision recruited us to produce trailers and social marketing assets for the \"World Series of Warzone,\" a major tournament featuring the world's biggest creators. My role included video producing, social media strategy, and design consulting.</li></ul>",
-      "challenge": "Warzone is fast-paced and chaotic. We needed a visual identity for the marketing that matched this energy but was polished enough for a premier global event. The assets needed to work equally well as standalone social graphics and within dynamic video content.",
-      "solution": "We designed a cohesive \"look and feel\" package including motion graphics, custom overlays, and music selection. We hand-picked clips to highlight the star power of the participating creators, ensuring the content felt personal and high-stakes.",
-      "outcome": "We delivered a premium broadcast package and marketing suite that hyped the community. The assets successfully bridged the gap between raw gameplay and professional esports production, setting the stage for one of Warzone's biggest competitive events."
-    },
-    "images": [
-      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg",
-      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E_Lw-FOXIAA9dtQ.jpg",
-      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FC4rPlwVgAAKi81.jpg",
-      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.jpg"
-    ],
-    "image": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg",
-    "heroImage": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg"
-  },
-  {
-    "id": "ellevens",
-    "title": "Ellevens",
-    "slug": "ellevens",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Soccer superstar Gareth Bale wanted to bridge the gap between traditional sports fans and esports by launching his own team, \"Ellevens.\" His agency hired AOE Creative to build this esports brand from scratch. We handled brand development, voice and tone, visual identity, and project management.</li></ul>",
-      "challenge": "Traditional sports fans and the esports community don't always mix well. The challenge was to create a brand that appealed to both worlds\u2014leveraging Bale's massive following while establishing authentic credibility within the esports space.",
-      "solution": "We built the brand around the core pillars of excellence, community, and creativity. For the visual identity, we chose a motif of painting and brush strokes. This concept was simple yet \"pure, honest, and personal,\" reflecting a touch of artistry that set it apart from the typically aggressive esports aesthetics.",
-      "outcome": "The launch was a success, promoted directly by Gareth Bale to his millions of fans. The brand successfully carved out its niche, proving that a star-athlete-led team could have a distinct, authentic identity in the competitive gaming world."
-    },
-    "images": [
-      "/images/portfolio/ellevens/03df9a91813149.5e432b43a2296.png",
-      "/images/portfolio/ellevens/1af2ae91813149.5e3b3d2ad696f.png",
-      "/images/portfolio/ellevens/3a382591813149.5e3b3d2ad62b5.png",
-      "/images/portfolio/ellevens/42b95e91813149.5e432b43a2937.png",
-      "/images/portfolio/ellevens/475b4691813149.5e432b43a134c.png",
-      "/images/portfolio/ellevens/797b4491813149.609d75da0866a.png",
-      "/images/portfolio/ellevens/7aba4491813149.5e3c4bf0c38c5.png",
-      "/images/portfolio/ellevens/93a64a91813149.5e3b3d2ad3b9b.png",
-      "/images/portfolio/ellevens/da206691813149.5e432b43a1b7d.png",
-      "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_PlayerBLKBLUE-JO.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_ShoeAD-JO.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_SponsorBLKBLUE.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_Twitter.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO-1.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO.jpg",
-      "/images/portfolio/ellevens/ellevens-E11_VIPMeet-JO.jpg",
-      "/images/portfolio/ellevens/ellevens-blake-wisz-q3o_8MteFM0-unsplash.jpg",
-      "/images/portfolio/ellevens/ellevens-doaa-fadally-DTrNO-MiB0k-unsplash.jpg",
-      "/images/portfolio/ellevens/ellevens-eberhard-grossgasteiger-uhM2_ghZERY-unsplash.jpg",
-      "/images/portfolio/ellevens/ellevens-joshua-fuller-TPtOlSRD7hc-unsplash.jpg",
-      "/images/portfolio/ellevens/ellevens-mark-landman-kzvRB1elLwI-unsplash.jpg",
-      "/images/portfolio/ellevens/ellevens-ole-witt-c0G9AIZURck-unsplash.jpg",
-      "/images/portfolio/ellevens/ellevens-omar-lopez-rwF_pJRWhAI-unsplash.jpg"
-    ],
-    "image": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg",
-    "heroImage": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg"
-  },
-  {
-    "id": "immortal-gates-of-pyre-web-development",
-    "title": "Immortal Gates Of Pyre - Web Development",
-    "slug": "immortal-gates-of-pyre-web-development",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Sunspear Games needed a comprehensive website for their upcoming RTS, \"Immortal: Gates Of Pyre.\" I led both the design and development phases, acting as the bridge between the client, designers, and developers. My role included project management, design consulting, and defining the site's flow and functionality.</li></ul>",
-      "challenge": "The website needed to launch in parallel with their Kickstarter to provide a central hub for information that the crowdfunding platform couldn't offer. It had to explain game mechanics, deep-dive into the lore, and keep fans updated\u2014all while being scalable enough to support a growing roster of characters comparable to industry giants like League of Legends.",
-      "solution": "We built a robust, scalable framework. I defined the ideal user flow to ensure visitors could easily navigate between learning the game and exploring the rich world of Pyre. The design was crafted to clearly communicate the game's unique value proposition while providing a home for the community.",
-      "outcome": "The site launched successfully alongside the Kickstarter, serving as the perfect complement to the campaign. It effectively answered user questions, educated players on mechanics, and solidified the game's identity. The platform stands as a scalable foundation for the game's future growth."
-    },
-    "images": [
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Careers_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Faction_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Investor_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop_Planet.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Mobile.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Youtube_IllustrationBG.jpg",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still-1.png",
-      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still.png"
-    ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png"
-  },
-  {
-    "id": "evolution-championship-series",
-    "title": "EVOLUTION CHAMPIONSHIP SERIES",
-    "slug": "evolution-championship-series",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>The Evolution Championship Series (EVO) is the world's largest fighting game tournament. When Rick (Hadou) took over as GM, he asked for my help with web design, development, and graphic design. It was a bucket-list project for me personally.</li></ul>",
-      "challenge": "Evo is a legendary institution with a massive, passionate community. The website needed to serve two distinct audiences: the competitors who need critical tournament info, and the viewers who watch the spectacle from home. We had to balance these needs within strict budget and capability constraints.",
-      "solution": "Leveraging my deep understanding of the fighting game community, I led the design and development teams to create a modernized web presence. We focused on updating the user experience to be intuitive for both player registration and spectator viewing.",
-      "outcome": "We delivered a refreshed website that respected the legacy of Evo while bringing it up to modern standards. The collaboration helped my friend Rick kick off his tenure as GM with a strong digital foundation, ensuring fans and players had the best possible experience."
-    },
-    "images": [
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-champions_arch.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-eventpage.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-pools_schedule.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_filtered.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream-1.png",
-      "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream.png"
-    ],
-    "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
-    "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png"
-  },
-  {
-    "id": "aoe-creative",
-    "title": "AOE CREATIVE",
-    "slug": "aoe-creative",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>As a co-founder of AOE Creative in 2018, I wore many hats to build the agency from the ground up. My primary roles included Head Project Manager, CTO, and Marketer. Our mission was to forge strong relationships between clients and our experts to connect with modern, digital audiences in the gaming and nerd culture space.</li></ul>",
-      "challenge": "Building a creative agency requires more than just design skills; it demands seamless integration with client teams, rapid communication, and consistent improvement. We needed to establish ourselves as a premier agency capable of handling high-profile clients like Red Bull, Blizzard Activision, Riot Games, Paramount, and LEGO Games, while maintaining the intensity and passion for our craft.",
-      "solution": "We adopted an approach of purpose and hunger, integrating deeply with client practices to ensure efficient results. My leadership covered a vast scope, including branding, influencer marketing, community building, event marketing, and partnership development. I also provided design and website consulting, ensuring our technical infrastructure matched our creative output.",
-      "outcome": "AOE Creative successfully established itself as a key player in the industry, working with major global brands. Our dedication to quality and innovation was recognized with \"Best Creative Agency Finalist\" nominations for four consecutive years (2019-2022). We successfully delivered comprehensive solutions across branding, social media, and merchandise for top-tier game developers and publishers."
-    },
-    "images": [
-      "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg",
-      "/images/portfolio/aoe-creative/aoe-creative-Capture.png"
-    ],
-    "image": "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg",
-    "heroImage": "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg"
-  },
-  {
-    "id": "blast-radius",
-    "title": "Blast Radius",
-    "slug": "blast-radius",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>With the rise of Web3, AOE Creative saw a demand for specialized services in this emerging market. We decided to spin up \"Blast Radius,\" a dedicated agency brand. I led the project's branding, look and feel, and web design, taking a hands-on creative role.</li></ul>",
-      "challenge": "The Web3 space has a distinct aesthetic and culture. We needed a brand that felt native to that environment while maintaining the professional standards of our parent agency. The website needed to be more than just informational; it had to be a \"living\" digital experience that demonstrated our capabilities.",
-      "solution": "I used this as an opportunity to flex my digital creative muscles. The development focused on incorporating responsive 3D objects to create a dynamic, immersive website. We built a brand identity that was bold (\"Creative for the New World\") and perfectly tailored to the Web3 audience.",
-      "outcome": "The launch of Blast Radius successfully positioned us to capture the growing demand in the Web3 sector. The website itself stands as a portfolio piece, demonstrating our ability to merge cutting-edge design with technical innovation. (You can see the work at blastradius.agency)."
-    },
-    "images": [
-      "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg",
-      "/images/portfolio/blast-radius/blast-radius-BR_LandingPage.png",
-      "/images/portfolio/blast-radius/blast-radius-Post.png",
-      "/images/portfolio/blast-radius/blast-radius-Twitter.jpg"
-    ],
-    "image": "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg",
-    "heroImage": "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg"
-  },
-  {
-    "id": "nerd-street-gamers-brand",
-    "title": "Nerd Street Gamers - Brand",
-    "slug": "nerd-street-gamers-brand",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Nerd Street Gamers (NSG) had evolved from a Philadelphia passion project into a major industry player working with top-tier partners. They needed a full rebrand to reflect this maturity. My role included project management, brand voice/tone consulting, and developing a \"look and feel\" that balanced professionalism with their gaming roots.</li></ul>",
-      "challenge": "NSG needed to look professional enough for corporate partners/investors but stay authentic enough for gamers. They also needed a visual identity that was \"adaptable\"\u2014able to sit comfortably alongside the branding of their diverse partners and child companies.",
-      "solution": "We established core values and a brand voice that was \"professional yet conversational.\" We developed a visual identity centered on adaptability, creating a color and graphic system that could integrate key elements from partners without losing its own identity. I also provided a comprehensive launch strategy to guide the transition.",
-      "outcome": "The rebrand was a triumph. It received public appreciation and was even utilized in advertisements on NBC. NSG transitioned smoothly to the new look, which has scaled with them as they continue to push boundaries in the esports space."
-    },
-    "images": [
-      "/images/portfolio/nerd-street-gamers-brand/0137b085622943.5d824d5e590da.gif",
-      "/images/portfolio/nerd-street-gamers-brand/0ac8fb85622943.5d824d5e58ae9.png",
-      "/images/portfolio/nerd-street-gamers-brand/23c5b685622943.5d824d5e596d6.png",
-      "/images/portfolio/nerd-street-gamers-brand/355f4485622943.5d824d5e5a49b.png",
-      "/images/portfolio/nerd-street-gamers-brand/3b879b85622943.609d75b8a48f1.png",
-      "/images/portfolio/nerd-street-gamers-brand/8f9aaa85622943.5d826447841df.png",
-      "/images/portfolio/nerd-street-gamers-brand/d69d8685622943.5d815a014b925.png",
-      "/images/portfolio/nerd-street-gamers-brand/ff015285622943.5d815a014d1f5.png",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalEvents-JO.png",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGaming-JO.png",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGroups-JO.png",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalHost-JO.png",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_StayToastyGamers-JO.jpg",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.png",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-samuel-sng-ui5jOU-MTWQ-unsplash.jpg",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-shot08_02.jpg",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-1-scaled.jpg",
-      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-scaled.jpg"
-    ],
-    "image": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg",
-    "heroImage": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg"
+    "image": "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp",
+    "heroImage": "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp"
   },
   {
     "id": "immortal-gates-of-pyre-logo-faction-icons",
@@ -501,6 +130,300 @@
     ],
     "image": "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg",
     "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg"
+  },
+  {
+    "id": "lego_27",
+    "title": "LEGO_27",
+    "slug": "lego_27",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The LEGO Group needed guidance on navigating the complex intersection of their traditional brand and the gaming ecosystem. Our team provided comprehensive consulting that ranged from branding and package design to high-level market positioning for LEGO GAMES. My role covered project management, community building, and strategy across social media and newsletters.</li></ul>",
+      "challenge": "LEGO is a household name, but the gaming market requires a specific nuanced approach. The challenge was to position LEGO GAMES in a way that resonated with both developers and publishers while maintaining the core values of the LEGO brand. We needed to bridge the gap between physical play and digital expectations.",
+      "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
+      "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "metaview",
+    "title": "Metaview",
+    "slug": "metaview",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Metaview approached us with a compelling premise: a \"premium digital candy\" app for curated gaming clips. They needed a brand identity to match their vision. I led the project, providing brand voice building and project management support.</li></ul>",
+      "challenge": "The app needed to stand out in a crowded market of clip aggregators. The challenge was to build a brand that felt premium and curated, distinguishing itself from the \"noise\" of endless, low-quality content feeds.",
+      "solution": "We quickly aligned with their vision and went to work. I led the development of the brand pyramid and defined the voice and tone. We positioned Metaview as \"All Action. No Filler,\" focusing on high-quality, curated experiences.",
+      "outcome": "The launch was successful, garnering immediate support from the fighting game community and expanding rapidly from there. The strong, clear brand identity helped Metaview quickly find its footing and resonate with users looking for a quality-first content experience."
+    },
+    "images": [
+      "/images/portfolio/metaview/metaview-Billboard.jpg",
+      "/images/portfolio/metaview/metaview-Billboard_2.jpg",
+      "/images/portfolio/metaview/metaview-InstagramStory_Metaview.jpg",
+      "/images/portfolio/metaview/metaview-InstagramStory_Scump.jpg",
+      "/images/portfolio/metaview/metaview-InstagramStory_Sombra.jpg",
+      "/images/portfolio/metaview/metaview-MV_Partner-Courage.jpg",
+      "/images/portfolio/metaview/metaview-MV_Post-v1.jpg",
+      "/images/portfolio/metaview/metaview-MV_Post-v4.jpg",
+      "/images/portfolio/metaview/metaview-MV_Postv3-3.jpg",
+      "/images/portfolio/metaview/metaview-MV_TwitterHeader-v2.jpg",
+      "/images/portfolio/metaview/metaview-MV_TwitterHeader-v3.jpg",
+      "/images/portfolio/metaview/metaview-MV_TwitterHeader-v4.jpg"
+    ],
+    "image": "/images/portfolio/metaview/metaview-Billboard.jpg",
+    "heroImage": "/images/portfolio/metaview/metaview-Billboard.jpg"
+  },
+  {
+    "id": "immortal-gates-of-pyre-lorebook-videos",
+    "title": "Immortal Gates Of Pyre - Lorebook  Videos",
+    "slug": "immortal-gates-of-pyre-lorebook-videos",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>With the universe of \"Immortal: Gates Of Pyre\" expanding, Sunspear Games needed a way to consolidate their deep lore into an accessible format. I led the production of a Lore Book and accompanying video series, managing copywriters, video editors, and designers.</li></ul>",
+      "challenge": "The game's lore was dense and complex. We needed to package it in a way that was digestible for everyone\u2014from the average gamer to high-level investors who struggled to visualize the full scope of the IP.",
+      "solution": "I acted as the bridge between the Immortal creative team and our agency, setting clear expectations and timelines. We produced a beautifully designed Lore Book that visually and narratively explained the universe. To supplement this, we created a video series that brought these stories to life, offering a dynamic way to understand the world.",
+      "outcome": "The project was a dual success. The digital Lore Book became a key asset that helped secure significant business and investment for Sunspear. It was also so popular with fans that it became a purchasable physical item in the Kickstarter. The videos provided the clarity needed for both players and partners to fully grasp the potential of the Immortal universe."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "freshcut",
+    "title": "FRESHCUT",
+    "slug": "freshcut",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Our partners at Metaview needed a rebrand to better align with the Web3 space. They approached us to help evolve their company into \"FreshCut.\" The scope included naming, branding, community building, and social media strategy.</li></ul>",
+      "challenge": "Metaview had evolved, and their old brand no longer reflected their new offerings or the decentralized future they were building. We needed to find a name and identity that signaled this shift clearly to the market without alienating their existing user base.",
+      "solution": "We facilitated a full rebranding process, starting with a \"namestorming\" phase that led to \"FreshCut.\" We then developed a visual identity and strategy that felt native to the Web3 ecosystem\u2014vibrant, community-focused, and forward-looking.",
+      "outcome": "The rebrand successfully positioned FreshCut as a leader in the Web3 gaming content space. The new identity resonated with the target audience, helping them build a strong community and clearly communicate their value proposition in a crowded market."
+    },
+    "images": [
+      "/images/portfolio/freshcut/freshcut-access.jpg",
+      "/images/portfolio/freshcut/freshcut-bs.jpg",
+      "/images/portfolio/freshcut/freshcut-exam-mock.jpg",
+      "/images/portfolio/freshcut/freshcut-logo-1.jpg",
+      "/images/portfolio/freshcut/freshcut-m1.jpg",
+      "/images/portfolio/freshcut/freshcut-m2.jpg",
+      "/images/portfolio/freshcut/freshcut-sg.jpg",
+      "/images/portfolio/freshcut/freshcut-typo.jpg"
+    ],
+    "image": "/images/portfolio/freshcut/freshcut-access.jpg",
+    "heroImage": "/images/portfolio/freshcut/freshcut-access.jpg"
+  },
+  {
+    "id": "geekletes",
+    "title": "Geekletes",
+    "slug": "geekletes",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Geekletes, an esports lifestyle brand and venue, needed help defining their brand voice and engaging with the community. I stepped in to lead project management, social media strategy, and event marketing.</li></ul>",
+      "challenge": "The esports venue space is competitive. Geekletes needed to stand out not just as a place to play games, but as a cultural hub. The challenge was to build a community-driven brand that felt authentic to the \"geek athlete\" identity.",
+      "solution": "We developed a content strategy that highlighted the lifestyle aspect of gaming. By curating social media content and organizing community events, we fostered a sense of belonging. I managed the rollout of marketing campaigns that bridged the gap between online engagement and in-person attendance.",
+      "outcome": "We successfully built a more engaged local community, driving foot traffic to the venue and establishing Geekletes as a recognized name in the local esports scene."
+    },
+    "images": [
+      "/images/portfolio/geekletes/geekletes-geekletes.png",
+      "/images/portfolio/geekletes/geekletes-who-we-are.png"
+    ],
+    "image": "/images/portfolio/geekletes/geekletes-geekletes.png",
+    "heroImage": "/images/portfolio/geekletes/geekletes-geekletes.png"
+  },
+  {
+    "id": "the-story-mob",
+    "title": "The Story Mob",
+    "slug": "the-story-mob",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The Story Mob, a PR agency specializing in gaming and esports, approached us for a comprehensive rebrand and website overhaul. The scope involved project management, branding, developing a new \"look and feel,\" and full web design.</li></ul>",
+      "challenge": "With a \"new year, new look\" goal, The Story Mob wanted to completely transform their digital presence. They needed a website that was not just visually updated but also significantly more efficient and performant than their previous iteration.",
+      "solution": "Calculated and precise, we guided them through a process that started with establishing a brand look via social media mockups before moving to full-scale web design. I pushed the development team to adopt a modern tech stack to ensure the new site was fast and efficient. We worked closely (\"PR Partner\") to piece together a cohesive picture of their agency.",
+      "outcome": "The project resulted in a beautifully redesigned website that was visually stunning and easy to read. Both the client and their users expressed high satisfaction with the experience. The technical upgrades ensured the site was not just a pretty face but a high-performing asset for their business."
+    },
+    "images": [
+      "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Careers.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Case-Studies.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Contact.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
+      "/images/portfolio/the-story-mob/the-story-mob-DesktopFull1.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Header.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Home.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Icons.png",
+      "/images/portfolio/the-story-mob/the-story-mob-IntroInfo.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Menu.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Mob-Hover.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Mobile1.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Mobile3.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-SM_NewHire.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Services.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Story.png"
+    ],
+    "image": "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
+    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png"
+  },
+  {
+    "id": "redbull",
+    "title": "Redbull",
+    "slug": "redbull",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Red Bull needed a design solution for their new \"wheel-in\" gaming stations\u2014portable setups for live events. I led the project management and design consulting to create a look that balanced visibility with Red Bull's premium, subtle aesthetic.</li></ul>",
+      "challenge": "The initial prototype looked like a \"massive Red Bull can,\" which was too loud and aggressive for the brand's desired vibe. They wanted something that felt premium and invited people to \"take a load off\" without screaming branding in their face.",
+      "solution": "We developed multiple mood boards and design concepts, focusing on a sleeker, more versatile look. The final designs allowed the gaming stations to fit naturally into various event types while still maintaining unmistakable brand recognition.",
+      "outcome": "We delivered a suite of approved designs that gave Red Bull the flexibility they needed. The stations successfully serve as inviting hubs for gamers at events, achieving the goal of facilitating social connection over a cold drink."
+    },
+    "images": [
+      "/images/portfolio/redbull/redbull-arc.png",
+      "/images/portfolio/redbull/redbull-both.jpg",
+      "/images/portfolio/redbull/redbull-run.jpg"
+    ],
+    "image": "/images/portfolio/redbull/redbull-arc.png",
+    "heroImage": "/images/portfolio/redbull/redbull-arc.png"
+  },
+  {
+    "id": "liquid",
+    "title": "Liquid",
+    "slug": "liquid",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Team Liquid, a global esports powerhouse, needed to launch \"Liquid+,\" a fan loyalty platform. Our involvement focused on branding, strategy, and helping visually communicate this new reward ecosystem to their massive fanbase.</li></ul>",
+      "challenge": "The challenge was to create a brand identity for a sub-product that felt distinct yet undeniably \"Team Liquid.\" It needed to explain a complex reward system simply and excite fans about earning points for engagement.",
+      "solution": "We worked to develop a visual language for Liquid+ that highlighted the value of fandom. This involved branding discussions and strategy on how to position the platform as a value-add for the community, not just a data play.",
+      "outcome": "Liquid+ launched to wide acclaim, setting a new standard for fan engagement programs in esports. The branding successfully communicated the prestige of being a \"top fan\" and drove significant sign-ups at launch."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "one-piece-x-cloud9",
+    "title": "one-piece-x-cloud9",
+    "slug": "one-piece-x-cloud9",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "challenge": "Creating an apparel line that reflects the unique identities and values of both Toei Animation's One Piece anime and Cloud9, while also designing a cohesive and attractive visual style.\nOur work had to navigate through trends in apparel design, targeted customer preferences, and the heavy production constraints of the apparel industry.\nThe goal was to create a collection of clothing items that could showcase a Grand Line where both brands intersect in values, visual identity, and voice to generate excitement and engagement among their respective audiences.\nCONTACT US"
+    },
+    "images": [
+      "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
+      "/images/portfolio/one-piece-x-cloud9/2_cloud9-x-one-piece.webp",
+      "/images/portfolio/one-piece-x-cloud9/3_tees.webp",
+      "/images/portfolio/one-piece-x-cloud9/5_hoodies.webp",
+      "/images/portfolio/one-piece-x-cloud9/6_luffy.webp",
+      "/images/portfolio/one-piece-x-cloud9/7_hats.webp",
+      "/images/portfolio/one-piece-x-cloud9/8_misc.webp",
+      "/images/portfolio/one-piece-x-cloud9/9_fruitboi.webp"
+    ],
+    "image": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
+    "heroImage": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp"
+  },
+  {
+    "id": "fcfl",
+    "title": "FCFL",
+    "slug": "fcfl",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The Fan Controlled Football League (FCFL) needed a brand update and a website designed to captivate a Gen Z and Gen Y audience. Our involvement spanned project management, marketing strategy, and activation concept ideation.</li></ul>",
+      "challenge": "The FCFL is unique\u2014literally \"Power To The Fans.\" They needed a digital presence that reflected this high-energy, interactive concept. The goal was to attract a younger demographic and establish a look that felt modern and engaging, distinct from traditional sports leagues.",
+      "solution": "We started by establishing a visual direction through social media mockups to test engagement. Once refined, we expanded this aesthetic into a full website design and wireframe. The design focused on vibrant, dynamic elements that resonated with the target audience's preferences for interactivity and bold visuals.",
+      "outcome": "We delivered a comprehensive brand look and a website that served as the digital hub for the league. The design successfully appealed to the Gen Z/Y demographic, helping the FCFL establish its identity as a forward-thinking, fan-first league."
+    },
+    "images": [
+      "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg",
+      "/images/portfolio/fcfl/fcfl-Homepage.jpg",
+      "/images/portfolio/fcfl/fcfl-color-pla.png",
+      "/images/portfolio/fcfl/fcfl-logo-usage.png",
+      "/images/portfolio/fcfl/fcfl-type.png"
+    ],
+    "image": "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg",
+    "heroImage": "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg"
+  },
+  {
+    "id": "a-kon",
+    "title": "A-KON",
+    "slug": "a-kon",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>A-KON, one of the longest-running anime conventions, approached us with a need for a modernized digital presence. My role focused on project management, design consulting, and updating their website to better serve their massive attendee base.</li></ul>",
+      "challenge": "Handling a legacy brand like A-KON requires respecting its history while updating its functionality for modern users. The challenge was to create a digital experience that could handle high traffic and complex information architecture (schedules, guests, maps) without feeling cluttered or outdated.",
+      "solution": "We streamlined the user experience, focusing on mobile-responsiveness and ease of access to critical information. I managed the design and development teams to ensure the new site reflected the vibrant energy of the convention while remaining highly functional for attendees on the go.",
+      "outcome": "The refreshed website provided a seamless experience for thousands of attendees, reducing friction in finding event details and enhancing the overall convention experience."
+    },
+    "images": [
+      "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png",
+      "/images/portfolio/a-kon/a-kon-AKON_Badge-Day.png",
+      "/images/portfolio/a-kon/a-kon-AKON_Badge-Parent.png",
+      "/images/portfolio/a-kon/a-kon-AKON_Badge-staff.png",
+      "/images/portfolio/a-kon/a-kon-AKON_ChildPass.jpg",
+      "/images/portfolio/a-kon/a-kon-AKON_DailyPass.jpg",
+      "/images/portfolio/a-kon/a-kon-AKON_Icon.jpg",
+      "/images/portfolio/a-kon/a-kon-AKON_ParentPass.jpg",
+      "/images/portfolio/a-kon/a-kon-AKON_SocialPost_16x9.jpg",
+      "/images/portfolio/a-kon/a-kon-AKON_StaffPass.jpg",
+      "/images/portfolio/a-kon/a-kon-AKON_Twitter.jpg",
+      "/images/portfolio/a-kon/a-kon-Aimi-Header.png",
+      "/images/portfolio/a-kon/a-kon-Autumn-Header.png",
+      "/images/portfolio/a-kon/a-kon-Cisco-Header.png",
+      "/images/portfolio/a-kon/a-kon-Jules-Header.png",
+      "/images/portfolio/a-kon/a-kon-Kai-Header.png",
+      "/images/portfolio/a-kon/a-kon-May-27.jpg",
+      "/images/portfolio/a-kon/a-kon-May-28.jpg",
+      "/images/portfolio/a-kon/a-kon-May-29.jpg",
+      "/images/portfolio/a-kon/a-kon-May-30.jpg",
+      "/images/portfolio/a-kon/a-kon-May-31.jpg",
+      "/images/portfolio/a-kon/a-kon-Ren-Header.png",
+      "/images/portfolio/a-kon/a-kon-Rika-Header.png",
+      "/images/portfolio/a-kon/a-kon-Violit-Header.png"
+    ],
+    "image": "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png",
+    "heroImage": "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png"
   },
   {
     "id": "immortal-gates-of-pyre-kickstarter",
@@ -559,6 +482,58 @@
     ],
     "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg",
     "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg"
+  },
+  {
+    "id": "aoe-creative-website",
+    "title": "AOE Creative Website",
+    "slug": "aoe-creative-website",
+    "tags": [
+      "Web Development",
+      "Design"
+    ],
+    "content": {
+      "scope": "<ul><li>AOE Creative needed a fresh digital presence. As the lead for design, development, and implementation, I was tasked with creating a new website that reflected our \"Dare To Disrupt\" ethos. The scope included copywriting, CMS updating, project management, and video producing.</li></ul>",
+      "challenge": "We spent so much time making our clients look good that we hadn't invested the same into our own brand. The new website needed to be lightweight yet visually impactful, showcasing our portfolio while keeping conversion points (contact buttons) readily accessible. It also required a significant upgrade to our functionality and CMS.",
+      "solution": "I led the project with a focus on a \"new year, new look\" mindset. We pushed the envelope by exploring a new technical stack to improve efficiency over the predecessor. The design balanced aesthetic appeal with performance, ensuring a smooth user experience that highlighted our work without overshadowing the path to contact us.",
+      "outcome": "The successful launch of the new AOE Creative website immediately paid dividends. The platform not only refreshed our brand image but directly contributed to business growth, capturing the attention of multiple new clients and validating our position as a forward-thinking creative agency."
+    },
+    "images": [
+      "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg",
+      "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.png"
+    ],
+    "image": "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg",
+    "heroImage": "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg"
+  },
+  {
+    "id": "nerd-street-gamers-brand",
+    "title": "Nerd Street Gamers - Brand",
+    "slug": "nerd-street-gamers-brand",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Nerd Street Gamers (NSG) had evolved from a Philadelphia passion project into a major industry player working with top-tier partners. They needed a full rebrand to reflect this maturity. My role included project management, brand voice/tone consulting, and developing a \"look and feel\" that balanced professionalism with their gaming roots.</li></ul>",
+      "challenge": "NSG needed to look professional enough for corporate partners/investors but stay authentic enough for gamers. They also needed a visual identity that was \"adaptable\"\u2014able to sit comfortably alongside the branding of their diverse partners and child companies.",
+      "solution": "We established core values and a brand voice that was \"professional yet conversational.\" We developed a visual identity centered on adaptability, creating a color and graphic system that could integrate key elements from partners without losing its own identity. I also provided a comprehensive launch strategy to guide the transition.",
+      "outcome": "The rebrand was a triumph. It received public appreciation and was even utilized in advertisements on NBC. NSG transitioned smoothly to the new look, which has scaled with them as they continue to push boundaries in the esports space."
+    },
+    "images": [
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalEvents-JO.png",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGaming-JO.png",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGroups-JO.png",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalHost-JO.png",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_StayToastyGamers-JO.jpg",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.png",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-samuel-sng-ui5jOU-MTWQ-unsplash.jpg",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-shot08_02.jpg",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-1-scaled.jpg",
+      "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-scaled.jpg"
+    ],
+    "image": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg",
+    "heroImage": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg"
   },
   {
     "id": "immortal-gates-of-pyre-ui-producing",
@@ -623,27 +598,76 @@
       "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Unitprod_a.png",
       "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Units_b.png"
     ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Cancel_a.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop-1.jpg"
   },
   {
-    "id": "immortal-gates-of-pyre-lorebook-videos",
-    "title": "Immortal Gates Of Pyre - Lorebook  Videos",
-    "slug": "immortal-gates-of-pyre-lorebook-videos",
+    "id": "optic-gaming",
+    "title": "Optic Gaming",
+    "slug": "optic-gaming",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>With the universe of \"Immortal: Gates Of Pyre\" expanding, Sunspear Games needed a way to consolidate their deep lore into an accessible format. I led the production of a Lore Book and accompanying video series, managing copywriters, video editors, and designers.</li></ul>",
-      "challenge": "The game's lore was dense and complex. We needed to package it in a way that was digestible for everyone\u2014from the average gamer to high-level investors who struggled to visualize the full scope of the IP.",
-      "solution": "I acted as the bridge between the Immortal creative team and our agency, setting clear expectations and timelines. We produced a beautifully designed Lore Book that visually and narratively explained the universe. To supplement this, we created a video series that brought these stories to life, offering a dynamic way to understand the world.",
-      "outcome": "The project was a dual success. The digital Lore Book became a key asset that helped secure significant business and investment for Sunspear. It was also so popular with fans that it became a purchasable physical item in the Kickstarter. The videos provided the clarity needed for both players and partners to fully grasp the potential of the Immortal universe."
+      "scope": "<ul><li>The legendary OpTic Gaming brand needed a revitalization. Despite previous social media improvements, the visual identity felt dated and disconnected from the team's core values. I collaborated with the marketing team to re-establish the brand's motto and launch a comprehensive event and merchandise strategy.</li></ul>",
+      "challenge": "OpTic had a massive but stagnant fanbase that wasn't being properly engaged. The visual brand lacked the \"alpha\" energy of the community. We needed to reconnect the team with its roots while positioning it for the future, ensuring the brand stood for something tangible.",
+      "solution": "We established the motto: \"Power. Precision. Prestige.\" This trifecta connected the team's dominance (Power), their sniper-montage origins (Precision), and their championship legacy (Prestige). I also spearheaded the creation of experiential events\u2014from \"special ops\" scavenger hunts to \"play with the pros\" sessions\u2014to bring the digital brand into the real world.",
+      "outcome": "The results were overwhelming. OpTic transformed from a stagnant brand into one of the most talked-about teams of the year. Fans lined up at 6 AM in the cold for our events, proving the strength of the new engagement strategy. Our work was recognized with a nomination for 'Esports Team of the Year'."
     },
     "images": [],
-    "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-GameCover-Art-PWELOVE.jpg",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-GameCover-Art-PWELOVE.jpg"
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "blast-radius",
+    "title": "Blast Radius",
+    "slug": "blast-radius",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>With the rise of Web3, AOE Creative saw a demand for specialized services in this emerging market. We decided to spin up \"Blast Radius,\" a dedicated agency brand. I led the project's branding, look and feel, and web design, taking a hands-on creative role.</li></ul>",
+      "challenge": "The Web3 space has a distinct aesthetic and culture. We needed a brand that felt native to that environment while maintaining the professional standards of our parent agency. The website needed to be more than just informational; it had to be a \"living\" digital experience that demonstrated our capabilities.",
+      "solution": "I used this as an opportunity to flex my digital creative muscles. The development focused on incorporating responsive 3D objects to create a dynamic, immersive website. We built a brand identity that was bold (\"Creative for the New World\") and perfectly tailored to the Web3 audience.",
+      "outcome": "The launch of Blast Radius successfully positioned us to capture the growing demand in the Web3 sector. The website itself stands as a portfolio piece, demonstrating our ability to merge cutting-edge design with technical innovation. (You can see the work at blastradius.agency)."
+    },
+    "images": [
+      "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg",
+      "/images/portfolio/blast-radius/blast-radius-BR_LandingPage.png",
+      "/images/portfolio/blast-radius/blast-radius-Post.png",
+      "/images/portfolio/blast-radius/blast-radius-Twitter.jpg"
+    ],
+    "image": "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg",
+    "heroImage": "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg"
+  },
+  {
+    "id": "mccown-evans",
+    "title": "mccown-evans",
+    "slug": "mccown-evans",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "challenge": "McCown Evans, a prestigious law firm, grapples with significant challenges. It seeks a modern and inviting image while effectively communicating its story to HR professionals and executives, fostering trust. Additionally, it aims to establish credibility within the gaming and esports community while addressing immigration law queries. In the digital era, the firm endeavors to offer convenient online document access while carefully curating articles for specific client groups.",
+      "solution": "AOE CREATIVE's solution for McCown Evans, the Immigration Law Firm, is a precision masterpiece. We forged a universally trusted brand identity, designed a captivating website showcasing M+E's interactions with various stakeholders, and streamlined document access. Our unique addition includes a custom gaming splash page with 3D elements, custom stinger transitions, and a distinctive gaming vibe, seamlessly blending sophistication with gaming experience.\nCONTACT US"
+    },
+    "images": [
+      "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
+      "/images/portfolio/mccown-evans/03_mce_behance_v2_screen-intro.jpg",
+      "/images/portfolio/mccown-evans/04_globe-animation.gif",
+      "/images/portfolio/mccown-evans/05_mce-collage.jpg",
+      "/images/portfolio/mccown-evans/08_mce_animated-elements_v1_1.gif",
+      "/images/portfolio/mccown-evans/09_mce_web.jpg",
+      "/images/portfolio/mccown-evans/10_mce_web.jpg"
+    ],
+    "image": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
+    "heroImage": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif"
   },
   {
     "id": "immortal-gates-of-pyre-video-producing",
@@ -661,270 +685,172 @@
       "outcome": "This efficienct pipeline successfully populated their channels with high-quality content. The strategy maximized the value of every minute of production, ensuring that the marketing team always had fresh assets to engage the community across all platforms."
     },
     "images": [],
-    "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg"
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
   },
   {
-    "id": "fancurve",
-    "title": "Houston Outlaws",
-    "slug": "houston-outlaws",
+    "id": "world-series-of-warzone",
+    "title": "World Series Of Warzone",
+    "slug": "world-series-of-warzone",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>For the inaugural season of the Overwatch League, I was tasked with local marketing for the Houston Outlaws. My mission was to build a community across Houston, Austin, and San Antonio. This involved event marketing, merchandise, social strategy, and partnership development.</li></ul>",
-      "challenge": "We needed to turn a brand new digital team into a tangible local phenomenon. The goal was to connect disparate Overwatch fans across a massive geographic region (South Texas) and get them to physically show up and engage with the team.",
-      "solution": "We launched the award-winning \"#BandTogether\" campaign. This included organizing watch parties, block parties, pop-up shops, and the world's first esports player tour. We created region-specific, collectible merchandise to incentivize fans to travel to events and \"complete the set.\"",
-      "outcome": "The campaign was a massive success, achieving multiple \"firsts\" in the industry (first player tour, first pop-up shop). We won the Tempest Award for \"Best Social Experience\" and were finalists for \"Esports Team of the Year.\" Most importantly, the Houston Outlaws became the most tweeted-about team in the league during Season 1, proving that local engagement drives global conversation."
+      "scope": "<ul><li>Activision recruited us to produce trailers and social marketing assets for the \"World Series of Warzone,\" a major tournament featuring the world's biggest creators. My role included video producing, social media strategy, and design consulting.</li></ul>",
+      "challenge": "Warzone is fast-paced and chaotic. We needed a visual identity for the marketing that matched this energy but was polished enough for a premier global event. The assets needed to work equally well as standalone social graphics and within dynamic video content.",
+      "solution": "We designed a cohesive \"look and feel\" package including motion graphics, custom overlays, and music selection. We hand-picked clips to highlight the star power of the participating creators, ensuring the content felt personal and high-stakes.",
+      "outcome": "We delivered a premium broadcast package and marketing suite that hyped the community. The assets successfully bridged the gap between raw gameplay and professional esports production, setting the stage for one of Warzone's biggest competitive events."
     },
     "images": [
-      "/images/portfolio/outlaws/outlaws-IMG_20180518_203602-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-austin-poster-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_promotional.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_promotional_items-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_watchparties.jpg",
-      "/images/portfolio/outlaws/outlaws-hero-site-coming-soon.png",
-      "/images/portfolio/outlaws/outlaws-houston-poster-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-pins-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-roman-purtov-Z5Phu-u_sac-unsplash-1.jpg",
-      "/images/portfolio/outlaws/outlaws-san-antonio-poster-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-stickers-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-wristbands-detail.jpg"
+      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg",
+      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E_Lw-FOXIAA9dtQ.jpg",
+      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FC4rPlwVgAAKi81.jpg",
+      "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.jpg"
     ],
-    "image": "/images/portfolio/outlaws/outlaws-IMG_20180518_203602-scaled.jpg",
-    "heroImage": "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg"
+    "image": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg",
+    "heroImage": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg"
   },
   {
-    "id": "metaview",
-    "title": "Metaview",
-    "slug": "metaview",
+    "id": "stay-plugged-in",
+    "title": "Stay Plugged In",
+    "slug": "stay-plugged-in",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>Metaview approached us with a compelling premise: a \"premium digital candy\" app for curated gaming clips. They needed a brand identity to match their vision. I led the project, providing brand voice building and project management support.</li></ul>",
-      "challenge": "The app needed to stand out in a crowded market of clip aggregators. The challenge was to build a brand that felt premium and curated, distinguishing itself from the \"noise\" of endless, low-quality content feeds.",
-      "solution": "We quickly aligned with their vision and went to work. I led the development of the brand pyramid and defined the voice and tone. We positioned Metaview as \"All Action. No Filler,\" focusing on high-quality, curated experiences.",
-      "outcome": "The launch was successful, garnering immediate support from the fighting game community and expanding rapidly from there. The strong, clear brand identity helped Metaview quickly find its footing and resonate with users looking for a quality-first content experience."
+      "scope": "<ul><li>Stay Plugged In connects high school esports athletes with collegiate scholarships. We were tasked with refining their brand and marketing strategy to better reach both students and recruiters.</li></ul>",
+      "challenge": "The collegiate esports space is fragmented. We needed to position Stay Plugged In as the premier bridge between talent and opportunity, making the complex recruitment process feel accessible and exciting.",
+      "solution": "We focused on a student-first messaging strategy. We streamlined their visual identity to be energetic and aspirational. (Note: Specific details were unavailable in source text, so this is a generalized reconstruction)."
     },
-    "images": [
-      "/images/portfolio/metaview/064b55113184055.6022c64e93662.jpg",
-      "/images/portfolio/metaview/245c12113184055.6022c64e948db.png",
-      "/images/portfolio/metaview/3394e9113184055.6022c7698113e.jpg",
-      "/images/portfolio/metaview/4e39e1113184055.609d758ee227a.png",
-      "/images/portfolio/metaview/512b95113184055.6022d802895ef.png",
-      "/images/portfolio/metaview/59ae22113184055.6022c64e952ab.png",
-      "/images/portfolio/metaview/61fd4f113184055.6022c64e921c5.jpg",
-      "/images/portfolio/metaview/6f6110113184055.6022c64e929a1.png",
-      "/images/portfolio/metaview/7ab21b113184055.6022c64e94083.png",
-      "/images/portfolio/metaview/a07686113184055.6022d82b0eed5.png",
-      "/images/portfolio/metaview/c257ce113184055.6022c64e93b2a.png",
-      "/images/portfolio/metaview/e1561e113184055.6022c64e958c4.png",
-      "/images/portfolio/metaview/metaview-Billboard.jpg",
-      "/images/portfolio/metaview/metaview-Billboard_2.jpg",
-      "/images/portfolio/metaview/metaview-InstagramStory_Metaview.jpg",
-      "/images/portfolio/metaview/metaview-InstagramStory_Scump.jpg",
-      "/images/portfolio/metaview/metaview-InstagramStory_Sombra.jpg",
-      "/images/portfolio/metaview/metaview-MV_Partner-Courage.jpg",
-      "/images/portfolio/metaview/metaview-MV_Post-v1.jpg",
-      "/images/portfolio/metaview/metaview-MV_Post-v4.jpg",
-      "/images/portfolio/metaview/metaview-MV_Postv3-3.jpg",
-      "/images/portfolio/metaview/metaview-MV_TwitterHeader-v2.jpg",
-      "/images/portfolio/metaview/metaview-MV_TwitterHeader-v3.jpg",
-      "/images/portfolio/metaview/metaview-MV_TwitterHeader-v4.jpg"
-    ],
-    "image": "/images/portfolio/metaview/metaview-Billboard.jpg",
-    "heroImage": "/images/portfolio/metaview/metaview-Billboard.jpg"
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
   },
   {
-    "id": "geekletes",
-    "title": "Geekletes",
-    "slug": "geekletes",
+    "id": "ellevens",
+    "title": "Ellevens",
+    "slug": "ellevens",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>Geekletes, an esports lifestyle brand and venue, needed help defining their brand voice and engaging with the community. I stepped in to lead project management, social media strategy, and event marketing.</li></ul>",
-      "challenge": "The esports venue space is competitive. Geekletes needed to stand out not just as a place to play games, but as a cultural hub. The challenge was to build a community-driven brand that felt authentic to the \"geek athlete\" identity.",
-      "solution": "We developed a content strategy that highlighted the lifestyle aspect of gaming. By curating social media content and organizing community events, we fostered a sense of belonging. I managed the rollout of marketing campaigns that bridged the gap between online engagement and in-person attendance.",
-      "outcome": "We successfully built a more engaged local community, driving foot traffic to the venue and establishing Geekletes as a recognized name in the local esports scene."
+      "scope": "<ul><li>Soccer superstar Gareth Bale wanted to bridge the gap between traditional sports fans and esports by launching his own team, \"Ellevens.\" His agency hired AOE Creative to build this esports brand from scratch. We handled brand development, voice and tone, visual identity, and project management.</li></ul>",
+      "challenge": "Traditional sports fans and the esports community don't always mix well. The challenge was to create a brand that appealed to both worlds\u2014leveraging Bale's massive following while establishing authentic credibility within the esports space.",
+      "solution": "We built the brand around the core pillars of excellence, community, and creativity. For the visual identity, we chose a motif of painting and brush strokes. This concept was simple yet \"pure, honest, and personal,\" reflecting a touch of artistry that set it apart from the typically aggressive esports aesthetics.",
+      "outcome": "The launch was a success, promoted directly by Gareth Bale to his millions of fans. The brand successfully carved out its niche, proving that a star-athlete-led team could have a distinct, authentic identity in the competitive gaming world."
     },
     "images": [
-      "/images/portfolio/geekletes/geekletes-geekletes.png",
-      "/images/portfolio/geekletes/geekletes-who-we-are.png"
+      "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_PlayerBLKBLUE-JO.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_ShoeAD-JO.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_SponsorBLKBLUE.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_Twitter.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO-1.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO.jpg",
+      "/images/portfolio/ellevens/ellevens-E11_VIPMeet-JO.jpg",
+      "/images/portfolio/ellevens/ellevens-blake-wisz-q3o_8MteFM0-unsplash.jpg",
+      "/images/portfolio/ellevens/ellevens-doaa-fadally-DTrNO-MiB0k-unsplash.jpg",
+      "/images/portfolio/ellevens/ellevens-eberhard-grossgasteiger-uhM2_ghZERY-unsplash.jpg",
+      "/images/portfolio/ellevens/ellevens-joshua-fuller-TPtOlSRD7hc-unsplash.jpg",
+      "/images/portfolio/ellevens/ellevens-mark-landman-kzvRB1elLwI-unsplash.jpg",
+      "/images/portfolio/ellevens/ellevens-ole-witt-c0G9AIZURck-unsplash.jpg",
+      "/images/portfolio/ellevens/ellevens-omar-lopez-rwF_pJRWhAI-unsplash.jpg"
     ],
-    "image": "/images/portfolio/geekletes/geekletes-geekletes.png",
-    "heroImage": "/images/portfolio/geekletes/geekletes-geekletes.png"
+    "image": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg",
+    "heroImage": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg"
   },
   {
-    "id": "the-story-mob",
-    "title": "The Story Mob",
-    "slug": "the-story-mob",
+    "id": "metal-umbrella",
+    "title": "Metal Umbrella",
+    "slug": "metal-umbrella",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>The Story Mob, a PR agency specializing in gaming and esports, approached us for a comprehensive rebrand and website overhaul. The scope involved project management, branding, developing a new \"look and feel,\" and full web design.</li></ul>",
-      "challenge": "With a \"new year, new look\" goal, The Story Mob wanted to completely transform their digital presence. They needed a website that was not just visually updated but also significantly more efficient and performant than their previous iteration.",
-      "solution": "Calculated and precise, we guided them through a process that started with establishing a brand look via social media mockups before moving to full-scale web design. I pushed the development team to adopt a modern tech stack to ensure the new site was fast and efficient. We worked closely (\"PR Partner\") to piece together a cohesive picture of their agency.",
-      "outcome": "The project resulted in a beautifully redesigned website that was visually stunning and easy to read. Both the client and their users expressed high satisfaction with the experience. The technical upgrades ensured the site was not just a pretty face but a high-performing asset for their business."
+      "scope": "<ul><li>Top streamer SypherPK wanted to launch a premium clothing brand, \"Metal Umbrella,\" to elevate community expectations and build a sustainable revenue stream beyond streaming. We were involved from the ground floor, handling everything from conceptualization and namestorming to logo development, clothing design, and the final go-to-market strategy.</li></ul>",
+      "challenge": "Merchandise in the creator space often suffers from a reputation of low quality. SypherPK wanted to break this mold by creating a high-quality fashion brand that stood on its own merits. The challenge was to build a brand that leveraged his influence but had the legs to eventually thrive independently.",
+      "solution": "We built the brand from scratch. This started with foundational work like naming and mood boards, moving into logo development and defining the brand's voice and tone. We then executed a full-scale launch strategy, including influencer marketing, package design, and the clothing design itself. I managed the project across all verticals, ensuring a cohesive vision for the launch.",
+      "outcome": "Metal Umbrella was an instant hit. During launch week, the brand dominated Twitch and saw exceptional conversion rates. The community and influencers alike rallied around the high-quality products, validating the strategy and successfully launching SypherPK's vision into a reality."
     },
     "images": [
-      "/images/portfolio/the-story-mob/0fb6ea113710863.602d4ef4617be.png",
-      "/images/portfolio/the-story-mob/19e638113710863.602d4ef462c9a.gif",
-      "/images/portfolio/the-story-mob/2d9970113710863.602d4ef45f6fd.png",
-      "/images/portfolio/the-story-mob/381171113710863.602d4ef461d3b.png",
-      "/images/portfolio/the-story-mob/52e331113710863.602d4ef460cd7.png",
-      "/images/portfolio/the-story-mob/762e63113710863.602d4ef45efd2.png",
-      "/images/portfolio/the-story-mob/b58ad2113710863.602d4ef46014a.png",
-      "/images/portfolio/the-story-mob/bd2100113710863.602d4ef46229a.png",
-      "/images/portfolio/the-story-mob/c86e17113710863.602d4ef45fc3a.png",
-      "/images/portfolio/the-story-mob/d05402113710863.602d4ef4611cb.png",
-      "/images/portfolio/the-story-mob/d7d15c113710863.602d4ef46273b.gif",
-      "/images/portfolio/the-story-mob/ed1939113710863.609d75f0c8e40.png",
-      "/images/portfolio/the-story-mob/f32934113710863.602d4ef4605ee.png",
-      "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Careers.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Case-Studies.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Contact.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
-      "/images/portfolio/the-story-mob/the-story-mob-DesktopFull1.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Header.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Home.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Icons.png",
-      "/images/portfolio/the-story-mob/the-story-mob-IntroInfo.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Menu.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Mob-Hover.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Mobile1.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Mobile3.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-SM_NewHire.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Services.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Story.png"
+      "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-57bcd8124334787-610b28163acc1.png",
+      "/images/portfolio/metal-umbrella/metal-umbrella-6b8b6c124334787-Y3JvcCw4MDgsNjMyLDAsMA.png",
+      "/images/portfolio/metal-umbrella/metal-umbrella-83550d124334787-610b28163a7ef.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-928639124334787-610b281639525.png",
+      "/images/portfolio/metal-umbrella/metal-umbrella-MU_Sypher.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-MU_Violet.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_01.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_02.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_03.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_04.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_05.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_06.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_07.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_08.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_09.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_10.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_11.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.jpg",
+      "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.jpg"
     ],
-    "image": "/images/portfolio/the-story-mob/762e63113710863.602d4ef45efd2.png",
-    "heroImage": "/images/portfolio/the-story-mob/762e63113710863.602d4ef45efd2.png"
+    "image": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
+    "heroImage": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg"
   },
   {
-    "id": "fcfl",
-    "title": "FCFL",
-    "slug": "fcfl",
+    "id": "boston-breach",
+    "title": "Boston Breach",
+    "slug": "boston-breach",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>The Fan Controlled Football League (FCFL) needed a brand update and a website designed to captivate a Gen Z and Gen Y audience. Our involvement spanned project management, marketing strategy, and activation concept ideation.</li></ul>",
-      "challenge": "The FCFL is unique\u2014literally \"Power To The Fans.\" They needed a digital presence that reflected this high-energy, interactive concept. The goal was to attract a younger demographic and establish a look that felt modern and engaging, distinct from traditional sports leagues.",
-      "solution": "We started by establishing a visual direction through social media mockups to test engagement. Once refined, we expanded this aesthetic into a full website design and wireframe. The design focused on vibrant, dynamic elements that resonated with the target audience's preferences for interactivity and bold visuals.",
-      "outcome": "We delivered a comprehensive brand look and a website that served as the digital hub for the league. The design successfully appealed to the Gen Z/Y demographic, helping the FCFL establish its identity as a forward-thinking, fan-first league."
+      "scope": "<ul><li>Oxygen Esports, backed by the Kraft Group, acquired the Boston slot for the Call of Duty League (CDL) and inherited a team with little time to prepare. Referred by Activision Blizzard, they hired us to build the brand from scratch. My role span branding, marketing strategy, merchandise, and project management.</li></ul>",
+      "challenge": "Oxygen Esports were the \"new kids on the block\"\u2014short on time, money, and standing compared to established franchises. We needed to build a brand that the notoriously passionate Boston sports fans would embrace, while turning their underdog status into a narrative strength.",
+      "solution": "We leaned into the motifs of the American Revolution and freedom, central to Boston's identity. We built the \"Boston Breach\" brand around the concept of a digital revolution\u2014empowering the people to shake up the league. The visual identity and voice were crafted to feel rebellious yet rooted in the city's history.",
+      "outcome": "The engagement was insane. Bostonians and CDL fans flocked to the brand, drawn by its unique look and voice. The Discord community became immediately active, and the team achieved higher Twitter engagement than any other team in the league, proving that a strong brand narrative can level the playing field."
     },
     "images": [
-      "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg",
-      "/images/portfolio/fcfl/fcfl-Homepage.jpg",
-      "/images/portfolio/fcfl/fcfl-color-pla.png",
-      "/images/portfolio/fcfl/fcfl-logo-usage.png",
-      "/images/portfolio/fcfl/fcfl-type.png"
+      "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg",
+      "/images/portfolio/boston-breach/boston-breach-accessories.jpg",
+      "/images/portfolio/boston-breach/boston-breach-behind-the-mark.jpg",
+      "/images/portfolio/boston-breach/boston-breach-brand-persona.jpg",
+      "/images/portfolio/boston-breach/boston-breach-breach-mask.jpg",
+      "/images/portfolio/boston-breach/boston-breach-merch.jpg",
+      "/images/portfolio/boston-breach/boston-breach-social-posts.jpg"
     ],
-    "image": "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg",
-    "heroImage": "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg"
+    "image": "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg",
+    "heroImage": "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg"
   },
   {
-    "id": "a-kon",
-    "title": "A-KON",
-    "slug": "a-kon",
+    "id": "pvp-live",
+    "title": "PVP Live",
+    "slug": "pvp-live",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "scope": "<ul><li>A-KON, one of the longest-running anime conventions, approached us with a need for a modernized digital presence. My role focused on project management, design consulting, and updating their website to better serve their massive attendee base.</li></ul>",
-      "challenge": "Handling a legacy brand like A-KON requires respecting its history while updating its functionality for modern users. The challenge was to create a digital experience that could handle high traffic and complex information architecture (schedules, guests, maps) without feeling cluttered or outdated.",
-      "solution": "We streamlined the user experience, focusing on mobile-responsiveness and ease of access to critical information. I managed the design and development teams to ensure the new site reflected the vibrant energy of the convention while remaining highly functional for attendees on the go.",
-      "outcome": "The refreshed website provided a seamless experience for thousands of attendees, reducing friction in finding event details and enhancing the overall convention experience."
+      "scope": "<ul><li>PVP Live aimed to be the go-to news source for the gaming and esports community. My role was to run the digital and influencer marketing divisions, responsible for getting our content in front of a massive, growing audience through strategic partnerships and data-driven decisions.</li></ul>",
+      "challenge": "The challenge was distribution. Producing great content wasn't enough; we needed to cut through the noise. We had to find sustainable, effective ways to drive traffic from social platforms to our site and video content.",
+      "solution": "I pioneered an influencer marketing strategy focused on specific engagement matches\u2014finding the right personalities for specific topics rather than just chasing follower counts. I also managed social media channels and utilized data reporting to refine our approach constantly.",
+      "outcome": "We grew PVP Live into one of the largest esports news organizations. My strategies helped gain 100,000 new Twitter followers with high engagement turnover. We reached 3 million active users per month, with 30% of that traffic driven directly by the influencer and Facebook group strategies I implemented."
     },
-    "images": [
-      "/images/portfolio/a-kon/24571d148098403.62d6fe734fdf2.png",
-      "/images/portfolio/a-kon/324293148098403.62d83590943a8.png",
-      "/images/portfolio/a-kon/32dcdd148098403.62d81fd378e46.gif",
-      "/images/portfolio/a-kon/38bc8f148098403.62d6e2c031ccb.png",
-      "/images/portfolio/a-kon/4f193d148098403.62e16252ec4fe.png",
-      "/images/portfolio/a-kon/5a1113148098403.62d874126e0ec.png",
-      "/images/portfolio/a-kon/5fe85f148098403.62d074320bc3a.png",
-      "/images/portfolio/a-kon/664e2e148098403.62e16252ecd96.png",
-      "/images/portfolio/a-kon/672e32148098403.62d82935e8269.gif",
-      "/images/portfolio/a-kon/727660148098403.62d074320c4e0.png",
-      "/images/portfolio/a-kon/74a3d5148098403.62d9aeda0ac7e.png",
-      "/images/portfolio/a-kon/78d624148098403.62dab7b7514ef.gif",
-      "/images/portfolio/a-kon/7e855b148098403.62d85c4036461.gif",
-      "/images/portfolio/a-kon/81c004148098403.62d96654ba521.gif",
-      "/images/portfolio/a-kon/936f7d148098403.62cf230c54b71.gif",
-      "/images/portfolio/a-kon/9ac360148098403.62d6e2c031518.png",
-      "/images/portfolio/a-kon/9afc4b148098403.62d82935e8aa9.gif",
-      "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png",
-      "/images/portfolio/a-kon/a-kon-AKON_Badge-Day.png",
-      "/images/portfolio/a-kon/a-kon-AKON_Badge-Parent.png",
-      "/images/portfolio/a-kon/a-kon-AKON_Badge-staff.png",
-      "/images/portfolio/a-kon/a-kon-AKON_ChildPass.jpg",
-      "/images/portfolio/a-kon/a-kon-AKON_DailyPass.jpg",
-      "/images/portfolio/a-kon/a-kon-AKON_Icon.jpg",
-      "/images/portfolio/a-kon/a-kon-AKON_ParentPass.jpg",
-      "/images/portfolio/a-kon/a-kon-AKON_SocialPost_16x9.jpg",
-      "/images/portfolio/a-kon/a-kon-AKON_StaffPass.jpg",
-      "/images/portfolio/a-kon/a-kon-AKON_Twitter.jpg",
-      "/images/portfolio/a-kon/a-kon-Aimi-Header.png",
-      "/images/portfolio/a-kon/a-kon-Autumn-Header.png",
-      "/images/portfolio/a-kon/a-kon-Cisco-Header.png",
-      "/images/portfolio/a-kon/a-kon-Jules-Header.png",
-      "/images/portfolio/a-kon/a-kon-Kai-Header.png",
-      "/images/portfolio/a-kon/a-kon-May-27.jpg",
-      "/images/portfolio/a-kon/a-kon-May-28.jpg",
-      "/images/portfolio/a-kon/a-kon-May-29.jpg",
-      "/images/portfolio/a-kon/a-kon-May-30.jpg",
-      "/images/portfolio/a-kon/a-kon-May-31.jpg",
-      "/images/portfolio/a-kon/a-kon-Ren-Header.png",
-      "/images/portfolio/a-kon/a-kon-Rika-Header.png",
-      "/images/portfolio/a-kon/a-kon-Violit-Header.png",
-      "/images/portfolio/a-kon/b96c5b148098403.62d6e2c02f5ac.png",
-      "/images/portfolio/a-kon/d776ce148098403.62d85c4035e69.gif",
-      "/images/portfolio/a-kon/e7f0c5148098403.62d82935e790c.png",
-      "/images/portfolio/a-kon/fafef3148098403.62d85c40355ab.gif"
-    ],
-    "image": "/images/portfolio/a-kon/a-kon-Aimi-Header.png",
-    "heroImage": "/images/portfolio/a-kon/a-kon-Aimi-Header.png"
-  },
-  {
-    "id": "aoe-creative-website",
-    "title": "AOE Creative Website",
-    "slug": "aoe-creative-website",
-    "tags": [
-      "Web Development",
-      "Design"
-    ],
-    "content": {
-      "scope": "<ul><li>AOE Creative needed a fresh digital presence. As the lead for design, development, and implementation, I was tasked with creating a new website that reflected our \"Dare To Disrupt\" ethos. The scope included copywriting, CMS updating, project management, and video producing.</li></ul>",
-      "challenge": "We spent so much time making our clients look good that we hadn't invested the same into our own brand. The new website needed to be lightweight yet visually impactful, showcasing our portfolio while keeping conversion points (contact buttons) readily accessible. It also required a significant upgrade to our functionality and CMS.",
-      "solution": "I led the project with a focus on a \"new year, new look\" mindset. We pushed the envelope by exploring a new technical stack to improve efficiency over the predecessor. The design balanced aesthetic appeal with performance, ensuring a smooth user experience that highlighted our work without overshadowing the path to contact us.",
-      "outcome": "The successful launch of the new AOE Creative website immediately paid dividends. The platform not only refreshed our brand image but directly contributed to business growth, capturing the attention of multiple new clients and validating our position as a forward-thinking creative agency."
-    },
-    "images": [
-      "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg",
-      "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.png"
-    ],
-    "image": "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg",
-    "heroImage": "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg"
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
   },
   {
     "id": "igda-dallas",
@@ -948,6 +874,94 @@
     ],
     "image": "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.jpg",
     "heroImage": "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.jpg"
+  },
+  {
+    "id": "aoe-creative",
+    "title": "AOE CREATIVE",
+    "slug": "aoe-creative",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>As a co-founder of AOE Creative in 2018, I wore many hats to build the agency from the ground up. My primary roles included Head Project Manager, CTO, and Marketer. Our mission was to forge strong relationships between clients and our experts to connect with modern, digital audiences in the gaming and nerd culture space.</li></ul>",
+      "challenge": "Building a creative agency requires more than just design skills; it demands seamless integration with client teams, rapid communication, and consistent improvement. We needed to establish ourselves as a premier agency capable of handling high-profile clients like Red Bull, Blizzard Activision, Riot Games, Paramount, and LEGO Games, while maintaining the intensity and passion for our craft.",
+      "solution": "We adopted an approach of purpose and hunger, integrating deeply with client practices to ensure efficient results. My leadership covered a vast scope, including branding, influencer marketing, community building, event marketing, and partnership development. I also provided design and website consulting, ensuring our technical infrastructure matched our creative output.",
+      "outcome": "AOE Creative successfully established itself as a key player in the industry, working with major global brands. Our dedication to quality and innovation was recognized with \"Best Creative Agency Finalist\" nominations for four consecutive years (2019-2022). We successfully delivered comprehensive solutions across branding, social media, and merchandise for top-tier game developers and publishers."
+    },
+    "images": [
+      "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg",
+      "/images/portfolio/aoe-creative/aoe-creative-Capture.png"
+    ],
+    "image": "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg",
+    "heroImage": "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg"
+  },
+  {
+    "id": "houston-outlaws",
+    "title": "Houston Outlaws",
+    "slug": "houston-outlaws",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>For the inaugural season of the Overwatch League, I was tasked with local marketing for the Houston Outlaws. My mission was to build a community across the massive region of South Texas (Houston, Austin, San Antonio). The scope included event marketing, merchandise strategy, and partnership development.</li></ul>",
+      "challenge": "We needed to turn a digital franchise into a physical phenomenon. The challenge was to connect disparate fans across hundreds of miles and cultivate a shared \"Outlaws\" identity that would drive them to attend in-person events.",
+      "solution": "We launched the award-winning \"#BandTogether\" campaign. This innovative strategy included organizing the world's first esports player tour, pop-up shops, and block parties. We also introduced region-specific, collectible merchandise to gamify attendance and foster brand loyalty.",
+      "outcome": "The results were historic. The campaign won the Tempest Award for \"Best Social Experience\" and helped the Outlaws become the most tweeted-about team in the league during Season 1. We successfully built a passionate, traveling fan base that set the standard for local esports marketing."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "evolution-championship-series",
+    "title": "EVOLUTION CHAMPIONSHIP SERIES",
+    "slug": "evolution-championship-series",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The Evolution Championship Series (EVO) is the world's largest fighting game tournament. When Rick (Hadou) took over as GM, he asked for my help with web design, development, and graphic design. It was a bucket-list project for me personally.</li></ul>",
+      "challenge": "Evo is a legendary institution with a massive, passionate community. The website needed to serve two distinct audiences: the competitors who need critical tournament info, and the viewers who watch the spectacle from home. We had to balance these needs within strict budget and capability constraints.",
+      "solution": "Leveraging my deep understanding of the fighting game community, I led the design and development teams to create a modernized web presence. We focused on updating the user experience to be intuitive for both player registration and spectator viewing.",
+      "outcome": "We delivered a refreshed website that respected the legacy of Evo while bringing it up to modern standards. The collaboration helped my friend Rick kick off his tenure as GM with a strong digital foundation, ensuring fans and players had the best possible experience."
+    },
+    "images": [
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-champions_arch.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-eventpage.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-pools_schedule.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_filtered.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream-1.png",
+      "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream.png"
+    ],
+    "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
+    "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png"
+  },
+  {
+    "id": "paramount-players",
+    "title": "PARAMOUNT  PLAYERS",
+    "slug": "paramount-players",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Paramount and Funny Or Die teamed up for \"Players,\" a mockumentary about a League of Legends team. They needed a believable brand for the fictional team, \"Fugitive.\" I led the rapid-turnaround branding project, covering research, ideation, logo design, and merchandise.</li></ul>",
+      "challenge": "We had limited time to create a brand history that felt earned. The show's premise relied on authenticity\u2014\"Fugitive\" needed to look like a real team that had evolved over years of competition. We couldn't just design one logo; we had to design a history.",
+      "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
+      "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
   },
   {
     "id": "overwatch-league-in-game-sprays",
@@ -983,6 +997,50 @@
     "heroImage": "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Ghangzhou.png"
   },
   {
+    "id": "immortal-gates-of-pyre-web-development",
+    "title": "Immortal Gates Of Pyre - Web Development",
+    "slug": "immortal-gates-of-pyre-web-development",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Sunspear Games needed a comprehensive website for their upcoming RTS, \"Immortal: Gates Of Pyre.\" I led both the design and development phases, acting as the bridge between the client, designers, and developers. My role included project management, design consulting, and defining the site's flow and functionality.</li></ul>",
+      "challenge": "The website needed to launch in parallel with their Kickstarter to provide a central hub for information that the crowdfunding platform couldn't offer. It had to explain game mechanics, deep-dive into the lore, and keep fans updated\u2014all while being scalable enough to support a growing roster of characters comparable to industry giants like League of Legends.",
+      "solution": "We built a robust, scalable framework. I defined the ideal user flow to ensure visitors could easily navigate between learning the game and exploring the rich world of Pyre. The design was crafted to clearly communicate the game's unique value proposition while providing a home for the community.",
+      "outcome": "The site launched successfully alongside the Kickstarter, serving as the perfect complement to the campaign. It effectively answered user questions, educated players on mechanics, and solidified the game's identity. The platform stands as a scalable foundation for the game's future growth."
+    },
+    "images": [
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Careers_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Faction_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Investor_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop_Planet.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Mobile.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Youtube_IllustrationBG.jpg",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still-1.png",
+      "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still.png"
+    ],
+    "image": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png"
+  },
+  {
     "id": "tourney-locator",
     "title": "Tourney Locator",
     "slug": "tourney-locator",
@@ -1004,91 +1062,5 @@
     ],
     "image": "/images/portfolio/tourney-locator/tourney-locator-LTC.png",
     "heroImage": "/images/portfolio/tourney-locator/tourney-locator-LTC.png"
-  },
-  {
-    "id": "liquid",
-    "title": "Liquid",
-    "slug": "liquid",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Team Liquid, a global esports powerhouse, needed to launch \"Liquid+,\" a fan loyalty platform. Our involvement focused on branding, strategy, and helping visually communicate this new reward ecosystem to their massive fanbase.</li></ul>",
-      "challenge": "The challenge was to create a brand identity for a sub-product that felt distinct yet undeniably \"Team Liquid.\" It needed to explain a complex reward system simply and excite fans about earning points for engagement.",
-      "solution": "We worked to develop a visual language for Liquid+ that highlighted the value of fandom. This involved branding discussions and strategy on how to position the platform as a value-add for the community, not just a data play.",
-      "outcome": "Liquid+ launched to wide acclaim, setting a new standard for fan engagement programs in esports. The branding successfully communicated the prestige of being a \"top fan\" and drove significant sign-ups at launch."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
-  },
-  {
-    "id": "optic-gaming",
-    "title": "Optic Gaming",
-    "slug": "optic-gaming",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>The legendary OpTic Gaming brand needed a revitalization. Despite previous social media improvements, the visual identity felt dated and disconnected from the team's core values. I collaborated with the marketing team to re-establish the brand's motto and launch a comprehensive event and merchandise strategy.</li></ul>",
-      "challenge": "OpTic had a massive but stagnant fanbase that wasn't being properly engaged. The visual brand lacked the \"alpha\" energy of the community. We needed to reconnect the team with its roots while positioning it for the future, ensuring the brand stood for something tangible.",
-      "solution": "We established the motto: \"Power. Precision. Prestige.\" This trifecta connected the team's dominance (Power), their sniper-montage origins (Precision), and their championship legacy (Prestige). I also spearheaded the creation of experiential events\u2014from \"special ops\" scavenger hunts to \"play with the pros\" sessions\u2014to bring the digital brand into the real world.",
-      "outcome": "The results were overwhelming. OpTic transformed from a stagnant brand into one of the most talked-about teams of the year. Fans lined up at 6 AM in the cold for our events, proving the strength of the new engagement strategy. Our work was recognized with a nomination for 'Esports Team of the Year'."
-    },
-    "images": [],
-    "image": "/images/portfolio/optic-gaming/optic-header.png",
-    "heroImage": "/images/portfolio/optic-gaming/optic-header.png"
-  },
-  {
-    "id": "stay-plugged-in",
-    "title": "Stay Plugged In",
-    "slug": "stay-plugged-in",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Stay Plugged In connects high school esports athletes with collegiate scholarships. We were tasked with refining their brand and marketing strategy to better reach both students and recruiters.</li></ul>",
-      "challenge": "The collegiate esports space is fragmented. We needed to position Stay Plugged In as the premier bridge between talent and opportunity, making the complex recruitment process feel accessible and exciting.",
-      "solution": "We focused on a student-first messaging strategy. We streamlined their visual identity to be energetic and aspirational. (Note: Specific details were unavailable in source text, so this is a generalized reconstruction)."
-    },
-    "images": [
-      "/images/portfolio/stay-plugged-in/0fa437132316687.63e1618463e22.png",
-      "/images/portfolio/stay-plugged-in/13285d132316687.6303933d837fc.png",
-      "/images/portfolio/stay-plugged-in/2ed613132316687.63e1618461eb2.png",
-      "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.gif",
-      "/images/portfolio/stay-plugged-in/385ba2132316687.63e17a7e91756.png",
-      "/images/portfolio/stay-plugged-in/41d479132316687.63e1338205aed.png",
-      "/images/portfolio/stay-plugged-in/48fe4c132316687.63e1618462d86.png",
-      "/images/portfolio/stay-plugged-in/9e8063132316687.63e1338204a53.gif",
-      "/images/portfolio/stay-plugged-in/abe4e0132316687.63e17a7e90add.png",
-      "/images/portfolio/stay-plugged-in/adbdbb132316687.63e1338206c59.png"
-    ],
-    "image": "/images/portfolio/stay-plugged-in/9e8063132316687.63e1338204a53.gif",
-    "heroImage": "/images/portfolio/stay-plugged-in/9e8063132316687.63e1338204a53.gif"
-  },
-  {
-    "id": "pvp-live",
-    "title": "PVP Live",
-    "slug": "pvp-live",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>PVP Live aimed to be the go-to news source for the gaming and esports community. My role was to run the digital and influencer marketing divisions, responsible for getting our content in front of a massive, growing audience through strategic partnerships and data-driven decisions.</li></ul>",
-      "challenge": "The challenge was distribution. Producing great content wasn't enough; we needed to cut through the noise. We had to find sustainable, effective ways to drive traffic from social platforms to our site and video content.",
-      "solution": "I pioneered an influencer marketing strategy focused on specific engagement matches\u2014finding the right personalities for specific topics rather than just chasing follower counts. I also managed social media channels and utilized data reporting to refine our approach constantly.",
-      "outcome": "We grew PVP Live into one of the largest esports news organizations. My strategies helped gain 100,000 new Twitter followers with high engagement turnover. We reached 3 million active users per month, with 30% of that traffic driven directly by the influencer and Facebook group strategies I implemented."
-    },
-    "images": [],
-    "image": "/images/portfolio/pvp-live.jpg",
-    "heroImage": "/images/portfolio/pvp-live.jpg"
   }
 ]
