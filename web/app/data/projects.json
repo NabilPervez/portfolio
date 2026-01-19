@@ -1,5 +1,70 @@
 [
   {
+    "id": "paramount-players",
+    "title": "PARAMOUNT  PLAYERS",
+    "slug": "paramount-players",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Paramount and Funny Or Die teamed up for \"Players,\" a mockumentary about a League of Legends team. They needed a believable brand for the fictional team, \"Fugitive.\" I led the rapid-turnaround branding project, covering research, ideation, logo design, and merchandise.</li></ul>",
+      "challenge": "We had limited time to create a brand history that felt earned. The show's premise relied on authenticity\u2014\"Fugitive\" needed to look like a real team that had evolved over years of competition. We couldn't just design one logo; we had to design a history.",
+      "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
+      "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
+    },
+    "images": [
+      "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
+      "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.gif",
+      "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.png",
+      "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
+      "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.png",
+      "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
+      "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.gif",
+      "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
+      "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
+      "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.gif",
+      "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.png",
+      "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.png",
+      "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
+    ],
+    "image": "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
+    "heroImage": "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png"
+  },
+  {
+    "id": "lego_27",
+    "title": "LEGO",
+    "slug": "lego_27",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The LEGO Group needed guidance on navigating the complex intersection of their traditional brand and the gaming ecosystem. Our team provided comprehensive consulting that ranged from branding and package design to high-level market positioning for LEGO GAMES. My role covered project management, community building, and strategy across social media and newsletters.</li></ul>",
+      "challenge": "LEGO is a household name, but the gaming market requires a specific nuanced approach. The challenge was to position LEGO GAMES in a way that resonated with both developers and publishers while maintaining the core values of the LEGO brand. We needed to bridge the gap between physical play and digital expectations.",
+      "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
+      "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
+    },
+    "images": [
+      "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
+      "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
+      "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.gif",
+      "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
+      "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.png",
+      "/images/portfolio/lego_27/96866c126553707.6153625602cd4.gif",
+      "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.gif",
+      "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
+      "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.gif",
+      "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
+      "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
+      "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
+    ],
+    "image": "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
+    "heroImage": "/images/portfolio/lego_27/406806126553707.615376f58f116.png"
+  },
+  {
     "id": "redbull",
     "title": "Redbull",
     "slug": "redbull",
@@ -296,7 +361,7 @@
       "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream-1.png",
       "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream.png"
     ],
-    "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
+    "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
     "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png"
   },
   {
@@ -747,8 +812,8 @@
       "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
       "/images/portfolio/the-story-mob/the-story-mob-Story.png"
     ],
-    "image": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
-    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png"
+    "image": "/images/portfolio/the-story-mob/the-story-mob-Home.png",
+    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Home.png"
   },
   {
     "id": "fcfl",
@@ -941,38 +1006,6 @@
     "heroImage": "/images/portfolio/tourney-locator/tourney-locator-LTC.png"
   },
   {
-    "id": "lego_27",
-    "title": "LEGO",
-    "slug": "lego_27",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>The LEGO Group needed guidance on navigating the complex intersection of their traditional brand and the gaming ecosystem. Our team provided comprehensive consulting that ranged from branding and package design to high-level market positioning for LEGO GAMES. My role covered project management, community building, and strategy across social media and newsletters.</li></ul>",
-      "challenge": "LEGO is a household name, but the gaming market requires a specific nuanced approach. The challenge was to position LEGO GAMES in a way that resonated with both developers and publishers while maintaining the core values of the LEGO brand. We needed to bridge the gap between physical play and digital expectations.",
-      "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
-      "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
-    },
-    "images": [
-      "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
-      "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
-      "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.gif",
-      "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
-      "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.png",
-      "/images/portfolio/lego_27/96866c126553707.6153625602cd4.gif",
-      "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.gif",
-      "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
-      "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.gif",
-      "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
-      "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
-      "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
-    ],
-    "image": "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
-    "heroImage": "/images/portfolio/lego_27/406806126553707.615376f58f116.png"
-  },
-  {
     "id": "liquid",
     "title": "Liquid",
     "slug": "liquid",
@@ -1057,38 +1090,5 @@
     "images": [],
     "image": "/images/portfolio/pvp-live.jpg",
     "heroImage": "/images/portfolio/pvp-live.jpg"
-  },
-  {
-    "id": "paramount-players",
-    "title": "PARAMOUNT  PLAYERS",
-    "slug": "paramount-players",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Paramount and Funny Or Die teamed up for \"Players,\" a mockumentary about a League of Legends team. They needed a believable brand for the fictional team, \"Fugitive.\" I led the rapid-turnaround branding project, covering research, ideation, logo design, and merchandise.</li></ul>",
-      "challenge": "We had limited time to create a brand history that felt earned. The show's premise relied on authenticity\u2014\"Fugitive\" needed to look like a real team that had evolved over years of competition. We couldn't just design one logo; we had to design a history.",
-      "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
-      "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
-    },
-    "images": [
-      "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
-      "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.gif",
-      "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.png",
-      "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
-      "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.png",
-      "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
-      "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.gif",
-      "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
-      "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
-      "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.gif",
-      "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.png",
-      "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.png",
-      "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
-    ],
-    "image": "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
-    "heroImage": "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png"
   }
 ]

@@ -11,7 +11,7 @@ export function TestimonialCarousel() {
                 {testimonialsData.map((t) => (
                     <motion.div
                         key={t.id}
-                        whileHover={{ y: -5 }}
+                        whileHover={{ y: -5, backgroundColor: "#FFF9EA" }}
                         className="snap-center bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all w-[300px] md:w-[400px] flex-shrink-0 flex flex-col justify-between"
                     >
                         <div>
