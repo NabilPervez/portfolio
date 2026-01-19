@@ -1,7 +1,122 @@
 [
   {
+    "id": "lego_27",
+    "title": "LEGO",
+    "slug": "lego_27",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The LEGO Group needed guidance on navigating the complex intersection of their traditional brand and the gaming ecosystem. Our team provided comprehensive consulting that ranged from branding and package design to high-level market positioning for LEGO GAMES. My role covered project management, community building, and strategy across social media and newsletters.</li></ul>",
+      "challenge": "LEGO is a household name, but the gaming market requires a specific nuanced approach. The challenge was to position LEGO GAMES in a way that resonated with both developers and publishers while maintaining the core values of the LEGO brand. We needed to bridge the gap between physical play and digital expectations.",
+      "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
+      "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "voyagers-of-nera",
+    "title": "Voyagers of Nera",
+    "slug": "voyagers-of-nera",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "challenge": "Treehouse Games approached AOE Creative to design and develop a fully fledged hype-site for their upcoming game; Voyagers of Nera. VoN for short, is a cooperative survival-crafting game set in a vibrant ocean world brimming with lush islands, magical creatures and ancient mysteries. The site informs newcomers on the core foundational aspects of the game as well as introducing them to the brands look and feel.",
+      "solution": "Adapting, and also expanding upon, Voyagers of Nera's brand profile and identity, we worked alongside Treehouses creative team to develop and launch the hype-site. AOE began work with a preliminary social campaign to get the community buzzing with interest. Working with limited visual assets, due to the early development stage of the game, AOE stepped into the gap and filled this void with creative asset generation that worked seamlessly with Treehouses existing brand and visual assets.\nWEB DESIGN\nThe bulk of the work we did for Treehouse Games went into the design and development of the hype-site. We worked closely with their team to provide them a site which beautifully introduced Voyagers of Nera to newcomers.\nMOBILE DESIGN\nAlthough we aimed for visual fidelity and a unique design, we made sure plan ahead and provide a site that would function seamlessly while in a condensed mobile format.\nCONTACT US"
+    },
+    "images": [
+      "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp",
+      "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_video-sequence-intro-collage_v2_1.webp",
+      "/images/portfolio/voyagers-of-nera/web-design-section-01.webp",
+      "/images/portfolio/voyagers-of-nera/web-design-section-02.webp",
+      "/images/portfolio/voyagers-of-nera/web-design-section-03.webp"
+    ],
+    "image": "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp",
+    "heroImage": "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp"
+  },
+  {
+    "id": "session",
+    "title": "NACON",
+    "slug": "session",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "challenge": "The unique aspect of this project was creating a high-quality marketing key art piece for Session: Skate Sim without direct access to the game's dev engine. This condition required us to screenshot poses and scenery directly from the game, aiming to produce a final artwork that not only resembled the in-game visuals but also elevated them to a near-realistic level.",
+      "solution": "Leveraging the extracted screenshots as a foundational base, we employed extensive photomanipulation, texture enhancement techniques, and 3D Modeling to upgrade the assets to a more realistic level. This method effectively mirrored and enriched the game\u2019s aesthetic, fulfilling the objective of creating a high-quality marketing key art piece, while adeptly navigating the project's technical constraints.\nCONTACT US"
+    },
+    "images": [
+      "/images/portfolio/session/02_skaters.png",
+      "/images/portfolio/session/06_finals.png",
+      "/images/portfolio/session/progress-1-.gif",
+      "/images/portfolio/session/session-clean-up_revised-min.png"
+    ],
+    "image": "/images/portfolio/session/02_skaters.png",
+    "heroImage": "/images/portfolio/session/02_skaters.png"
+  },
+  {
+    "id": "one-piece-x-cloud9",
+    "title": "One Piece",
+    "slug": "one-piece-x-cloud9",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "challenge": "Creating an apparel line that reflects the unique identities and values of both Toei Animation's One Piece anime and Cloud9, while also designing a cohesive and attractive visual style.\nOur work had to navigate through trends in apparel design, targeted customer preferences, and the heavy production constraints of the apparel industry.\nThe goal was to create a collection of clothing items that could showcase a Grand Line where both brands intersect in values, visual identity, and voice to generate excitement and engagement among their respective audiences.\nCONTACT US",
+      "solution": ""
+    },
+    "images": [
+      "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
+      "/images/portfolio/one-piece-x-cloud9/2_cloud9-x-one-piece.webp",
+      "/images/portfolio/one-piece-x-cloud9/3_tees.webp",
+      "/images/portfolio/one-piece-x-cloud9/5_hoodies.webp",
+      "/images/portfolio/one-piece-x-cloud9/6_luffy.webp",
+      "/images/portfolio/one-piece-x-cloud9/7_hats.webp",
+      "/images/portfolio/one-piece-x-cloud9/8_misc.webp",
+      "/images/portfolio/one-piece-x-cloud9/9_fruitboi.webp"
+    ],
+    "image": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
+    "heroImage": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp"
+  },
+  {
+    "id": "mccown-evans",
+    "title": "McCown Evans",
+    "slug": "mccown-evans",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "challenge": "McCown Evans, a prestigious law firm, grapples with significant challenges. It seeks a modern and inviting image while effectively communicating its story to HR professionals and executives, fostering trust. Additionally, it aims to establish credibility within the gaming and esports community while addressing immigration law queries. In the digital era, the firm endeavors to offer convenient online document access while carefully curating articles for specific client groups.",
+      "solution": "AOE CREATIVE's solution for McCown Evans, the Immigration Law Firm, is a precision masterpiece. We forged a universally trusted brand identity, designed a captivating website showcasing M+E's interactions with various stakeholders, and streamlined document access. Our unique addition includes a custom gaming splash page with 3D elements, custom stinger transitions, and a distinctive gaming vibe, seamlessly blending sophistication with gaming experience.\nCONTACT US"
+    },
+    "images": [
+      "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
+      "/images/portfolio/mccown-evans/03_mce_behance_v2_screen-intro.jpg",
+      "/images/portfolio/mccown-evans/04_globe-animation.gif",
+      "/images/portfolio/mccown-evans/05_mce-collage.jpg",
+      "/images/portfolio/mccown-evans/08_mce_animated-elements_v1_1.gif",
+      "/images/portfolio/mccown-evans/09_mce_web.jpg",
+      "/images/portfolio/mccown-evans/10_mce_web.jpg"
+    ],
+    "image": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
+    "heroImage": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif"
+  },
+  {
     "id": "fancurve",
-    "title": "Fancurve",
+    "title": "Houston Outlaws",
     "slug": "fancurve",
     "tags": [
       "Strategy",
@@ -34,49 +149,123 @@
     "heroImage": "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg"
   },
   {
-    "id": "session",
-    "title": "session",
-    "slug": "session",
+    "id": "optic-gaming",
+    "title": "Optic Gaming",
+    "slug": "optic-gaming",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "challenge": "The unique aspect of this project was creating a high-quality marketing key art piece for Session: Skate Sim without direct access to the game's dev engine. This condition required us to screenshot poses and scenery directly from the game, aiming to produce a final artwork that not only resembled the in-game visuals but also elevated them to a near-realistic level.",
-      "solution": "Leveraging the extracted screenshots as a foundational base, we employed extensive photomanipulation, texture enhancement techniques, and 3D Modeling to upgrade the assets to a more realistic level. This method effectively mirrored and enriched the game\u2019s aesthetic, fulfilling the objective of creating a high-quality marketing key art piece, while adeptly navigating the project's technical constraints.\nCONTACT US"
+      "scope": "<ul><li>The legendary OpTic Gaming brand needed a revitalization. Despite previous social media improvements, the visual identity felt dated and disconnected from the team's core values. I collaborated with the marketing team to re-establish the brand's motto and launch a comprehensive event and merchandise strategy.</li></ul>",
+      "challenge": "OpTic had a massive but stagnant fanbase that wasn't being properly engaged. The visual brand lacked the \"alpha\" energy of the community. We needed to reconnect the team with its roots while positioning it for the future, ensuring the brand stood for something tangible.",
+      "solution": "We established the motto: \"Power. Precision. Prestige.\" This trifecta connected the team's dominance (Power), their sniper-montage origins (Precision), and their championship legacy (Prestige). I also spearheaded the creation of experiential events\u2014from \"special ops\" scavenger hunts to \"play with the pros\" sessions\u2014to bring the digital brand into the real world.",
+      "outcome": "The results were overwhelming. OpTic transformed from a stagnant brand into one of the most talked-about teams of the year. Fans lined up at 6 AM in the cold for our events, proving the strength of the new engagement strategy. Our work was recognized with a nomination for 'Esports Team of the Year'."
     },
     "images": [
-      "/images/portfolio/session/02_skaters.png",
-      "/images/portfolio/session/06_finals.png",
-      "/images/portfolio/session/progress-1-.gif",
-      "/images/portfolio/session/session-clean-up_revised-min.png"
+      "/images/portfolio/optic-gaming/optic-header.png"
     ],
-    "image": "/images/portfolio/session/02_skaters.png",
-    "heroImage": "/images/portfolio/session/02_skaters.png"
+    "image": "/images/portfolio/optic-gaming/optic-header.png",
+    "heroImage": "/images/portfolio/optic-gaming/optic-header.png"
   },
   {
-    "id": "voyagers-of-nera",
-    "title": "voyagers-of-nera",
-    "slug": "voyagers-of-nera",
+    "id": "stay-plugged-in",
+    "title": "Stay Plugged In",
+    "slug": "stay-plugged-in",
     "tags": [
       "Strategy",
       "Design",
       "Development"
     ],
     "content": {
-      "challenge": "Treehouse Games approached AOE Creative to design and develop a fully fledged hype-site for their upcoming game; Voyagers of Nera. VoN for short, is a cooperative survival-crafting game set in a vibrant ocean world brimming with lush islands, magical creatures and ancient mysteries. The site informs newcomers on the core foundational aspects of the game as well as introducing them to the brands look and feel.",
-      "solution": "Adapting, and also expanding upon, Voyagers of Nera's brand profile and identity, we worked alongside Treehouses creative team to develop and launch the hype-site. AOE began work with a preliminary social campaign to get the community buzzing with interest. Working with limited visual assets, due to the early development stage of the game, AOE stepped into the gap and filled this void with creative asset generation that worked seamlessly with Treehouses existing brand and visual assets.\nWEB DESIGN\nThe bulk of the work we did for Treehouse Games went into the design and development of the hype-site. We worked closely with their team to provide them a site which beautifully introduced Voyagers of Nera to newcomers.\nMOBILE DESIGN\nAlthough we aimed for visual fidelity and a unique design, we made sure plan ahead and provide a site that would function seamlessly while in a condensed mobile format.\nCONTACT US"
+      "scope": "<ul><li>Stay Plugged In connects high school esports athletes with collegiate scholarships. We were tasked with refining their brand and marketing strategy to better reach both students and recruiters.</li></ul>",
+      "challenge": "The collegiate esports space is fragmented. We needed to position Stay Plugged In as the premier bridge between talent and opportunity, making the complex recruitment process feel accessible and exciting.",
+      "solution": "We focused on a student-first messaging strategy. We streamlined their visual identity to be energetic and aspirational. (Note: Specific details were unavailable in source text, so this is a generalized reconstruction)."
+    },
+    "images": [],
+    "image": "/images/portfolio/stay-plugged-in/stay-plugged-in.jpg",
+    "heroImage": "/images/portfolio/stay-plugged-in/stay-plugged-in.jpg"
+  },
+  {
+    "id": "paramount-players",
+    "title": "Paramount Pictures",
+    "slug": "paramount-players",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Paramount and Funny Or Die teamed up for \"Players,\" a mockumentary about a League of Legends team. They needed a believable brand for the fictional team, \"Fugitive.\" I led the rapid-turnaround branding project, covering research, ideation, logo design, and merchandise.</li></ul>",
+      "challenge": "We had limited time to create a brand history that felt earned. The show's premise relied on authenticity\u2014\"Fugitive\" needed to look like a real team that had evolved over years of competition. We couldn't just design one logo; we had to design a history.",
+      "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
+      "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
+  },
+  {
+    "id": "the-story-mob",
+    "title": "The Story Mob",
+    "slug": "the-story-mob",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>The Story Mob, a PR agency specializing in gaming and esports, approached us for a comprehensive rebrand and website overhaul. The scope involved project management, branding, developing a new \"look and feel,\" and full web design.</li></ul>",
+      "challenge": "With a \"new year, new look\" goal, The Story Mob wanted to completely transform their digital presence. They needed a website that was not just visually updated but also significantly more efficient and performant than their previous iteration.",
+      "solution": "Calculated and precise, we guided them through a process that started with establishing a brand look via social media mockups before moving to full-scale web design. I pushed the development team to adopt a modern tech stack to ensure the new site was fast and efficient. We worked closely (\"PR Partner\") to piece together a cohesive picture of their agency.",
+      "outcome": "The project resulted in a beautifully redesigned website that was visually stunning and easy to read. Both the client and their users expressed high satisfaction with the experience. The technical upgrades ensured the site was not just a pretty face but a high-performing asset for their business."
     },
     "images": [
-      "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp",
-      "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_video-sequence-intro-collage_v2_1.webp",
-      "/images/portfolio/voyagers-of-nera/web-design-section-01.webp",
-      "/images/portfolio/voyagers-of-nera/web-design-section-02.webp",
-      "/images/portfolio/voyagers-of-nera/web-design-section-03.webp"
+      "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Careers.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Case-Studies.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Contact.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
+      "/images/portfolio/the-story-mob/the-story-mob-DesktopFull1.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Header.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Home.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Icons.png",
+      "/images/portfolio/the-story-mob/the-story-mob-IntroInfo.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Menu.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Mob-Hover.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Mobile1.png",
+      "/images/portfolio/the-story-mob/the-story-mob-Mobile3.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-SM_NewHire.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Services.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
+      "/images/portfolio/the-story-mob/the-story-mob-Story.png"
     ],
-    "image": "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp",
-    "heroImage": "/images/portfolio/voyagers-of-nera/aoeb_000_voyagers_of_nera_v9_01.webp"
+    "image": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
+    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png"
+  },
+  {
+    "id": "redbull",
+    "title": "Redbull",
+    "slug": "redbull",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Red Bull needed a design solution for their new \"wheel-in\" gaming stations\u2014portable setups for live events. I led the project management and design consulting to create a look that balanced visibility with Red Bull's premium, subtle aesthetic.</li></ul>",
+      "challenge": "The initial prototype looked like a \"massive Red Bull can,\" which was too loud and aggressive for the brand's desired vibe. They wanted something that felt premium and invited people to \"take a load off\" without screaming branding in their face.",
+      "solution": "We developed multiple mood boards and design concepts, focusing on a sleeker, more versatile look. The final designs allowed the gaming stations to fit naturally into various event types while still maintaining unmistakable brand recognition.",
+      "outcome": "We delivered a suite of approved designs that gave Red Bull the flexibility they needed. The stations successfully serve as inviting hubs for gamers at events, achieving the goal of facilitating social connection over a cold drink."
+    },
+    "images": [
+      "/images/portfolio/redbull/redbull-arc.png",
+      "/images/portfolio/redbull/redbull-both.jpg",
+      "/images/portfolio/redbull/redbull-run.jpg"
+    ],
+    "image": "/images/portfolio/redbull/redbull-arc.png",
+    "heroImage": "/images/portfolio/redbull/redbull-arc.png"
   },
   {
     "id": "immortal-gates-of-pyre-logo-faction-icons",
@@ -130,25 +319,6 @@
     ],
     "image": "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg",
     "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg"
-  },
-  {
-    "id": "lego_27",
-    "title": "LEGO_27",
-    "slug": "lego_27",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>The LEGO Group needed guidance on navigating the complex intersection of their traditional brand and the gaming ecosystem. Our team provided comprehensive consulting that ranged from branding and package design to high-level market positioning for LEGO GAMES. My role covered project management, community building, and strategy across social media and newsletters.</li></ul>",
-      "challenge": "LEGO is a household name, but the gaming market requires a specific nuanced approach. The challenge was to position LEGO GAMES in a way that resonated with both developers and publishers while maintaining the core values of the LEGO brand. We needed to bridge the gap between physical play and digital expectations.",
-      "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
-      "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
   },
   {
     "id": "metaview",
@@ -252,67 +422,6 @@
     "heroImage": "/images/portfolio/geekletes/geekletes-geekletes.png"
   },
   {
-    "id": "the-story-mob",
-    "title": "The Story Mob",
-    "slug": "the-story-mob",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>The Story Mob, a PR agency specializing in gaming and esports, approached us for a comprehensive rebrand and website overhaul. The scope involved project management, branding, developing a new \"look and feel,\" and full web design.</li></ul>",
-      "challenge": "With a \"new year, new look\" goal, The Story Mob wanted to completely transform their digital presence. They needed a website that was not just visually updated but also significantly more efficient and performant than their previous iteration.",
-      "solution": "Calculated and precise, we guided them through a process that started with establishing a brand look via social media mockups before moving to full-scale web design. I pushed the development team to adopt a modern tech stack to ensure the new site was fast and efficient. We worked closely (\"PR Partner\") to piece together a cohesive picture of their agency.",
-      "outcome": "The project resulted in a beautifully redesigned website that was visually stunning and easy to read. Both the client and their users expressed high satisfaction with the experience. The technical upgrades ensured the site was not just a pretty face but a high-performing asset for their business."
-    },
-    "images": [
-      "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Careers.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Case-Studies.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Contact.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
-      "/images/portfolio/the-story-mob/the-story-mob-DesktopFull1.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Header.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Home.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Icons.png",
-      "/images/portfolio/the-story-mob/the-story-mob-IntroInfo.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Menu.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Mob-Hover.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Mobile1.png",
-      "/images/portfolio/the-story-mob/the-story-mob-Mobile3.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-SM_NewHire.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Services.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
-      "/images/portfolio/the-story-mob/the-story-mob-Story.png"
-    ],
-    "image": "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
-    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png"
-  },
-  {
-    "id": "redbull",
-    "title": "Redbull",
-    "slug": "redbull",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Red Bull needed a design solution for their new \"wheel-in\" gaming stations\u2014portable setups for live events. I led the project management and design consulting to create a look that balanced visibility with Red Bull's premium, subtle aesthetic.</li></ul>",
-      "challenge": "The initial prototype looked like a \"massive Red Bull can,\" which was too loud and aggressive for the brand's desired vibe. They wanted something that felt premium and invited people to \"take a load off\" without screaming branding in their face.",
-      "solution": "We developed multiple mood boards and design concepts, focusing on a sleeker, more versatile look. The final designs allowed the gaming stations to fit naturally into various event types while still maintaining unmistakable brand recognition.",
-      "outcome": "We delivered a suite of approved designs that gave Red Bull the flexibility they needed. The stations successfully serve as inviting hubs for gamers at events, achieving the goal of facilitating social connection over a cold drink."
-    },
-    "images": [
-      "/images/portfolio/redbull/redbull-arc.png",
-      "/images/portfolio/redbull/redbull-both.jpg",
-      "/images/portfolio/redbull/redbull-run.jpg"
-    ],
-    "image": "/images/portfolio/redbull/redbull-arc.png",
-    "heroImage": "/images/portfolio/redbull/redbull-arc.png"
-  },
-  {
     "id": "liquid",
     "title": "Liquid",
     "slug": "liquid",
@@ -330,31 +439,6 @@
     "images": [],
     "image": "/images/portfolio/default.jpg",
     "heroImage": "/images/portfolio/default.jpg"
-  },
-  {
-    "id": "one-piece-x-cloud9",
-    "title": "one-piece-x-cloud9",
-    "slug": "one-piece-x-cloud9",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "challenge": "Creating an apparel line that reflects the unique identities and values of both Toei Animation's One Piece anime and Cloud9, while also designing a cohesive and attractive visual style.\nOur work had to navigate through trends in apparel design, targeted customer preferences, and the heavy production constraints of the apparel industry.\nThe goal was to create a collection of clothing items that could showcase a Grand Line where both brands intersect in values, visual identity, and voice to generate excitement and engagement among their respective audiences.\nCONTACT US"
-    },
-    "images": [
-      "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
-      "/images/portfolio/one-piece-x-cloud9/2_cloud9-x-one-piece.webp",
-      "/images/portfolio/one-piece-x-cloud9/3_tees.webp",
-      "/images/portfolio/one-piece-x-cloud9/5_hoodies.webp",
-      "/images/portfolio/one-piece-x-cloud9/6_luffy.webp",
-      "/images/portfolio/one-piece-x-cloud9/7_hats.webp",
-      "/images/portfolio/one-piece-x-cloud9/8_misc.webp",
-      "/images/portfolio/one-piece-x-cloud9/9_fruitboi.webp"
-    ],
-    "image": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
-    "heroImage": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp"
   },
   {
     "id": "fcfl",
@@ -602,25 +686,6 @@
     "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop-1.jpg"
   },
   {
-    "id": "optic-gaming",
-    "title": "Optic Gaming",
-    "slug": "optic-gaming",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>The legendary OpTic Gaming brand needed a revitalization. Despite previous social media improvements, the visual identity felt dated and disconnected from the team's core values. I collaborated with the marketing team to re-establish the brand's motto and launch a comprehensive event and merchandise strategy.</li></ul>",
-      "challenge": "OpTic had a massive but stagnant fanbase that wasn't being properly engaged. The visual brand lacked the \"alpha\" energy of the community. We needed to reconnect the team with its roots while positioning it for the future, ensuring the brand stood for something tangible.",
-      "solution": "We established the motto: \"Power. Precision. Prestige.\" This trifecta connected the team's dominance (Power), their sniper-montage origins (Precision), and their championship legacy (Prestige). I also spearheaded the creation of experiential events\u2014from \"special ops\" scavenger hunts to \"play with the pros\" sessions\u2014to bring the digital brand into the real world.",
-      "outcome": "The results were overwhelming. OpTic transformed from a stagnant brand into one of the most talked-about teams of the year. Fans lined up at 6 AM in the cold for our events, proving the strength of the new engagement strategy. Our work was recognized with a nomination for 'Esports Team of the Year'."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
-  },
-  {
     "id": "blast-radius",
     "title": "Blast Radius",
     "slug": "blast-radius",
@@ -643,31 +708,6 @@
     ],
     "image": "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg",
     "heroImage": "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg"
-  },
-  {
-    "id": "mccown-evans",
-    "title": "mccown-evans",
-    "slug": "mccown-evans",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "challenge": "McCown Evans, a prestigious law firm, grapples with significant challenges. It seeks a modern and inviting image while effectively communicating its story to HR professionals and executives, fostering trust. Additionally, it aims to establish credibility within the gaming and esports community while addressing immigration law queries. In the digital era, the firm endeavors to offer convenient online document access while carefully curating articles for specific client groups.",
-      "solution": "AOE CREATIVE's solution for McCown Evans, the Immigration Law Firm, is a precision masterpiece. We forged a universally trusted brand identity, designed a captivating website showcasing M+E's interactions with various stakeholders, and streamlined document access. Our unique addition includes a custom gaming splash page with 3D elements, custom stinger transitions, and a distinctive gaming vibe, seamlessly blending sophistication with gaming experience.\nCONTACT US"
-    },
-    "images": [
-      "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
-      "/images/portfolio/mccown-evans/03_mce_behance_v2_screen-intro.jpg",
-      "/images/portfolio/mccown-evans/04_globe-animation.gif",
-      "/images/portfolio/mccown-evans/05_mce-collage.jpg",
-      "/images/portfolio/mccown-evans/08_mce_animated-elements_v1_1.gif",
-      "/images/portfolio/mccown-evans/09_mce_web.jpg",
-      "/images/portfolio/mccown-evans/10_mce_web.jpg"
-    ],
-    "image": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
-    "heroImage": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif"
   },
   {
     "id": "immortal-gates-of-pyre-video-producing",
@@ -711,24 +751,6 @@
     ],
     "image": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg",
     "heroImage": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg"
-  },
-  {
-    "id": "stay-plugged-in",
-    "title": "Stay Plugged In",
-    "slug": "stay-plugged-in",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Stay Plugged In connects high school esports athletes with collegiate scholarships. We were tasked with refining their brand and marketing strategy to better reach both students and recruiters.</li></ul>",
-      "challenge": "The collegiate esports space is fragmented. We needed to position Stay Plugged In as the premier bridge between talent and opportunity, making the complex recruitment process feel accessible and exciting.",
-      "solution": "We focused on a student-first messaging strategy. We streamlined their visual identity to be energetic and aspirational. (Note: Specific details were unavailable in source text, so this is a generalized reconstruction)."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
   },
   {
     "id": "ellevens",
@@ -943,25 +965,6 @@
     ],
     "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
     "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png"
-  },
-  {
-    "id": "paramount-players",
-    "title": "PARAMOUNT  PLAYERS",
-    "slug": "paramount-players",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Paramount and Funny Or Die teamed up for \"Players,\" a mockumentary about a League of Legends team. They needed a believable brand for the fictional team, \"Fugitive.\" I led the rapid-turnaround branding project, covering research, ideation, logo design, and merchandise.</li></ul>",
-      "challenge": "We had limited time to create a brand history that felt earned. The show's premise relied on authenticity\u2014\"Fugitive\" needed to look like a real team that had evolved over years of competition. We couldn't just design one logo; we had to design a history.",
-      "solution": "We dove deep into the visual history of League of Legends esports. We designed not just the current branding, but also \"previous iterations\" of the logo to be used as props and backstory elements. We extended this to a full merchandise line, ensuring every jersey and hoodie on screen looked authentic.",
-      "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
   },
   {
     "id": "overwatch-league-in-game-sprays",
