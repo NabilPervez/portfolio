@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
+import projectsData from "./data/projects.json";
 import clientsData from "./data/clients.json";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Image from "next/image";
@@ -48,10 +49,21 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
-  // Split clients into two rows
-  const midPoint = Math.ceil(clientsData.length / 2);
-  const row1 = clientsData.slice(0, midPoint);
-  const row2 = clientsData.slice(midPoint);
+  // Clients logic for static grid (keep if used by MobileAutoCarousel in clients section)
+  // Actually, MobileAutoCarousel takes children, so we probably just map clientsData there directly in the JSX?
+  // Checking original file: Lines 179 maps clientsData slice.
+  // Lines 52-54 defined row1/row2 which were ONLY used in the bottom section I just replaced.
+  // So I can replace row1/row2 definition with project logic.
+
+  // Filter valid projects
+  const validProjects = projectsData.filter(p => {
+    const img = p.heroImage || p.image;
+    return img && !img.includes("default.jpg");
+  });
+
+  const midPoint = Math.ceil(validProjects.length / 2);
+  const projectRow1 = validProjects.slice(0, midPoint);
+  const projectRow2 = validProjects.slice(midPoint);
 
   return (
     <div ref={containerRef} className="relative overflow-x-hidden">
@@ -286,11 +298,11 @@ export default function Home() {
             animate={{ x: ["0%", "-50%"] }}
             transition={{ ease: "linear", duration: 60, repeat: Infinity }}
           >
-            {[...row1, ...row1, ...row1, ...row1].map((client, i) => (
-              <div key={`row1-${i}`} className="relative w-[300px] h-[200px] flex-shrink-0 bg-white border border-gray-100 rounded-sm overflow-hidden group shadow-sm">
+            {[...projectRow1, ...projectRow1].map((project, i) => (
+              <div key={`p-row1-${i}`} className="relative w-[400px] h-[250px] flex-shrink-0 bg-white border border-gray-100 rounded-sm overflow-hidden group shadow-sm">
                 <ImageWithFallback
-                  src={client.logo}
-                  alt={client.name}
+                  src={project.heroImage || project.image}
+                  alt={project.title}
                   fill
                   className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
                 />
@@ -307,11 +319,11 @@ export default function Home() {
             animate={{ x: ["-50%", "0%"] }}
             transition={{ ease: "linear", duration: 60, repeat: Infinity }}
           >
-            {[...row2, ...row2, ...row2, ...row2].map((client, i) => (
-              <div key={`row2-${i}`} className="relative w-[300px] h-[200px] flex-shrink-0 bg-white border border-gray-100 rounded-sm overflow-hidden group shadow-sm">
+            {[...projectRow2, ...projectRow2].map((project, i) => (
+              <div key={`p-row2-${i}`} className="relative w-[400px] h-[250px] flex-shrink-0 bg-white border border-gray-100 rounded-sm overflow-hidden group shadow-sm">
                 <ImageWithFallback
-                  src={client.logo}
-                  alt={client.name}
+                  src={project.heroImage || project.image}
+                  alt={project.title}
                   fill
                   className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
                 />

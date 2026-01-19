@@ -15,8 +15,8 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "NABIL PERVEZ | Strategist & Designer",
-  description: "Senior Frontend Architect and UI/UX Designer.",
+  title: "Nabil Pervez | Product Manager & Strategist",
+  description: "Senior Product Manager, Strategist, and Designer specializing in gaming, esports, and digital innovation.",
   icons: {
     icon: '/logo.jpg',
   },
