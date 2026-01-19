@@ -127,10 +127,8 @@ const expertise = [
 
 const clients = [
     "Riot Games", "Activision Blizzard", "Nacon", "LEGO", "Paramount Pictures",
-    "Amazon", "Red Bull", "Coca-Cola", "Shopify", "Team Liquid", "Cloud 9",
-    "OpTic Gaming", "Houston Outlaws", "Dallas Fuel", "Complexity", "Envy Gaming",
-    "Evil Geniuses", "FlyQuest", "Immortals", "Misfits", "NRG", "Dignitas",
-    "Golden Guardians", "100 Thieves", "TSM", "CLG", "Splyce", "Echo Fox",
+    "Amazon", "Red Bull", "Coca-Cola", "Team Liquid", "Cloud 9",
+    "OpTic Gaming", "Houston Outlaws",
     "PVP Live", "Infinite Esports", "MutualMind", "T-Mobile", "Fujitsu",
     "Viz Media"
 ];
@@ -230,7 +228,7 @@ export default function AboutPage() {
                     desktopGridClassName="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
                     {expertise.map((skill, i) => (
-                        <div key={i} className="h-full p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30 flex items-center justify-center text-center group">
+                        <div key={i} className="h-full p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:bg-[#FFF9EA] hover:border-gold/30 flex items-center justify-center text-center group">
                             <span className="font-medium text-secondary group-hover:text-foreground transition-colors">
                                 {skill}
                             </span>
@@ -267,7 +265,7 @@ export default function AboutPage() {
                     desktopGridClassName="hidden md:grid grid-cols-2 md:grid-cols-4 gap-8"
                 >
                     {clients.map((client, i) => (
-                        <div key={i} className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all w-full">
+                        <div key={i} className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all hover:bg-[#FFF9EA] w-full">
                             <span className="text-lg font-display font-bold text-gray-400 uppercase tracking-wider">{client}</span>
                         </div>
                     ))}

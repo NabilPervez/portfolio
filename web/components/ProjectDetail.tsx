@@ -98,8 +98,8 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
             <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 md:mt-24">
 
                 {/* Project Meta Data Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24 border-b border-gray-200 pb-16">
-                    {/* Tags */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 pb-12">
+                    {/* Tags - Left Side (1/3) */}
                     <div className="md:col-span-4">
                         <span className="block text-xs uppercase tracking-widest text-gray-400 mb-4">Role / Services</span>
                         <div className="flex flex-wrap gap-2">
@@ -108,45 +108,57 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                             ))}
                         </div>
                     </div>
-
-                    {/* Scope */}
-                    <div className="md:col-span-8">
-                        <span className="block text-xs uppercase tracking-widest text-gray-400 mb-4">The Scope</span>
-                        <div className="text-lg md:text-xl font-light leading-relaxed text-secondary">
-                            {isHtml(project.content.scope) ? (
-                                <div dangerouslySetInnerHTML={{ __html: project.content.scope }} />
-                            ) : (
-                                <p>{project.content.scope || "Strategy & Execution"}</p>
-                            )}
-                        </div>
-                    </div>
-
-                    {/* Behance Embed */}
-                    {project.behanceId && (
-                        <div className="col-span-1 md:col-span-12 w-full mb-12 flex justify-center">
-                            <iframe
-                                src={`https://www.behance.net/embed/project/${project.behanceId}?ilo0=1`}
-                                height="100%"
-                                width="100%"
-                                allowFullScreen
-                                loading="lazy"
-                                frameBorder="0"
-                                allow="clipboard-write"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                className="w-full min-h-[1200px] border border-gray-200 rounded-sm shadow-sm"
-                            ></iframe>
-                        </div>
-                    )}
                 </div>
 
-                {/* Narrative Content */}
+                {/* Narrative Content - Centered */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                     <div className="lg:col-span-8 lg:col-start-3">
+                        {/* Scope moved here to center */}
+                        <div className="mb-16">
+                            <h3 className="text-sm font-bold uppercase tracking-widest mb-6 text-foreground text-opacity-40">The Scope</h3>
+                            <div className="prose prose-lg prose-neutral max-w-none text-secondary font-light leading-relaxed">
+                                {isHtml(project.content.scope) ? (
+                                    <div dangerouslySetInnerHTML={{ __html: project.content.scope }} />
+                                ) : (
+                                    <p>{project.content.scope || "Strategy & Execution"}</p>
+                                )}
+                            </div>
+                        </div>
+
                         {renderSection("The Challenge", project.content.challenge)}
                         {renderSection("The Solution", project.content.solution)}
                         {renderSection("The Outcome", project.content.outcome || "")}
                     </div>
                 </div>
+
+                {/* Behance Embed - Moved below narrative or keep at top? 
+                   Previous design had it in the meta grid. 
+                   If I move Scope down, the meta grid is just tags. 
+                   Let's place Behance embed at the bottom of the narrative or in a separate full-width block. 
+                   Actually, line 125 had it in the meta grid row. 
+                   I'll keep it there or properly separate it. 
+                   Let's put it AFTER the narrative content for better flow if it's large.
+                   Or keep it in the top grid (col-span-12) if it's meant to be a showcase.
+                   I will keep it in a separate full-width block between Meta and Narrative or after Narrative.
+                   Let's place it *after* the narrative for now as it's usually long visual content.
+                */}
+
+                {/* Behance Embed */}
+                {project.behanceId && (
+                    <div className="w-full mb-24 flex justify-center">
+                        <iframe
+                            src={`https://www.behance.net/embed/project/${project.behanceId}?ilo0=1`}
+                            height="100%"
+                            width="100%"
+                            allowFullScreen
+                            loading="lazy"
+                            frameBorder="0"
+                            allow="clipboard-write"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            className="w-full min-h-[1200px] border border-gray-200 rounded-sm shadow-sm"
+                        ></iframe>
+                    </div>
+                )}
 
             </div>
 
