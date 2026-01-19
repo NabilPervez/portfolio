@@ -165,48 +165,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Integration Section */}
-      <section className="py-24 bg-background border-y border-gray-100">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-6">The Intersection</span>
-          <h3 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-8">The Integration</h3>
-
-          <div className="space-y-8 text-xl md:text-2xl font-light leading-relaxed text-secondary">
-            <p>
-              &quot;The designers want art, the developers want efficiency, and the business wants ROI.
-              Most projects fail at the intersection because of a failure to communicate expectations&quot;
-            </p>
-            <p className="font-medium text-foreground">
-              I live at that intersection.
-            </p>
-            <p>
-              I am the translator who ensures your creative vision survives the technical build, and your business goals aren&apos;t lost in the code. I make the complex simple, and the simple powerful.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Specializations Section */}
-      <section className="py-24 bg-gray-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="mb-16">
-            <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">My Core Skills</span>
-            <h3 className="text-4xl md:text-5xl font-display font-semibold text-foreground">What I Specialize In</h3>
-          </div>
-
-          <MobileAutoCarousel
-            desktopGridClassName="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {specializations.map((spec, idx) => (
-              <div key={idx} className="h-full group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30 rounded-sm">
-                <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">{spec.title}</h4>
-                <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
-              </div>
-            ))}
-          </MobileAutoCarousel>
-        </div>
-      </section>
-
       {/* Static Client Grid - Promo Cards */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -244,6 +202,52 @@ export default function Home() {
           </MobileAutoCarousel>
         </div>
       </section>
+
+      {/* The Integration Section */}
+      {/* 
+      <section className="py-24 bg-background border-y border-gray-100">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-6">The Intersection</span>
+          <h3 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-8">The Integration</h3>
+
+          <div className="space-y-8 text-xl md:text-2xl font-light leading-relaxed text-secondary">
+            <p>
+              &quot;The designers want art, the developers want efficiency, and the business wants ROI.
+              Most projects fail at the intersection because of a failure to communicate expectations&quot;
+            </p>
+            <p className="font-medium text-foreground">
+              I live at that intersection.
+            </p>
+            <p>
+              I am the translator who ensures your creative vision survives the technical build, and your business goals aren&apos;t lost in the code. I make the complex simple, and the simple powerful.
+            </p>
+          </div>
+        </div>
+      </section>
+      */}
+
+      {/* Specializations Section */}
+      <section className="py-24 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="mb-16">
+            <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">My Core Skills</span>
+            <h3 className="text-4xl md:text-5xl font-display font-semibold text-foreground">What I Specialize In</h3>
+          </div>
+
+          <MobileAutoCarousel
+            desktopGridClassName="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            {specializations.map((spec, idx) => (
+              <div key={idx} className="h-full group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30 rounded-sm">
+                <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">{spec.title}</h4>
+                <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
+              </div>
+            ))}
+          </MobileAutoCarousel>
+        </div>
+      </section>
+
+
 
       {/* Testimonials Section - Carousel */}
       <section className="py-24 bg-gray-50 border-t border-gray-200 overflow-hidden">
