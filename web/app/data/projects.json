@@ -14,9 +14,22 @@
       "solution": "We worked closely with their team to define how developers and publishers should market their titles under the LEGO banner. This involved detailed work on branding, package design, and communication strategies. I helped implement newsletters and social media strategies that effectively communicated this new direction to the target audience.",
       "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
     },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "images": [
+      "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
+      "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
+      "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.gif",
+      "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
+      "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.png",
+      "/images/portfolio/lego_27/96866c126553707.6153625602cd4.gif",
+      "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.gif",
+      "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
+      "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.gif",
+      "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
+      "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
+      "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
+    ],
+    "image": "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
+    "heroImage": "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png"
   },
   {
     "id": "voyagers-of-nera",
@@ -60,8 +73,8 @@
       "/images/portfolio/session/progress-1-.gif",
       "/images/portfolio/session/session-clean-up_revised-min.png"
     ],
-    "image": "/images/portfolio/session/02_skaters.png",
-    "heroImage": "/images/portfolio/session/02_skaters.png"
+    "image": "/images/portfolio/session/06_finals.png",
+    "heroImage": "/images/portfolio/session/06_finals.png"
   },
   {
     "id": "one-piece-x-cloud9",
@@ -86,8 +99,8 @@
       "/images/portfolio/one-piece-x-cloud9/8_misc.webp",
       "/images/portfolio/one-piece-x-cloud9/9_fruitboi.webp"
     ],
-    "image": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp",
-    "heroImage": "/images/portfolio/one-piece-x-cloud9/1_cloud9-x-one-piece.webp"
+    "image": "/images/portfolio/one-piece-x-cloud9/9_fruitboi.webp",
+    "heroImage": "/images/portfolio/one-piece-x-cloud9/9_fruitboi.webp"
   },
   {
     "id": "mccown-evans",
@@ -117,7 +130,7 @@
   {
     "id": "fancurve",
     "title": "Houston Outlaws",
-    "slug": "fancurve",
+    "slug": "houston-outlaws",
     "tags": [
       "Strategy",
       "Design",
@@ -145,8 +158,8 @@
       "/images/portfolio/outlaws/outlaws-stickers-detail.jpg",
       "/images/portfolio/outlaws/outlaws-wristbands-detail.jpg"
     ],
-    "image": "/images/portfolio/outlaws/outlaws-IMG_20180518_203602-scaled.jpg",
-    "heroImage": "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg"
+    "image": "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg",
+    "heroImage": "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg"
   },
   {
     "id": "optic-gaming",
@@ -183,7 +196,18 @@
       "challenge": "The collegiate esports space is fragmented. We needed to position Stay Plugged In as the premier bridge between talent and opportunity, making the complex recruitment process feel accessible and exciting.",
       "solution": "We focused on a student-first messaging strategy. We streamlined their visual identity to be energetic and aspirational. (Note: Specific details were unavailable in source text, so this is a generalized reconstruction)."
     },
-    "images": [],
+    "images": [
+      "/images/portfolio/stay-plugged-in/0fa437132316687.63e1618463e22.png",
+      "/images/portfolio/stay-plugged-in/13285d132316687.6303933d837fc.png",
+      "/images/portfolio/stay-plugged-in/2ed613132316687.63e1618461eb2.png",
+      "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.gif",
+      "/images/portfolio/stay-plugged-in/385ba2132316687.63e17a7e91756.png",
+      "/images/portfolio/stay-plugged-in/41d479132316687.63e1338205aed.png",
+      "/images/portfolio/stay-plugged-in/48fe4c132316687.63e1618462d86.png",
+      "/images/portfolio/stay-plugged-in/9e8063132316687.63e1338204a53.gif",
+      "/images/portfolio/stay-plugged-in/abe4e0132316687.63e17a7e90add.png",
+      "/images/portfolio/stay-plugged-in/adbdbb132316687.63e1338206c59.png"
+    ],
     "image": "/images/portfolio/stay-plugged-in/stay-plugged-in.jpg",
     "heroImage": "/images/portfolio/stay-plugged-in/stay-plugged-in.jpg"
   },
@@ -241,8 +265,8 @@
       "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
       "/images/portfolio/the-story-mob/the-story-mob-Story.png"
     ],
-    "image": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
-    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png"
+    "image": "/images/portfolio/the-story-mob/the-story-mob-Header.png",
+    "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Header.png"
   },
   {
     "id": "redbull",
@@ -283,42 +307,18 @@
       "outcome": "The Sunspear Games team was blown away by the final product. The designs provided the visual anchor the game needed. They now proudly use these assets across all media, from the game UI to marketing materials, successfully unifying the game's visual identity."
     },
     "images": [
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-3D_Immortal.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-3D_Immortal_Mark.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-3D_Immortal_Pyre.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-3D_Immortal_Siphari.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-3D_Immortal_Siphari_2.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Alloy_Gold.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Alloy_White.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Ether_Gold.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Ether_White.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-IconImmortal-01.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-IconImmortal_Pyre-02.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-IconImmortal_Siphari-01.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-IconImmortal_full-01.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-IconImmortal_full_Stroke.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Icon_Logo_Shadow.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Icon_Logo_ShadowStrong.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Icon_Logo_Stroke.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Logo_Final.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Pyre_Gold.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Pyre_White.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Shatter.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-Shatter_Square.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-a1.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-b1.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-c1.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-j4.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-p1.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-p2.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-p3.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-p4.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-q.png",
-      "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-q2.png"
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/234db8115497303.604fc9910e4cb.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/74b541115497303.609d760d96e0f.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/90d97d115497303.604fc9910d607.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/a76bca115497303.604fc2f16a3ae.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/ac44fb115497303.604fc2f169708.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/b445d9115497303.604fc9910dd82.png",
+      "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/d20e21115497303.604fc2f16b002.png"
     ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-icons/immortal-gates-of-pyre-logo-icons-209897331_961733758009127_447740803922051937_n.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons.png"
   },
   {
     "id": "metaview",
@@ -368,8 +368,8 @@
       "outcome": "The project was a dual success. The digital Lore Book became a key asset that helped secure significant business and investment for Sunspear. It was also so popular with fans that it became a purchasable physical item in the Kickstarter. The videos provided the clarity needed for both players and partners to fully grasp the potential of the Immortal universe."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-lorebook-videos.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-lorebook-videos.png"
   },
   {
     "id": "freshcut",
@@ -420,25 +420,6 @@
     ],
     "image": "/images/portfolio/geekletes/geekletes-geekletes.png",
     "heroImage": "/images/portfolio/geekletes/geekletes-geekletes.png"
-  },
-  {
-    "id": "liquid",
-    "title": "Liquid",
-    "slug": "liquid",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>Team Liquid, a global esports powerhouse, needed to launch \"Liquid+,\" a fan loyalty platform. Our involvement focused on branding, strategy, and helping visually communicate this new reward ecosystem to their massive fanbase.</li></ul>",
-      "challenge": "The challenge was to create a brand identity for a sub-product that felt distinct yet undeniably \"Team Liquid.\" It needed to explain a complex reward system simply and excite fans about earning points for engagement.",
-      "solution": "We worked to develop a visual language for Liquid+ that highlighted the value of fandom. This involved branding discussions and strategy on how to position the platform as a value-add for the community, not just a data play.",
-      "outcome": "Liquid+ launched to wide acclaim, setting a new standard for fan engagement programs in esports. The branding successfully communicated the prestige of being a \"top fan\" and drove significant sign-ups at launch."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
   },
   {
     "id": "fcfl",
@@ -506,8 +487,8 @@
       "/images/portfolio/a-kon/a-kon-Rika-Header.png",
       "/images/portfolio/a-kon/a-kon-Violit-Header.png"
     ],
-    "image": "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png",
-    "heroImage": "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png"
+    "image": "/images/portfolio/a-kon/a-kon-AKON_Twitter.jpg",
+    "heroImage": "/images/portfolio/a-kon/a-kon-AKON_Twitter.jpg"
   },
   {
     "id": "immortal-gates-of-pyre-kickstarter",
@@ -564,8 +545,8 @@
       "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-immortal.png",
       "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-thorn.png"
     ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter.png"
   },
   {
     "id": "aoe-creative-website",
@@ -682,8 +663,8 @@
       "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Unitprod_a.png",
       "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Units_b.png"
     ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Cancel_a.png",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop-1.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing.png"
   },
   {
     "id": "blast-radius",
@@ -725,8 +706,8 @@
       "outcome": "This efficienct pipeline successfully populated their channels with high-quality content. The strategy maximized the value of every minute of production, ensuring that the marketing team always had fresh assets to engage the community across all platforms."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/immortal-gates-of-pyre-video-producing.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-video-producing.png"
   },
   {
     "id": "world-series-of-warzone",
@@ -871,8 +852,8 @@
       "outcome": "We grew PVP Live into one of the largest esports news organizations. My strategies helped gain 100,000 new Twitter followers with high engagement turnover. We reached 3 million active users per month, with 30% of that traffic driven directly by the influencer and Facebook group strategies I implemented."
     },
     "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
+    "image": "/images/portfolio/pvp-live.jpg",
+    "heroImage": "/images/portfolio/pvp-live.jpg"
   },
   {
     "id": "igda-dallas",
@@ -920,25 +901,6 @@
     "heroImage": "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg"
   },
   {
-    "id": "houston-outlaws",
-    "title": "Houston Outlaws",
-    "slug": "houston-outlaws",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>For the inaugural season of the Overwatch League, I was tasked with local marketing for the Houston Outlaws. My mission was to build a community across the massive region of South Texas (Houston, Austin, San Antonio). The scope included event marketing, merchandise strategy, and partnership development.</li></ul>",
-      "challenge": "We needed to turn a digital franchise into a physical phenomenon. The challenge was to connect disparate fans across hundreds of miles and cultivate a shared \"Outlaws\" identity that would drive them to attend in-person events.",
-      "solution": "We launched the award-winning \"#BandTogether\" campaign. This innovative strategy included organizing the world's first esports player tour, pop-up shops, and block parties. We also introduced region-specific, collectible merchandise to gamify attendance and foster brand loyalty.",
-      "outcome": "The results were historic. The campaign won the Tempest Award for \"Best Social Experience\" and helped the Outlaws become the most tweeted-about team in the league during Season 1. We successfully built a passionate, traveling fan base that set the standard for local esports marketing."
-    },
-    "images": [],
-    "image": "/images/portfolio/default.jpg",
-    "heroImage": "/images/portfolio/default.jpg"
-  },
-  {
     "id": "evolution-championship-series",
     "title": "EVOLUTION CHAMPIONSHIP SERIES",
     "slug": "evolution-championship-series",
@@ -963,7 +925,7 @@
       "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream-1.png",
       "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream.png"
     ],
-    "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
+    "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
     "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png"
   },
   {
@@ -1040,8 +1002,8 @@
       "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still-1.png",
       "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still.png"
     ],
-    "image": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png",
-    "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png"
+    "image": "/images/portfolio/immortal-gates-of-pyre-web-development.png",
+    "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development.png"
   },
   {
     "id": "tourney-locator",
@@ -1065,5 +1027,24 @@
     ],
     "image": "/images/portfolio/tourney-locator/tourney-locator-LTC.png",
     "heroImage": "/images/portfolio/tourney-locator/tourney-locator-LTC.png"
+  },
+  {
+    "id": "liquid",
+    "title": "Team Liquid",
+    "slug": "liquid",
+    "tags": [
+      "Strategy",
+      "Design",
+      "Development"
+    ],
+    "content": {
+      "scope": "<ul><li>Team Liquid, a global esports powerhouse, needed to launch \"Liquid+,\" a fan loyalty platform. Our involvement focused on branding, strategy, and helping visually communicate this new reward ecosystem to their massive fanbase.</li></ul>",
+      "challenge": "The challenge was to create a brand identity for a sub-product that felt distinct yet undeniably \"Team Liquid.\" It needed to explain a complex reward system simply and excite fans about earning points for engagement.",
+      "solution": "We worked to develop a visual language for Liquid+ that highlighted the value of fandom. This involved branding discussions and strategy on how to position the platform as a value-add for the community, not just a data play.",
+      "outcome": "Liquid+ launched to wide acclaim, setting a new standard for fan engagement programs in esports. The branding successfully communicated the prestige of being a \"top fan\" and drove significant sign-ups at launch."
+    },
+    "images": [],
+    "image": "/images/portfolio/default.jpg",
+    "heroImage": "/images/portfolio/default.jpg"
   }
 ]
