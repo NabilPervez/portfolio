@@ -273,7 +273,7 @@ export default function AboutPage() {
             </div>
 
             {/* Timeline Section */}
-            <div className="max-w-4xl border-t border-gray-200 pt-24 animate-fade-in-up [animation-delay:400ms]">
+            <div className="w-full border-t border-gray-200 pt-24 animate-fade-in-up [animation-delay:400ms]">
                 <h2 className="text-3xl md:text-4xl font-display font-bold mb-16">My Career</h2>
 
                 <div className="space-y-8">

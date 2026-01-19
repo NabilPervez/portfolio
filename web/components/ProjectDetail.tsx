@@ -14,9 +14,9 @@ interface ProjectDetailProps {
         tags: string[];
         image: string;
         content: {
-            scope: string;
+            scope?: string;
             challenge: string;
-            solution: string;
+            solution?: string;
             outcome?: string;
         };
         images?: string[];
@@ -117,7 +117,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                         <div className="mb-16">
                             <h3 className="text-sm font-bold uppercase tracking-widest mb-6 text-foreground text-opacity-40">The Scope</h3>
                             <div className="prose prose-lg prose-neutral max-w-none text-secondary font-light leading-relaxed">
-                                {isHtml(project.content.scope) ? (
+                                {project.content.scope && isHtml(project.content.scope) ? (
                                     <div dangerouslySetInnerHTML={{ __html: project.content.scope }} />
                                 ) : (
                                     <p>{project.content.scope || "Strategy & Execution"}</p>
@@ -126,7 +126,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                         </div>
 
                         {renderSection("The Challenge", project.content.challenge)}
-                        {renderSection("The Solution", project.content.solution)}
+                        {renderSection("The Solution", project.content.solution || "")}
                         {renderSection("The Outcome", project.content.outcome || "")}
                     </div>
                 </div>
