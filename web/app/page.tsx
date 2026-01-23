@@ -13,6 +13,7 @@ import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
 import ColorBends from "@/components/ColorBends";
 import GradientText from "@/components/GradientText";
+import CurvedLoop from "@/components/CurvedLoop";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -185,6 +186,17 @@ export default function Home() {
 
           {/* Bento Grid */}
           <BentoGrid />
+
+          <div className="mt-12 w-full overflow-hidden">
+            <CurvedLoop
+              marqueeText="Who ✦ Has ✦ Nabil ✦ Worked ✦ With ✦"
+              speed={2}
+              curveAmount={100}
+              direction="right"
+              interactive
+              className="text-gold"
+            />
+          </div>
 
         </div>
       </section>
