@@ -156,15 +156,23 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end mb-12">
-            <div>
+            {/* Left Column: All Text */}
+            <div className="order-2 md:order-1 flex flex-col justify-center">
               <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">Who Am I</span>
               <h3 className="text-4xl md:text-6xl font-display font-bold leading-[1.1] mb-8">
                 I&apos;m Nabil - I&apos;m a <br />
                 <span className="text-gold">Nerd Translator</span>.
               </h3>
+              <div className="text-lg text-secondary font-light leading-relaxed max-w-lg space-y-6">
+                <p>
+                  My unique ability to bridge the gap between <strong>technical complexity</strong> and <strong>creative vision</strong> allows me to translate these different languages (marketing, design, development) into &quot;business success&quot;.
+                </p>
+              </div>
+            </div>
 
-              {/* Headshot moved here */}
-              <div className="relative h-[400px] w-full max-w-md rounded-lg overflow-hidden border border-gray-200 shadow-xl">
+            {/* Right Column: Headshot */}
+            <div className="order-1 md:order-2 flex justify-end items-end">
+              <div className="relative h-[500px] w-full max-w-md rounded-lg overflow-hidden border border-gray-200 shadow-xl">
                 <Image
                   src="/images/nabil-headshot.jpg"
                   alt="Nabil Pervez"
@@ -172,11 +180,6 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-            </div>
-            <div className="text-lg text-secondary font-light leading-relaxed max-w-lg md:text-right space-y-6">
-              <p>
-                My unique ability to bridge the gap between <strong>technical complexity</strong> and <strong>creative vision</strong> allows me to translate these different languages (marketing, design, development) into &quot;business success&quot;.
-              </p>
             </div>
           </div>
 

@@ -5,6 +5,7 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import projectData from "../data/projects.json";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import GridMotion from "@/components/GridMotion";
 
 export default function PortfolioPage() {
     // Transform data to match component interface
@@ -21,9 +22,19 @@ export default function PortfolioPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="min-h-screen bg-background pt-32 pb-24 px-4 md:px-8"
+            className="min-h-screen bg-background"
         >
-            <div className="w-full">
+            {/* GridMotion Hero */}
+            <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 overflow-hidden">
+                <GridMotion items={projectData.map(p => p.heroImage || p.image).filter(Boolean)} gradientColor="black" />
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
+                    <h1 className="text-6xl md:text-8xl font-display font-bold text-white text-center drop-shadow-2xl">
+                        Portfolio
+                    </h1>
+                </div>
+            </div>
+
+            <div className="w-full px-4 md:px-8 pb-24 max-w-[1920px] mx-auto">
 
                 {/* Header with Behance Button */}
                 <div className="flex justify-between items-end mb-12 px-4 md:px-0">
