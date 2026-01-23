@@ -96,8 +96,8 @@ export default function Home() {
             animate="show"
             className="flex flex-col items-center text-center justify-center max-w-5xl mx-auto"
           >
-            <div>
-              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold mt-48 md:mt-0">
+            <div className="relative z-10 p-8 rounded-3xl bg-black/30 backdrop-blur-md border border-white/10 shadow-2xl">
+              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold md:mt-0">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
               <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-white mb-8">
@@ -107,7 +107,7 @@ export default function Home() {
                   colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                   animationSpeed={3}
                   showBorder={false}
-                  className="inline-flex"
+                  className="inline-flex px-1"
                 >
                   innovation
                 </GradientText>.
