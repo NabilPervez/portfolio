@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import StarBorder from "./StarBorder";
 import { StaggeredMenu } from "./StaggeredMenu";
@@ -14,6 +14,30 @@ const navLinks = [
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Products", href: "/products" },
+    {
+        name: "Apps",
+        href: "#",
+        dropdown: [
+            { name: "KinKeep", href: "https://kinkeepmarketing.netlify.app/" },
+            { name: "Baraka Boost", href: "/apps/barakaboost" },
+            { name: "Muhasaba", href: "/apps/muhasaba" },
+            { name: "Learn The Names Of Allah", href: "/apps/learnthenamesofallah" },
+            { name: "Ayah Echo", href: "/apps/ayah-echo" },
+            { name: "The Journey", href: "/apps/the-journey" },
+            { name: "Infinity Loader", href: "https://infinity-loader.netlify.app/" },
+            { name: "Podomo Power", href: "https://podomopower.netlify.app/" },
+            { name: "Zaman Homepage", href: "https://zamanhomepage.netlify.app/" },
+        ]
+    },
+    {
+        name: "Games",
+        href: "#",
+        dropdown: [
+            { name: "Hangman Survival", href: "/games/hangman-survival" },
+            { name: "LexiLink", href: "/games/lexilink" },
+            { name: "Math Boat", href: "/games/math-boat" },
+        ]
+    }
 ];
 
 export function Navbar() {
@@ -48,9 +72,39 @@ export function Navbar() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-12 pointer-events-auto">
+                    <nav className="hidden md:flex items-center gap-8 lg:gap-12 pointer-events-auto">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
+
+                            if (link.dropdown) {
+                                return (
+                                    <div key={link.name} className="relative group">
+                                        <button className={cn(
+                                            "flex items-center gap-1 text-sm font-medium tracking-wide transition-all duration-300 opacity-70 hover:opacity-100 hover:text-gold",
+                                            isScrolled ? "text-black" : "text-white"
+                                        )}>
+                                            {link.name}
+                                            <ChevronDown className="w-4 h-4" />
+                                        </button>
+
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px]">
+                                            <div className="bg-white/95 backdrop-blur-sm border border-gray-100 rounded-xl shadow-xl p-2 flex flex-col gap-1">
+                                                {link.dropdown.map((subItem) => (
+                                                    <Link
+                                                        key={subItem.name}
+                                                        href={subItem.href}
+                                                        target={subItem.href.startsWith('http') ? "_blank" : "_self"}
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold rounded-lg transition-colors whitespace-nowrap text-left"
+                                                    >
+                                                        {subItem.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            }
+
                             return (
                                 <Link
                                     key={link.href}
@@ -115,7 +169,21 @@ export function Navbar() {
                                     { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
                                     { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
-                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' }
+                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' },
+                                    { label: 'Apps', ariaLabel: 'Apps section', link: '#' },
+                                    { label: 'KinKeep', ariaLabel: 'KinKeep App', link: 'https://kinkeepmarketing.netlify.app/' },
+                                    { label: 'Baraka Boost', ariaLabel: 'Baraka Boost App', link: '/apps/barakaboost' },
+                                    { label: 'Muhasaba', ariaLabel: 'Muhasaba App', link: '/apps/muhasaba' },
+                                    { label: 'Names Of Allah', ariaLabel: 'Learn Names Of Allah', link: '/apps/learnthenamesofallah' },
+                                    { label: 'Ayah Echo', ariaLabel: 'Ayah Echo App', link: '/apps/ayah-echo' },
+                                    { label: 'The Journey', ariaLabel: 'The Journey App', link: '/apps/the-journey' },
+                                    { label: 'Infinity Loader', ariaLabel: 'Infinity Loader', link: 'https://infinity-loader.netlify.app/' },
+                                    { label: 'Podomo Power', ariaLabel: 'Podomo Power', link: 'https://podomopower.netlify.app/' },
+                                    { label: 'Zaman HP', ariaLabel: 'Zaman Homepage', link: 'https://zamanhomepage.netlify.app/' },
+                                    { label: 'Games', ariaLabel: 'Games section', link: '#' },
+                                    { label: 'Hangman', ariaLabel: 'Hangman Survival', link: '/games/hangman-survival' },
+                                    { label: 'LexiLink', ariaLabel: 'LexiLink Game', link: '/games/lexilink' },
+                                    { label: 'Math Boat', ariaLabel: 'Math Boat Game', link: '/games/math-boat' }
                                 ]}
                                 socialItems={[
                                     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/perveznabil' },
