@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import StarBorder from "./StarBorder";
 import { StaggeredMenu } from "./StaggeredMenu";
 
@@ -19,7 +19,7 @@ const navLinks = [
         href: "#",
         dropdown: [
             { name: "KinKeep", href: "https://kinkeepmarketing.netlify.app/" },
-            { name: "Baraka Boost", href: "/apps/barakaboost" },
+            { name: "Baraka Boost", href: "https://barakaboostmarketing.netlify.app/" },
             { name: "Muhasaba", href: "/apps/muhasaba" },
             { name: "Learn The Names Of Allah", href: "/apps/learnthenamesofallah" },
             { name: "Ayah Echo", href: "/apps/ayah-echo" },
@@ -46,11 +46,20 @@ export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const { scrollY } = useScroll();
 
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        if (latest > 50) {
-            setIsScrolled(true);
+    // Handle initial state and route changes
+    useEffect(() => {
+        if (pathname === "/") {
+            setIsScrolled(window.scrollY > 50);
         } else {
-            setIsScrolled(false);
+            setIsScrolled(true);
+        }
+    }, [pathname]);
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        if (pathname === "/") {
+            setIsScrolled(latest > 50);
+        } else {
+            setIsScrolled(true);
         }
     });
 
@@ -172,7 +181,7 @@ export function Navbar() {
                                     { label: 'Products', ariaLabel: 'View our products', link: '/products' },
                                     { label: 'Apps', ariaLabel: 'Apps section', link: '#' },
                                     { label: 'KinKeep', ariaLabel: 'KinKeep App', link: 'https://kinkeepmarketing.netlify.app/' },
-                                    { label: 'Baraka Boost', ariaLabel: 'Baraka Boost App', link: '/apps/barakaboost' },
+                                    { label: 'Baraka Boost', ariaLabel: 'Baraka Boost App', link: 'https://barakaboostmarketing.netlify.app/' },
                                     { label: 'Muhasaba', ariaLabel: 'Muhasaba App', link: '/apps/muhasaba' },
                                     { label: 'Names Of Allah', ariaLabel: 'Learn Names Of Allah', link: '/apps/learnthenamesofallah' },
                                     { label: 'Ayah Echo', ariaLabel: 'Ayah Echo App', link: '/apps/ayah-echo' },
