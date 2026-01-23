@@ -20,10 +20,10 @@ const navLinks = [
         dropdown: [
             { name: "KinKeep", href: "https://kinkeepmarketing.netlify.app/" },
             { name: "Baraka Boost", href: "https://barakaboostmarketing.netlify.app/" },
-            { name: "Muhasaba", href: "/apps/muhasaba" },
-            { name: "Learn The Names Of Allah", href: "/apps/learnthenamesofallah" },
-            { name: "Ayah Echo", href: "/apps/ayah-echo" },
-            { name: "The Journey", href: "/apps/the-journey" },
+            { name: "Muhasaba", href: "https://muhasabah.netlify.app/" },
+            { name: "Learn The Names Of Allah", href: "https://learnthenamesofallah.netlify.app/" },
+            { name: "Ayah Echo", href: "https://ayahecho.netlify.app/" },
+            { name: "The Journey", href: "https://thejourneyhome.netlify.app/" },
             { name: "Infinity Loader", href: "https://infinity-loader.netlify.app/" },
             { name: "Podomo Power", href: "https://podomopower.netlify.app/" },
             { name: "Zaman Homepage", href: "https://zamanhomepage.netlify.app/" },
@@ -33,9 +33,9 @@ const navLinks = [
         name: "Games",
         href: "#",
         dropdown: [
-            { name: "Hangman Survival", href: "/games/hangman-survival" },
-            { name: "LexiLink", href: "/games/lexilink" },
-            { name: "Math Boat", href: "/games/math-boat" },
+            { name: "Hangman Survival", href: "https://wheel-of-fortune-game.netlify.app/" },
+            { name: "LexiLink", href: "https://lexilinkgame.netlify.app/" },
+            { name: "Math Boat", href: "https://math-boat.netlify.app/" },
         ]
     }
 ];
@@ -182,17 +182,17 @@ export function Navbar() {
                                     { label: 'Apps', ariaLabel: 'Apps section', link: '#' },
                                     { label: 'KinKeep', ariaLabel: 'KinKeep App', link: 'https://kinkeepmarketing.netlify.app/' },
                                     { label: 'Baraka Boost', ariaLabel: 'Baraka Boost App', link: 'https://barakaboostmarketing.netlify.app/' },
-                                    { label: 'Muhasaba', ariaLabel: 'Muhasaba App', link: '/apps/muhasaba' },
-                                    { label: 'Names Of Allah', ariaLabel: 'Learn Names Of Allah', link: '/apps/learnthenamesofallah' },
-                                    { label: 'Ayah Echo', ariaLabel: 'Ayah Echo App', link: '/apps/ayah-echo' },
-                                    { label: 'The Journey', ariaLabel: 'The Journey App', link: '/apps/the-journey' },
+                                    { label: 'Muhasaba', ariaLabel: 'Muhasaba App', link: 'https://muhasabah.netlify.app/' },
+                                    { label: 'Names Of Allah', ariaLabel: 'Learn Names Of Allah', link: 'https://learnthenamesofallah.netlify.app/' },
+                                    { label: 'Ayah Echo', ariaLabel: 'Ayah Echo App', link: 'https://ayahecho.netlify.app/' },
+                                    { label: 'The Journey', ariaLabel: 'The Journey App', link: 'https://thejourneyhome.netlify.app/' },
                                     { label: 'Infinity Loader', ariaLabel: 'Infinity Loader', link: 'https://infinity-loader.netlify.app/' },
                                     { label: 'Podomo Power', ariaLabel: 'Podomo Power', link: 'https://podomopower.netlify.app/' },
                                     { label: 'Zaman HP', ariaLabel: 'Zaman Homepage', link: 'https://zamanhomepage.netlify.app/' },
                                     { label: 'Games', ariaLabel: 'Games section', link: '#' },
-                                    { label: 'Hangman', ariaLabel: 'Hangman Survival', link: '/games/hangman-survival' },
-                                    { label: 'LexiLink', ariaLabel: 'LexiLink Game', link: '/games/lexilink' },
-                                    { label: 'Math Boat', ariaLabel: 'Math Boat Game', link: '/games/math-boat' }
+                                    { label: 'Hangman', ariaLabel: 'Hangman Survival', link: 'https://wheel-of-fortune-game.netlify.app/' },
+                                    { label: 'LexiLink', ariaLabel: 'LexiLink Game', link: 'https://lexilinkgame.netlify.app/' },
+                                    { label: 'Math Boat', ariaLabel: 'Math Boat Game', link: 'https://math-boat.netlify.app/' }
                                 ]}
                                 socialItems={[
                                     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/perveznabil' },
