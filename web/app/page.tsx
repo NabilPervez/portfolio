@@ -70,7 +70,7 @@ export default function Home() {
     <div ref={containerRef} className="relative overflow-x-hidden">
 
       {/* Hero Section */}
-      <section className="h-screen relative flex items-center justify-center overflow-hidden bg-background">
+      <section className="h-screen relative flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <ColorBends
             colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
@@ -107,13 +107,13 @@ export default function Home() {
               <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold mt-48 md:mt-0">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
-              <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-foreground mb-8">
+              <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-white mb-8">
                 I create <br />
                 <span className="text-gold">digital solutions</span> <br />
-                through <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-purple-800 to-blue-900 animate-gradient-x">innovation</span>.
+                through <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 animate-gradient-x">innovation</span>.
               </motion.h2>
 
-              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-secondary max-w-xl leading-relaxed mb-10">
+              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed mb-10">
                 Accomplished product manager - specialized in branding.<br />
                 Honored with multiple awards and boasting over a decade of expertise.
               </motion.p>
@@ -121,13 +121,13 @@ export default function Home() {
               <motion.div variants={fadeInUp as any} className="flex flex-wrap gap-4">
                 <Link
                   href="/portfolio"
-                  className="group inline-flex items-center gap-3 px-10 py-5 bg-foreground text-white rounded-full text-lg font-medium tracking-wide transition-all hover:bg-gold hover:text-white"
+                  className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-black rounded-full text-lg font-medium tracking-wide transition-all hover:bg-gold hover:text-white"
                 >
                   View My Work <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   href="/about"
-                  className="group inline-flex items-center gap-3 px-10 py-5 border border-gray-300 rounded-full text-lg font-medium tracking-wide transition-all hover:border-foreground hover:bg-transparent"
+                  className="group inline-flex items-center gap-3 px-10 py-5 border border-gray-700 text-white rounded-full text-lg font-medium tracking-wide transition-all hover:border-white hover:bg-transparent"
                 >
                   About Me
                 </Link>
