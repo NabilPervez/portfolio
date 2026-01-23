@@ -12,6 +12,7 @@ import { BentoGrid } from "@/components/BentoGrid";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
 import ColorBends from "@/components/ColorBends";
+import GradientText from "@/components/GradientText";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -86,15 +87,7 @@ export default function Home() {
             autoRotate={0}
           />
         </div>
-        {/* Parallax Background Text */}
-        <motion.div
-          style={{ y, opacity }}
-          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0"
-        >
-          <h1 className="text-[15vw] md:text-[20vw] font-display font-bold text-gray-100 uppercase tracking-tighter whitespace-nowrap">
-            VISIONARY
-          </h1>
-        </motion.div>
+
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
           <motion.div
@@ -110,7 +103,14 @@ export default function Home() {
               <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-white mb-8">
                 I create <br />
                 <span className="text-gold">digital solutions</span> <br />
-                through <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 animate-gradient-x">innovation</span>.
+                through <GradientText
+                  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                  animationSpeed={3}
+                  showBorder={false}
+                  className="inline-flex"
+                >
+                  innovation
+                </GradientText>.
               </motion.h2>
 
               <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed mb-10">
