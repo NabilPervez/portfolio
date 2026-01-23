@@ -108,7 +108,7 @@ export function Navbar() {
 
                     {/* Mobile Menu - StaggeredMenu */}
                     <div className="md:hidden z-[60] fixed top-0 right-0 w-full h-full pointer-events-none">
-                        <div className="pointer-events-auto h-full">
+                        <div className="h-full pointer-events-none">
                             <StaggeredMenu
                                 position="right"
                                 items={[
