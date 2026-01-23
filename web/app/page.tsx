@@ -94,9 +94,9 @@ export default function Home() {
             variants={staggerContainer}
             initial="hidden"
             animate="show"
-            className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
+            className="flex flex-col items-center text-center justify-center max-w-5xl mx-auto"
           >
-            <div className="md:col-span-8">
+            <div>
               <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold mt-48 md:mt-0">
                 Strategist &middot; Product &middot; Branding
               </motion.p>
@@ -113,12 +113,12 @@ export default function Home() {
                 </GradientText>.
               </motion.h2>
 
-              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed mb-10">
+              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto leading-relaxed mb-10">
                 Accomplished product manager - specialized in branding.<br />
                 Honored with multiple awards and boasting over a decade of expertise.
               </motion.p>
 
-              <motion.div variants={fadeInUp as any} className="flex flex-wrap gap-4">
+              <motion.div variants={fadeInUp as any} className="flex flex-wrap justify-center gap-4">
                 <Link
                   href="/portfolio"
                   className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-black rounded-full text-lg font-medium tracking-wide transition-all hover:bg-gold hover:text-white"
@@ -131,23 +131,6 @@ export default function Home() {
                 >
                   About Me
                 </Link>
-              </motion.div>
-            </div>
-
-            {/* Headshot in Hero */}
-            <div className="hidden md:block md:col-span-4 relative h-[600px] w-full">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-                className="absolute inset-0 bg-gray-100 rounded-sm overflow-hidden"
-              >
-                <Image
-                  src="/images/nabil-headshot.jpg"
-                  alt="Nabil Pervez"
-                  fill
-                  className="object-cover"
-                />
               </motion.div>
             </div>
           </motion.div>
@@ -175,10 +158,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end mb-12">
             <div>
               <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">Who Am I</span>
-              <h3 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">
+              <h3 className="text-4xl md:text-6xl font-display font-bold leading-[1.1] mb-8">
                 I&apos;m Nabil - I&apos;m a <br />
                 <span className="text-gold">Nerd Translator</span>.
               </h3>
+
+              {/* Headshot moved here */}
+              <div className="relative h-[400px] w-full max-w-md rounded-lg overflow-hidden border border-gray-200 shadow-xl">
+                <Image
+                  src="/images/nabil-headshot.jpg"
+                  alt="Nabil Pervez"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div className="text-lg text-secondary font-light leading-relaxed max-w-lg md:text-right space-y-6">
               <p>

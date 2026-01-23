@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import StarBorder from "./StarBorder";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -17,10 +18,27 @@ const navLinks = [
 export function Navbar() {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const { scrollY } = useScroll();
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        if (latest > 50) {
+            setIsScrolled(true);
+        } else {
+            setIsScrolled(false);
+        }
+    });
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white text-black border-b border-gray-100">
+            <header
+                className={cn(
+                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
+                    isScrolled
+                        ? "bg-white text-black border-gray-100"
+                        : "bg-transparent text-white border-transparent"
+                )}
+            >
                 <div className="mx-auto max-w-7xl px-6 md:px-12 h-24 flex items-center justify-between">
 
                     {/* Logo / Brand Name */}
@@ -64,29 +82,31 @@ export function Navbar() {
                             <Link
                                 href="https://nabilpervezconsulting.com/"
                                 target="_blank"
-                                className="px-6 py-2 border border-black/10 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
+                                className="px-6 py-2 border border-current rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all hover:border-gold"
                             >
                                 Consulting
                             </Link>
                             <Link
                                 href="mailto:nabilpervezconsulting@gmail.com"
-                                className="px-6 py-2 border border-black/10 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
+                                className="px-6 py-2 border border-current rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all hover:border-gold"
                             >
                                 Contact
                             </Link>
-                            <Link
+                            <StarBorder
+                                as={Link}
                                 href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-"
                                 target="_blank"
-                                className="px-6 py-2 bg-foreground text-background rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all"
+                                color="cyan"
+                                speed="5s"
                             >
                                 Book Me
-                            </Link>
+                            </StarBorder>
                         </div>
                     </nav>
 
                     {/* Mobile Menu Button - Using mix-blend-difference allows visible white text on both white/black backgrounds */}
                     <button
-                        className="md:hidden z-50 p-2 pointer-events-auto"
+                        className="md:hidden z-50 p-2 pointer-events-auto mix-blend-difference text-white"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
