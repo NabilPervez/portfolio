@@ -11,6 +11,7 @@ import Image from "next/image";
 import { BentoGrid } from "@/components/BentoGrid";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
+import ColorBends from "@/components/ColorBends";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -70,6 +71,21 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="h-screen relative flex items-center justify-center overflow-hidden bg-background">
+        <div className="absolute inset-0 z-0">
+          <ColorBends
+            colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+            rotation={0}
+            speed={0.2}
+            scale={1}
+            frequency={1}
+            warpStrength={1}
+            mouseInfluence={1}
+            parallax={0.5}
+            noise={0.1}
+            transparent
+            autoRotate={0}
+          />
+        </div>
         {/* Parallax Background Text */}
         <motion.div
           style={{ y, opacity }}
