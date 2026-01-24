@@ -21,6 +21,7 @@ interface ProjectDetailProps {
         };
         images?: string[];
         behanceId?: string;
+        videoUrl?: string;
     };
     nextProject?: {
         slug: string;
@@ -157,6 +158,23 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                             referrerPolicy="strict-origin-when-cross-origin"
                             className="w-full min-h-[1200px] border border-gray-200 rounded-sm shadow-sm"
                         ></iframe>
+                    </div>
+                )}
+
+                {/* Video Embed */}
+                {project.videoUrl && (
+                    <div className="w-full mb-24 flex justify-center">
+                        <div className="w-full aspect-video border border-gray-200 rounded-sm shadow-sm overflow-hidden bg-black">
+                            <iframe
+                                src={project.videoUrl}
+                                width="100%"
+                                height="100%"
+                                frameBorder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
                     </div>
                 )}
 
