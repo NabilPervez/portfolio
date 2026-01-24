@@ -7,6 +7,7 @@ interface StaggeredMenuProps {
     position?: 'right' | 'left';
     colors?: string[];
     items?: { label: string; ariaLabel: string; link: string }[];
+    ctaItems?: { label: string; link: string; target?: string }[];
     socialItems?: { label: string; link: string }[];
     displaySocials?: boolean;
     displayItemNumbering?: boolean;
@@ -26,6 +27,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     position = 'right',
     colors = ['#B19EEF', '#5227FF'],
     items = [],
+    ctaItems = [],
     socialItems = [],
     displaySocials = true,
     displayItemNumbering = true,
@@ -104,6 +106,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         const numberEls = Array.from(panel.querySelectorAll('.sm-panel-list[data-numbering] .sm-panel-item'));
         const socialTitle = panel.querySelector('.sm-socials-title');
         const socialLinks = Array.from(panel.querySelectorAll('.sm-socials-link'));
+        const ctaLinks = Array.from(panel.querySelectorAll('.sm-cta-link'));
 
         const layerStates = layers.map(el => ({ el, start: Number(gsap.getProperty(el, 'xPercent')) }));
         const panelStart = Number(gsap.getProperty(panel, 'xPercent'));
@@ -119,6 +122,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         }
         if (socialLinks.length) {
             gsap.set(socialLinks, { y: 25, opacity: 0 });
+        }
+        if (ctaLinks.length) {
+            gsap.set(ctaLinks, { y: 25, opacity: 0 });
         }
 
         const tl = gsap.timeline({ paused: true });
@@ -164,8 +170,28 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             }
         }
 
-        if (socialTitle || socialLinks.length) {
+        if (socialTitle || socialLinks.length || ctaLinks.length) {
             const socialsStart = panelInsertTime + panelDuration * 0.4;
+
+            if (ctaLinks.length) {
+                tl.to(
+                    ctaLinks,
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.55,
+                        ease: 'power3.out',
+                        stagger: { each: 0.08, from: 'start' },
+                        onComplete: () => {
+                            gsap.set(ctaLinks, { clearProps: 'opacity' });
+                        }
+                    },
+                    socialsStart
+                );
+            }
+
+            const socialDelay = ctaLinks.length ? socialsStart + 0.2 : socialsStart;
+
             if (socialTitle) {
                 tl.to(
                     socialTitle,
@@ -174,7 +200,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                         duration: 0.5,
                         ease: 'power2.out'
                     },
-                    socialsStart
+                    socialDelay
                 );
             }
             if (socialLinks.length) {
@@ -190,7 +216,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                             gsap.set(socialLinks, { clearProps: 'opacity' });
                         }
                     },
-                    socialsStart + 0.04
+                    socialDelay + 0.04
                 );
             }
         }
@@ -242,6 +268,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 const socialTitle = panel.querySelector('.sm-socials-title');
                 const socialLinks = Array.from(panel.querySelectorAll('.sm-socials-link'));
                 if (socialTitle) gsap.set(socialTitle, { opacity: 0 });
+                const ctaLinks = Array.from(panel.querySelectorAll('.sm-cta-link'));
+                if (ctaLinks.length) gsap.set(ctaLinks, { y: 25, opacity: 0 });
                 if (socialLinks.length) gsap.set(socialLinks, { y: 25, opacity: 0 });
                 busyRef.current = false;
             }
@@ -439,6 +467,24 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                             </li>
                         )}
                     </ul>
+                    {ctaItems && ctaItems.length > 0 && (
+                        <div className="sm-ctas" aria-label="Quick links">
+                            <ul className="sm-ctas-list" role="list">
+                                {ctaItems.map((c, i) => (
+                                    <li key={c.label + i} className="sm-ctas-item">
+                                        <a
+                                            href={c.link}
+                                            target={c.target || '_self'}
+                                            rel={c.target === '_blank' ? "noopener noreferrer" : undefined}
+                                            className="sm-cta-link"
+                                        >
+                                            {c.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                     {displaySocials && socialItems && socialItems.length > 0 && (
                         <div className="sm-socials" aria-label="Social links">
                             <h3 className="sm-socials-title">Socials</h3>

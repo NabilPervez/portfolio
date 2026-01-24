@@ -127,6 +127,11 @@ export function Navbar() {
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
                                     { label: 'Products', ariaLabel: 'View our products', link: '/products' }
                                 ]}
+                                ctaItems={[
+                                    { label: 'Consulting', link: 'https://nabilpervezconsulting.com/', target: '_blank' },
+                                    { label: 'Contact', link: 'mailto:nabilpervezconsulting@gmail.com' },
+                                    { label: 'Book Me', link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-', target: '_blank' }
+                                ]}
                                 socialItems={[
                                     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/perveznabil' },
                                     { label: 'GitHub', link: 'https://github.com/NabilPervez' },
