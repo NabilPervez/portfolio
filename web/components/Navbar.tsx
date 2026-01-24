@@ -14,30 +14,8 @@ const navLinks = [
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Products", href: "/products" },
-    {
-        name: "Apps",
-        href: "#",
-        dropdown: [
-            { name: "KinKeep", href: "https://kinkeepmarketing.netlify.app/" },
-            { name: "Baraka Boost", href: "https://barakaboostmarketing.netlify.app/" },
-            { name: "Muhasaba", href: "https://muhasabah.netlify.app/" },
-            { name: "Learn The Names Of Allah", href: "https://learnthenamesofallah.netlify.app/" },
-            { name: "Ayah Echo", href: "https://ayahecho.netlify.app/" },
-            { name: "The Journey", href: "https://thejourneyhome.netlify.app/" },
-            { name: "Infinity Loader", href: "https://infinity-loader.netlify.app/" },
-            { name: "Podomo Power", href: "https://podomopower.netlify.app/" },
-            { name: "Zaman Homepage", href: "https://zamanhomepage.netlify.app/" },
-        ]
-    },
-    {
-        name: "Games",
-        href: "#",
-        dropdown: [
-            { name: "Hangman Survival", href: "https://wheel-of-fortune-game.netlify.app/" },
-            { name: "LexiLink", href: "https://lexilinkgame.netlify.app/" },
-            { name: "Math Boat", href: "https://math-boat.netlify.app/" },
-        ]
-    }
+    { name: "Apps", href: "/apps" },
+    { name: "Games", href: "/games" },
 ];
 
 export function Navbar() {
@@ -84,35 +62,6 @@ export function Navbar() {
                     <nav className="hidden md:flex items-center gap-8 lg:gap-12 pointer-events-auto">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
-
-                            if (link.dropdown) {
-                                return (
-                                    <div key={link.name} className="relative group">
-                                        <button className={cn(
-                                            "flex items-center gap-1 text-sm font-medium tracking-wide transition-all duration-300 opacity-70 hover:opacity-100 hover:text-gold",
-                                            isScrolled ? "text-black" : "text-white"
-                                        )}>
-                                            {link.name}
-                                            <ChevronDown className="w-4 h-4" />
-                                        </button>
-
-                                        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px]">
-                                            <div className="bg-white/95 backdrop-blur-sm border border-gray-100 rounded-xl shadow-xl p-2 flex flex-col gap-1">
-                                                {link.dropdown.map((subItem) => (
-                                                    <Link
-                                                        key={subItem.name}
-                                                        href={subItem.href}
-                                                        target={subItem.href.startsWith('http') ? "_blank" : "_self"}
-                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold rounded-lg transition-colors whitespace-nowrap text-left"
-                                                    >
-                                                        {subItem.name}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            }
 
                             return (
                                 <Link
@@ -179,20 +128,8 @@ export function Navbar() {
                                     { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
                                     { label: 'Products', ariaLabel: 'View our products', link: '/products' },
-                                    { label: 'Apps', ariaLabel: 'Apps section', link: '#' },
-                                    { label: 'KinKeep', ariaLabel: 'KinKeep App', link: 'https://kinkeepmarketing.netlify.app/' },
-                                    { label: 'Baraka Boost', ariaLabel: 'Baraka Boost App', link: 'https://barakaboostmarketing.netlify.app/' },
-                                    { label: 'Muhasaba', ariaLabel: 'Muhasaba App', link: 'https://muhasabah.netlify.app/' },
-                                    { label: 'Names Of Allah', ariaLabel: 'Learn Names Of Allah', link: 'https://learnthenamesofallah.netlify.app/' },
-                                    { label: 'Ayah Echo', ariaLabel: 'Ayah Echo App', link: 'https://ayahecho.netlify.app/' },
-                                    { label: 'The Journey', ariaLabel: 'The Journey App', link: 'https://thejourneyhome.netlify.app/' },
-                                    { label: 'Infinity Loader', ariaLabel: 'Infinity Loader', link: 'https://infinity-loader.netlify.app/' },
-                                    { label: 'Podomo Power', ariaLabel: 'Podomo Power', link: 'https://podomopower.netlify.app/' },
-                                    { label: 'Zaman HP', ariaLabel: 'Zaman Homepage', link: 'https://zamanhomepage.netlify.app/' },
-                                    { label: 'Games', ariaLabel: 'Games section', link: '#' },
-                                    { label: 'Hangman', ariaLabel: 'Hangman Survival', link: 'https://wheel-of-fortune-game.netlify.app/' },
-                                    { label: 'LexiLink', ariaLabel: 'LexiLink Game', link: 'https://lexilinkgame.netlify.app/' },
-                                    { label: 'Math Boat', ariaLabel: 'Math Boat Game', link: 'https://math-boat.netlify.app/' }
+                                    { label: 'Apps', ariaLabel: 'Apps section', link: '/apps' },
+                                    { label: 'Games', ariaLabel: 'Games section', link: '/games' }
                                 ]}
                                 socialItems={[
                                     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/perveznabil' },
