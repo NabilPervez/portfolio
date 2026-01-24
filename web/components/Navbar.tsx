@@ -14,8 +14,6 @@ const navLinks = [
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Products", href: "/products" },
-    { name: "Apps", href: "/apps" },
-    { name: "Games", href: "/games" },
 ];
 
 export function Navbar() {
@@ -127,9 +125,7 @@ export function Navbar() {
                                     { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
                                     { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
-                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' },
-                                    { label: 'Apps', ariaLabel: 'Apps section', link: '/apps' },
-                                    { label: 'Games', ariaLabel: 'Games section', link: '/games' }
+                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' }
                                 ]}
                                 socialItems={[
                                     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/perveznabil' },

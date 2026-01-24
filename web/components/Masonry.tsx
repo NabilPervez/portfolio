@@ -60,7 +60,7 @@ const preloadImages = async (urls: string[]) => {
 
 interface MasonryItem {
     id: string | number;
-    img: string;
+    img?: string;
     name: string;
     url?: string;
     height?: number;
@@ -135,7 +135,7 @@ const Masonry = ({
     };
 
     useEffect(() => {
-        const urls = items.map(i => i.img).filter(Boolean);
+        const urls = items.map(i => i.img).filter((url): url is string => !!url);
         preloadImages(urls).then(() => setImagesReady(true));
     }, [items]);
 
@@ -159,7 +159,7 @@ const Masonry = ({
 
             colHeights[col] += height;
 
-            return { ...child, x, y, w: columnWidth, h: height };
+            return { ...child, x, y, w: columnWidth, h: height } as MasonryItem & { x: number, y: number, w: number, h: number };
         });
 
         setContainerHeight(Math.max(...colHeights));

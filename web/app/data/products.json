@@ -88,5 +88,35 @@
         "iconName": "Calendar",
         "bgColor": "#0D9488",
         "height": 310
+    },
+    {
+        "id": "hangman-survival",
+        "title": "Hangman Survival",
+        "name": "Hangman Survival",
+        "description": "Guess the word to survive. An interactive twist on the classic Hangman game.",
+        "url": "https://wheel-of-fortune-game.netlify.app/",
+        "iconName": "HelpCircle",
+        "bgColor": "#0891b2",
+        "height": 300
+    },
+    {
+        "id": "lexilink",
+        "title": "LexiLink",
+        "name": "LexiLink",
+        "description": "Connect words and meanings. A word puzzle game to test your vocabulary play.",
+        "url": "https://lexilinkgame.netlify.app/",
+        "iconName": "LinkIcon",
+        "bgColor": "#4f46e5",
+        "height": 260
+    },
+    {
+        "id": "math-boat",
+        "title": "Math Boat",
+        "name": "Math Boat",
+        "description": "Solve math problems to keep your boat afloat. A fun educational game for quick math skills.",
+        "url": "https://math-boat.netlify.app/",
+        "iconName": "Calculator",
+        "bgColor": "#be123c",
+        "height": 280
     }
 ]
