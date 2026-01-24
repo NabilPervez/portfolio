@@ -1,66 +1,5 @@
 [
   {
-    "id": "fancurve",
-    "title": "Fancurve",
-    "slug": "fancurve",
-    "tags": [
-      "Web3",
-      "Fashion",
-      "Platform"
-    ],
-    "content": {
-      "scope": "<ul><li>Fancurve is a digital fashion platform for the fan economy. I helped shape the product strategy and launch.</li></ul>",
-      "challenge": "Bringing traditional sports fans into the Web3 ecosystem requires removing friction and demonstrating tangible value beyond speculation.",
-      "solution": "We focused on 'wearable' utility and high-fidelity 3D assets that fans could display and use in digital spaces.",
-      "outcome": "Successfully launched partnerships with major European football clubs, introducing thousands of fans to digital collectibles."
-    },
-    "images": [
-      "/images/portfolio/fancurve/a98b0b148098559.633de8a434d5d.jpg",
-      "/images/portfolio/fancurve/483601148098559.62cf238aa6c68.png",
-      "/images/portfolio/fancurve/ed5391148098559.633dcf24d9015.jpg",
-      "/images/portfolio/fancurve/71b570148098559.62cf241f19315.png",
-      "/images/portfolio/fancurve/3a3179148098559.62cf241f16c76.png",
-      "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
-      "/images/portfolio/fancurve/94ba46148098559.62cf241f1aae8.png",
-      "/images/portfolio/fancurve/2ee648148098559.62cf241f17b06.png",
-      "/images/portfolio/fancurve/85c476148098559.62cf241f18ad8.png",
-      "/images/portfolio/fancurve/a23fb3148098559.62cf241f173c8.png",
-      "/images/portfolio/fancurve/1d27b2148098559.633c6618f0a00.jpg",
-      "/images/portfolio/fancurve/b7ff50148098559.633c4deb02e14.jpg"
-    ],
-    "image": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
-    "heroImage": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
-    "videoUrl": "https://player.vimeo.com/video/756886607"
-  },
-  {
-    "id": "alloy",
-    "title": "ALLOY",
-    "slug": "alloy",
-    "tags": [
-      "Branding",
-      "Identity",
-      "Design"
-    ],
-    "content": {
-      "scope": "<ul><li>ALLOY needed a brand identity that reflected its strength and versatility.</li></ul>",
-      "challenge": "Standing out in the agency landscape requires a bold visual language that communicates competence and creativity.",
-      "solution": "We developed a system based on elemental forms and metallic textures to convey solidity and refinement.",
-      "outcome": "A distinct brand identity that scales across digital and physical touchpoints."
-    },
-    "images": [
-      "/images/portfolio/alloy/bd9572145873245.62b2abf55f5ad.gif",
-      "/images/portfolio/alloy/0c5d09145873245.62ceddb218cbb.jpg",
-      "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif",
-      "/images/portfolio/alloy/924b1e145873245.62a6aa34cfe3d.jpg",
-      "/images/portfolio/alloy/496a51145873245.62a6aa34cef9a.jpg",
-      "/images/portfolio/alloy/38f94e145873245.62a6aa34cf74a.jpg",
-      "/images/portfolio/alloy/8b2ea6145873245.62a6aa34ce7a4.jpg",
-      "/images/portfolio/alloy/a8c826145873245.62a6aa34ce23f.jpg"
-    ],
-    "image": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif",
-    "heroImage": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif"
-  },
-  {
     "id": "lego_27",
     "title": "LEGO",
     "slug": "lego_27",
@@ -191,40 +130,6 @@
     ],
     "image": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
     "heroImage": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif"
-  },
-  {
-    "id": "fancurve",
-    "title": "Houston Outlaws",
-    "slug": "houston-outlaws",
-    "tags": [
-      "Strategy",
-      "Design",
-      "Development"
-    ],
-    "content": {
-      "scope": "<ul><li>For the inaugural season of the Overwatch League, I was tasked with local marketing for the Houston Outlaws. My mission was to build a community across Houston, Austin, and San Antonio. This involved event marketing, merchandise, social strategy, and partnership development.</li></ul>",
-      "challenge": "We needed to turn a brand new digital team into a tangible local phenomenon. The goal was to connect disparate Overwatch fans across a massive geographic region (South Texas) and get them to physically show up and engage with the team.",
-      "solution": "We launched the award-winning \"#BandTogether\" campaign. This included organizing watch parties, block parties, pop-up shops, and the world's first esports player tour. We created region-specific, collectible merchandise to incentivize fans to travel to events and \"complete the set.\"",
-      "outcome": "The campaign was a massive success, achieving multiple \"firsts\" in the industry (first player tour, first pop-up shop). We won the Tempest Award for \"Best Social Experience\" and were finalists for \"Esports Team of the Year.\" Most importantly, the Houston Outlaws became the most tweeted-about team in the league during Season 1, proving that local engagement drives global conversation."
-    },
-    "images": [
-      "/images/portfolio/outlaws/outlaws-IMG_20180518_203602-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-austin-poster-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_merchandise-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_promotional.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_promotional_items-scaled.jpg",
-      "/images/portfolio/outlaws/outlaws-desktop_outlaws_watchparties.jpg",
-      "/images/portfolio/outlaws/outlaws-hero-site-coming-soon.png",
-      "/images/portfolio/outlaws/outlaws-houston-poster-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-pins-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-roman-purtov-Z5Phu-u_sac-unsplash-1.jpg",
-      "/images/portfolio/outlaws/outlaws-san-antonio-poster-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-stickers-detail.jpg",
-      "/images/portfolio/outlaws/outlaws-wristbands-detail.jpg"
-    ],
-    "image": "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg",
-    "heroImage": "/images/portfolio/outlaws/outlaws-MVIMG_20180526_172827-scaled.jpg"
   },
   {
     "id": "optic-gaming",
@@ -1083,6 +988,67 @@
     ],
     "image": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Desktop.png",
     "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Desktop.png"
+  },
+  {
+    "id": "fancurve",
+    "title": "Fancurve",
+    "slug": "fancurve",
+    "tags": [
+      "Web3",
+      "Fashion",
+      "Platform"
+    ],
+    "content": {
+      "scope": "<ul><li><strong>Overview:</strong> Fancurve is a digital platform focused on photo-realistic 3D jerseys and digital wearable collectibles. The platform allows users to collect, wear, and trade branded digital sports gear.</li><li><strong>Key Features:</strong> 3D Rendering Engine, Marketplace, Metaverse Utility.</li></ul>",
+      "challenge": "Headline: \"Photo-realistic 3D Jerseys\"\n\nIntroducing a new level of fidelity for digital fashion. Our custom 3D rendering engine builds every stitch to create the most premium digital wearables. Bringing traditional sports fans into the Web3 ecosystem requires removing friction and demonstrating tangible value beyond speculation.",
+      "solution": "We designed the \"Drop\" shop interface and \"Locker\" profile to facilitate collecting and trading. The interface utilizes a dark mode aesthetic (black/dark grey backgrounds) to make the vibrant colors of the 3D jerseys pop. The typography is clean and modern, prioritizing readability.\n\nOnboarding: We created a seamless flow to explain the concept of digital wearables, their utility in the Metaverse, and the ability to buy, sell, and trade in the marketplace.",
+      "outcome": "Technical & Trust Signals: Each item is verified on the Blockchain and minted as a unique NFT, ensuring authenticity and ownership. The user journey flows from high-impact visual discovery to personal ownership, underpinned by clear calls to action and value statements regarding digital ownership and metaverse utility."
+    },
+    "images": [
+      "/images/portfolio/fancurve/a98b0b148098559.633de8a434d5d.jpg",
+      "/images/portfolio/fancurve/483601148098559.62cf238aa6c68.png",
+      "/images/portfolio/fancurve/ed5391148098559.633dcf24d9015.jpg",
+      "/images/portfolio/fancurve/71b570148098559.62cf241f19315.png",
+      "/images/portfolio/fancurve/3a3179148098559.62cf241f16c76.png",
+      "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
+      "/images/portfolio/fancurve/94ba46148098559.62cf241f1aae8.png",
+      "/images/portfolio/fancurve/2ee648148098559.62cf241f17b06.png",
+      "/images/portfolio/fancurve/85c476148098559.62cf241f18ad8.png",
+      "/images/portfolio/fancurve/a23fb3148098559.62cf241f173c8.png",
+      "/images/portfolio/fancurve/1d27b2148098559.633c6618f0a00.jpg",
+      "/images/portfolio/fancurve/b7ff50148098559.633c4deb02e14.jpg"
+    ],
+    "image": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
+    "heroImage": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
+    "videoUrl": "https://player.vimeo.com/video/756886607"
+  },
+  {
+    "id": "alloy",
+    "title": "ALLOY",
+    "slug": "alloy",
+    "tags": [
+      "Branding",
+      "Identity",
+      "Design"
+    ],
+    "content": {
+      "scope": "<ul><li><strong>Brand Overview:</strong> Name: Alloy. Tagline: \"All of you.\"</li><li><strong>Concept:</strong> A unified digital identity platform designed to aggregate and showcase a user's multifaceted online presence in a single, cohesive interface.</li><li><strong>Deliverables:</strong> Brand Identity, UI/UX Design, Interaction Design, Motion Principles.</li></ul>",
+      "challenge": "Context: We live in an era of fragmentation. Our digital identities are scattered across dozens of platforms\u2014Instagram for photos, Twitter for thoughts, LinkedIn for career, Spotify for taste.\n\nThe Problem: There is no single place that captures the full spectrum of a person. Current \"link-in-bio\" tools are utilitarian and static, lacking the emotional resonance and dynamic nature of a true social profile. Users struggle to present \"all of them\" without sending followers to five different tabs.",
+      "solution": "Unified Stream: Alloy connects to your existing platforms and aggregates your content into a beautiful, single-scroll feed. It pulls your latest tweets, photos, and song loops into one timeline.\n\nDynamic Identity: Instead of a static list of links, Alloy creates a living, breathing profile that updates in real-time as you post elsewhere. It is the \"alloy\" of your digital self\u2014a mixture of elements creating a stronger whole.\n\nDesign System: The logo is constructed using geometric precision, symbolizing the merging of different paths or streams into a central loop. The palette is high-contrast and digital-native, designed to make content pop while maintaining a premium feel.",
+      "outcome": "Interface Design: The interface uses a \"Glassmorphism\" inspired aesthetic with deep dark modes and subtle transparencies. Content cards float on top of the black background, giving the feed a sense of depth.\n\nInteraction: Motion principles are fluid, snappy, and continuous. As the user scrolls, the header elements smoothly collapse, and content cards enter the viewport with a subtle upward fade, creating a smooth, cascading effect."
+    },
+    "images": [
+      "/images/portfolio/alloy/bd9572145873245.62b2abf55f5ad.gif",
+      "/images/portfolio/alloy/0c5d09145873245.62ceddb218cbb.jpg",
+      "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif",
+      "/images/portfolio/alloy/924b1e145873245.62a6aa34cfe3d.jpg",
+      "/images/portfolio/alloy/496a51145873245.62a6aa34cef9a.jpg",
+      "/images/portfolio/alloy/38f94e145873245.62a6aa34cf74a.jpg",
+      "/images/portfolio/alloy/8b2ea6145873245.62a6aa34ce7a4.jpg",
+      "/images/portfolio/alloy/a8c826145873245.62a6aa34ce23f.jpg"
+    ],
+    "image": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif",
+    "heroImage": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif"
   },
   {
     "id": "tourney-locator",
