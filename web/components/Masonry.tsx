@@ -267,32 +267,64 @@ const Masonry = ({
                     <div
                         key={item.id}
                         data-key={item.id}
-                        className="item-wrapper"
+                        className="item-wrapper group"
                         onClick={() => item.url && window.open(item.url, '_blank', 'noopener')}
                         onMouseEnter={e => handleMouseEnter(e, item)}
                         onMouseLeave={e => handleMouseLeave(e, item)}
                     >
-                        <div className="item-img" style={{ backgroundImage: `url(${item.img})` }}>
-                            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-[10px] flex flex-col justify-end h-full">
-                                <span className="font-bold text-lg">{item.name}</span>
+                        {item.img ? (
+                            <div className="item-img" style={{ backgroundImage: `url(${item.img})` }}>
+                                <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-[10px] flex flex-col justify-end h-full">
+                                    <span className="font-bold text-lg">{item.name || item.title}</span>
+                                    {item.description && <p className="text-xs text-gray-200 mt-1 line-clamp-2">{item.description}</p>}
+                                </div>
+                                {colorShiftOnHover && (
+                                    <div
+                                        className="color-overlay"
+                                        style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            width: '100%',
+                                            height: '100%',
+                                            background: 'linear-gradient(45deg, rgba(255,0,150,0.5), rgba(0,150,255,0.5))',
+                                            opacity: 0,
+                                            pointerEvents: 'none',
+                                            borderRadius: '8px'
+                                        }}
+                                    />
+                                )}
                             </div>
-                            {colorShiftOnHover && (
-                                <div
-                                    className="color-overlay"
-                                    style={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        width: '100%',
-                                        height: '100%',
-                                        background: 'linear-gradient(45deg, rgba(255,0,150,0.5), rgba(0,150,255,0.5))',
-                                        opacity: 0,
-                                        pointerEvents: 'none',
-                                        borderRadius: '8px'
-                                    }}
-                                />
-                            )}
-                        </div>
+                        ) : (
+                            <div
+                                className="item-card w-full h-full rounded-[10px] p-6 flex flex-col justify-between transition-all duration-300 relative overflow-hidden"
+                                style={{ backgroundColor: item.bgColor || '#1a1a1a' }}
+                            >
+                                <div className="z-10">
+                                    <div className="mb-4 text-white/90">
+                                        {item.icon}
+                                    </div>
+                                    <h3 className="font-bold text-xl text-white mb-2">{item.name || item.title}</h3>
+                                    {item.description && (
+                                        <p className="text-sm text-white/70 line-clamp-3 leading-relaxed">
+                                            {item.description}
+                                        </p>
+                                    )}
+                                </div>
+
+                                {/* Hover Effect Overlay */}
+                                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
+                                {/* External Link Icon on Hover */}
+                                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 );
             })}

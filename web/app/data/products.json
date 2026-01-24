@@ -2,64 +2,91 @@
     {
         "id": "kinkeep",
         "title": "KinKeep",
+        "name": "KinKeep",
         "description": "Personal Relationship Management. Organize your social life and keep in touch with those who matter.",
         "url": "https://kinkeepmarketing.netlify.app/",
-        "image": "/images/products/kinkeep.png"
+        "iconName": "Heart",
+        "bgColor": "#E11D48",
+        "height": 300
     },
     {
         "id": "barakaboost",
         "title": "Baraka Boost",
+        "name": "Baraka Boost",
         "description": "Build Your Jannah. A productivity and spiritual growth platform designed to boost your daily blessings.",
         "url": "https://barakaboostmarketing.netlify.app/",
-        "image": "/images/products/barakaboost.png"
+        "iconName": "Zap",
+        "bgColor": "#CA8A04",
+        "height": 350
     },
     {
         "id": "muhasabah",
         "title": "Muhasabah",
+        "name": "Muhasabah",
         "description": "Digital Islamic Bullet Journal. Track your spiritual habits, daily prayers, and reflections in a beautiful interface.",
         "url": "https://muhasabah.netlify.app/",
-        "image": "/images/products/muhasabah.png"
+        "iconName": "BookOpen",
+        "bgColor": "#16A34A",
+        "height": 280
     },
     {
         "id": "learnthenamesofallah",
         "title": "Asmaul Husna",
+        "name": "Asmaul Husna",
         "description": "Learn the 99 Names of Allah. An interactive educational tool to understand and memorize the divine names.",
         "url": "https://learnthenamesofallah.netlify.app/",
-        "image": "/images/products/asmaulhusna.png"
+        "iconName": "Star",
+        "bgColor": "#2563EB",
+        "height": 320
     },
     {
         "id": "ayahecho",
         "title": "Ayah Echo",
+        "name": "Ayah Echo",
         "description": "Quranic Reflection & Memorization. Deepen your connection with the Quran through repeated listening and reflection.",
         "url": "https://ayahecho.netlify.app/",
-        "image": "/images/products/ayahecho.png"
+        "iconName": "Activity",
+        "bgColor": "#7C3AED",
+        "height": 260
     },
     {
         "id": "thejourneyhome",
         "title": "The Journey Home",
+        "name": "The Journey Home",
         "description": "You Are Returning. A digital experience exploring the spiritual journey of life and the return to the Divine.",
         "url": "https://thejourneyhome.netlify.app/",
-        "image": "/images/products/journeyhome.png"
+        "iconName": "Map",
+        "bgColor": "#EA580C",
+        "height": 340
     },
     {
         "id": "infinityloader",
         "title": "Infinity Loader",
+        "name": "Infinity Loader",
         "description": "A sleek, infinite loading animation component providing a captivating visual waiting experience.",
         "url": "https://infinity-loader.netlify.app/",
-        "image": "/images/products/infinity.png"
+        "iconName": "Loader",
+        "bgColor": "#475569",
+        "height": 240
     },
     {
         "id": "podomopower",
         "title": "Podomo Power",
+        "name": "Podomo Power",
         "description": "Islamic Focus Timer. Combine the Pomodoro technique with spiritual reminders to maximize productivity.",
         "url": "https://podomopower.netlify.app/",
-        "image": "/images/products/podomo.png"
+        "iconName": "Clock",
+        "bgColor": "#DC2626",
+        "height": 290
     },
     {
         "id": "zaman",
         "title": "Zaman",
+        "name": "Zaman",
         "description": "Islamic Daily Companion. Your all-in-one dashboard for prayer times, daily wisdom, and spiritual tracking.",
         "url": "https://zamanhomepage.netlify.app/",
-        "image": "/images/products/zaman.png"
+        "iconName": "Calendar",
+        "bgColor": "#0D9488",
+        "height": 310
     }
 ]
