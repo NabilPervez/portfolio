@@ -16,7 +16,8 @@ import {
     Calendar,
     HelpCircle,
     Link as LinkIcon,
-    Calculator
+    Calculator,
+    Video
 } from "lucide-react";
 import React from "react";
 
@@ -33,7 +34,8 @@ const IconMap: { [key: string]: React.ElementType } = {
     "Calendar": Calendar,
     "HelpCircle": HelpCircle,
     "LinkIcon": LinkIcon,
-    "Calculator": Calculator
+    "Calculator": Calculator,
+    "Video": Video
 };
 
 export default function ProductsPage() {

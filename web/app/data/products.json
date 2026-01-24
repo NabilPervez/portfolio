@@ -20,6 +20,16 @@
         "height": 350
     },
     {
+        "id": "onxycall",
+        "title": "OnxyCall",
+        "name": "OnxyCall",
+        "description": "Private Video Calling. secure, encrypted, and simple peer-to-peer video communication.",
+        "url": "https://onxychat.netlify.app/",
+        "iconName": "Video",
+        "bgColor": "#111827",
+        "height": 280
+    },
+    {
         "id": "muhasabah",
         "title": "Muhasabah",
         "name": "Muhasabah",
