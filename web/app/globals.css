@@ -23,6 +23,18 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  /* Dynamic viewport height for mobile */
+  /* Fallback for browsers that don't support dvh */
+  min-height: -webkit-fill-available;
+}
+
+/* Safe area utilities */
+:root {
+  --sat: env(safe-area-inset-top);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  --sar: env(safe-area-inset-right);
 }
 
 /* Custom Scrollbar for that minimal feel */

@@ -107,7 +107,7 @@ Biggest Challenge: ${formData.challenge}
     };
 
     return (
-        <main className="bg-black min-h-screen text-white selection:bg-gold selection:text-black">
+        <main className="bg-black min-h-[100dvh] text-white selection:bg-gold selection:text-black pb-[env(safe-area-inset-bottom)]">
             <Navbar />
             <NavbarSpacer />
 
