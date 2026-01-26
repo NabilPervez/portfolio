@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { Navbar } from "@/components/Navbar";
 import NavbarSpacer from "@/components/NavbarSpacer";
 import StarBorder from "@/components/StarBorder";
-import { Download, Mic, Monitor, User, Users, Zap, Video, Gamepad2, Briefcase, ChevronRight } from "lucide-react";
+import { Download, Mic, Monitor, User, Users, Zap, Video, Gamepad2, Briefcase, ChevronRight, Smartphone, FileText } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -49,7 +49,7 @@ Biggest Challenge: ${formData.challenge}
                                 Scaling Creativity through <span className="text-gold">Chaos</span>.
                             </h1>
                             <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed mb-8">
-                                The intersection of Agile Systems, Esports Culture, and Enterprise Marketing.
+                                The intersection of Agile Systems, Entertainment Culture, and Enterprise Marketing.
                             </p>
                             <p className="text-gray-400 max-w-lg mb-8">
                                 Co-Founder & Tech-Marketer behind campaigns for Riot Games, LEGO, and Coca-Cola. Helping teams bridge the gap between creative vision and technical execution.
@@ -71,7 +71,7 @@ Biggest Challenge: ${formData.challenge}
                         </div>
                         <div className="relative">
                             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative group">
-                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-50 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                                <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-80 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
                                 <div className="relative z-10 text-center p-8 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
                                     <Mic className="w-12 h-12 text-gold mx-auto mb-4" />
                                     <span className="text-sm font-mono tracking-widest uppercase text-white/80 block">Speaker / Host</span>
@@ -84,7 +84,7 @@ Biggest Challenge: ${formData.challenge}
                     <div className="border-t border-b border-white/10 py-8">
                         <p className="text-center text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Trusted By Teams At</p>
                         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                            {["Coca-Cola", "LEGO", "Houston Outlaws", "Riot Games", "T-Mobile", "Activision Blizzard"].map(brand => (
+                            {["Coca-Cola", "LEGO", "Paramount Pictures", "RedBull", "The Kraft Group", "Riot Games", "Activision", "Blizzard Entertainment"].map(brand => (
                                 <span key={brand} className="text-xl md:text-2xl font-display font-bold text-white/80">{brand}</span>
                             ))}
                         </div>
@@ -97,10 +97,7 @@ Biggest Challenge: ${formData.challenge}
                         <div>
                             <h2 className="text-3xl font-display font-bold mb-4">The Story</h2>
                             <div className="w-12 h-1 bg-gold mb-8"></div>
-                            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                                <strong className="text-white block mb-2">Short Bio</strong>
-                                Nabil Pervez is a dual-threat creative executive and technologist who specializes in operationalizing creativity. As the Co-Founder of AOE Creative, Nabil scaled a multi-million dollar portfolio, delivering high-octane campaigns for global giants. Grounded in IT and Agile, he teaches organizations how to apply rigorous frameworks to fluid creative processes.
-                            </p>
+
                         </div>
                         <div>
                             <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -109,9 +106,7 @@ Biggest Challenge: ${formData.challenge}
                             <p className="text-lg text-gray-300 leading-relaxed mb-6">
                                 Pivoting to the fast-paced world of digital marketing, Nabil Co-Founded AOE Creative, where he served as Lead Project Manager and CTO. There, he didn&apos;t just run campaigns; he built the engines that ran them. He managed a $5M+ portfolio and led cross-functional teams to sell out clothing lines for Fortnite creators and drive 45 million views for Activision Blizzard.
                             </p>
-                            <p className="text-lg text-gray-300 leading-relaxed">
-                                Today, Nabil sits at the intersection of Content Operations and Enterprise Technology. Whether he is optimizing Adobe Experience Manager workflows for T-Mobile or streamlining IT pipelines for financial services, Nabil’s message is clear: <span className="text-gold">The best creative work happens when you build the right systems to support it.</span>
-                            </p>
+
                         </div>
                     </div>
                 </FadeIn>
@@ -178,6 +173,63 @@ Biggest Challenge: ${formData.challenge}
                                 <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Bridging the gap between IT and Marketing.</li>
                                 <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Using automation to reduce &quot;grunt work&quot; by 20%.</li>
                                 <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Building a &quot;MarTech&quot; stack that scales.</li>
+                            </ul>
+                        </div>
+
+                        {/* Topic 4 */}
+                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
+                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
+                                <Smartphone className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4">Branding For A Digital Audience</h3>
+                            <div className="mb-6">
+                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Branding</span>
+                            </div>
+                            <p className="text-gray-400 mb-6 text-sm">
+                                Digital-first branding isn&apos;t just about a logo; it&apos;s about how you show up in the feed.
+                            </p>
+                            <ul className="space-y-3 text-sm text-gray-300">
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Visual Identity Systems for Social Media.</li>
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Voice & Tone validation.</li>
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Case Study: Paramount Pictures.</li>
+                            </ul>
+                        </div>
+
+                        {/* Topic 5 */}
+                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
+                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
+                                <FileText className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4">How To Build An Engaging Creative Brief</h3>
+                            <div className="mb-6">
+                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Process</span>
+                            </div>
+                            <p className="text-gray-400 mb-6 text-sm">
+                                The brief is the most important creative asset. Learn how to write one that inspires rather than restricts.
+                            </p>
+                            <ul className="space-y-3 text-sm text-gray-300">
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>The 4 essential components of every brief.</li>
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Eliminating ambiguity.</li>
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Briefing for Gen Z campaigns.</li>
+                            </ul>
+                        </div>
+
+                        {/* Topic 6 */}
+                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
+                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
+                                <Users className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4">The Importance Of Understanding Your Audience</h3>
+                            <div className="mb-6">
+                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Insights</span>
+                            </div>
+                            <p className="text-gray-400 mb-6 text-sm">
+                                Data doesn&apos;t tell the whole story. You need to understand the subcultures and communities you are speaking to.
+                            </p>
+                            <ul className="space-y-3 text-sm text-gray-300">
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Moving beyond demographics.</li>
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Community listening strategies.</li>
+                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Case Study: Houston Outlaws.</li>
                             </ul>
                         </div>
                     </div>
