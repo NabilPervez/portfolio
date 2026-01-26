@@ -60,14 +60,15 @@ Biggest Challenge: ${formData.challenge}
                                 >
                                     Book Nabil
                                 </Link>
-                                <Link
-                                    href="#media-kit"
+                                <a
+                                    href="/speaker-kit.zip"
                                     className="border border-white/20 px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
                                 >
                                     Download Kit
-                                </Link>
+                                </a>
                             </div>
                         </div>
+
                         <div className="relative">
                             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative group">
                                 <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-100 transition-all duration-700"></div>
@@ -101,7 +102,12 @@ Biggest Challenge: ${formData.challenge}
                             <p className="text-lg text-gray-300 leading-relaxed mb-6">
                                 Pivoting to the fast-paced world of digital marketing, Nabil Co-Founded AOE Creative, where he served as Lead Project Manager and CTO. There, he didn&apos;t just run campaigns; he built the engines that ran them. He managed a $5M+ portfolio and led cross-functional teams to sell out clothing lines for Fortnite creators and drive 45 million views for Activision Blizzard.
                             </p>
-
+                            <p className="text-lg text-gray-300 leading-relaxed">
+                                Over the years, Nabil has moderated, spoken, shoutcasted, and hosted hundreds of events. The largest crowd Nabil has spoken in front of was 70,000 people.
+                            </p>
+                            <p className="text-lg text-gray-300 leading-relaxed mt-6">
+                                His unique brand of optimism, charisma, and honesty has been freshing in world of buzzwords.
+                            </p>
                         </div>
                     </div>
                 </FadeIn>
@@ -302,9 +308,12 @@ Biggest Challenge: ${formData.challenge}
                             </p>
                         </div>
                         <div className="flex gap-4">
-                            <button className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                            <a
+                                href="/speaker-kit.zip"
+                                className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors"
+                            >
                                 <Download className="w-4 h-4" /> Download Assets
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </FadeIn>
@@ -316,74 +325,37 @@ Biggest Challenge: ${formData.challenge}
                         <p className="text-gray-400">Tell me about your event and let&apos;s see if we&apos;re a match.</p>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="mb-8">
-                            <p className="text-xl text-white font-medium mb-6">Send me an email telling me more about your event:</p>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-300">Event Date</label>
-                                <input
-                                    type="text"
-                                    name="eventDate"
-                                    required
-                                    value={formData.eventDate}
-                                    onChange={handleChange}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all"
-                                />
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
+                        <p className="text-xl text-white font-medium mb-6">Send me an email telling me more about your event:</p>
+                        <div className="space-y-4 mb-8 text-gray-300">
+                            <div className="flex items-center gap-3">
+                                <div className="w-1.5 h-1.5 bg-gold rounded-full"></div>
+                                <span>Event Date</span>
                             </div>
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-300">Location</label>
-                                <input
-                                    type="text"
-                                    name="location"
-                                    required
-                                    value={formData.location}
-                                    onChange={handleChange}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all"
-                                />
+                            <div className="flex items-center gap-3">
+                                <div className="w-1.5 h-1.5 bg-gold rounded-full"></div>
+                                <span>Location</span>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="w-1.5 h-1.5 bg-gold rounded-full"></div>
+                                <span>Est. Audience Size</span>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="w-1.5 h-1.5 bg-gold rounded-full"></div>
+                                <span>What is the biggest challenge your audience is facing?</span>
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 gap-6">
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-300">Est. Audience Size</label>
-                                <select
-                                    name="audienceSize"
-                                    value={formData.audienceSize}
-                                    onChange={handleChange}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all appearance-none"
-                                >
-                                    <option value="" className="bg-gray-900">Select size...</option>
-                                    <option value="Under 50" className="bg-gray-900">Under 50</option>
-                                    <option value="50 - 200" className="bg-gray-900">50 - 200</option>
-                                    <option value="200 - 500" className="bg-gray-900">200 - 500</option>
-                                    <option value="500+" className="bg-gray-900">500+</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div className="space-y-2">
-                            <label className="text-sm font-medium text-gray-300">What is the biggest challenge your audience is facing?</label>
-                            <textarea
-                                name="challenge"
-                                rows={4}
-                                required
-                                placeholder="They are struggling with..."
-                                value={formData.challenge}
-                                onChange={handleChange}
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all resize-none"
-                            ></textarea>
-                        </div>
-
-                        <div className="pt-4">
-                            <StarBorder as="button" type="submit" className="w-full flex justify-center py-4 text-cyan-400 font-bold tracking-widest uppercase">
-                                Send Inquiry
-                            </StarBorder>
-                        </div>
-                    </form>
+                        <StarBorder
+                            as="a"
+                            href={`mailto:nabilpervezconsulting@gmail.com?subject=Speaker Inquiry&body=${encodeURIComponent("Event Date:\nLocation:\nEst. Audience Size:\nWhat is the biggest challenge your audience is facing?:\n")}`}
+                            className="w-full flex justify-center py-4 text-cyan-400 font-bold tracking-widest uppercase cursor-pointer"
+                        >
+                            Send Inquiry
+                        </StarBorder>
+                    </div>
                 </FadeIn>
-            </div>
-        </main>
+            </div >
+        </main >
     );
 }
