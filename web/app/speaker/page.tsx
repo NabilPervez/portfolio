@@ -9,6 +9,78 @@ import Link from "next/link";
 import { useState } from "react";
 
 import GradientText from "@/components/GradientText";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
+
+const KEYNOTE_TOPICS = [
+    {
+        icon: <Zap className="w-6 h-6" />,
+        title: "The Agile Creative",
+        tag: "Strategy",
+        desc: "Creatives hate \"process,\" but they need it to scale. How to use Scrum/Agile (typically for software) to manage design and marketing.",
+        points: ["Run a \"Creative Sprint\" without killing inspiration.", "The \"Definition of Done\" for ambiguous assets.", "Case Study: Shipping 40 assets for LEGO in record time."]
+    },
+    {
+        icon: <Gamepad2 className="w-6 h-6" />,
+        title: "Decoding the Gamer Generation",
+        tag: "Culture",
+        desc: "Gaming isn't just a hobby; it's the dominant culture of the next generation. Lessons from the frontlines of Esports.",
+        points: ["\"Authenticity\" is the only currency that matters.", "Community as a Moat: Lessons from SypherPK.", "How to speak \"Internet\" without sounding like a bot."]
+    },
+    {
+        icon: <Monitor className="w-6 h-6" />,
+        title: "The CTO in the Marketing Department",
+        tag: "Tech Ops",
+        desc: "Marketing is now a technical discipline. If your marketing leader doesn't understand the tech stack, you're losing money.",
+        points: ["Bridging the gap between IT and Marketing.", "Using automation to reduce \"grunt work\" by 20%.", "Building a \"MarTech\" stack that scales."]
+    },
+    {
+        icon: <Smartphone className="w-6 h-6" />,
+        title: "Branding For A Digital Audience",
+        tag: "Branding",
+        desc: "Digital-first branding isn't just about a logo; it's about how you show up in the feed.",
+        points: ["Visual Identity Systems for Social Media.", "Voice & Tone validation.", "Case Study: Paramount Pictures."]
+    },
+    {
+        icon: <FileText className="w-6 h-6" />,
+        title: "How To Build An Engaging Creative Brief",
+        tag: "Process",
+        desc: "The brief is the most important creative asset. Learn how to write one that inspires rather than restricts.",
+        points: ["The 4 essential components of every brief.", "Eliminating ambiguity.", "Briefing for Gen Z campaigns."]
+    },
+    {
+        icon: <Users className="w-6 h-6" />,
+        title: "The Importance Of Understanding Your Audience",
+        tag: "Insights",
+        desc: "Data doesn't tell the whole story. You need to understand the subcultures and communities you are speaking to.",
+        points: ["Moving beyond demographics.", "Community listening strategies.", "Case Study: Houston Outlaws."]
+    }
+];
+
+const CASE_STUDIES = [
+    // Viral Marketing & Brand Growth
+    { category: "Viral Marketing", title: "Houston Outlaws", win: "Directed award-winning campaign with pop-up shops.", metric: "10M+ impressions, 10k+ attendees." },
+    { category: "Viral Marketing", title: "AOE Creative", win: "Scaled operations for a $5M portfolio.", metric: "90% client referral rate." },
+    { category: "Viral Marketing", title: "Activision Blizzard", win: "Built 4th most connected TikTok account from scratch.", metric: "45M views in 4 months." },
+    { category: "Viral Marketing", title: "Coca-Cola", win: "High-impact advertising campaign across social.", metric: "2.2M reach at 50% industry cost." },
+    { category: "Viral Marketing", title: "SypherPK", win: "End-to-end brand build for apparel line.", metric: "Sold-out clothing line upon launch." },
+    { category: "Viral Marketing", title: "Paramount Pictures' \"Players\"", win: "Branding for mockumentary.", metric: "25% rise in trailer views." },
+    { category: "Viral Marketing", title: "Boston Breach", win: "GTM strategy for CDL team.", metric: "#1 most engaged team in league." },
+    { category: "Viral Marketing", title: "Immortal: Gates of Pyre", win: "Kickstarter launch strategy.", metric: "5X'd funding goal." },
+    { category: "Viral Marketing", title: "World Series of Warzone", win: "Content production for tournament.", metric: "40% increase in social impressions." },
+    { category: "Viral Marketing", title: "Riot Games", win: "Interactive Map of EMEA.", metric: "40% boost in user interaction." },
+    { category: "Viral Marketing", title: "Voyagers of Nera", win: "Lore and gameplay website launch.", metric: "30% traffic increase." },
+
+    // Tech Ops, Systems & ROI
+    { category: "Tech Ops", title: "Session Skate Sim", win: "Led design teams for key art.", metric: "30% surge in pre-order sales." },
+    { category: "Tech Ops", title: "A-KON", win: "Brand identity and marketing strategy.", metric: "Record-high attendance." },
+    { category: "Tech Ops", title: "The Story Mob", win: "Technical overhaul of digital presence.", metric: "Reduced load times by 75%." },
+    { category: "Tech Ops", title: "T-Mobile (Content Ops)", win: "Streamlined AEM workflows.", metric: "Primary ops contact driving efficiencies." },
+    { category: "Tech Ops", title: "Prospera Financial Services", win: "AI integration in pipelines.", metric: "Enhanced scalability via automation." },
+    { category: "Tech Ops", title: "The Devhouse Agency", win: "Marketing ops and ad tech stack.", metric: "30% boost in social visibility." },
+    { category: "Tech Ops", title: "MutualMind", win: "Optimized support and vendor contracts.", metric: "Saved $50k annually." },
+    { category: "Tech Ops", title: "T-Mobile (ITSM)", win: "Led ITSM teams.", metric: "Reduced ticket time from 24h to 8h." },
+    { category: "Tech Ops", title: "Fujitsu", win: "Endpoint security management.", metric: "15% reduction in security incidents." },
+];
 
 export default function SpeakerPage() {
     const [formData, setFormData] = useState({
@@ -120,120 +192,31 @@ Biggest Challenge: ${formData.challenge}
                         <h2 className="text-4xl md:text-5xl font-display font-bold mt-4">Keynote Topics</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Topic 1 */}
-                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
-                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
-                                <Zap className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">The Agile Creative</h3>
-                            <div className="mb-6">
-                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Strategy</span>
-                            </div>
-                            <p className="text-gray-400 mb-6 text-sm">
-                                Creatives hate &quot;process,&quot; but they need it to scale. How to use Scrum/Agile (typically for software) to manage design and marketing.
-                            </p>
-                            <ul className="space-y-3 text-sm text-gray-300">
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Run a &quot;Creative Sprint&quot; without killing inspiration.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>The &quot;Definition of Done&quot; for ambiguous assets.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Case Study: Shipping 40 assets for LEGO in record time.</li>
-                            </ul>
-                        </div>
-
-                        {/* Topic 2 */}
-                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
-                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
-                                <Gamepad2 className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">Decoding the Gamer Generation</h3>
-                            <div className="mb-6">
-                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Culture</span>
-                            </div>
-                            <p className="text-gray-400 mb-6 text-sm">
-                                Gaming isn&apos;t just a hobby; it&apos;s the dominant culture of the next generation. Lessons from the frontlines of Esports.
-                            </p>
-                            <ul className="space-y-3 text-sm text-gray-300">
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>&quot;Authenticity&quot; is the only currency that matters.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Community as a Moat: Lessons from SypherPK.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>How to speak &quot;Internet&quot; without sounding like a bot.</li>
-                            </ul>
-                        </div>
-
-                        {/* Topic 3 */}
-                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
-                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
-                                <Monitor className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">The CTO in the Marketing Department</h3>
-                            <div className="mb-6">
-                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Tech Ops</span>
-                            </div>
-                            <p className="text-gray-400 mb-6 text-sm">
-                                Marketing is now a technical discipline. If your marketing leader doesn&apos;t understand the tech stack, you&apos;re losing money.
-                            </p>
-                            <ul className="space-y-3 text-sm text-gray-300">
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Bridging the gap between IT and Marketing.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Using automation to reduce &quot;grunt work&quot; by 20%.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Building a &quot;MarTech&quot; stack that scales.</li>
-                            </ul>
-                        </div>
-
-                        {/* Topic 4 */}
-                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
-                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
-                                <Smartphone className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">Branding For A Digital Audience</h3>
-                            <div className="mb-6">
-                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Branding</span>
-                            </div>
-                            <p className="text-gray-400 mb-6 text-sm">
-                                Digital-first branding isn&apos;t just about a logo; it&apos;s about how you show up in the feed.
-                            </p>
-                            <ul className="space-y-3 text-sm text-gray-300">
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Visual Identity Systems for Social Media.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Voice & Tone validation.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Case Study: Paramount Pictures.</li>
-                            </ul>
-                        </div>
-
-                        {/* Topic 5 */}
-                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
-                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
-                                <FileText className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">How To Build An Engaging Creative Brief</h3>
-                            <div className="mb-6">
-                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Process</span>
-                            </div>
-                            <p className="text-gray-400 mb-6 text-sm">
-                                The brief is the most important creative asset. Learn how to write one that inspires rather than restricts.
-                            </p>
-                            <ul className="space-y-3 text-sm text-gray-300">
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>The 4 essential components of every brief.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Eliminating ambiguity.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Briefing for Gen Z campaigns.</li>
-                            </ul>
-                        </div>
-
-                        {/* Topic 6 */}
-                        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group">
-                            <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
-                                <Users className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">The Importance Of Understanding Your Audience</h3>
-                            <div className="mb-6">
-                                <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">Insights</span>
-                            </div>
-                            <p className="text-gray-400 mb-6 text-sm">
-                                Data doesn&apos;t tell the whole story. You need to understand the subcultures and communities you are speaking to.
-                            </p>
-                            <ul className="space-y-3 text-sm text-gray-300">
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Moving beyond demographics.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Community listening strategies.</li>
-                                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-gold rounded-full mt-2"></div>Case Study: Houston Outlaws.</li>
-                            </ul>
-                        </div>
+                    <div className="w-full relative">
+                        <InfiniteCarousel speed={40}>
+                            {KEYNOTE_TOPICS.map((topic, i) => (
+                                <div key={i} className="min-w-[350px] md:min-w-[400px] bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors group flex flex-col h-full">
+                                    <div className="bg-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-black transition-colors text-gold">
+                                        {topic.icon}
+                                    </div>
+                                    <h3 className="text-2xl font-bold mb-4">{topic.title}</h3>
+                                    <div className="mb-6">
+                                        <span className="bg-white/10 text-xs px-3 py-1 rounded-full text-gray-300">{topic.tag}</span>
+                                    </div>
+                                    <p className="text-gray-400 mb-6 text-sm flex-grow">
+                                        {topic.desc}
+                                    </p>
+                                    <ul className="space-y-3 text-sm text-gray-300">
+                                        {topic.points.map((point, j) => (
+                                            <li key={j} className="flex items-start gap-2">
+                                                <div className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                                                {point}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </InfiniteCarousel>
                     </div>
                 </FadeIn>
 
@@ -244,58 +227,24 @@ Biggest Challenge: ${formData.challenge}
                         <h2 className="text-4xl md:text-5xl font-display font-bold mt-4">Case Studies</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                        <div>
-                            <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
-                                <Users className="text-gold" /> Viral Marketing & Brand Growth
-                            </h3>
-                            <div className="space-y-8">
-                                {[
-                                    { title: "Houston Outlaws", win: "Directed award-winning campaign with pop-up shops.", metric: "10M+ impressions, 10k+ attendees." },
-                                    { title: "AOE Creative", win: "Scaled operations for a $5M portfolio.", metric: "90% client referral rate." },
-                                    { title: "Activision Blizzard", win: "Built 4th most connected TikTok account from scratch.", metric: "45M views in 4 months." },
-                                    { title: "Coca-Cola", win: "High-impact advertising campaign across social.", metric: "2.2M reach at 50% industry cost." },
-                                    { title: "SypherPK", win: "End-to-end brand build for apparel line.", metric: "Sold-out clothing line upon launch." },
-                                    { title: "Paramount Pictures' \"Players\"", win: "Branding for mockumentary.", metric: "25% rise in trailer views." },
-                                    { title: "Boston Breach", win: "GTM strategy for CDL team.", metric: "#1 most engaged team in league." },
-                                    { title: "Immortal: Gates of Pyre", win: "Kickstarter launch strategy.", metric: "5X'd funding goal." },
-                                    { title: "World Series of Warzone", win: "Content production for tournament.", metric: "40% increase in social impressions." },
-                                    { title: "Riot Games", win: "Interactive Map of EMEA.", metric: "40% boost in user interaction." },
-                                    { title: "Voyagers of Nera", win: "Lore and gameplay website launch.", metric: "30% traffic increase." },
-                                ].map((study, i) => (
-                                    <div key={i} className="border-l-2 border-white/10 pl-6 hover:border-gold transition-colors">
-                                        <h4 className="font-bold text-lg text-white">{study.title}</h4>
-                                        <p className="text-gray-400 text-sm mt-1">{study.win}</p>
-                                        <p className="text-gold text-sm font-medium mt-1">{study.metric}</p>
+                    <div className="w-full relative">
+                        <InfiniteCarousel speed={60}>
+                            {CASE_STUDIES.map((study, i) => (
+                                <div key={i} className="min-w-[300px] md:min-w-[380px] bg-white/5 border border-white/10 p-6 rounded-xl hover:border-gold/50 transition-colors flex flex-col justify-between h-full group">
+                                    <div>
+                                        <div className="mb-4 flex items-center gap-2">
+                                            {study.category === "Viral Marketing" ? <Users className="w-4 h-4 text-gold" /> : <Briefcase className="w-4 h-4 text-gold" />}
+                                            <span className="text-xs uppercase tracking-widest text-gray-400">{study.category}</span>
+                                        </div>
+                                        <h4 className="font-bold text-xl text-white mb-2 group-hover:text-gold transition-colors">{study.title}</h4>
+                                        <p className="text-gray-300 text-sm leading-relaxed mb-4">{study.win}</p>
                                     </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div>
-                            <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
-                                <Briefcase className="text-gold" /> Tech Ops, Systems & ROI
-                            </h3>
-                            <div className="space-y-8">
-                                {[
-                                    { title: "Session Skate Sim", win: "Led design teams for key art.", metric: "30% surge in pre-order sales." },
-                                    { title: "A-KON", win: "Brand identity and marketing strategy.", metric: "Record-high attendance." },
-                                    { title: "The Story Mob", win: "Technical overhaul of digital presence.", metric: "Reduced load times by 75%." },
-                                    { title: "T-Mobile (Content Ops)", win: "Streamlined AEM workflows.", metric: "Primary ops contact driving efficiencies." },
-                                    { title: "Prospera Financial Services", win: "AI integration in pipelines.", metric: "Enhanced scalability via automation." },
-                                    { title: "The Devhouse Agency", win: "Marketing ops and ad tech stack.", metric: "30% boost in social visibility." },
-                                    { title: "MutualMind", win: "Optimized support and vendor contracts.", metric: "Saved $50k annually." },
-                                    { title: "T-Mobile (ITSM)", win: "Led ITSM teams.", metric: "Reduced ticket time from 24h to 8h." },
-                                    { title: "Fujitsu", win: "Endpoint security management.", metric: "15% reduction in security incidents." },
-                                ].map((study, i) => (
-                                    <div key={i} className="border-l-2 border-white/10 pl-6 hover:border-gold transition-colors">
-                                        <h4 className="font-bold text-lg text-white">{study.title}</h4>
-                                        <p className="text-gray-400 text-sm mt-1">{study.win}</p>
-                                        <p className="text-gold text-sm font-medium mt-1">{study.metric}</p>
+                                    <div className="pt-4 border-t border-white/10">
+                                        <p className="text-gold text-sm font-medium">{study.metric}</p>
                                     </div>
-                                ))}
-                            </div>
-                        </div>
+                                </div>
+                            ))}
+                        </InfiniteCarousel>
                     </div>
                 </FadeIn>
 

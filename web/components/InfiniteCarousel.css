@@ -1,0 +1,18 @@
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee var(--speed, 40s) linear infinite var(--direction, normal);
+    width: max-content;
+}
+
+.pause-on-hover:hover .animate-marquee {
+    animation-play-state: paused;
+}
