@@ -70,7 +70,7 @@ Biggest Challenge: ${formData.challenge}
                         </div>
                         <div className="relative">
                             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative group">
-                                <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-80 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                                <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-100 transition-all duration-700"></div>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ Biggest Challenge: ${formData.challenge}
                     <div className="border-t border-b border-white/10 py-8">
                         <p className="text-center text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Trusted By Teams At</p>
                         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                            {["Coca-Cola", "LEGO", "Paramount Pictures", "RedBull", "The Kraft Group", "Riot Games", "Activision", "Blizzard Entertainment"].map(brand => (
+                            {["Coca-Cola", "LEGO", "Paramount Pictures", "RedBull", "The Kraft Group", "Riot Games", "Activision", "Blizzard Entertainment", "OniStudios", "SypherPK", "NACON"].map(brand => (
                                 <span key={brand} className="text-xl md:text-2xl font-display font-bold text-white/80">{brand}</span>
                             ))}
                         </div>
