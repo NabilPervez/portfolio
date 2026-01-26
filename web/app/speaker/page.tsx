@@ -23,7 +23,6 @@ export default function SpeakerPage() {
         const body = `
 Event Date & Location: ${formData.eventDate}, ${formData.location}
 Audience Size: ${formData.audienceSize}
-Budget Range: ${formData.budget}
 Biggest Challenge: ${formData.challenge}
         `;
         window.location.href = `mailto:nabilpervezconsulting@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -72,10 +71,6 @@ Biggest Challenge: ${formData.challenge}
                         <div className="relative">
                             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative group">
                                 <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-80 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
-                                <div className="relative z-10 text-center p-8 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <Mic className="w-12 h-12 text-gold mx-auto mb-4" />
-                                    <span className="text-sm font-mono tracking-widest uppercase text-white/80 block">Speaker / Host</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -322,6 +317,9 @@ Biggest Challenge: ${formData.challenge}
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
+                        <div className="mb-8">
+                            <p className="text-xl text-white font-medium mb-6">Send me an email telling me more about your event:</p>
+                        </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-gray-300">Event Date</label>
@@ -329,7 +327,6 @@ Biggest Challenge: ${formData.challenge}
                                     type="text"
                                     name="eventDate"
                                     required
-                                    placeholder="e.g. Oct 24, 2024"
                                     value={formData.eventDate}
                                     onChange={handleChange}
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all"
@@ -341,7 +338,6 @@ Biggest Challenge: ${formData.challenge}
                                     type="text"
                                     name="location"
                                     required
-                                    placeholder="City, Venue, or Virtual"
                                     value={formData.location}
                                     onChange={handleChange}
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all"
@@ -349,7 +345,7 @@ Biggest Challenge: ${formData.challenge}
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 gap-6">
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-gray-300">Est. Audience Size</label>
                                 <select
@@ -363,20 +359,6 @@ Biggest Challenge: ${formData.challenge}
                                     <option value="50 - 200" className="bg-gray-900">50 - 200</option>
                                     <option value="200 - 500" className="bg-gray-900">200 - 500</option>
                                     <option value="500+" className="bg-gray-900">500+</option>
-                                </select>
-                            </div>
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-300">Budget Range</label>
-                                <select
-                                    name="budget"
-                                    value={formData.budget}
-                                    onChange={handleChange}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all appearance-none"
-                                >
-                                    <option value="" className="bg-gray-900">Select range...</option>
-                                    <option value="$2k - $5k" className="bg-gray-900">$2k - $5k</option>
-                                    <option value="$5k - $10k" className="bg-gray-900">$5k - $10k</option>
-                                    <option value="$10k+" className="bg-gray-900">$10k+</option>
                                 </select>
                             </div>
                         </div>
