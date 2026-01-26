@@ -12,6 +12,7 @@ import { StaggeredMenu } from "./StaggeredMenu";
 const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Speaker", href: "/speaker" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Products", href: "/products" },
 ];
@@ -124,6 +125,7 @@ export function Navbar() {
                                 items={[
                                     { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
                                     { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+                                    { label: 'Speaker', ariaLabel: 'Speaker page', link: '/speaker' },
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
                                     { label: 'Products', ariaLabel: 'View our products', link: '/products' }
                                 ]}
