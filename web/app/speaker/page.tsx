@@ -7,6 +7,8 @@ import StarBorder from "@/components/StarBorder";
 import { Download, Mic, Monitor, User, Users, Zap, Video, Gamepad2, Briefcase, ChevronRight, Smartphone, FileText } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import Waves from "@/components/Waves";
+import GradientText from "@/components/GradientText";
 
 export default function SpeakerPage() {
     const [formData, setFormData] = useState({
@@ -40,50 +42,66 @@ Biggest Challenge: ${formData.challenge}
             <div className="container mx-auto px-6 md:px-12 py-12 md:py-20">
 
                 {/* 1. Hero Section */}
-                <FadeIn className="mb-24 md:mb-32">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                        <div>
-                            <span className="block text-gold font-medium tracking-widest uppercase mb-4 text-sm">Speaker Profile</span>
-                            <h1 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-6">
-                                Scaling Creativity through <span className="text-gold">Chaos</span>.
-                            </h1>
-                            <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed mb-8">
-                                The intersection of Agile Systems, Entertainment Culture, and Enterprise Marketing.
-                            </p>
-                            <p className="text-gray-400 max-w-lg mb-8">
-                                Co-Founder & Tech-Marketer behind campaigns for Riot Games, LEGO, and Coca-Cola. Helping teams bridge the gap between creative vision and technical execution.
-                            </p>
-                            <div className="flex flex-wrap gap-4">
-                                <Link
-                                    href="#book"
-                                    className="bg-gold text-black px-8 py-3 rounded-full font-bold hover:bg-white transition-colors"
-                                >
-                                    Book Nabil
-                                </Link>
-                                <a
-                                    href="/speaker-kit.zip"
-                                    className="border border-white/20 px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
-                                >
-                                    Download Kit
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="relative">
-                            <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative group">
-                                <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-100 transition-all duration-700"></div>
-                            </div>
-                        </div>
+                <div className="relative mb-24 md:mb-32 rounded-3xl overflow-hidden">
+                    <div className="absolute inset-0 z-0">
+                        <Waves
+                            lineColor="#ffffff"
+                            backgroundColor="rgba(255, 255, 255, 0.2)"
+                            waveSpeedX={0.0125}
+                            waveSpeedY={0.01}
+                            waveAmpX={40}
+                            waveAmpY={20}
+                            friction={0.9}
+                            tension={0.01}
+                            maxCursorMove={120}
+                            xGap={12}
+                            yGap={36}
+                        />
                     </div>
-
-                    {/* Trust Bar */}
-                    <div className="border-t border-b border-white/10 py-8">
-                        <p className="text-center text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Trusted By Teams At</p>
-                        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                            {["Coca-Cola", "LEGO", "Paramount Pictures", "RedBull", "The Kraft Group", "Riot Games", "Activision", "Blizzard Entertainment", "OniStudios", "SypherPK", "NACON"].map(brand => (
-                                <span key={brand} className="text-xl md:text-2xl font-display font-bold text-white/80">{brand}</span>
-                            ))}
+                    <FadeIn className="relative z-10 p-8 md:p-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <span className="block text-gold font-medium tracking-widest uppercase mb-4 text-sm">Speaker Profile</span>
+                                <h1 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-6">
+                                    Scaling <GradientText colors={["#FFD700", "#FFA500", "#FFD700"]} animationSpeed={3} showBorder={false} className="inline-flex">Creativity</GradientText> through <span className="text-gold">Chaos</span>.
+                                </h1>
+                                <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed mb-8">
+                                    The intersection of Agile Systems, Entertainment Culture, and Enterprise Marketing.
+                                </p>
+                                <p className="text-gray-400 max-w-lg mb-8">
+                                    Co-Founder & Tech-Marketer behind campaigns for Riot Games, LEGO, and Coca-Cola. Helping teams bridge the gap between creative vision and technical execution.
+                                </p>
+                                <div className="flex flex-wrap gap-4">
+                                    <Link
+                                        href="#book"
+                                        className="bg-gold text-black px-8 py-3 rounded-full font-bold hover:bg-white transition-colors"
+                                    >
+                                        Book Nabil
+                                    </Link>
+                                    <a
+                                        href="/speaker-kit.zip"
+                                        className="border border-white/20 px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
+                                    >
+                                        Download Kit
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative group">
+                                    <div className="absolute inset-0 bg-[url('https://nabilpervezportfolio.netlify.app/images/nabil-headshot.jpg')] bg-cover bg-center opacity-100 transition-all duration-700"></div>
+                                </div>
+                            </div>
                         </div>
+                    </FadeIn>
+                </div>
+
+                {/* Trust Bar */}
+                <FadeIn className="border-t border-b border-white/10 py-8">
+                    <p className="text-center text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Trusted By Teams At</p>
+                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                        {["Coca-Cola", "LEGO", "Paramount Pictures", "RedBull", "The Kraft Group", "Riot Games", "Activision", "Blizzard Entertainment", "OniStudios", "SypherPK", "NACON"].map(brand => (
+                            <span key={brand} className="text-xl md:text-2xl font-display font-bold text-white/80">{brand}</span>
+                        ))}
                     </div>
                 </FadeIn>
 
