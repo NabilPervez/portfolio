@@ -6,32 +6,8 @@ import re
 import time
 
 URLS = [
-    "https://www.behance.net/gallery/189215887/NEWBREED-Luggage",
-    "https://www.behance.net/gallery/187335283/Voyagers-of-Nera-Website",
-    "https://www.behance.net/gallery/186633405/One-Piece-X-Cloud9",
-    "https://www.behance.net/gallery/183512947/SESSION-Skate-Sim",
-    "https://www.behance.net/gallery/176241963/McCown-Evans-Law",
-    "https://www.behance.net/gallery/176766823/Overwatch-League-2019-2023",
-    "https://www.behance.net/gallery/162750755/Oxygen-Esports",
-    "https://www.behance.net/gallery/173251195/Call-of-Duty-League-2023-Championship-Weekend",
-    "https://www.behance.net/gallery/167169443/CDL-Photo-Manipulation",
-    "https://www.behance.net/gallery/162092775/RIOT-LEC-Website",
-    "https://www.behance.net/gallery/162945755/Boston-Breach-2023",
-    "https://www.behance.net/gallery/132316687/Stay-Plugged-In-Branding",
-    "https://www.behance.net/gallery/159055627/Coca-Cola-Advertisement-Design",
-    "https://www.behance.net/gallery/159687413/Overwatch-League-Grand-Finals-2022",
-    "https://www.behance.net/gallery/131377741/Flyquest-Web-Design-Development",
-    "https://www.behance.net/gallery/148098403/A-KON-Rebrand",
-    "https://www.behance.net/gallery/131606503/Team-Fugitive",
-    "https://www.behance.net/gallery/144191187/Boston-Breach",
-    "https://www.behance.net/gallery/124334787/Metal-Umbrella-Brand-Identity-Marketing-Strategy",
-    "https://www.behance.net/gallery/126553707/LEGO-Games-Brand-Identity-Logo-Design",
-    "https://www.behance.net/gallery/124452495/CDL-Social-Media-Graphic-Design",
-    "https://www.behance.net/gallery/115497303/Immortal-Gates-of-Pyre-Brand-Development-Identity",
-    "https://www.behance.net/gallery/113184055/Metaview-Brand-Identity",
-    "https://www.behance.net/gallery/85622943/Nerd-Street-Gamers-Brand-Identity-Logo-Design",
-    "https://www.behance.net/gallery/113710863/The-Story-Mob-Web-Design-Development",
-    "https://www.behance.net/gallery/91813149/EllEVENS-Brand-Identity-Development"
+    "https://www.behance.net/gallery/148098559/Fancurve",
+    "https://www.behance.net/gallery/145873245/ALLOY-Brand-Identity-Development"
 ]
 
 HEADERS = {
@@ -84,19 +60,42 @@ def download_images(url):
         soup = BeautifulSoup(html_content, 'html.parser')
         
         # Behance main content images often have specific classes or are just large images in the main container.
-        # A common pattern for high-res images in Behance is urls containing 'project_modules'
-        images = []
-        for img in soup.find_all('img'):
-            src = img.get('src') or img.get('data-src')
-            if src and 'project_modules' in src:
-                # We can try to force high-res. 
-                # Common segements: /disp/, /max_1200/, /fs/
-                # Often /disp/ is the display version. /fs/ (full size) or /max_1200/ is better if available.
-                # However, blindly replacing might break link. Let's just take the src as is first.
-                images.append(src)
+        # Regex extraction for JSON-embedded images
+        # Behance embeds data in JSON weirdly sometimes
+        regex = r'(https://mir-s3-cdn-cf\.behance\.net/project_modules/[a-zA-Z0-9_/-]+\.(?:jpg|jpeg|png|webp|gif))'
+        found_urls = re.findall(regex, html_content)
         
+        images = []
+        for url in found_urls:
+            # We want high res if possible.
+            # Disp/max_1200/fs
+            # If we get a valid image URL, take it.
+            # Decode unicode escapes if any (though curl output shouldn't have them usually)
+            url = url.replace('\\/', '/')
+            images.append(url)
+
+        # Also try standard soup for good measure, though regex likely caught them
+        for img in soup.find_all('img'):
+            # Check src, data-src, srcset
+            candidates = []
+            if img.get('src'): candidates.append(img.get('src'))
+            if img.get('data-src'): candidates.append(img.get('data-src'))
+            if img.get('srcset'):
+                # srcset="url 1x, url 2x" -> split and take urls
+                for s in img.get('srcset').split(','):
+                    url = s.strip().split(' ')[0]
+                    candidates.append(url)
+            
+            for url in candidates:
+                if url and 'behance.net' in url and ('project_modules' in url):
+                     images.append(url)
+
         # Remove duplicates
         images = list(set(images))
+        
+        if len(images) == 0:
+             print("  No images found. Snippet of HTML:")
+             print(html_content[:1000])
         
         print(f"  Found {len(images)} potential images.")
         
