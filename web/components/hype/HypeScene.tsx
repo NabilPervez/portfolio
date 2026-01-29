@@ -63,7 +63,8 @@ export default function HypeScene() {
 
         const mat = new THREE.MeshPhongMaterial({
             color: 0xffffff,
-            flatShading: true
+            flatShading: true,
+            side: THREE.DoubleSide
         });
 
         const mat2 = new THREE.MeshPhongMaterial({
@@ -157,7 +158,7 @@ export default function HypeScene() {
     return (
         <div
             ref={containerRef}
-            className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
+            className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none bg-gradient-to-b from-[#11e8bb] to-[#8200c9]"
         />
     );
 }
