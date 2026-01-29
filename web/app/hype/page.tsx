@@ -37,7 +37,7 @@ function FloatingImage({ src, index }: { src: string; index: number }) {
 
 export default function HypePage() {
     return (
-        <div className="relative bg-black min-h-[400vh] text-white">
+        <div className="relative min-h-[400vh] text-white bg-gradient-to-b from-[#11e8bb] to-[#8200c9] bg-fixed">
             {/* Fixed 3D Background */}
             <HypeScene />
 
