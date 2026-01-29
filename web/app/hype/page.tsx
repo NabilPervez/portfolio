@@ -1,108 +1,91 @@
 "use client";
 
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import HypeScene from '@/components/hype/HypeScene';
 import Clock from '@/components/hype/Clock';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const images = [
-    '/images/portfolio/optic-gaming.png',
-    '/images/portfolio/lego-27.jpg',
-    '/images/portfolio/the-story-mob.png',
-    '/images/portfolio/nerd-street-gamers-brand.jpg',
-    '/images/portfolio/immortal-gates-of-pyre-kickstarter.png'
+const projects = [
+    { name: 'OpTic Gaming', src: '/images/portfolio/optic-gaming.png' },
+    { name: 'LEGO', src: '/images/portfolio/lego-27.jpg' },
+    { name: 'The Story Mob', src: '/images/portfolio/the-story-mob.png' },
+    { name: 'Nerd Street Gamers', src: '/images/portfolio/nerd-street-gamers-brand.jpg' },
+    { name: 'Immortal Gates of Pyre', src: '/images/portfolio/immortal-gates-of-pyre-kickstarter.png' }
 ];
-
-function FloatingImage({ src, index }: { src: string; index: number }) {
-    const yOffset = index % 2 === 0 ? [100, -100] : [-100, 100];
-    const { scrollYProgress } = useScroll();
-    const y = useTransform(scrollYProgress, [0, 1], yOffset.map(v => v * (index + 1) * 2));
-
-    return (
-        <motion.div
-            style={{ y }}
-            className={`absolute w-64 h-48 opacity-60 rounded-lg overflow-hidden border border-white/10
-        ${index % 2 === 0 ? 'left-[10%]' : 'right-[10%]'}
-      `}
-            initial={{ top: `${20 + (index * 15)}%`, opacity: 0 }}
-            whileInView={{ opacity: 0.8 }}
-            transition={{ duration: 1 }}
-        >
-            <Image src={src} alt="Portfolio Work" fill className="object-cover" />
-        </motion.div>
-    );
-}
 
 export default function HypePage() {
     return (
-        <div className="relative min-h-[400vh] text-white">
-            {/* Fixed 3D Background */}
+        <div className="relative min-h-[100vh]">
+            {/* Fixed 3D Background - Visible only in the first section effectively due to others having black bg */}
             <HypeScene />
 
             {/* --- SECTION 1: HERO --- */}
-            <section className="h-screen flex items-center justify-center sticky top-0 -z-0">
-                <h1 className="text-4xl md:text-7xl font-bold tracking-tighter text-center max-w-4xl px-4 mix-blend-difference">
-                    There is a whole world of possibilities.
+            <section className="h-screen flex items-center justify-center relative z-10">
+                <h1 className="text-4xl md:text-7xl font-bold tracking-tighter text-center max-w-5xl px-4 text-white drop-shadow-2xl">
+                    There are infinite possibilities
                 </h1>
             </section>
 
-            {/* Spacer to allow scrolling "through" the hero before the next text hits */}
-            <div className="h-[50vh]" />
-
-            {/* --- SECTION 2: THE BUILDER --- */}
-            <section className="relative h-[150vh] flex flex-col items-center justify-center z-10">
-                <div className="sticky top-1/2 -translate-y-1/2 text-center">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+            {/* --- SECTION 2: FULL WIDTH IMAGES --- */}
+            <section className="bg-black relative z-20 py-20 flex flex-col gap-0">
+                {projects.map((project, i) => (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-3xl md:text-6xl font-light font-display text-gray-200"
+                        className="relative w-full h-[70vh] group overflow-hidden border-b border-white/10"
                     >
-                        I've built these worlds for others.
-                    </motion.h2>
-                </div>
+                        <Image
+                            src={project.src}
+                            alt={project.name}
+                            fill
+                            className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 easing-out"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80" />
 
-                {/* Floating "Cubes"/Images Parallax Layer */}
-                <div className="absolute inset-0 pointer-events-none">
-                    {images.map((src, i) => (
-                        <FloatingImage key={i} src={src} index={i} />
-                    ))}
-                </div>
+                        <div className="absolute bottom-10 left-4 md:left-20 z-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <h3 className="text-4xl md:text-8xl font-black text-white uppercase tracking-tighter">
+                                {project.name}
+                            </h3>
+                        </div>
+                    </motion.div>
+                ))}
             </section>
 
-            {/* --- SECTION 3: THE RETURN --- */}
-            <section className="h-screen flex items-center justify-center z-10">
+            {/* --- SECTION 3: THE BRIDGE --- */}
+            <section className="h-[80vh] flex items-center justify-center bg-black relative z-20">
                 <motion.h2
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-600"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500 max-w-5xl px-6 leading-tight"
                 >
-                    I can build your dreams into a reality.
+                    I built these possibilities into these realities
                 </motion.h2>
             </section>
 
-            {/* --- SECTION 4: THE CLOSE --- */}
-            <section className="h-screen flex flex-col items-center justify-center z-10 bg-black/80 backdrop-blur-sm">
-                <h3 className="text-2xl font-light uppercase tracking-widest text-gray-400 mb-8">
-                    Time is ticking
-                </h3>
+            {/* --- SECTION 4: THE CLOCK / CLOSE --- */}
+            <section className="min-h-screen flex flex-col items-center justify-center bg-black relative z-20 pb-20">
+                <div className="scale-75 md:scale-100 mb-12">
+                    <Clock />
+                </div>
 
-                <Clock />
-
-                <div className="mt-12 text-center">
-                    <h2 className="text-5xl md:text-8xl font-black text-white mb-12">
-                        What Are You Waiting For?
-                    </h2>
-
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="text-center z-10"
+                >
                     <Link
                         href="/contact"
-                        className="inline-block px-12 py-6 bg-white text-black text-xl font-bold rounded-full hover:scale-110 transition-transform duration-300"
+                        className="inline-block px-16 py-6 bg-white text-black text-2xl font-black tracking-widest rounded-full hover:scale-105 hover:bg-gray-200 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.3)]"
                     >
-                        CONTACT NOW
+                        CONTACT
                     </Link>
-                </div>
+                </motion.div>
             </section>
         </div>
     );

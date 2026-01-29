@@ -111,8 +111,8 @@ export default function HypeScene() {
             // Move camera based on scroll
             // Flies from z=400 to z=100
             if (cameraRef.current) {
-                const targetZ = 400 - (scrollFraction * 300);
-                cameraRef.current.position.z = targetZ;
+                // const targetZ = 400 - (scrollFraction * 300);
+                // cameraRef.current.position.z = targetZ;
 
                 // Add some subtle rotation to the whole scene based on scroll
                 // to feel like "tumbling" through space

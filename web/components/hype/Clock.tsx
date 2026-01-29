@@ -105,11 +105,14 @@ export default function Clock() {
                 <div
                     className="time absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md flex justify-center items-center text-4xl border border-black text-black font-league-gothic z-10"
                     style={{
-                        height: 'calc(var(--clock-size) * 0.1)',
-                        width: 'calc(var(--clock-size) * 0.3)',
+                        height: 'calc(var(--clock-size) * 0.2)', // Increased height
+                        width: 'calc(var(--clock-size) * 0.5)',  // Increased width
                     }}
                 >
-                    {formatTime(time)}
+                    <div className="flex flex-col items-center leading-none">
+                        <span>IT&apos;S YOUR</span>
+                        <span>TURN</span>
+                    </div>
                 </div>
             </div>
         </div>
