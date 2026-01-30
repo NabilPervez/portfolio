@@ -56,30 +56,30 @@ const KEYNOTE_TOPICS = [
     }
 ];
 
-const CASE_STUDIES = [
-    // Viral Marketing & Brand Growth
-    { category: "Viral Marketing", title: "Houston Outlaws", win: "Directed award-winning campaign with pop-up shops.", metric: "10M+ impressions, 10k+ attendees." },
-    { category: "Viral Marketing", title: "AOE Creative", win: "Scaled operations for a $5M portfolio.", metric: "90% client referral rate." },
-    { category: "Viral Marketing", title: "Activision Blizzard", win: "Built 4th most connected TikTok account from scratch.", metric: "45M views in 4 months." },
-    { category: "Viral Marketing", title: "Coca-Cola", win: "High-impact advertising campaign across social.", metric: "2.2M reach at 50% industry cost." },
-    { category: "Viral Marketing", title: "SypherPK", win: "End-to-end brand build for apparel line.", metric: "Sold-out clothing line upon launch." },
-    { category: "Viral Marketing", title: "Paramount Pictures' \"Players\"", win: "Branding for mockumentary.", metric: "25% rise in trailer views." },
-    { category: "Viral Marketing", title: "Boston Breach", win: "GTM strategy for CDL team.", metric: "#1 most engaged team in league." },
-    { category: "Viral Marketing", title: "Immortal: Gates of Pyre", win: "Kickstarter launch strategy.", metric: "5X'd funding goal." },
-    { category: "Viral Marketing", title: "World Series of Warzone", win: "Content production for tournament.", metric: "40% increase in social impressions." },
-    { category: "Viral Marketing", title: "Riot Games", win: "Interactive Map of EMEA.", metric: "40% boost in user interaction." },
-    { category: "Viral Marketing", title: "Voyagers of Nera", win: "Lore and gameplay website launch.", metric: "30% traffic increase." },
+const MARKETING_STUDIES = [
+    { category: "Experiential", title: "Houston Outlaws", win: "Directed award-winning campaign with pop-up shops.", metric: "10M+ impressions, 10k+ attendees." },
+    { category: "Agency Scaling", title: "AOE Creative", win: "Scaled operations for a $5M portfolio.", metric: "90% client referral rate." },
+    { category: "Social Media", title: "Activision Blizzard", win: "Built 4th most connected TikTok account from scratch.", metric: "45M views in 4 months." },
+    { category: "Advertising", title: "Coca-Cola", win: "High-impact advertising campaign across social.", metric: "2.2M reach at 50% industry cost." },
+    { category: "Merchandise", title: "SypherPK", win: "End-to-end brand build for apparel line.", metric: "Sold-out clothing line upon launch." },
+    { category: "Branding", title: "Paramount Pictures' \"Players\"", win: "Branding for mockumentary.", metric: "25% rise in trailer views." },
+    { category: "GTM Strategy", title: "Boston Breach", win: "GTM strategy for CDL team.", metric: "#1 most engaged team in league." },
+    { category: "Crowdfunding", title: "Immortal: Gates of Pyre", win: "Kickstarter launch strategy.", metric: "5X'd funding goal." },
+    { category: "Content Production", title: "World Series of Warzone", win: "Content production for tournament.", metric: "40% increase in social impressions." },
+    { category: "Interactive Web", title: "Riot Games", win: "Interactive Map of EMEA.", metric: "40% boost in user interaction." },
+    { category: "Web Launch", title: "Voyagers of Nera", win: "Lore and gameplay website launch.", metric: "30% traffic increase." },
+];
 
-    // Tech Ops, Systems & ROI
-    { category: "Tech Ops", title: "Session Skate Sim", win: "Led design teams for key art.", metric: "30% surge in pre-order sales." },
-    { category: "Tech Ops", title: "A-KON", win: "Brand identity and marketing strategy.", metric: "Record-high attendance." },
-    { category: "Tech Ops", title: "The Story Mob", win: "Technical overhaul of digital presence.", metric: "Reduced load times by 75%." },
-    { category: "Tech Ops", title: "T-Mobile (Content Ops)", win: "Streamlined AEM workflows.", metric: "Primary ops contact driving efficiencies." },
-    { category: "Tech Ops", title: "Prospera Financial Services", win: "AI integration in pipelines.", metric: "Enhanced scalability via automation." },
-    { category: "Tech Ops", title: "The Devhouse Agency", win: "Marketing ops and ad tech stack.", metric: "30% boost in social visibility." },
-    { category: "Tech Ops", title: "MutualMind", win: "Optimized support and vendor contracts.", metric: "Saved $50k annually." },
-    { category: "Tech Ops", title: "T-Mobile (ITSM)", win: "Led ITSM teams.", metric: "Reduced ticket time from 24h to 8h." },
-    { category: "Tech Ops", title: "Fujitsu", win: "Endpoint security management.", metric: "15% reduction in security incidents." },
+const TECH_OPS_STUDIES = [
+    { category: "Visual Design", title: "Session Skate Sim", win: "Led design teams for key art.", metric: "30% surge in pre-order sales." },
+    { category: "Rebranding", title: "A-KON", win: "Brand identity and marketing strategy.", metric: "Record-high attendance." },
+    { category: "Web Performance", title: "The Story Mob", win: "Technical overhaul of digital presence.", metric: "Reduced load times by 75%." },
+    { category: "Workflow Optimization", title: "T-Mobile (Content Ops)", win: "Streamlined AEM workflows.", metric: "Primary ops contact driving efficiencies." },
+    { category: "AI Automation", title: "Prospera Financial Services", win: "AI integration in pipelines.", metric: "Enhanced scalability via automation." },
+    { category: "Ad Tech", title: "The Devhouse Agency", win: "Marketing ops and ad tech stack.", metric: "30% boost in social visibility." },
+    { category: "Vendor Management", title: "MutualMind", win: "Optimized support and vendor contracts.", metric: "Saved $50k annually." },
+    { category: "IT Service Management", title: "T-Mobile (ITSM)", win: "Led ITSM teams.", metric: "Reduced ticket time from 24h to 8h." },
+    { category: "Security Ops", title: "Fujitsu", win: "Endpoint security management.", metric: "15% reduction in security incidents." },
 ];
 
 export default function SpeakerPage() {
@@ -151,7 +151,7 @@ Biggest Challenge: ${formData.challenge}
                 </FadeIn>
 
                 {/* Trust Bar */}
-                <FadeIn className="border-t border-b border-white/10 py-8">
+                <FadeIn className="border-t border-b border-white/10 py-20 mb-20">
                     <p className="text-center text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Trusted By Teams At</p>
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                         {["Coca-Cola", "LEGO", "Paramount Pictures", "RedBull", "The Kraft Group", "Riot Games", "Activision", "Blizzard Entertainment", "OniStudios", "SypherPK", "NACON"].map(brand => (
@@ -227,24 +227,48 @@ Biggest Challenge: ${formData.challenge}
                         <h2 className="text-4xl md:text-5xl font-display font-bold mt-4">Case Studies</h2>
                     </div>
 
-                    <div className="w-full relative">
-                        <InfiniteCarousel speed={60}>
-                            {CASE_STUDIES.map((study, i) => (
-                                <div key={i} className="min-w-[300px] md:min-w-[380px] bg-white/5 border border-white/10 p-6 rounded-xl hover:border-gold/50 transition-colors flex flex-col justify-between h-full group">
-                                    <div>
-                                        <div className="mb-4 flex items-center gap-2">
-                                            {study.category === "Viral Marketing" ? <Users className="w-4 h-4 text-gold" /> : <Briefcase className="w-4 h-4 text-gold" />}
-                                            <span className="text-xs uppercase tracking-widest text-gray-400">{study.category}</span>
+                    <div className="space-y-16">
+                        {/* Marketing Carousel */}
+                        <div className="w-full relative">
+                            <InfiniteCarousel speed={60}>
+                                {MARKETING_STUDIES.map((study, i) => (
+                                    <div key={i} className="min-w-[300px] md:min-w-[380px] bg-white/5 border border-white/10 p-6 rounded-xl hover:border-gold/50 transition-colors flex flex-col justify-between h-full group">
+                                        <div>
+                                            <div className="mb-4 flex items-center gap-2">
+                                                <Users className="w-4 h-4 text-gold" />
+                                                <span className="text-xs uppercase tracking-widest text-gray-400">{study.category}</span>
+                                            </div>
+                                            <h4 className="font-bold text-xl text-white mb-2 group-hover:text-gold transition-colors">{study.title}</h4>
+                                            <p className="text-gray-300 text-sm leading-relaxed mb-4">{study.win}</p>
                                         </div>
-                                        <h4 className="font-bold text-xl text-white mb-2 group-hover:text-gold transition-colors">{study.title}</h4>
-                                        <p className="text-gray-300 text-sm leading-relaxed mb-4">{study.win}</p>
+                                        <div className="pt-4 border-t border-white/10">
+                                            <p className="text-gold text-sm font-medium">{study.metric}</p>
+                                        </div>
                                     </div>
-                                    <div className="pt-4 border-t border-white/10">
-                                        <p className="text-gold text-sm font-medium">{study.metric}</p>
+                                ))}
+                            </InfiniteCarousel>
+                        </div>
+
+                        {/* Tech Ops Carousel */}
+                        <div className="w-full relative">
+                            <InfiniteCarousel speed={50} direction="right">
+                                {TECH_OPS_STUDIES.map((study, i) => (
+                                    <div key={i} className="min-w-[300px] md:min-w-[380px] bg-white/5 border border-white/10 p-6 rounded-xl hover:border-gold/50 transition-colors flex flex-col justify-between h-full group">
+                                        <div>
+                                            <div className="mb-4 flex items-center gap-2">
+                                                <Briefcase className="w-4 h-4 text-gold" />
+                                                <span className="text-xs uppercase tracking-widest text-gray-400">{study.category}</span>
+                                            </div>
+                                            <h4 className="font-bold text-xl text-white mb-2 group-hover:text-gold transition-colors">{study.title}</h4>
+                                            <p className="text-gray-300 text-sm leading-relaxed mb-4">{study.win}</p>
+                                        </div>
+                                        <div className="pt-4 border-t border-white/10">
+                                            <p className="text-gold text-sm font-medium">{study.metric}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
-                        </InfiniteCarousel>
+                                ))}
+                            </InfiniteCarousel>
+                        </div>
                     </div>
                 </FadeIn>
 
@@ -292,13 +316,17 @@ Biggest Challenge: ${formData.challenge}
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="w-1.5 h-1.5 bg-gold rounded-full"></div>
+                                <span>Budget / Pricing</span>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="w-1.5 h-1.5 bg-gold rounded-full"></div>
                                 <span>What is the biggest challenge your audience is facing?</span>
                             </div>
                         </div>
 
                         <StarBorder
                             as="a"
-                            href={`mailto:nabilpervezconsulting@gmail.com?subject=Speaker Inquiry&body=${encodeURIComponent("Event Date:\nLocation:\nEst. Audience Size:\nWhat is the biggest challenge your audience is facing?:\n")}`}
+                            href={`mailto:nabilpervezconsulting@gmail.com?subject=Speaker Inquiry&body=${encodeURIComponent("Event Date:\nLocation:\nEst. Audience Size:\nBudget / Pricing:\nWhat is the biggest challenge your audience is facing?:\n")}`}
                             className="w-full flex justify-center py-4 text-cyan-400 font-bold tracking-widest uppercase cursor-pointer"
                         >
                             Send Inquiry
