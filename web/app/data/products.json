@@ -128,5 +128,25 @@
         "iconName": "Calculator",
         "bgColor": "#be123c",
         "height": 280
+    },
+    {
+        "id": "fliponomics",
+        "title": "Fliponomics",
+        "name": "Fliponomics",
+        "description": "Flip a coin, make a decision. A simple yet elegant coin flip simulator with smooth animations.",
+        "url": "https://fliponomics.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#f59e0b",
+        "height": 270
+    },
+    {
+        "id": "liquidlogo",
+        "title": "LiquidLogo",
+        "name": "LiquidLogo",
+        "description": "Dynamic liquid text animations. Create mesmerizing fluid logo effects with customizable parameters.",
+        "url": "https://liquidlogo.netlify.app/",
+        "iconName": "Zap",
+        "bgColor": "#06b6d4",
+        "height": 290
     }
 ]
