@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Nabil Pervez | Product Manager & Strategist",
   description: "Senior Product Manager, Strategist, and Designer specializing in gaming, esports, and digital innovation.",
   icons: {
-    icon: '/logo.jpg',
+    icon: '/favicon.png',
   },
   robots: {
     index: true,
