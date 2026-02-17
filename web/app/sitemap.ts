@@ -1,33 +1,52 @@
-// Correct implementation for sitemap.ts
 import { MetadataRoute } from 'next'
+import projectsData from './data/projects.json'
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
+    const baseUrl = 'https://nabilpervez.com';
+
+    // Static Routes
+    const staticRoutes = [
         {
-            url: 'https://nabilpervez.com',
+            url: baseUrl,
             lastModified: new Date(),
-            changeFrequency: 'yearly',
+            changeFrequency: 'yearly' as const,
             priority: 1,
         },
         {
-            url: 'https://nabilpervez.com/about',
+            url: `${baseUrl}/about`,
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
         {
-            url: 'https://nabilpervez.com/portfolio',
+            url: `${baseUrl}/portfolio`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
+            changeFrequency: 'weekly' as const,
             priority: 0.8,
         },
         {
-            url: 'https://nabilpervez.com/products',
+            url: `${baseUrl}/products`,
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
-    ]
+        {
+            url: `${baseUrl}/speaker`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+    ];
+
+    // Dynamic Portfolio Routes
+    const portfolioRoutes = projectsData.map((project) => ({
+        url: `${baseUrl}/portfolio/${project.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const, // Projects don't change often once published
+        priority: 0.7,
+    }));
+
+    return [...staticRoutes, ...portfolioRoutes];
 }

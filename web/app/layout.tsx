@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
@@ -14,12 +14,29 @@ const syne = Syne({
   weight: ["400", "500", "600", "700", "800"], // Bold weights for display
 });
 
+// --- SEO CONFIGURATION ---
+const siteUrl = "https://nabilpervez.com";
+const siteName = "Nabil Pervez";
+const contactEmail = "nabilpervezconsulting@gmail.com";
+const defaultTitle = "Nabil Pervez | Product Manager & Strategist";
+const defaultDescription = "Senior Product Manager, Strategist, and Designer specializing in gaming, esports, and digital innovation. Helping businesses bridge the gap between technical complexity and creative vision.";
+const ogImage = `${siteUrl}/images/nabil-headshot.jpg`;
+
 export const metadata: Metadata = {
-  title: "Nabil Pervez | Product Manager & Strategist",
-  description: "Senior Product Manager, Strategist, and Designer specializing in gaming, esports, and digital innovation.",
-  icons: {
-    icon: '/favicon.png',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: defaultTitle,
+    template: `%s | ${siteName}`,
   },
+  description: defaultDescription,
+  keywords: [
+    "Product Manager", "Strategist", "Designer", "Gaming", "Esports",
+    "Digital Innovation", "Nabil Pervez", "Consultant", "Brand Strategy",
+    "Creative Direction", "Agile Leadership", "User Research"
+  ],
+  authors: [{ name: "Nabil Pervez", url: siteUrl }],
+  creator: "Nabil Pervez",
+  publisher: "Nabil Pervez",
   robots: {
     index: true,
     follow: true,
@@ -31,14 +48,79 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/favicon.png', // Ensure this exists in public/
+    shortcut: '/favicon.ico', // Ensure this exists in public/
+    apple: '/apple-touch-icon.png', // Ensure this exists in public/
+  },
+  manifest: '/site.webmanifest', // Ensure this exists in public/
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    title: defaultTitle,
+    description: defaultDescription,
+    siteName: siteName,
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Nabil Pervez - Product Manager & Strategist",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [ogImage],
+    creator: "@nabilpervez", // Update if specific handle exists
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
   viewportFit: "cover",
+  themeColor: "#000000",
+};
+
+// --- STRUCTURED DATA (JSON-LD) ---
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${siteUrl}/#person`,
+  name: siteName,
+  url: siteUrl,
+  image: ogImage,
+  jobTitle: "Product Manager & Strategist",
+  worksFor: {
+    "@type": "Organization",
+    name: "Nabil Pervez Consulting",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/perveznabil/",
+    "https://nabilpervezconsulting.com/",
+    "https://www.behance.net/aoecreative",
+  ],
+  description: defaultDescription,
+  email: contactEmail,
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: siteName,
+  url: siteUrl,
+  inLanguage: "en",
+  publisher: { "@id": `${siteUrl}/#person` },
 };
 
 export default function RootLayout({
@@ -52,24 +134,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            // ... kept as is, but tool requires valid replacement. I'll replace the closing tag area.
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Nabil Pervez",
-              "url": "https://nabilpervez.com",
-              "image": "https://nabilpervez.com/images/nabil-headshot.jpg",
-              "jobTitle": "Product Manager",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Nabil Pervez Consulting"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/in/nabilpervez/",
-                "https://nabilpervezconsulting.com/",
-                "https://www.behance.net/aoecreative"
-              ]
-            })
+            __html: JSON.stringify([personJsonLd, websiteJsonLd]),
           }}
         />
         {/* Google tag (gtag.js) */}
