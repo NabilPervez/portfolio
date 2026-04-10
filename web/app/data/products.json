@@ -20,6 +20,106 @@
         "height": 350
     },
     {
+        "id": "quran-reflections",
+        "title": "Quran Reflections",
+        "name": "Quran Reflections",
+        "description": "Deepen your connection with the Quran through guided reflections, daily reading, and personalized insights.",
+        "url": "https://quran-reflections.netlify.app/",
+        "iconName": "BookOpen",
+        "bgColor": "#10b981",
+        "height": 300
+    },
+    {
+        "id": "quran-audiobook",
+        "title": "Quran Audiobook",
+        "name": "Quran Audiobook",
+        "description": "Listen to the clear Quran seamlessly with this immersive audiobook experience.",
+        "url": "https://quran-audiobook.netlify.app/",
+        "iconName": "Video",
+        "bgColor": "#8b5cf6",
+        "height": 280
+    },
+    {
+        "id": "pushup-power",
+        "title": "Pushup Power",
+        "name": "Pushup Power",
+        "description": "Track your pushups and squats with a local-first application designed for progressive overload.",
+        "url": "https://pushup-power.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#ef4444",
+        "height": 310
+    },
+    {
+        "id": "serenity-daily",
+        "title": "Serenity Daily",
+        "name": "Serenity Daily",
+        "description": "A progressive web app to manage anxiety, build positive routines, and practice daily mindfulness.",
+        "url": "https://serenity-daily.netlify.app/",
+        "iconName": "Heart",
+        "bgColor": "#3b82f6",
+        "height": 330
+    },
+    {
+        "id": "babysync",
+        "title": "BabySync",
+        "name": "BabySync",
+        "description": "A comprehensive tracking tool for new parents to log feeds, sleep, and overall baby health.",
+        "url": "https://babysync.netlify.app/",
+        "iconName": "Clock",
+        "bgColor": "#f43f5e",
+        "height": 290
+    },
+    {
+        "id": "hassanat-visualizer",
+        "title": "Hassanat Visualizer",
+        "name": "Hassanat Visualizer",
+        "description": "See your good deeds accumulate and reflect upon your spiritual growth through interactive charts.",
+        "url": "https://hassanat-visualizer.netlify.app/",
+        "iconName": "Star",
+        "bgColor": "#f59e0b",
+        "height": 320
+    },
+    {
+        "id": "name-and-need",
+        "title": "Name & Need",
+        "name": "Name & Need",
+        "description": "Discover your spiritual needs and connect them with the divine attributes in a meaningful way.",
+        "url": "https://nameandneed.netlify.app/",
+        "iconName": "Heart",
+        "bgColor": "#EC4899",
+        "height": 300
+    },
+    {
+        "id": "islamic-estate-calculator",
+        "title": "Islamic Estate Calculator",
+        "name": "Islamic Estate Calculator",
+        "description": "Calculate Islamic inheritance shares quickly and accurately according to authentic foundations.",
+        "url": "https://islamic-estate-calculator.netlify.app/",
+        "iconName": "Calculator",
+        "bgColor": "#059669",
+        "height": 280
+    },
+    {
+        "id": "islam-north-star",
+        "title": "Islam North Star",
+        "name": "Islam North Star",
+        "description": "Find your spiritual direction and plan your goals aligning with your faith.",
+        "url": "https://islam-north-star.netlify.app/",
+        "iconName": "Star",
+        "bgColor": "#2563EB",
+        "height": 290
+    },
+    {
+        "id": "focusexpo",
+        "title": "Focus Expo",
+        "name": "Focus Expo",
+        "description": "A productivity and focus app that helps you block distractions and conquer your daily goals.",
+        "url": "https://focusexpo.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#DC2626",
+        "height": 310
+    },
+    {
         "id": "onxycall",
         "title": "OnxyCall",
         "name": "OnxyCall",
@@ -148,65 +248,5 @@
         "iconName": "Zap",
         "bgColor": "#06b6d4",
         "height": 290
-    },
-    {
-        "id": "quran-reflections",
-        "title": "Quran Reflections",
-        "name": "Quran Reflections",
-        "description": "Deepen your connection with the Quran through guided reflections, daily reading, and personalized insights.",
-        "url": "https://quran-reflections.netlify.app/",
-        "iconName": "BookOpen",
-        "bgColor": "#10b981",
-        "height": 300
-    },
-    {
-        "id": "quran-audiobook",
-        "title": "Quran Audiobook",
-        "name": "Quran Audiobook",
-        "description": "Listen to the clear Quran seamlessly with this immersive audiobook experience.",
-        "url": "https://quran-audiobook.netlify.app/",
-        "iconName": "Video",
-        "bgColor": "#8b5cf6",
-        "height": 280
-    },
-    {
-        "id": "pushup-power",
-        "title": "Pushup Power",
-        "name": "Pushup Power",
-        "description": "Track your pushups and squats with a local-first application designed for progressive overload.",
-        "url": "https://pushup-power.netlify.app/",
-        "iconName": "Activity",
-        "bgColor": "#ef4444",
-        "height": 310
-    },
-    {
-        "id": "serenity-daily",
-        "title": "Serenity Daily",
-        "name": "Serenity Daily",
-        "description": "A progressive web app to manage anxiety, build positive routines, and practice daily mindfulness.",
-        "url": "https://serenity-daily.netlify.app/",
-        "iconName": "Heart",
-        "bgColor": "#3b82f6",
-        "height": 330
-    },
-    {
-        "id": "babysync",
-        "title": "BabySync",
-        "name": "BabySync",
-        "description": "A comprehensive tracking tool for new parents to log feeds, sleep, and overall baby health.",
-        "url": "https://babysync.netlify.app/",
-        "iconName": "Clock",
-        "bgColor": "#f43f5e",
-        "height": 290
-    },
-    {
-        "id": "hassanat-visualizer",
-        "title": "Hassanat Visualizer",
-        "name": "Hassanat Visualizer",
-        "description": "See your good deeds accumulate and reflect upon your spiritual growth through interactive charts.",
-        "url": "https://hassanat-visualizer.netlify.app/",
-        "iconName": "Star",
-        "bgColor": "#f59e0b",
-        "height": 320
     }
 ]
