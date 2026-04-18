@@ -248,5 +248,35 @@
         "iconName": "Zap",
         "bgColor": "#06b6d4",
         "height": 290
+    },
+    {
+        "id": "dhikrflow",
+        "title": "Dhikr Flow",
+        "name": "Dhikr Flow",
+        "description": "A digital tasbih and dhikr counter to help you maintain your daily remembrance of Allah with focus and ease.",
+        "url": "https://dhikrflow.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#10b981",
+        "height": 280
+    },
+    {
+        "id": "timeline-journaling",
+        "title": "Timeline Journal",
+        "name": "Timeline Journal",
+        "description": "A chronological journaling experience. Track your thoughts, memories, and reflections over time in a beautiful timeline view.",
+        "url": "https://timeline-journaling.netlify.app/",
+        "iconName": "Clock",
+        "bgColor": "#8b5cf6",
+        "height": 300
+    },
+    {
+        "id": "sublime-habits",
+        "title": "Sublime Character",
+        "name": "Sublime Character",
+        "description": "Discover the daily habits, manners, and emotional wisdom of Prophet Muhammad ﷺ — verified from classical Islamic sources.",
+        "url": "https://sublime-habits.netlify.app/",
+        "iconName": "Star",
+        "bgColor": "#f59e0b",
+        "height": 320
     }
 ]
