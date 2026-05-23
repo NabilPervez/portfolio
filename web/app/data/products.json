@@ -40,6 +40,56 @@
         "height": 280
     },
     {
+        "id": "hadith-reflection",
+        "title": "Hadith Reflection",
+        "name": "Hadith Reflection",
+        "description": "Reflect on the sayings of the Prophet Muhammad (PBUH) with daily guided insights.",
+        "url": "https://hadith-reflection.netlify.app/",
+        "iconName": "BookOpen",
+        "bgColor": "#0F766E",
+        "height": 290
+    },
+    {
+        "id": "habit-flow",
+        "title": "Habit Flow",
+        "name": "Habit Flow",
+        "description": "Build and track positive habits seamlessly with an intuitive, fluid interface.",
+        "url": "https://habit-flow-now.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#3B82F6",
+        "height": 310
+    },
+    {
+        "id": "dhikrflow",
+        "title": "Dhikr Flow",
+        "name": "Dhikr Flow",
+        "description": "Stay consistent with your daily remembrance of Allah through a beautiful, distraction-free tracker.",
+        "url": "https://dhikrflow.netlify.app/",
+        "iconName": "Heart",
+        "bgColor": "#8B5CF6",
+        "height": 280
+    },
+    {
+        "id": "sublime-habits",
+        "title": "Sublime Habits",
+        "name": "Sublime Habits",
+        "description": "Elevate your daily routine by building habits that align with your higher purpose.",
+        "url": "https://sublime-habits.netlify.app/",
+        "iconName": "Star",
+        "bgColor": "#F59E0B",
+        "height": 300
+    },
+    {
+        "id": "auroramemorymatch",
+        "title": "Aurora Memory Match",
+        "name": "Aurora Memory Match",
+        "description": "Exercise your memory and focus with a beautifully designed card matching game.",
+        "url": "https://auroramemorymatch.netlify.app/",
+        "iconName": "HelpCircle",
+        "bgColor": "#EC4899",
+        "height": 270
+    },
+    {
         "id": "pushup-power",
         "title": "Pushup Power",
         "name": "Pushup Power",
