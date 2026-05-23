@@ -22,40 +22,23 @@ const GridMotion = ({ items = [], gradientColor = 'black' }: GridMotionProps) =>
     }
 
     useEffect(() => {
-        gsap.ticker.lagSmoothing(0);
-
-        const handleMouseMove = (e: MouseEvent) => {
-            mouseXRef.current = e.clientX;
-        };
-
-        const updateMotion = () => {
-            const maxMoveAmount = 300;
-            const baseDuration = 0.8;
-            const inertiaFactors = [0.6, 0.4, 0.3, 0.2];
-
-            rowRefs.current.forEach((row, index) => {
-                if (row) {
-                    const direction = index % 2 === 0 ? 1 : -1;
-                    const moveAmount = ((mouseXRef.current / window.innerWidth) * maxMoveAmount - 300 / 2) * direction;
-
-                    gsap.to(row, {
-                        x: moveAmount,
-                        duration: baseDuration + inertiaFactors[index % inertiaFactors.length],
-                        ease: 'power3.out',
-                        overwrite: 'auto'
-                    });
+        rowRefs.current.forEach((row, index) => {
+            if (row) {
+                const direction = index % 2 === 0 ? 1 : -1;
+                
+                // Set initial position if moving right so we don't see blank space
+                if (direction === 1) {
+                    gsap.set(row, { x: '-50%' });
                 }
-            });
-        };
 
-        const removeAnimationLoop = gsap.ticker.add(updateMotion);
-
-        window.addEventListener('mousemove', handleMouseMove);
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-            removeAnimationLoop();
-        };
+                gsap.to(row, {
+                    x: direction === 1 ? '0%' : '-50%',
+                    duration: 20 + index * 2, // Slow duration, slightly different per row
+                    ease: 'none',
+                    repeat: -1,
+                });
+            }
+        });
     }, []);
 
     return (
@@ -69,8 +52,8 @@ const GridMotion = ({ items = [], gradientColor = 'black' }: GridMotionProps) =>
                 <div className="gridMotion-container">
                     {[...Array(4)].map((_, rowIndex) => (
                         <div key={rowIndex} className="row" ref={el => { rowRefs.current[rowIndex] = el }}>
-                            {[...Array(7)].map((_, itemIndex) => {
-                                const index = rowIndex * 7 + itemIndex;
+                            {[...Array(14)].map((_, itemIndex) => {
+                                const index = rowIndex * 7 + (itemIndex % 7);
                                 const content = combinedItems[index % combinedItems.length];
                                 return (
                                     <div key={itemIndex} className="row__item">
