@@ -6,7 +6,7 @@ import './StaggeredMenu.css';
 interface StaggeredMenuProps {
     position?: 'right' | 'left';
     colors?: string[];
-    items?: { label: string; ariaLabel: string; link: string }[];
+    items?: { label: string; ariaLabel: string; link: string; target?: string }[];
     ctaItems?: { label: string; link: string; target?: string }[];
     socialItems?: { label: string; link: string }[];
     displaySocials?: boolean;
@@ -454,7 +454,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                         {items && items.length ? (
                             items.map((it, idx) => (
                                 <li className="sm-panel-itemWrap" key={it.label + idx}>
-                                    <a className="sm-panel-item" href={it.link} aria-label={it.ariaLabel} data-index={idx + 1}>
+                                    <a className="sm-panel-item" href={it.link} aria-label={it.ariaLabel} data-index={idx + 1} target={it.target} rel={it.target === '_blank' ? "noopener noreferrer" : undefined}>
                                         <span className="sm-panel-itemLabel">{it.label}</span>
                                     </a>
                                 </li>

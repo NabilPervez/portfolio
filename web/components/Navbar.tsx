@@ -9,12 +9,13 @@ import { useState, useEffect } from "react";
 import StarBorder from "./StarBorder";
 import { StaggeredMenu } from "./StaggeredMenu";
 
-const navLinks = [
+const navLinks: { name: string; href: string; target?: string }[] = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Speaker", href: "/speaker" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Products", href: "/products" },
+    { name: "Resume", href: "https://nabilpervez.github.io/resume/", target: "_blank" },
 ];
 
 export function Navbar() {
@@ -66,6 +67,7 @@ export function Navbar() {
                                 <Link
                                     key={link.href}
                                     href={link.href}
+                                    target={link.target}
                                     className={cn(
                                         "text-sm font-medium tracking-wide transition-all duration-300 relative group",
                                         isActive ? "text-gold" : "opacity-70 hover:opacity-100 hover:text-gold"
@@ -127,7 +129,8 @@ export function Navbar() {
                                     { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
                                     { label: 'Speaker', ariaLabel: 'Speaker page', link: '/speaker' },
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
-                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' }
+                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' },
+                                    { label: 'Resume', ariaLabel: 'View resume', link: 'https://nabilpervez.github.io/resume/', target: '_blank' }
                                 ]}
                                 ctaItems={[
                                     { label: 'Consulting', link: 'https://nabilpervezconsulting.com/', target: '_blank' },
