@@ -63,21 +63,21 @@
         "id": "dhikrflow",
         "title": "Dhikr Flow",
         "name": "Dhikr Flow",
-        "description": "Stay consistent with your daily remembrance of Allah through a beautiful, distraction-free tracker.",
+        "description": "A digital tasbih and dhikr counter to help you maintain your daily remembrance of Allah with focus and ease.",
         "url": "https://dhikrflow.netlify.app/",
-        "iconName": "Heart",
-        "bgColor": "#8B5CF6",
+        "iconName": "Activity",
+        "bgColor": "#10b981",
         "height": 280
     },
     {
         "id": "sublime-habits",
-        "title": "Sublime Habits",
-        "name": "Sublime Habits",
-        "description": "Elevate your daily routine by building habits that align with your higher purpose.",
+        "title": "Sublime Character",
+        "name": "Sublime Character",
+        "description": "Discover the daily habits, manners, and emotional wisdom of Prophet Muhammad \ufdfa \u2014 verified from classical Islamic sources.",
         "url": "https://sublime-habits.netlify.app/",
         "iconName": "Star",
-        "bgColor": "#F59E0B",
-        "height": 300
+        "bgColor": "#f59e0b",
+        "height": 320
     },
     {
         "id": "auroramemorymatch",
@@ -300,16 +300,6 @@
         "height": 290
     },
     {
-        "id": "dhikrflow",
-        "title": "Dhikr Flow",
-        "name": "Dhikr Flow",
-        "description": "A digital tasbih and dhikr counter to help you maintain your daily remembrance of Allah with focus and ease.",
-        "url": "https://dhikrflow.netlify.app/",
-        "iconName": "Activity",
-        "bgColor": "#10b981",
-        "height": 280
-    },
-    {
         "id": "timeline-journaling",
         "title": "Timeline Journal",
         "name": "Timeline Journal",
@@ -318,15 +308,5 @@
         "iconName": "Clock",
         "bgColor": "#8b5cf6",
         "height": 300
-    },
-    {
-        "id": "sublime-habits",
-        "title": "Sublime Character",
-        "name": "Sublime Character",
-        "description": "Discover the daily habits, manners, and emotional wisdom of Prophet Muhammad ﷺ — verified from classical Islamic sources.",
-        "url": "https://sublime-habits.netlify.app/",
-        "iconName": "Star",
-        "bgColor": "#f59e0b",
-        "height": 320
     }
 ]
