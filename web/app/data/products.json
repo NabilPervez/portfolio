@@ -90,6 +90,16 @@
         "height": 270
     },
     {
+        "id": "bodyweight-trainer",
+        "title": "Bodyweight Trainer",
+        "name": "Bodyweight Trainer",
+        "description": "Master your bodyweight and build functional strength with guided workouts and progressions.",
+        "url": "https://bodyweight-trainer.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#DC2626",
+        "height": 310
+    },
+    {
         "id": "pushup-power",
         "title": "Pushup Power",
         "name": "Pushup Power",
