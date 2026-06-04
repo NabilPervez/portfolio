@@ -328,5 +328,25 @@
         "iconName": "BookOpen",
         "bgColor": "#10b981",
         "height": 300
+    },
+    {
+        "id": "recurr",
+        "title": "Recurr",
+        "name": "Recurr",
+        "description": "A simple and intuitive recurring expense tracker and subscription manager.",
+        "url": "https://makeitrecurring.netlify.app/",
+        "iconName": "Calendar",
+        "bgColor": "#6366f1",
+        "height": 290
+    },
+    {
+        "id": "roll-of-the-draw",
+        "title": "Roll of the Draw",
+        "name": "Roll of the Draw",
+        "description": "A fun and interactive decision-making and luck-based game to test your fortune.",
+        "url": "https://rollofthedraw.netlify.app/",
+        "iconName": "HelpCircle",
+        "bgColor": "#ec4899",
+        "height": 310
     }
 ]
