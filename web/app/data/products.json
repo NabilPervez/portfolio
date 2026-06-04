@@ -318,5 +318,15 @@
         "iconName": "Clock",
         "bgColor": "#8b5cf6",
         "height": 300
+    },
+    {
+        "id": "islamic-rag-quran-and-hadith",
+        "title": "Islamic RAG - Quran & Hadith",
+        "name": "Islamic RAG - Quran & Hadith",
+        "description": "An interactive Retrieval-Augmented Generation application for exploring the Quran and Hadith.",
+        "url": "https://islamic-rag-quran-and-hadith.streamlit.app/",
+        "iconName": "BookOpen",
+        "bgColor": "#10b981",
+        "height": 300
     }
 ]
