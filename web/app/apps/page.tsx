@@ -25,6 +25,8 @@ const sections: { title: string; apps: App[] }[] = [
             { name: "Zaman", blurb: "Islamic daily companion", site: "zamanhomepage" },
             { name: "Muhasabah", blurb: "Digital Islamic bullet journal", site: "muhasabah" },
             { name: "Duaa Connect", blurb: "Find your supplication", site: "nameandneed" },
+            { name: "Asmaul Husna", blurb: "Learn the Names of Allah", site: "learnthenamesofallah" },
+            { name: "The Sacred Stream", blurb: "The Quran as an audiobook", site: "quran-audiobook" },
         ],
     },
     {
@@ -33,6 +35,7 @@ const sections: { title: string; apps: App[] }[] = [
             { name: "Bullet Journal", blurb: "A digital bullet journal", site: "bullet-journal-app" },
             { name: "Murmur", blurb: "Private voice transcription", site: "transcribe-pwa" },
             { name: "Serenity", blurb: "Daily action plan", site: "serenity-v2-app" },
+            { name: "KinKeep", blurb: "Stay in touch with family and friends", site: "kinkeep" },
         ],
     },
     {
@@ -46,7 +49,7 @@ const sections: { title: string; apps: App[] }[] = [
 export default function AppsPage() {
     return (
         <main className="min-h-screen px-4 pt-32 pb-20">
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-5xl">
                 <header className="mb-12 text-center">
                     <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-midnight">Apps</h1>
                     <p className="mt-3 text-secondary">Things I&apos;ve built. Tap to open.</p>
@@ -58,7 +61,7 @@ export default function AppsPage() {
                             <span aria-hidden className="h-px w-6 bg-gold" />
                             {section.title}
                         </h2>
-                        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                             {section.apps.map((app) => (
                                 <li key={app.site}>
                                     <a
