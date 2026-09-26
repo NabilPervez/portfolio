@@ -17,8 +17,6 @@ const sections: { title: string; apps: App[] }[] = [
     {
         title: "Islamic",
         apps: [
-            { name: "Baraka Boost", blurb: "Islamic habits tracker", site: "barakaboostapp" },
-            { name: "About Baraka Boost", blurb: "What Baraka Boost is and how it helps", site: "barakaboostmarketing" },
             { name: "Quran Reflections", blurb: "Your personal tadabbur journal", site: "quran-reflections" },
             { name: "Solo Hifz Partner", blurb: "Quran memorization practice", site: "quran-memorization-app" },
             { name: "Hadith Reflection", blurb: "Daily hadith to reflect on", site: "hadith-reflection" },
@@ -26,15 +24,13 @@ const sections: { title: string; apps: App[] }[] = [
             { name: "Ayah Echo", blurb: "Practice and perfect your recitation", site: "ayahecho" },
             { name: "Zaman", blurb: "Islamic daily companion", site: "zamanhomepage" },
             { name: "Muhasabah", blurb: "Digital Islamic bullet journal", site: "muhasabah" },
-            { name: "Reflecting on the Names of Allah", blurb: "A book on the 99 Names", site: "reflecting-on-the-names-of-allah-book" },
+            { name: "Duaa Connect", blurb: "Find your supplication", site: "nameandneed" },
         ],
     },
     {
         title: "Productivity",
         apps: [
             { name: "Bullet Journal", blurb: "A digital bullet journal", site: "bullet-journal-app" },
-            { name: "LearnLoop", blurb: "Sprint-based learning", site: "learnloopapp" },
-            { name: "Recurr", blurb: "Make it recurring", site: "makeitrecurring" },
             { name: "Murmur", blurb: "Private voice transcription", site: "transcribe-pwa" },
             { name: "Serenity", blurb: "Daily action plan", site: "serenity-v2-app" },
         ],
