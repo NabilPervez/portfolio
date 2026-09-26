@@ -3,10 +3,10 @@ import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Apps",
-    description: "Islamic, productivity, and lifestyle apps built by Nabil Pervez.",
+    description: "Islamic, productivity, and fitness apps built by Nabil Pervez.",
     openGraph: {
         title: "Apps | Nabil Pervez",
-        description: "Islamic, productivity, and lifestyle apps built by Nabil Pervez.",
+        description: "Islamic, productivity, and fitness apps built by Nabil Pervez.",
         url: "https://nabilpervez.com/apps",
     },
 };
@@ -18,13 +18,15 @@ const sections: { title: string; apps: App[] }[] = [
         title: "Islamic",
         apps: [
             { name: "Baraka Boost", blurb: "Islamic habits tracker", site: "barakaboostapp" },
+            { name: "About Baraka Boost", blurb: "What Baraka Boost is and how it helps", site: "barakaboostmarketing" },
             { name: "Quran Reflections", blurb: "Your personal tadabbur journal", site: "quran-reflections" },
-            { name: "The Sacred Stream", blurb: "The Quran as an audiobook", site: "quran-audiobook" },
             { name: "Solo Hifz Partner", blurb: "Quran memorization practice", site: "quran-memorization-app" },
             { name: "Hadith Reflection", blurb: "Daily hadith to reflect on", site: "hadith-reflection" },
+            { name: "Dhikr Flow", blurb: "Daily dhikr and remembrance", site: "dhikrflow" },
+            { name: "Ayah Echo", blurb: "Practice and perfect your recitation", site: "ayahecho" },
+            { name: "Zaman", blurb: "Islamic daily companion", site: "zamanhomepage" },
+            { name: "Muhasabah", blurb: "Digital Islamic bullet journal", site: "muhasabah" },
             { name: "Reflecting on the Names of Allah", blurb: "A book on the 99 Names", site: "reflecting-on-the-names-of-allah-book" },
-            { name: "Halal Passport", blurb: "DFW halal spots", site: "halal-passport" },
-            { name: "DFW Halal", blurb: "A halal foodie journal for Dallas–Fort Worth", site: "dfw-halal-foodie-journal" },
         ],
     },
     {
@@ -41,13 +43,6 @@ const sections: { title: string; apps: App[] }[] = [
         title: "Health & Fitness",
         apps: [
             { name: "Lift More", blurb: "Functional lift tracker", site: "lift-more" },
-        ],
-    },
-    {
-        title: "Creative & Design",
-        apps: [
-            { name: "Spectrum Keys", blurb: "Built key by key", site: "spectrum-keys" },
-            { name: "NPC Design System", blurb: "A design system for my products", site: "npc-design-system" },
         ],
     },
 ];
