@@ -22,7 +22,6 @@ const sections: { title: string; apps: App[] }[] = [
             { name: "Hadith Reflection", blurb: "Daily hadith to reflect on", site: "hadith-reflection" },
             { name: "Dhikr Flow", blurb: "Daily dhikr and remembrance", site: "dhikrflow" },
             { name: "Ayah Echo", blurb: "Practice and perfect your recitation", site: "ayahecho" },
-            { name: "Zaman", blurb: "Islamic daily companion", site: "zamanhomepage" },
             { name: "Muhasabah", blurb: "Digital Islamic bullet journal", site: "muhasabah" },
             { name: "Duaa Connect", blurb: "Find your supplication", site: "nameandneed" },
             { name: "Asmaul Husna", blurb: "Learn the Names of Allah", site: "learnthenamesofallah" },
