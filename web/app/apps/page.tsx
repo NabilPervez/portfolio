@@ -55,31 +55,37 @@ const sections: { title: string; apps: App[] }[] = [
 export default function AppsPage() {
     return (
         <main className="min-h-screen px-4 pt-32 pb-20">
-            <div className="mx-auto max-w-xl">
+            <div className="mx-auto max-w-3xl">
                 <header className="mb-12 text-center">
-                    <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight">Apps</h1>
+                    <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-midnight">Apps</h1>
                     <p className="mt-3 text-secondary">Things I&apos;ve built. Tap to open.</p>
                 </header>
 
                 {sections.map((section) => (
                     <section key={section.title} className="mb-10">
-                        <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
+                        <h2 className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-midnight">
+                            <span aria-hidden className="h-px w-6 bg-gold" />
                             {section.title}
                         </h2>
-                        <ul className="flex flex-col gap-3">
+                        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                             {section.apps.map((app) => (
                                 <li key={app.site}>
                                     <a
                                         href={`https://${app.site}.netlify.app`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group flex items-center justify-between gap-4 rounded-2xl border border-black/10 bg-white px-5 py-4 shadow-sm transition hover:-translate-y-0.5 hover:border-black/30 hover:shadow-md"
+                                        className="group relative flex h-full items-center justify-between gap-4 overflow-hidden rounded-2xl border border-midnight/10 bg-white px-5 py-4 shadow-sm transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:border-midnight hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
                                     >
-                                        <span>
-                                            <span className="block font-semibold">{app.name}</span>
-                                            <span className="block text-sm text-secondary">{app.blurb}</span>
+                                        {/* Fill that sweeps up from the bottom on hover */}
+                                        <span
+                                            aria-hidden
+                                            className="absolute inset-0 origin-bottom scale-y-0 bg-midnight transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] group-hover:scale-y-100 group-focus-visible:scale-y-100"
+                                        />
+                                        <span className="relative">
+                                            <span className="block font-semibold text-midnight transition-colors duration-300 group-hover:text-white">{app.name}</span>
+                                            <span className="block text-sm text-secondary transition-colors duration-300 group-hover:text-gold">{app.blurb}</span>
                                         </span>
-                                        <ArrowUpRight className="h-5 w-5 shrink-0 text-secondary transition group-hover:text-foreground" />
+                                        <ArrowUpRight className="relative h-5 w-5 shrink-0 text-gold transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                                     </a>
                                 </li>
                             ))}
