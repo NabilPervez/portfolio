@@ -1,6 +1,6 @@
 /* Portfolio hero, ported from the NPC homepage hero motion: pattern ripples outward in two rings,
    headline shimmers, sheen follows the pointer on desktop. No consulting branding. */
-.phero{--ease:cubic-bezier(.16,1,.3,1);--ink:#07101F;position:relative;overflow:hidden;isolation:isolate;min-height:calc(100svh - 64px);max-height:900px;display:grid;place-items:center;text-align:center;color:#fff;
+.phero{--ease:cubic-bezier(.16,1,.3,1);--ink:#07101F;position:relative;overflow:hidden;isolation:isolate;min-height:100svh;width:100%;display:grid;place-items:center;text-align:center;color:#fff;
   background:radial-gradient(ellipse 70% 60% at 50% 45%,#0F1A2C 0%,var(--ink) 70%)}
 .phero .pattern{position:absolute;inset:0;background:url(/img/hero-pattern.png) 0 0/56px}
 .phero .dim{filter:grayscale(1) brightness(.85);opacity:.12}
@@ -14,7 +14,7 @@
   transform:translate(calc(var(--tx,0)*18%),calc(var(--ty,0)*12%));transition:transform .6s var(--ease)}
 .phero .lockup{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:22px;padding:112px 24px 64px}
 .phero .kicker{font-size:.75rem;letter-spacing:.42em;margin-right:-.42em;color:#C6A87C;text-transform:uppercase;font-weight:700}
-.phero h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.6rem,7vw,5.6rem);line-height:1}
+.phero h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.4rem,9vw,5.6rem);overflow-wrap:anywhere;line-height:1}
 .phero .nw{white-space:nowrap}
 .phero .shine{background:linear-gradient(90deg,#C6A87C,#F3E2B8,#C6A87C,#9C7F52,#C6A87C);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
 .phero .lede{font-size:clamp(1.05rem,2vw,1.35rem);color:rgb(255 255 255/.7);max-width:36ch}

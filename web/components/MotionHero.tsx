@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import "./PortfolioHero.css";
+import Link from "next/link";
+import "./MotionHero.css";
 
-export default function PortfolioHero({ count }: { count: number }) {
+export default function MotionHero() {
   const ref = useRef<HTMLElement>(null);
   useEffect(() => {
     const el = ref.current;
@@ -18,21 +19,20 @@ export default function PortfolioHero({ count }: { count: number }) {
   }, []);
 
   return (
-    <section className="phero" ref={ref} aria-labelledby="portfolio-title">
+    <section className="phero" ref={ref} aria-labelledby="hero-title">
       <div className="pattern dim" aria-hidden="true" />
       <div className="ring" aria-hidden="true"><div className="pattern" /></div>
       <div className="ring" aria-hidden="true"><div className="pattern" /></div>
       <div className="clear" aria-hidden="true" />
       <div className="lockup">
-        <p className="kicker enter">Nabil Pervez · Portfolio</p>
-        <h1 id="portfolio-title" className="enter d1">
-          <span className="nw">Brand. Campaigns.</span> <span className="nw">Product. Web.</span>
-          <br /><span className="shine">Shipped.</span>
+        <p className="kicker enter">Strategist · Product · Branding</p>
+        <h1 id="hero-title" className="enter d1">
+          Brand. Product.<br />Web. AI.<br /><span className="shine">Shipped.</span>
         </h1>
-        <p className="lede enter d2">{count} case studies from LEGO, Riot, Activision Blizzard, Coca-Cola, Lenovo Legion and more. Co-founder &amp; CTO of AOE Creative, 3× Best Esports Agency of the Year Finalist.</p>
+        <p className="lede enter d2">Product manager and co-founder &amp; CTO of AOE Creative, a 3× Best Esports Agency of the Year Finalist. Work for LEGO, Riot, Activision Blizzard and Coca-Cola.</p>
         <div className="ctas enter d2">
-          <a className="btn btn-gold" href="#work">See the work</a>
-          <a className="btn btn-line" href="/about">About me</a>
+          <Link className="btn btn-gold" href="/portfolio">View my work</Link>
+          <Link className="btn btn-line" href="/about">About me</Link>
         </div>
       </div>
       <div className="sheen" aria-hidden="true" />

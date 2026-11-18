@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { caseStudies, TAGS, type Tag } from "@/lib/caseStudies";
 import { useState } from "react";
-import PortfolioHero from "./PortfolioHero";
+import GridMotion from "@/components/GridMotion";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
@@ -27,8 +27,15 @@ export default function PortfolioContent() {
             transition={{ duration: 0.5 }}
             className="min-h-screen bg-background"
         >
-            <PortfolioHero count={caseStudies.length} />
-            <div className="h-24" />
+            {/* GridMotion Hero */}
+            <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 overflow-hidden">
+                <GridMotion items={all.map(p => p.image).filter(Boolean)} gradientColor="black" />
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
+                    <h1 className="text-6xl md:text-8xl font-display font-bold text-white text-center drop-shadow-2xl">
+                        Portfolio
+                    </h1>
+                </div>
+            </div>
 
             <div id="work" className="w-full px-4 md:px-8 pb-24 max-w-[1920px] mx-auto scroll-mt-24">
 

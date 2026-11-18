@@ -11,8 +11,7 @@ import Image from "next/image";
 import { BentoGrid } from "@/components/BentoGrid";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
-import ColorBends from "@/components/ColorBends";
-import GradientText from "@/components/GradientText";
+import MotionHero from "@/components/MotionHero";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -71,71 +70,7 @@ export default function Home() {
     <div ref={containerRef} className="relative overflow-x-hidden">
 
       {/* Hero Section */}
-      <section className="h-screen relative flex items-center justify-center overflow-hidden bg-black">
-        <div className="absolute inset-0 z-0">
-          <ColorBends
-            colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
-            rotation={0}
-            speed={0.2}
-            scale={1}
-            frequency={1}
-            warpStrength={1}
-            mouseInfluence={1}
-            parallax={0.5}
-            noise={0.1}
-            transparent
-            autoRotate={0}
-          />
-        </div>
-
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            animate="show"
-            className="flex flex-col items-center text-center justify-center max-w-5xl mx-auto"
-          >
-            <div className="relative z-10 p-8 rounded-3xl bg-black/30 backdrop-blur-md border border-white/10 shadow-2xl">
-              <motion.p variants={fadeInUp as any} className="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-gold md:mt-0">
-                Strategist &middot; Product &middot; Branding
-              </motion.p>
-              <motion.h2 variants={fadeInUp as any} className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-white mb-8">
-                I create <br />
-                <span className="text-gold">digital solutions</span> <br />
-                through <GradientText
-                  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                  animationSpeed={3}
-                  showBorder={false}
-                  className="inline-flex px-1"
-                >
-                  innovation
-                </GradientText>.
-              </motion.h2>
-
-              <motion.p variants={fadeInUp as any} className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto leading-relaxed mb-10">
-                Accomplished product manager - specialized in branding.<br />
-                Honored with multiple awards and boasting over a decade of expertise.
-              </motion.p>
-
-              <motion.div variants={fadeInUp as any} className="flex flex-wrap justify-center gap-4">
-                <Link
-                  href="/portfolio"
-                  className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-black rounded-full text-lg font-medium tracking-wide transition-all hover:bg-gold hover:text-white"
-                >
-                  View My Work <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link
-                  href="/about"
-                  className="group inline-flex items-center gap-3 px-10 py-5 border border-gray-700 text-white rounded-full text-lg font-medium tracking-wide transition-all hover:border-white hover:bg-transparent"
-                >
-                  About Me
-                </Link>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <MotionHero />
 
       {/* Video Section Below Hero */}
       <section className="bg-black py-0">
