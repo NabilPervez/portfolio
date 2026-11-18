@@ -81,7 +81,9 @@ export default function Home() {
             muted
             playsInline
             className="object-cover w-full h-full opacity-80"
-            src="https://aoecreative.com/uploads/homepage.webm"
+            src="/media/home-reel.mp4"
+            poster="/media/home-reel-poster.webp"
+            aria-label="Showreel"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>

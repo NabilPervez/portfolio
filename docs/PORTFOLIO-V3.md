@@ -3,10 +3,10 @@
 PRD: https://claude.ai/artifact/DF9tdGj3ZP3MyLJCmQ4bRg · Audit: https://claude.ai/artifact/T3eqVgee1zrq6nzGF5KAHJ
 
 ## How case studies work
-- `web/app/data/caseStudies.json` — the 14 AOE Creative case studies (chapter layout, stats, video). Generated once from Markel Lee's site data, then rewritten in Nabil's voice (role = Co-Founder & CTO). Edit this file directly from now on.
+- `web/app/data/caseStudies.json` — the 9 AOE Creative case studies (chapter layout, stats, video). Rewritten in Nabil's voice (role = Co-Founder & CTO). Edit this file directly from now on.
 - `web/app/data/projects.json` — the legacy projects. `web/lib/caseStudies.ts` adapts them into the same shape so every slug uses one template. Tags for legacy entries live in `LEGACY_TAGS`.
 - `web/components/case/` — `CaseStudy` (layout), `MediaItem` (MP4 loop/controls + click-to-load YouTube), `CaseImage`, `Reveal`.
-- `web/public/media/aoe/` — re-encoded WebP (640/1280/1920) + MP4 + posters copied from markel-lee-website.
+- `web/public/media/aoe/` — re-encoded WebP (640/1280/1920) + MP4 + posters.
 - Portfolio hero: `web/components/portfolio/PortfolioHero.*`, ported from npc-homepage-redesign. No "Consulting" text.
 
 ## Sprints (Definition of Done)

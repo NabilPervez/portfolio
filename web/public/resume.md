@@ -215,14 +215,6 @@ Recommendations
 * All LinkedIn membersShow Godswill Ugwa Jr. recommendation to All LinkedIn members  
   * Nabil is a well-connected and eloquent speaker that has helped me professionally in many ways from connecting me with influencers to providing quality advice on multiple campaigns. He's a joy to talk with and is an asset to any team.Nabil is a well-connected and eloquent speaker that has helped me professionally in many ways from connecting me with influencers to providing quality advice on multiple campaigns. He's a joy to talk with and is an asset to any team.
 
-![Markel Lee profile picture][image8]  
-[Markel LeeMarkel Lee](https://www.linkedin.com/in/markellee)  
-[· 1stFirst degree connection](https://www.linkedin.com/in/markellee)  
-[Creative DirectorCreative Director March 18, 2024, Markel managed Nabil directlyMarch 18, 2024, Markel managed Nabil directly](https://www.linkedin.com/in/markellee)
-
-* All LinkedIn membersShow Markel Lee recommendation to All LinkedIn members  
-  * At AOE Creative, I have had the pleasure of working closely with Nabil in his capacity as Chief Technology Officer for the past 5 years. In this time, I have been consistently impressed by his remarkable skills, dedication, and management abilities. Nabil has a strong background in marketing, project management, and business, with over five years of experience in these fields. He has consistently demonstrated an ability to manage complex projects and has been instrumental in our company's growth and success.At AOE Creative, I have had the pleasure of working closely with Nabil in his capacity as Chief Technology Officer for the past 5 years. In this time, I have been consistently impressed by his remarkable skills, dedication, and management abilities. Nabil has a strong background in marketing, project management, and business, with over five years of experience in these fields. He has consistently demonstrated an ability to manage complex projects and has been instrumental in our company's growth and success.
-
 ![Dávid Dolyák profile picture][image9]  
 [Dávid DolyákDávid Dolyák](https://www.linkedin.com/in/d%C3%A1vid-doly%C3%A1k-a54b0714b)  
 [· 1stFirst degree connection](https://www.linkedin.com/in/d%C3%A1vid-doly%C3%A1k-a54b0714b)  
