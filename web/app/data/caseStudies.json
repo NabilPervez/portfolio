@@ -206,7 +206,8 @@
     "alt": "EMEA Championship finals stage"
    }
   },
-  "org": "AOE Creative"
+  "org": "AOE Creative",
+  "cardVideo": "/media/aoe/2026-09-emea-website.mp4"
  },
  {
   "slug": "immortal-gates-of-pyre",
@@ -404,7 +405,8 @@
     "alt": "Immortal: Gates of Pyre key art"
    }
   },
-  "org": "AOE Creative"
+  "org": "AOE Creative",
+  "cardVideo": "/media/aoe/2026-09-desktop-gif.mp4"
  },
  {
   "slug": "paramount-players",
@@ -606,7 +608,8 @@
    "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
    "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
    "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
-  ]
+  ],
+  "cardVideo": "/media/aoe/2026-09-fug-logoanimation.mp4"
  },
  {
   "slug": "call-of-duty-league",
@@ -770,7 +773,8 @@
    "notes": [],
    "image": null
   },
-  "org": "AOE Creative"
+  "org": "AOE Creative",
+  "cardVideo": "/media/aoe/2025-10-adobe-express-cdl-championsanimation-dallas.mp4"
  },
  {
   "slug": "overwatch-league",
@@ -960,7 +964,8 @@
     "alt": "Overwatch League artwork"
    }
   },
-  "org": "AOE Creative"
+  "org": "AOE Creative",
+  "cardVideo": "/media/aoe/2025-10-ow-grandfinalswinnersshd-ani-2.mp4"
  },
  {
   "slug": "coca-cola",
@@ -971,11 +976,11 @@
   ],
   "stat": "2.23M+ reach",
   "thumb": {
-   "src": "/media/aoe/2020-12-cokeheader-1920.webp",
-   "srcSet": "/media/aoe/2020-12-cokeheader-640.webp 640w, /media/aoe/2020-12-cokeheader-1280.webp 1280w, /media/aoe/2020-12-cokeheader-1920.webp 1920w",
+   "src": "/media/aoe/2025-10-cocacolaad-amongus-1920.webp",
+   "srcSet": "/media/aoe/2025-10-cocacolaad-amongus-640.webp 640w, /media/aoe/2025-10-cocacolaad-amongus-1280.webp 1280w, /media/aoe/2025-10-cocacolaad-amongus-1920.webp 1920w",
    "w": 1920,
    "h": 1080,
-   "alt": "Coca-Cola branded Poké Ball campaign artwork"
+   "alt": "Coca-Cola esports campaign key art with Coca-Cola logo"
   },
   "role": "I co-led Coca-Cola's esports campaign. As CTO I owned the campaign plan, the ad sets and the delivery schedule, and made sure the work hit Coke's reach goal on time.",
   "task": "Design a campaign that authentically connects Coca-Cola's “Bringing People Together” brand values to esports and gaming audiences.",
@@ -1288,7 +1293,8 @@
    "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
    "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
    "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
-  ]
+  ],
+  "cardVideo": "/media/aoe/2025-09-lego-logo-reveal.mp4"
  },
  {
   "slug": "metal-umbrella",
@@ -1439,7 +1445,8 @@
    "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.jpg",
    "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.jpg",
    "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.jpg"
-  ]
+  ],
+  "cardVideo": "/media/aoe/2025-10-mu-behance-animation-12.mp4"
  },
  {
   "slug": "houston-outlaws",
@@ -1599,6 +1606,7 @@
     "alt": "Houston Outlaws team artwork"
    }
   },
-  "org": "AOE Creative"
+  "org": "AOE Creative",
+  "cardVideo": "/media/aoe/2025-09-bandtogetherclip.mp4"
  }
 ]

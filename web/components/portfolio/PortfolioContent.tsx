@@ -13,9 +13,10 @@ export default function PortfolioContent() {
     const all = caseStudies.map(p => ({
         slug: p.slug,
         title: p.title,
-        category: p.client,
+        category: p.client.toLowerCase() === p.title.toLowerCase() ? p.tags.join(" · ") : p.client,
         tags: p.tags,
         image: p.thumb.src,
+        video: p.cardVideo,
         stat: p.stat,
     }));
     const projects = filter === "All" ? all : all.filter(p => p.tags.includes(filter));
@@ -79,12 +80,17 @@ export default function PortfolioContent() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     {projects.map((project) => (
                         <Link href={`/portfolio/${project.slug}`} key={project.slug} className="group block relative h-[50vh] min-h-[400px] overflow-hidden bg-gray-100 border border-gray-200 shadow-sm w-full">
+{project.video ? (
+                                <video src={project.video} poster={project.image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true"
+                                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+                            ) : (
                             <ImageWithFallback
                                 src={project.image}
                                 alt={project.title}
                                 fill
                                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                             />
+                            )}
                             {/* Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
 

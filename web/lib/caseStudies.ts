@@ -29,6 +29,7 @@ export type CaseStudy = {
   work: { heading: string[]; blocks: { label: string; body: string }[]; media: Media[] };
   results: { heading: string[]; stats: Stat[]; notes: string[]; body?: string; image?: Img | null };
   extraImages?: string[];
+  cardVideo?: string;
 };
 
 const LEGACY_TAGS: Record<string, Tag[]> = {
@@ -78,6 +79,7 @@ function adapt(p: LegacyProject): CaseStudy {
     approach: { heading: ["The", "Approach"], bullets: sentences(solution) },
     work: { heading: ["The", "Work"], blocks: [], media: borrowed },
     results: { heading: ["The", "Outcome"], stats: [], notes: [], body: strip(p.content.outcome) },
+    cardVideo: BORROW_MEDIA[p.slug]?.startsWith("immortal") ? rich.find((c) => c.slug === "immortal-gates-of-pyre")?.cardVideo : undefined,
     extraImages: (p.images ?? []).filter((i) => i !== (p.heroImage || p.image)),
   };
 }
