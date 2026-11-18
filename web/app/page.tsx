@@ -4,8 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
-import projectsData from "./data/projects.json";
-import clientsData from "./data/clients.json";
+import { caseStudies } from "@/lib/caseStudies";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Image from "next/image";
 import { BentoGrid } from "@/components/BentoGrid";
@@ -57,10 +56,9 @@ export default function Home() {
   // So I can replace row1/row2 definition with project logic.
 
   // Filter valid projects
-  const validProjects = projectsData.filter(p => {
-    const img = p.heroImage || p.image;
-    return img && !img.includes("default.jpg");
-  });
+  const validProjects = caseStudies
+    .filter(p => p.thumb.src && !p.thumb.src.includes("default.jpg"))
+    .map(p => ({ slug: p.slug, title: p.title, image: p.thumb.src, video: p.cardVideo }));
 
   const midPoint = Math.ceil(validProjects.length / 2);
   const projectRow1 = validProjects.slice(0, midPoint);
@@ -127,41 +125,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Static Client Grid - Promo Cards */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="mb-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">My Previous Clients</h2>
-            <p className="text-secondary max-w-2xl mx-auto">Trusted by industry leaders.</p>
+      {/* Previous Clients - logo lockup */}
+      <section className="py-24 bg-black">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">My Previous Clients</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">Trusted by industry leaders.</p>
           </div>
-
-          <MobileAutoCarousel
-            desktopGridClassName="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {clientsData.slice(0, 8).map((client, i) => (
-              <div key={i} className="group relative bg-gray-900 border border-gray-100 aspect-[3/2] flex flex-col items-center justify-center overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-lg w-full">
-                {/* Full Card Image Background */}
-                <div className="absolute inset-0 w-full h-full opacity-50 group-hover:opacity-30 transition-opacity duration-500">
-                  <ImageWithFallback
-                    src={client.logo}
-                    alt={client.name}
-                    fill
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-110 group-hover:scale-100"
-                  />
-                </div>
-
-                {/* Overlay for text readability */}
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-300" />
-
-                {/* Text Centered Large Bold */}
-                <div className="relative z-10 p-4 text-center">
-                  <span className="text-xl md:text-2xl font-display font-bold text-white uppercase tracking-wider group-hover:text-gold transition-colors duration-300 shadow-black drop-shadow-md">
-                    {client.name}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </MobileAutoCarousel>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/client-logos.webp"
+            width={1116}
+            height={569}
+            loading="lazy"
+            alt="Client logos: The Story Mob, Kraft Group, Team Liquid, Sansar, Paramount+, Red Bull, Sunspear Games, Overwatch League, OpTic Gaming, Oni Studios, Nerd Street Gamers, McCown Evans, LEGO, Houston Outlaws, Funny or Die, Freshcut, Flashpoint, FCFL, EVO, Ellevens, Cloud9, Call of Duty League, Axiomatic, Activision Blizzard"
+            className="w-full h-auto"
+          />
         </div>
       </section>
 
@@ -242,42 +221,46 @@ export default function Home() {
         </div>
 
         {/* Row 1 - Moving Left */}
-        <div className="flex overflow-hidden mb-8 opacity-40 hover:opacity-100 transition-opacity duration-500">
+        <div className="flex overflow-hidden mb-8">
           <motion.div
             className="flex gap-6 px-6"
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ ease: "linear", duration: 60, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 120, repeat: Infinity }}
           >
             {[...projectRow1, ...projectRow1].map((project, i) => (
-              <div key={`p-row1-${i}`} className="relative w-[400px] h-[250px] flex-shrink-0 bg-white border border-gray-100 rounded-sm overflow-hidden group shadow-sm">
-                <ImageWithFallback
-                  src={project.heroImage || project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+              <Link href={`/portfolio/${project.slug}`} key={`p-row1-${i}`} aria-label={project.title} className="relative w-[320px] h-[200px] md:w-[560px] md:h-[350px] flex-shrink-0 bg-black rounded-sm overflow-hidden group shadow-sm">
+                {project.video ? (
+                  <video src={project.video} poster={project.image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                ) : (
+                  <ImageWithFallback src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                )}
+                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <span className="font-display font-bold text-white text-lg md:text-2xl">{project.title}</span>
+                </div>
+              </Link>
             ))}
           </motion.div>
         </div>
 
         {/* Row 2 - Moving Right */}
-        <div className="flex overflow-hidden opacity-40 hover:opacity-100 transition-opacity duration-500">
+        <div className="flex overflow-hidden">
           <motion.div
             className="flex gap-6 px-6"
             initial={{ x: "-50%" }}
             animate={{ x: ["-50%", "0%"] }}
-            transition={{ ease: "linear", duration: 60, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 120, repeat: Infinity }}
           >
             {[...projectRow2, ...projectRow2].map((project, i) => (
-              <div key={`p-row2-${i}`} className="relative w-[400px] h-[250px] flex-shrink-0 bg-white border border-gray-100 rounded-sm overflow-hidden group shadow-sm">
-                <ImageWithFallback
-                  src={project.heroImage || project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+              <Link href={`/portfolio/${project.slug}`} key={`p-row2-${i}`} aria-label={project.title} className="relative w-[320px] h-[200px] md:w-[560px] md:h-[350px] flex-shrink-0 bg-black rounded-sm overflow-hidden group shadow-sm">
+                {project.video ? (
+                  <video src={project.video} poster={project.image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                ) : (
+                  <ImageWithFallback src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                )}
+                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <span className="font-display font-bold text-white text-lg md:text-2xl">{project.title}</span>
+                </div>
+              </Link>
             ))}
           </motion.div>
         </div>

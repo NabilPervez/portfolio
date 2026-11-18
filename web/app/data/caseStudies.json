@@ -138,7 +138,7 @@
      "video": "/media/aoe/2026-09-emea-website.mp4",
      "poster": "/media/aoe/2026-09-emea-website-poster.webp",
      "title": "Website walkthrough",
-     "loop": false,
+     "loop": true,
      "w": 1280,
      "h": 720
     },
@@ -146,7 +146,7 @@
      "video": "/media/aoe/2026-09-6-interactive-map.mp4",
      "poster": "/media/aoe/2026-09-6-interactive-map-poster.webp",
      "title": "Interactive map in motion",
-     "loop": false,
+     "loop": true,
      "w": 1280,
      "h": 732
     },
@@ -161,7 +161,7 @@
      "video": "/media/aoe/2026-09-3-mobile-splash.mp4",
      "poster": "/media/aoe/2026-09-3-mobile-splash-poster.webp",
      "title": "Mobile splash screen",
-     "loop": false,
+     "loop": true,
      "w": 1280,
      "h": 676
     },
@@ -176,7 +176,7 @@
      "video": "/media/aoe/2026-09-9-ar-style.mp4",
      "poster": "/media/aoe/2026-09-9-ar-style-poster.webp",
      "title": "AR-style filter",
-     "loop": false,
+     "loop": true,
      "w": 1280,
      "h": 676
     }
@@ -207,7 +207,7 @@
    }
   },
   "org": "AOE Creative",
-  "cardVideo": "/media/aoe/2026-09-emea-website.mp4"
+  "cardVideo": "/media/aoe/2026-09-3-mobile-splash.mp4"
  },
  {
   "slug": "immortal-gates-of-pyre",
@@ -355,7 +355,7 @@
      "video": "/media/aoe/2026-09-immortal-tutorialv4.mp4",
      "poster": "/media/aoe/2026-09-immortal-tutorialv4-poster.webp",
      "title": "In-game tutorial",
-     "loop": false,
+     "loop": true,
      "w": 1280,
      "h": 720
     },
@@ -555,7 +555,7 @@
      "video": "/media/aoe/2026-09-players-jerseyvideo.mp4",
      "poster": "/media/aoe/2026-09-players-jerseyvideo-poster.webp",
      "title": "Jersey reveal",
-     "loop": false,
+     "loop": true,
      "w": 1280,
      "h": 864
     },
@@ -976,11 +976,11 @@
   ],
   "stat": "2.23M+ reach",
   "thumb": {
-   "src": "/media/aoe/2025-10-cocacolaad-amongus-1920.webp",
-   "srcSet": "/media/aoe/2025-10-cocacolaad-amongus-640.webp 640w, /media/aoe/2025-10-cocacolaad-amongus-1280.webp 1280w, /media/aoe/2025-10-cocacolaad-amongus-1920.webp 1920w",
+   "src": "/media/aoe/2025-10-cocacolaad-pageimg-1920.webp",
+   "srcSet": "/media/aoe/2025-10-cocacolaad-pageimg-640.webp 640w, /media/aoe/2025-10-cocacolaad-pageimg-1280.webp 1280w, /media/aoe/2025-10-cocacolaad-pageimg-1920.webp 1920w",
    "w": 1920,
    "h": 1080,
-   "alt": "Coca-Cola esports campaign key art with Coca-Cola logo"
+   "alt": "Coca-Cola robot vending drone on the Coca-Cola ribbon"
   },
   "role": "I co-led Coca-Cola's esports campaign. As CTO I owned the campaign plan, the ad sets and the delivery schedule, and made sure the work hit Coke's reach goal on time.",
   "task": "Design a campaign that authentically connects Coca-Cola's “Bringing People Together” brand values to esports and gaming audiences.",
