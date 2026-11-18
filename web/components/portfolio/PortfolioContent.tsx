@@ -2,21 +2,23 @@
 
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import projectData from "../../app/data/projects.json";
+import { caseStudies, TAGS, type Tag } from "@/lib/caseStudies";
+import { useState } from "react";
+import PortfolioHero from "./PortfolioHero";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import GridMotion from "@/components/GridMotion";
 
 export default function PortfolioContent() {
-    // Transform data to match component interface
-    const projects = projectData.map(p => ({
+    const [filter, setFilter] = useState<Tag | "All">("All");
+    const all = caseStudies.map(p => ({
         slug: p.slug,
         title: p.title,
-        category: p.tags && p.tags.length > 0 ? p.tags[0] : "Development",
+        category: p.client,
         tags: p.tags,
-        image: p.image,
-        heroImage: p.heroImage
+        image: p.thumb.src,
+        stat: p.stat,
     }));
+    const projects = filter === "All" ? all : all.filter(p => p.tags.includes(filter));
 
     return (
         <motion.div
@@ -25,17 +27,10 @@ export default function PortfolioContent() {
             transition={{ duration: 0.5 }}
             className="min-h-screen bg-background"
         >
-            {/* GridMotion Hero */}
-            <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 overflow-hidden">
-                <GridMotion items={projectData.map(p => p.heroImage || p.image).filter(Boolean)} gradientColor="black" />
-                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
-                    <h1 className="text-6xl md:text-8xl font-display font-bold text-white text-center drop-shadow-2xl">
-                        Portfolio
-                    </h1>
-                </div>
-            </div>
+            <PortfolioHero count={caseStudies.length} />
+            <div className="h-24" />
 
-            <div className="w-full px-4 md:px-8 pb-24 max-w-[1920px] mx-auto">
+            <div id="work" className="w-full px-4 md:px-8 pb-24 max-w-[1920px] mx-auto scroll-mt-24">
 
                 {/* Header with Behance Button */}
                 <div className="flex justify-between items-end mb-12 px-4 md:px-0">
@@ -63,6 +58,16 @@ export default function PortfolioContent() {
                     </Link>
                 </div>
 
+                {/* Filters */}
+                <div className="flex flex-wrap gap-2 mb-10 px-4 md:px-0" role="group" aria-label="Filter projects">
+                    {(["All", ...TAGS] as const).map(t => (
+                        <button key={t} onClick={() => setFilter(t)} aria-pressed={filter === t}
+                            className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${filter === t ? "bg-foreground text-white border-foreground" : "border-black/15 hover:border-foreground"}`}>
+                            {t}
+                        </button>
+                    ))}
+                </div>
+
                 {/* Grid - 2 Column Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     {projects.map((project) => (
@@ -78,6 +83,7 @@ export default function PortfolioContent() {
 
                             {/* Text Content */}
                             <div className="absolute bottom-0 left-0 w-full p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                                {project.stat && <p className="text-gold font-bold text-sm mb-2">{project.stat}</p>}
                                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-2 leading-tight">{project.title}</h3>
                                 <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-300">
                                     <div className="pt-4 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
