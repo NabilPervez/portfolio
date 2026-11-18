@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import projectsData from './data/projects.json'
+import { caseStudies as projectsData } from '@/lib/caseStudies'
 
 export const dynamic = "force-static";
 
