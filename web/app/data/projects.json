@@ -1072,5 +1072,59 @@
         ],
         "image": "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.jpg",
         "heroImage": "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.jpg"
+    },
+    {
+        "id": "newbreed",
+        "title": "NEWBREED",
+        "slug": "newbreed",
+        "tags": [
+            "Strategy",
+            "Design"
+        ],
+        "content": {
+            "scope": "<p>As Co-Founder &amp; CTO of AOE Creative, I co-led brand strategy, identity, packaging, 3D and motion for NEWBREED's launch.</p>",
+            "challenge": "<p>NEWBREED came to us already ambitious. Founder Sebastian Svärd, a former pro footballer, wanted a premium luggage brand that could stand next to Samsonite, Briggs &amp; Riley and Tumi. He also wanted gamers to see it as part of their journey, not just travel gear. We had to make one brand speak credibly to both audiences.</p>",
+            "solution": "<p>We built the brand on a single idea: NEWBREED guards the gear and the dreams you carry. We defined the strategy and identity first, then carried it into packaging, 3D product visuals, merch and motion. The brand leaned on chasing dreams and new experiences, so it felt aspirational instead of utilitarian. For gamers, it promised protection for precious equipment on the way to the next event.</p>",
+            "outcome": "<p>NEWBREED launched with a complete brand system: strategy, identity, packaging, 3D and motion assets, including patch animations and a stop-motion piece for social. It was ready to sit next to the category leaders and to show up in gaming spaces.</p>"
+        },
+        "images": [
+            "https://aoecreative.com/uploads/nb-2.png",
+            "https://aoecreative.com/uploads/nb-3.png",
+            "https://aoecreative.com/uploads/animation_patches.gif",
+            "https://aoecreative.com/uploads/nb-4.png",
+            "https://aoecreative.com/uploads/nb-5.png",
+            "https://aoecreative.com/uploads/stopmotion-thebodyguard-ezgif.com-optimize.gif",
+            "https://aoecreative.com/uploads/nb-6.png"
+        ],
+        "image": "https://aoecreative.com/uploads/nb-2.png",
+        "heroImage": "https://aoecreative.com/uploads/nb-2.png"
+    },
+{
+        "id": "oxg-esports",
+        "title": "OXG Esports",
+        "slug": "oxg-esports",
+        "tags": [
+            "Strategy",
+            "Design"
+        ],
+        "content": {
+            "scope": "<p>As Co-Founder &amp; CTO of AOE Creative, I co-led Oxygen Esports' unified rebrand: logo and ID system, style guide and social strategy.</p>",
+            "challenge": "<p>Oxygen Esports competed across CoD League, Valorant, Rainbow Six, Overwatch League, Rocket League and Halo. When Boston Breach and Boston Uprising joined, its green geometric identity no longer held the family together. Oxygen needed one brand that worked across every team and still felt modern in an increasingly flat industry.</p>",
+            "solution": "<p>We reframed the org's mindset from competing at the top to win-first. Instead of the content-first path of orgs like 100 Thieves and FaZe, Oxygen would be an organization that creates icons. We designed a clean, timeless wordmark and a storm icon whose center swaps per team, with Breach's X as the default. Sharper, modern colors kept it welcoming while adding a competitive edge, and a style guide made the system consistent across teams and partners.</p>",
+            "outcome": "<p>Oxygen and Boston Breach consistently ranked at or near the top of their competitors month over month for engagement, impressions and sentiment. The unified system made every team instantly recognizable as OXG.</p>"
+        },
+        "images": [
+            "https://aoecreative.com/uploads/oxg02-website-header-1.png",
+            "https://aoecreative.com/uploads/logo-oxg.png",
+            "https://aoecreative.com/uploads/oxg02-watchparty-3.png",
+            "https://aoecreative.com/uploads/oxg_partner.png",
+            "https://aoecreative.com/uploads/oxg02-dark-5.png",
+            "https://aoecreative.com/uploads/oxg02-controller-6.png",
+            "https://aoecreative.com/uploads/mockups.png",
+            "https://aoecreative.com/uploads/t-shirt2.png",
+            "https://aoecreative.com/uploads/screen_shot_2023-02-01_at_10.38.18_am.png"
+        ],
+        "image": "https://aoecreative.com/uploads/oxg02-website-header-1.png",
+        "heroImage": "https://aoecreative.com/uploads/oxg02-website-header-1.png"
     }
 ]

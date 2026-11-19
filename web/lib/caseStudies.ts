@@ -41,7 +41,7 @@ const LEGACY_TAGS: Record<string, Tag[]> = {
   ellevens: ["Brand Identity"], "boston-breach": ["Esports", "Brand Identity"], "pvp-live": ["Product & Web"], "igda-dallas": ["Experiential"],
   "aoe-creative": ["Brand Identity"], "evolution-championship-series": ["Experiential", "Esports"],
   "overwatch-league-in-game-sprays": ["Esports", "Brand Identity"], fancurve: ["Product & Web"], alloy: ["Product & Web"],
-  "tourney-locator": ["Product & Web"],
+  "tourney-locator": ["Product & Web"], newbreed: ["Brand Identity", "Campaigns"], "oxg-esports": ["Brand Identity", "Esports"],
   "immortal-gates-of-pyre-logo-faction-icons": ["Brand Identity"], "immortal-gates-of-pyre-lorebook-videos": ["Campaigns"],
   "immortal-gates-of-pyre-kickstarter": ["Campaigns"], "immortal-gates-of-pyre-ui-producing": ["Product & Web"],
   "immortal-gates-of-pyre-video-producing": ["Campaigns"], "immortal-gates-of-pyre-web-development": ["Product & Web"],
