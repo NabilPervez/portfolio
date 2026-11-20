@@ -15,21 +15,21 @@
             "outcome": "Our strategic guidance helped clarify LEGO GAMES' position in the market. By establishing clear standards for branding and marketing, we empowered them to work more effectively with their partners, ensuring that every digital product felt authentically LEGO."
         },
         "images": [
-            "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
-            "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
-            "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.gif",
-            "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
-            "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.png",
-            "/images/portfolio/lego_27/96866c126553707.6153625602cd4.gif",
-            "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.gif",
-            "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
-            "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.gif",
-            "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
-            "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
-            "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
+            "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.webp",
+            "/images/portfolio/lego_27/406806126553707.615376f58f116.webp",
+            "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.mp4",
+            "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.webp",
+            "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.webp",
+            "/images/portfolio/lego_27/96866c126553707.6153625602cd4.mp4",
+            "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.mp4",
+            "/images/portfolio/lego_27/b0024b126553707.613144231265b.mp4",
+            "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.mp4",
+            "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.webp",
+            "/images/portfolio/lego_27/df5548126553707.614b7baabf837.webp",
+            "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.webp"
         ],
-        "image": "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
-        "heroImage": "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif"
+        "image": "/images/portfolio/lego_27/b0024b126553707.613144231265b.mp4",
+        "heroImage": "/images/portfolio/lego_27/b0024b126553707.613144231265b.mp4"
     },
     {
         "id": "voyagers-of-nera",
@@ -70,13 +70,13 @@
             "scope": "<ul><li><strong>Key Art Creation:</strong> Developed high-quality marketing art from in-game screenshots.</li><li><strong>Asset Enhancement:</strong> Used photomanipulation and 3D modeling to achieve realism.</li></ul>"
         },
         "images": [
-            "/images/portfolio/session/02_skaters.png",
-            "/images/portfolio/session/06_finals.png",
-            "/images/portfolio/session/progress-1-.gif",
-            "/images/portfolio/session/session-clean-up_revised-min.png"
+            "/images/portfolio/session/02_skaters.webp",
+            "/images/portfolio/session/06_finals.webp",
+            "/images/portfolio/session/progress-1-.mp4",
+            "/images/portfolio/session/session-clean-up_revised-min.webp"
         ],
-        "image": "/images/portfolio/session/progress-1-.gif",
-        "heroImage": "/images/portfolio/session/progress-1-.gif"
+        "image": "/images/portfolio/session/progress-1-.mp4",
+        "heroImage": "/images/portfolio/session/progress-1-.mp4"
     },
     {
         "id": "one-piece-x-cloud9",
@@ -120,16 +120,16 @@
             "scope": "<ul><li><strong>Brand Identity:</strong> Forged a modern, trusted brand image.</li><li><strong>Web Design:</strong> Created a captivating site with streamlined document access.</li><li><strong>Niche Targeting:</strong> Developed a custom gaming splash page to appeal to esports clients.</li></ul>"
         },
         "images": [
-            "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
-            "/images/portfolio/mccown-evans/03_mce_behance_v2_screen-intro.jpg",
-            "/images/portfolio/mccown-evans/04_globe-animation.gif",
-            "/images/portfolio/mccown-evans/05_mce-collage.jpg",
-            "/images/portfolio/mccown-evans/08_mce_animated-elements_v1_1.gif",
-            "/images/portfolio/mccown-evans/09_mce_web.jpg",
-            "/images/portfolio/mccown-evans/10_mce_web.jpg"
+            "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.mp4",
+            "/images/portfolio/mccown-evans/03_mce_behance_v2_screen-intro.webp",
+            "/images/portfolio/mccown-evans/04_globe-animation.mp4",
+            "/images/portfolio/mccown-evans/05_mce-collage.webp",
+            "/images/portfolio/mccown-evans/08_mce_animated-elements_v1_1.mp4",
+            "/images/portfolio/mccown-evans/09_mce_web.webp",
+            "/images/portfolio/mccown-evans/10_mce_web.webp"
         ],
-        "image": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif",
-        "heroImage": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.gif"
+        "image": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.mp4",
+        "heroImage": "/images/portfolio/mccown-evans/01_mce-export_01_speedup_25fps_v1.mp4"
     },
     {
         "id": "optic-gaming",
@@ -147,10 +147,10 @@
             "outcome": "The results were overwhelming. OpTic transformed from a stagnant brand into one of the most talked-about teams of the year. Fans lined up at 6 AM in the cold for our events, proving the strength of the new engagement strategy. Our work was recognized with a nomination for 'Esports Team of the Year'."
         },
         "images": [
-            "/images/portfolio/optic-gaming/optic-header.png"
+            "/images/portfolio/optic-gaming/optic-header.webp"
         ],
-        "image": "/images/portfolio/optic-gaming/optic-header.png",
-        "heroImage": "/images/portfolio/optic-gaming/optic-header.png"
+        "image": "/images/portfolio/optic-gaming/optic-header.webp",
+        "heroImage": "/images/portfolio/optic-gaming/optic-header.webp"
     },
     {
         "id": "stay-plugged-in",
@@ -167,19 +167,19 @@
             "solution": "We focused on a student-first messaging strategy. We streamlined their visual identity to be energetic and aspirational. (Note: Specific details were unavailable in source text, so this is a generalized reconstruction)."
         },
         "images": [
-            "/images/portfolio/stay-plugged-in/0fa437132316687.63e1618463e22.png",
-            "/images/portfolio/stay-plugged-in/13285d132316687.6303933d837fc.png",
-            "/images/portfolio/stay-plugged-in/2ed613132316687.63e1618461eb2.png",
-            "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.gif",
-            "/images/portfolio/stay-plugged-in/385ba2132316687.63e17a7e91756.png",
-            "/images/portfolio/stay-plugged-in/41d479132316687.63e1338205aed.png",
-            "/images/portfolio/stay-plugged-in/48fe4c132316687.63e1618462d86.png",
-            "/images/portfolio/stay-plugged-in/9e8063132316687.63e1338204a53.gif",
-            "/images/portfolio/stay-plugged-in/abe4e0132316687.63e17a7e90add.png",
-            "/images/portfolio/stay-plugged-in/adbdbb132316687.63e1338206c59.png"
+            "/images/portfolio/stay-plugged-in/0fa437132316687.63e1618463e22.webp",
+            "/images/portfolio/stay-plugged-in/13285d132316687.6303933d837fc.webp",
+            "/images/portfolio/stay-plugged-in/2ed613132316687.63e1618461eb2.webp",
+            "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.mp4",
+            "/images/portfolio/stay-plugged-in/385ba2132316687.63e17a7e91756.webp",
+            "/images/portfolio/stay-plugged-in/41d479132316687.63e1338205aed.webp",
+            "/images/portfolio/stay-plugged-in/48fe4c132316687.63e1618462d86.webp",
+            "/images/portfolio/stay-plugged-in/9e8063132316687.63e1338204a53.mp4",
+            "/images/portfolio/stay-plugged-in/abe4e0132316687.63e17a7e90add.webp",
+            "/images/portfolio/stay-plugged-in/adbdbb132316687.63e1338206c59.webp"
         ],
-        "image": "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.gif",
-        "heroImage": "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.gif"
+        "image": "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.mp4",
+        "heroImage": "/images/portfolio/stay-plugged-in/3327f9132316687.61a7debf45912.mp4"
     },
     {
         "id": "paramount-players",
@@ -197,22 +197,22 @@
             "outcome": "We successfully created a believable visual universe for the show. The branding stood up to scrutiny from hardcore fans and seamlessly integrated into the mockumentary format, grounding the comedy in visual reality."
         },
         "images": [
-            "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.gif",
-            "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.gif",
-            "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
-            "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
-            "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.gif",
-            "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
-            "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.png",
-            "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.png",
-            "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.png",
-            "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.png",
-            "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
-            "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
-            "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
+            "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.mp4",
+            "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.mp4",
+            "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.webp",
+            "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.webp",
+            "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.mp4",
+            "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.webp",
+            "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.webp",
+            "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.webp",
+            "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.webp",
+            "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.webp",
+            "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.mp4",
+            "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.webp",
+            "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.mp4"
         ],
-        "image": "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
-        "heroImage": "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png"
+        "image": "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.webp",
+        "heroImage": "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.webp"
     },
     {
         "id": "the-story-mob",
@@ -230,27 +230,27 @@
             "outcome": "The project resulted in a beautifully redesigned website that was visually stunning and easy to read. Both the client and their users expressed high satisfaction with the experience. The technical upgrades ensured the site was not just a pretty face but a high-performing asset for their business."
         },
         "images": [
-            "/images/portfolio/the-story-mob/the-story-mob-About.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Careers.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Case-Studies.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Contact.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Desktop2.png",
-            "/images/portfolio/the-story-mob/the-story-mob-DesktopFull1.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Header.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Home.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Icons.png",
-            "/images/portfolio/the-story-mob/the-story-mob-IntroInfo.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Menu.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Mob-Hover.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Mobile1.png",
-            "/images/portfolio/the-story-mob/the-story-mob-Mobile3.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-SM_NewHire.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Services.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Stories.jpg",
-            "/images/portfolio/the-story-mob/the-story-mob-Story.png"
+            "/images/portfolio/the-story-mob/the-story-mob-About.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Careers.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Case-Studies.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Contact.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Desktop2.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-DesktopFull1.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Header.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Home.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Icons.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-IntroInfo.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Menu.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Mob-Hover.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Mobile1.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Mobile3.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-SM_NewHire.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Services.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Stories.webp",
+            "/images/portfolio/the-story-mob/the-story-mob-Story.webp"
         ],
-        "image": "/images/portfolio/the-story-mob/the-story-mob-Header.png",
-        "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Header.png"
+        "image": "/images/portfolio/the-story-mob/the-story-mob-Header.webp",
+        "heroImage": "/images/portfolio/the-story-mob/the-story-mob-Header.webp"
     },
     {
         "id": "redbull",
@@ -268,12 +268,12 @@
             "outcome": "We delivered a suite of approved designs that gave Red Bull the flexibility they needed. The stations successfully serve as inviting hubs for gamers at events, achieving the goal of facilitating social connection over a cold drink."
         },
         "images": [
-            "/images/portfolio/redbull/redbull-arc.png",
-            "/images/portfolio/redbull/redbull-both.jpg",
-            "/images/portfolio/redbull/redbull-run.jpg"
+            "/images/portfolio/redbull/redbull-arc.webp",
+            "/images/portfolio/redbull/redbull-both.webp",
+            "/images/portfolio/redbull/redbull-run.webp"
         ],
-        "image": "/images/portfolio/redbull/redbull-both.jpg",
-        "heroImage": "/images/portfolio/redbull/redbull-both.jpg"
+        "image": "/images/portfolio/redbull/redbull-both.webp",
+        "heroImage": "/images/portfolio/redbull/redbull-both.webp"
     },
     {
         "id": "immortal-gates-of-pyre-logo-faction-icons",
@@ -291,18 +291,18 @@
             "outcome": "The Sunspear Games team was blown away by the final product. The designs provided the visual anchor the game needed. They now proudly use these assets across all media, from the game UI to marketing materials, successfully unifying the game's visual identity."
         },
         "images": [
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/234db8115497303.604fc9910e4cb.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/74b541115497303.609d760d96e0f.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/90d97d115497303.604fc9910d607.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/a76bca115497303.604fc2f16a3ae.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/ac44fb115497303.604fc2f169708.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/b445d9115497303.604fc9910dd82.png",
-            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/d20e21115497303.604fc2f16b002.png"
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/234db8115497303.604fc9910e4cb.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/74b541115497303.609d760d96e0f.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/90d97d115497303.604fc9910d607.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/a76bca115497303.604fc2f16a3ae.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/ac44fb115497303.604fc2f169708.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/b445d9115497303.604fc9910dd82.webp",
+            "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/d20e21115497303.604fc2f16b002.webp"
         ],
-        "image": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.png",
-        "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.png"
+        "image": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.webp",
+        "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/329114115497303.604fc2f16b71b.webp"
     },
     {
         "id": "metaview",
@@ -320,21 +320,21 @@
             "outcome": "The launch was successful, garnering immediate support from the fighting game community and expanding rapidly from there. The strong, clear brand identity helped Metaview quickly find its footing and resonate with users looking for a quality-first content experience."
         },
         "images": [
-            "/images/portfolio/metaview/metaview-Billboard.jpg",
-            "/images/portfolio/metaview/metaview-Billboard_2.jpg",
-            "/images/portfolio/metaview/metaview-InstagramStory_Metaview.jpg",
-            "/images/portfolio/metaview/metaview-InstagramStory_Scump.jpg",
-            "/images/portfolio/metaview/metaview-InstagramStory_Sombra.jpg",
-            "/images/portfolio/metaview/metaview-MV_Partner-Courage.jpg",
-            "/images/portfolio/metaview/metaview-MV_Post-v1.jpg",
-            "/images/portfolio/metaview/metaview-MV_Post-v4.jpg",
-            "/images/portfolio/metaview/metaview-MV_Postv3-3.jpg",
-            "/images/portfolio/metaview/metaview-MV_TwitterHeader-v2.jpg",
-            "/images/portfolio/metaview/metaview-MV_TwitterHeader-v3.jpg",
-            "/images/portfolio/metaview/metaview-MV_TwitterHeader-v4.jpg"
+            "/images/portfolio/metaview/metaview-Billboard.webp",
+            "/images/portfolio/metaview/metaview-Billboard_2.webp",
+            "/images/portfolio/metaview/metaview-InstagramStory_Metaview.webp",
+            "/images/portfolio/metaview/metaview-InstagramStory_Scump.webp",
+            "/images/portfolio/metaview/metaview-InstagramStory_Sombra.webp",
+            "/images/portfolio/metaview/metaview-MV_Partner-Courage.webp",
+            "/images/portfolio/metaview/metaview-MV_Post-v1.webp",
+            "/images/portfolio/metaview/metaview-MV_Post-v4.webp",
+            "/images/portfolio/metaview/metaview-MV_Postv3-3.webp",
+            "/images/portfolio/metaview/metaview-MV_TwitterHeader-v2.webp",
+            "/images/portfolio/metaview/metaview-MV_TwitterHeader-v3.webp",
+            "/images/portfolio/metaview/metaview-MV_TwitterHeader-v4.webp"
         ],
-        "image": "/images/portfolio/metaview/metaview-MV_Post-v1.jpg",
-        "heroImage": "/images/portfolio/metaview/metaview-MV_Post-v1.jpg"
+        "image": "/images/portfolio/metaview/metaview-MV_Post-v1.webp",
+        "heroImage": "/images/portfolio/metaview/metaview-MV_Post-v1.webp"
     },
     {
         "id": "immortal-gates-of-pyre-lorebook-videos",
@@ -352,8 +352,8 @@
             "outcome": "The project was a dual success. The digital Lore Book became a key asset that helped secure significant business and investment for Sunspear. It was also so popular with fans that it became a purchasable physical item in the Kickstarter. The videos provided the clarity needed for both players and partners to fully grasp the potential of the Immortal universe."
         },
         "images": [],
-        "image": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.png",
-        "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.png"
+        "image": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.webp",
+        "heroImage": "/images/portfolio/immortal-gates-of-pyre-logo-faction-icons/11258d115497303.604fc2f16be4e.webp"
     },
     {
         "id": "freshcut",
@@ -371,17 +371,17 @@
             "outcome": "The rebrand successfully positioned FreshCut as a leader in the Web3 gaming content space. The new identity resonated with the target audience, helping them build a strong community and clearly communicate their value proposition in a crowded market."
         },
         "images": [
-            "/images/portfolio/freshcut/freshcut-access.jpg",
-            "/images/portfolio/freshcut/freshcut-bs.jpg",
-            "/images/portfolio/freshcut/freshcut-exam-mock.jpg",
-            "/images/portfolio/freshcut/freshcut-logo-1.jpg",
-            "/images/portfolio/freshcut/freshcut-m1.jpg",
-            "/images/portfolio/freshcut/freshcut-m2.jpg",
-            "/images/portfolio/freshcut/freshcut-sg.jpg",
-            "/images/portfolio/freshcut/freshcut-typo.jpg"
+            "/images/portfolio/freshcut/freshcut-access.webp",
+            "/images/portfolio/freshcut/freshcut-bs.webp",
+            "/images/portfolio/freshcut/freshcut-exam-mock.webp",
+            "/images/portfolio/freshcut/freshcut-logo-1.webp",
+            "/images/portfolio/freshcut/freshcut-m1.webp",
+            "/images/portfolio/freshcut/freshcut-m2.webp",
+            "/images/portfolio/freshcut/freshcut-sg.webp",
+            "/images/portfolio/freshcut/freshcut-typo.webp"
         ],
-        "image": "/images/portfolio/freshcut/freshcut-sg.jpg",
-        "heroImage": "/images/portfolio/freshcut/freshcut-sg.jpg"
+        "image": "/images/portfolio/freshcut/freshcut-sg.webp",
+        "heroImage": "/images/portfolio/freshcut/freshcut-sg.webp"
     },
     {
         "id": "geekletes",
@@ -399,11 +399,11 @@
             "outcome": "We successfully built a more engaged local community, driving foot traffic to the venue and establishing Geekletes as a recognized name in the local esports scene."
         },
         "images": [
-            "/images/portfolio/geekletes/geekletes-geekletes.png",
-            "/images/portfolio/geekletes/geekletes-who-we-are.png"
+            "/images/portfolio/geekletes/geekletes-geekletes.webp",
+            "/images/portfolio/geekletes/geekletes-who-we-are.webp"
         ],
-        "image": "/images/portfolio/geekletes/geekletes-geekletes.png",
-        "heroImage": "/images/portfolio/geekletes/geekletes-geekletes.png"
+        "image": "/images/portfolio/geekletes/geekletes-geekletes.webp",
+        "heroImage": "/images/portfolio/geekletes/geekletes-geekletes.webp"
     },
     {
         "id": "fcfl",
@@ -421,14 +421,14 @@
             "outcome": "We delivered a comprehensive brand look and a website that served as the digital hub for the league. The design successfully appealed to the Gen Z/Y demographic, helping the FCFL establish its identity as a forward-thinking, fan-first league."
         },
         "images": [
-            "/images/portfolio/fcfl/fcfl-FCFL_Twitter.jpg",
-            "/images/portfolio/fcfl/fcfl-Homepage.jpg",
-            "/images/portfolio/fcfl/fcfl-color-pla.png",
-            "/images/portfolio/fcfl/fcfl-logo-usage.png",
-            "/images/portfolio/fcfl/fcfl-type.png"
+            "/images/portfolio/fcfl/fcfl-FCFL_Twitter.webp",
+            "/images/portfolio/fcfl/fcfl-Homepage.webp",
+            "/images/portfolio/fcfl/fcfl-color-pla.webp",
+            "/images/portfolio/fcfl/fcfl-logo-usage.webp",
+            "/images/portfolio/fcfl/fcfl-type.webp"
         ],
-        "image": "/images/portfolio/fcfl/fcfl-logo-usage.png",
-        "heroImage": "/images/portfolio/fcfl/fcfl-logo-usage.png"
+        "image": "/images/portfolio/fcfl/fcfl-logo-usage.webp",
+        "heroImage": "/images/portfolio/fcfl/fcfl-logo-usage.webp"
     },
     {
         "id": "a-kon",
@@ -446,33 +446,33 @@
             "outcome": "The refreshed website provided a seamless experience for thousands of attendees, reducing friction in finding event details and enhancing the overall convention experience."
         },
         "images": [
-            "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.png",
-            "/images/portfolio/a-kon/a-kon-AKON_Badge-Day.png",
-            "/images/portfolio/a-kon/a-kon-AKON_Badge-Parent.png",
-            "/images/portfolio/a-kon/a-kon-AKON_Badge-staff.png",
-            "/images/portfolio/a-kon/a-kon-AKON_ChildPass.jpg",
-            "/images/portfolio/a-kon/a-kon-AKON_DailyPass.jpg",
-            "/images/portfolio/a-kon/a-kon-AKON_Icon.jpg",
-            "/images/portfolio/a-kon/a-kon-AKON_ParentPass.jpg",
-            "/images/portfolio/a-kon/a-kon-AKON_SocialPost_16x9.jpg",
-            "/images/portfolio/a-kon/a-kon-AKON_StaffPass.jpg",
-            "/images/portfolio/a-kon/a-kon-AKON_Twitter.jpg",
-            "/images/portfolio/a-kon/a-kon-Aimi-Header.png",
-            "/images/portfolio/a-kon/a-kon-Autumn-Header.png",
-            "/images/portfolio/a-kon/a-kon-Cisco-Header.png",
-            "/images/portfolio/a-kon/a-kon-Jules-Header.png",
-            "/images/portfolio/a-kon/a-kon-Kai-Header.png",
-            "/images/portfolio/a-kon/a-kon-May-27.jpg",
-            "/images/portfolio/a-kon/a-kon-May-28.jpg",
-            "/images/portfolio/a-kon/a-kon-May-29.jpg",
-            "/images/portfolio/a-kon/a-kon-May-30.jpg",
-            "/images/portfolio/a-kon/a-kon-May-31.jpg",
-            "/images/portfolio/a-kon/a-kon-Ren-Header.png",
-            "/images/portfolio/a-kon/a-kon-Rika-Header.png",
-            "/images/portfolio/a-kon/a-kon-Violit-Header.png"
+            "/images/portfolio/a-kon/a-kon-AKON_Badge-Child.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_Badge-Day.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_Badge-Parent.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_Badge-staff.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_ChildPass.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_DailyPass.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_Icon.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_ParentPass.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_SocialPost_16x9.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_StaffPass.webp",
+            "/images/portfolio/a-kon/a-kon-AKON_Twitter.webp",
+            "/images/portfolio/a-kon/a-kon-Aimi-Header.webp",
+            "/images/portfolio/a-kon/a-kon-Autumn-Header.webp",
+            "/images/portfolio/a-kon/a-kon-Cisco-Header.webp",
+            "/images/portfolio/a-kon/a-kon-Jules-Header.webp",
+            "/images/portfolio/a-kon/a-kon-Kai-Header.webp",
+            "/images/portfolio/a-kon/a-kon-May-27.webp",
+            "/images/portfolio/a-kon/a-kon-May-28.webp",
+            "/images/portfolio/a-kon/a-kon-May-29.webp",
+            "/images/portfolio/a-kon/a-kon-May-30.webp",
+            "/images/portfolio/a-kon/a-kon-May-31.webp",
+            "/images/portfolio/a-kon/a-kon-Ren-Header.webp",
+            "/images/portfolio/a-kon/a-kon-Rika-Header.webp",
+            "/images/portfolio/a-kon/a-kon-Violit-Header.webp"
         ],
-        "image": "/images/portfolio/a-kon/a-kon-AKON_Icon.jpg",
-        "heroImage": "/images/portfolio/a-kon/a-kon-AKON_Icon.jpg"
+        "image": "/images/portfolio/a-kon/a-kon-AKON_Icon.webp",
+        "heroImage": "/images/portfolio/a-kon/a-kon-AKON_Icon.webp"
     },
     {
         "id": "immortal-gates-of-pyre-kickstarter",
@@ -490,47 +490,47 @@
             "outcome": "The results were phenomenal. The campaign didn't just meet its funding goal—it raised 500% (5X) of the target. We reached the funding goal within hours of launch. Additionally, Kickstarter featured the campaign as a \"Project We Love,\" validating the quality and excitement we generated around the game."
         },
         "images": [
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-2_Tier1.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-2_Tier2.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-2_Tier4.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-3_1DaysForLaunch.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-3_3DaysForLaunch.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-4_Launch.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-5_150-Done.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-5_200-Done.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Addon-Banner.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Addon-Templates.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Anointed.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Beyond-Develompment.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Deacon.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Deacon2.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Dervish.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-FAQ_N.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Factions2.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Game-Features.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-GameCover-Art-PWELOVE.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Godhead.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Initiate.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Magi.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Masked-Hunter.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Mote.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Ordinate.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-PlayTogether.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Pyre.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Pyre2.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-RPG.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Resources.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Roadmap_Launch.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Sipari.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Spear-of-the-sun.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Underspine.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-immortal.png",
-            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-thorn.png"
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-1_PreviewLive.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-2_Tier1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-2_Tier2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-2_Tier4.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-3_1DaysForLaunch.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-3_3DaysForLaunch.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-4_Launch.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-5_150-Done.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-5_200-Done.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Addon-Banner.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Addon-Templates.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Anointed.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Beyond-Develompment.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Deacon.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Deacon2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Dervish.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-FAQ_N.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Factions2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Game-Features.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-GameCover-Art-PWELOVE.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Godhead.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Initiate.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Magi.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Masked-Hunter.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Mote.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Ordinate.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-PlayTogether.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Pyre.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Pyre2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-RPG.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Resources.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Roadmap_Launch.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Sipari.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Spear-of-the-sun.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-Underspine.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-immortal.webp",
+            "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-thorn.webp"
         ],
-        "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.jpg",
-        "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.jpg"
+        "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.webp",
+        "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.webp"
     },
     {
         "id": "aoe-creative-website",
@@ -547,11 +547,11 @@
             "outcome": "The successful launch of the new AOE Creative website immediately paid dividends. The platform not only refreshed our brand image but directly contributed to business growth, capturing the attention of multiple new clients and validating our position as a forward-thinking creative agency."
         },
         "images": [
-            "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.jpg",
-            "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.png"
+            "/images/portfolio/aoe-creative-website/aoe-creative-website-1500x500.webp",
+            "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.webp"
         ],
-        "image": "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.png",
-        "heroImage": "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.png"
+        "image": "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.webp",
+        "heroImage": "/images/portfolio/aoe-creative-website/aoe-creative-website-Home_1920.webp"
     },
     {
         "id": "nerd-street-gamers-brand",
@@ -569,20 +569,20 @@
             "outcome": "The rebrand was a triumph. It received public appreciation and was even utilized in advertisements on NBC. NSG transitioned smoothly to the new look, which has scaled with them as they continue to push boundaries in the esports space."
         },
         "images": [
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.jpg",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalEvents-JO.png",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGaming-JO.png",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGroups-JO.png",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalHost-JO.png",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_StayToastyGamers-JO.jpg",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.png",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-samuel-sng-ui5jOU-MTWQ-unsplash.jpg",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-shot08_02.jpg",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-1-scaled.jpg",
-            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-scaled.jpg"
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Business_Card_Mockup_2-scaled.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalEvents-JO.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGaming-JO.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalGroups-JO.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_FacebookLocalHost-JO.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-NSG_StayToastyGamers-JO.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-samuel-sng-ui5jOU-MTWQ-unsplash.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-shot08_02.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-1-scaled.webp",
+            "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-sng_promodraft03-scaled.webp"
         ],
-        "image": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.png",
-        "heroImage": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.png"
+        "image": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.webp",
+        "heroImage": "/images/portfolio/nerd-street-gamers-brand/nerd-street-gamers-brand-Nerd_blog-1200x675-1.webp"
     },
     {
         "id": "immortal-gates-of-pyre-ui-producing",
@@ -599,56 +599,56 @@
             "outcome": "After months of revisions and testing, we delivered a finalized UI/UX package for the HUD, menus, and game client. The result is a seamless interface that players currently use, successfully merging the game's rich visual identity with professional-grade usability."
         },
         "images": [
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Cancel_a.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3-1.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3_B-1.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3_B.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Construction_a.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Deploy_Absolver.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Deploy_Magi.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Deploy_Tower.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Dervish_Windstep.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-EscapeMenu.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-EscapeMenu_Mid.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-GUI_V2.9.5.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Halt_C.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_1-1.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_1-2.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_2-1.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_2-2.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop-1.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Info.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Start-1.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Start.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_a.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Map_C.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Orzum_Obelisk.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Orzum_inspire.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Ajari.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Mote.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Orzum.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Warden.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Settings_b.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SipariHelm_A.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SipariHelm_B.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Sipari_a.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SoulForge_A.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-1.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-2-B.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-2.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-3.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Supply_a.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Time_B.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Undeploy_Absolver.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Undeploy_Magi.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Unitprod_a.png",
-            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Units_b.png"
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Cancel_a.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3_B-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Client_Optimal_V3_B.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Construction_a.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Deploy_Absolver.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Deploy_Magi.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Deploy_Tower.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Dervish_Windstep.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-EscapeMenu.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-EscapeMenu_Mid.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-GUI_V2.9.5.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Halt_C.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_1-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_1-2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_2-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-ImmortalUI_2-2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Info.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Start-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_F8MLauncher_Start.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Immortal_a.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Map_C.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Orzum_Obelisk.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Orzum_inspire.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Ajari.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Mote.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Orzum.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SUN_LoadingScreen-Warden.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Settings_b.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SipariHelm_A.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SipariHelm_B.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Sipari_a.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-SoulForge_A.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-2-B.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-2.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Stage-3.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Supply_a.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Time_B.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Undeploy_Absolver.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Undeploy_Magi.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Unitprod_a.webp",
+            "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-Units_b.webp"
         ],
-        "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg",
-        "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.jpg"
+        "image": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.webp",
+        "heroImage": "/images/portfolio/immortal-gates-of-pyre-ui-producing/immortal-gates-of-pyre-ui-producing-CharacterSelect.webp"
     },
     {
         "id": "blast-radius",
@@ -666,13 +666,13 @@
             "outcome": "The launch of Blast Radius successfully positioned us to capture the growing demand in the Web3 sector. The website itself stands as a portfolio piece, demonstrating our ability to merge cutting-edge design with technical innovation. (You can see the work at blastradius.agency)."
         },
         "images": [
-            "/images/portfolio/blast-radius/blast-radius-BR_Icon.jpg",
-            "/images/portfolio/blast-radius/blast-radius-BR_LandingPage.png",
-            "/images/portfolio/blast-radius/blast-radius-Post.png",
-            "/images/portfolio/blast-radius/blast-radius-Twitter.jpg"
+            "/images/portfolio/blast-radius/blast-radius-BR_Icon.webp",
+            "/images/portfolio/blast-radius/blast-radius-BR_LandingPage.webp",
+            "/images/portfolio/blast-radius/blast-radius-Post.webp",
+            "/images/portfolio/blast-radius/blast-radius-Twitter.webp"
         ],
-        "image": "/images/portfolio/blast-radius/blast-radius-Post.png",
-        "heroImage": "/images/portfolio/blast-radius/blast-radius-Post.png"
+        "image": "/images/portfolio/blast-radius/blast-radius-Post.webp",
+        "heroImage": "/images/portfolio/blast-radius/blast-radius-Post.webp"
     },
     {
         "id": "immortal-gates-of-pyre-video-producing",
@@ -690,8 +690,8 @@
             "outcome": "This efficienct pipeline successfully populated their channels with high-quality content. The strategy maximized the value of every minute of production, ensuring that the marketing team always had fresh assets to engage the community across all platforms."
         },
         "images": [],
-        "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.jpg",
-        "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.jpg"
+        "image": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.webp",
+        "heroImage": "/images/portfolio/immortal-gates-of-pyre-kickstarter/immortal-gates-of-pyre-kickstarter-210674224_546875943113807_5687717794063233096_n.webp"
     },
     {
         "id": "world-series-of-warzone",
@@ -709,13 +709,13 @@
             "outcome": "We delivered a premium broadcast package and marketing suite that hyped the community. The assets successfully bridged the gap between raw gameplay and professional esports production, setting the stage for one of Warzone's biggest competitive events."
         },
         "images": [
-            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.jpg",
-            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E_Lw-FOXIAA9dtQ.jpg",
-            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FC4rPlwVgAAKi81.jpg",
-            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.jpg"
+            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E-3Qfz8VUA8OPH9.webp",
+            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-E_Lw-FOXIAA9dtQ.webp",
+            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FC4rPlwVgAAKi81.webp",
+            "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.webp"
         ],
-        "image": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.jpg",
-        "heroImage": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.jpg"
+        "image": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.webp",
+        "heroImage": "/images/portfolio/world-series-of-warzone/world-series-of-warzone-FEGkv22X0AUpKNS.webp"
     },
     {
         "id": "ellevens",
@@ -733,24 +733,24 @@
             "outcome": "The launch was a success, promoted directly by Gareth Bale to his millions of fans. The brand successfully carved out its niche, proving that a star-athlete-led team could have a distinct, authentic identity in the competitive gaming world."
         },
         "images": [
-            "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_PlayerBLKBLUE-JO.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_ShoeAD-JO.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_SponsorBLKBLUE.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_Twitter.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO-1.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO.jpg",
-            "/images/portfolio/ellevens/ellevens-E11_VIPMeet-JO.jpg",
-            "/images/portfolio/ellevens/ellevens-blake-wisz-q3o_8MteFM0-unsplash.jpg",
-            "/images/portfolio/ellevens/ellevens-doaa-fadally-DTrNO-MiB0k-unsplash.jpg",
-            "/images/portfolio/ellevens/ellevens-eberhard-grossgasteiger-uhM2_ghZERY-unsplash.jpg",
-            "/images/portfolio/ellevens/ellevens-joshua-fuller-TPtOlSRD7hc-unsplash.jpg",
-            "/images/portfolio/ellevens/ellevens-mark-landman-kzvRB1elLwI-unsplash.jpg",
-            "/images/portfolio/ellevens/ellevens-ole-witt-c0G9AIZURck-unsplash.jpg",
-            "/images/portfolio/ellevens/ellevens-omar-lopez-rwF_pJRWhAI-unsplash.jpg"
+            "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.webp",
+            "/images/portfolio/ellevens/ellevens-E11_PlayerBLKBLUE-JO.webp",
+            "/images/portfolio/ellevens/ellevens-E11_ShoeAD-JO.webp",
+            "/images/portfolio/ellevens/ellevens-E11_SponsorBLKBLUE.webp",
+            "/images/portfolio/ellevens/ellevens-E11_Twitter.webp",
+            "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO-1.webp",
+            "/images/portfolio/ellevens/ellevens-E11_TwitterBLKBLUE-JO.webp",
+            "/images/portfolio/ellevens/ellevens-E11_VIPMeet-JO.webp",
+            "/images/portfolio/ellevens/ellevens-blake-wisz-q3o_8MteFM0-unsplash.webp",
+            "/images/portfolio/ellevens/ellevens-doaa-fadally-DTrNO-MiB0k-unsplash.webp",
+            "/images/portfolio/ellevens/ellevens-eberhard-grossgasteiger-uhM2_ghZERY-unsplash.webp",
+            "/images/portfolio/ellevens/ellevens-joshua-fuller-TPtOlSRD7hc-unsplash.webp",
+            "/images/portfolio/ellevens/ellevens-mark-landman-kzvRB1elLwI-unsplash.webp",
+            "/images/portfolio/ellevens/ellevens-ole-witt-c0G9AIZURck-unsplash.webp",
+            "/images/portfolio/ellevens/ellevens-omar-lopez-rwF_pJRWhAI-unsplash.webp"
         ],
-        "image": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg",
-        "heroImage": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.jpg"
+        "image": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.webp",
+        "heroImage": "/images/portfolio/ellevens/ellevens-E11_LiveNowBLKBLUE-JO.webp"
     },
     {
         "id": "metal-umbrella",
@@ -768,30 +768,30 @@
             "outcome": "Metal Umbrella was an instant hit. During launch week, the brand dominated Twitch and saw exceptional conversion rates. The community and influencers alike rallied around the high-quality products, validating the strategy and successfully launching SypherPK's vision into a reality."
         },
         "images": [
-            "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-57bcd8124334787-610b28163acc1.png",
-            "/images/portfolio/metal-umbrella/metal-umbrella-6b8b6c124334787-Y3JvcCw4MDgsNjMyLDAsMA.png",
-            "/images/portfolio/metal-umbrella/metal-umbrella-83550d124334787-610b28163a7ef.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-928639124334787-610b281639525.png",
-            "/images/portfolio/metal-umbrella/metal-umbrella-MU_Sypher.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-MU_Violet.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_01.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_02.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_03.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_04.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_05.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_06.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_07.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_08.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_09.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_10.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_11.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.jpg",
-            "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.jpg"
+            "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-57bcd8124334787-610b28163acc1.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-6b8b6c124334787-Y3JvcCw4MDgsNjMyLDAsMA.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-83550d124334787-610b28163a7ef.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-928639124334787-610b281639525.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-MU_Sypher.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-MU_Violet.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_01.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_02.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_03.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_04.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_05.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_06.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_07.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_08.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_09.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_10.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_11.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.webp",
+            "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.webp"
         ],
-        "image": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
-        "heroImage": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg"
+        "image": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.webp",
+        "heroImage": "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.webp"
     },
     {
         "id": "boston-breach",
@@ -809,16 +809,16 @@
             "outcome": "The engagement was insane. Bostonians and CDL fans flocked to the brand, drawn by its unique look and voice. The Discord community became immediately active, and the team achieved higher Twitter engagement than any other team in the league, proving that a strong brand narrative can level the playing field."
         },
         "images": [
-            "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.jpg",
-            "/images/portfolio/boston-breach/boston-breach-accessories.jpg",
-            "/images/portfolio/boston-breach/boston-breach-behind-the-mark.jpg",
-            "/images/portfolio/boston-breach/boston-breach-brand-persona.jpg",
-            "/images/portfolio/boston-breach/boston-breach-breach-mask.jpg",
-            "/images/portfolio/boston-breach/boston-breach-merch.jpg",
-            "/images/portfolio/boston-breach/boston-breach-social-posts.jpg"
+            "/images/portfolio/boston-breach/boston-breach-BB_RosterAnnouncement_A.webp",
+            "/images/portfolio/boston-breach/boston-breach-accessories.webp",
+            "/images/portfolio/boston-breach/boston-breach-behind-the-mark.webp",
+            "/images/portfolio/boston-breach/boston-breach-brand-persona.webp",
+            "/images/portfolio/boston-breach/boston-breach-breach-mask.webp",
+            "/images/portfolio/boston-breach/boston-breach-merch.webp",
+            "/images/portfolio/boston-breach/boston-breach-social-posts.webp"
         ],
-        "image": "/images/portfolio/boston-breach/boston-breach-behind-the-mark.jpg",
-        "heroImage": "/images/portfolio/boston-breach/boston-breach-behind-the-mark.jpg"
+        "image": "/images/portfolio/boston-breach/boston-breach-behind-the-mark.webp",
+        "heroImage": "/images/portfolio/boston-breach/boston-breach-behind-the-mark.webp"
     },
     {
         "id": "pvp-live",
@@ -836,8 +836,8 @@
             "outcome": "We grew PVP Live into one of the largest esports news organizations. My strategies helped gain 100,000 new Twitter followers with high engagement turnover. We reached 3 million active users per month, with 30% of that traffic driven directly by the influencer and Facebook group strategies I implemented."
         },
         "images": [],
-        "image": "/images/portfolio/pvp-live.jpg",
-        "heroImage": "/images/portfolio/pvp-live.jpg"
+        "image": "/images/portfolio/pvp-live.webp",
+        "heroImage": "/images/portfolio/pvp-live.webp"
     },
     {
         "id": "igda-dallas",
@@ -855,12 +855,12 @@
             "outcome": "The event was a resounding success, bringing in over 100 engaged users—many of whom were new to Discord gatherings. The success of this pivot actually shifted the culture, developing a sustainable online following that continued to thrive in monthly meetups long after the event concluded."
         },
         "images": [
-            "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.jpg",
-            "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_9-16.png",
-            "/images/portfolio/igda-dallas/igda-dallas-IDGE_Avatar.jpg"
+            "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.webp",
+            "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_9-16.webp",
+            "/images/portfolio/igda-dallas/igda-dallas-IDGE_Avatar.webp"
         ],
-        "image": "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.jpg",
-        "heroImage": "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.jpg"
+        "image": "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.webp",
+        "heroImage": "/images/portfolio/igda-dallas/igda-dallas-IDGA_Poster_16-9.webp"
     },
     {
         "id": "aoe-creative",
@@ -878,11 +878,11 @@
             "outcome": "AOE Creative successfully established itself as a key player in the industry, working with major global brands. Our dedication to quality and innovation was recognized with \"Best Creative Agency Finalist\" nominations for four consecutive years (2019-2022). We successfully delivered comprehensive solutions across branding, social media, and merchandise for top-tier game developers and publishers."
         },
         "images": [
-            "/images/portfolio/aoe-creative/aoe-creative-1500x5002.jpg",
-            "/images/portfolio/aoe-creative/aoe-creative-Capture.png"
+            "/images/portfolio/aoe-creative/aoe-creative-1500x5002.webp",
+            "/images/portfolio/aoe-creative/aoe-creative-Capture.webp"
         ],
-        "image": "/images/portfolio/aoe-creative/aoe-creative-Capture.png",
-        "heroImage": "/images/portfolio/aoe-creative/aoe-creative-Capture.png"
+        "image": "/images/portfolio/aoe-creative/aoe-creative-Capture.webp",
+        "heroImage": "/images/portfolio/aoe-creative/aoe-creative-Capture.webp"
     },
     {
         "id": "evolution-championship-series",
@@ -900,17 +900,17 @@
             "outcome": "We delivered a refreshed website that respected the legacy of Evo while bringing it up to modern standards. The collaboration helped my friend Rick kick off his tenure as GM with a strong digital foundation, ensuring fans and players had the best possible experience."
         },
         "images": [
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-about.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-champions_arch.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-eventpage.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-pools_schedule.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_filtered.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream-1.png",
-            "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream.png"
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-about.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-champions_arch.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-eventpage.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-pools_schedule.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_filtered.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream-1.webp",
+            "/images/portfolio/evolution-championship-series/evolution-championship-series-schedule_stream.webp"
         ],
-        "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png",
-        "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.png"
+        "image": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.webp",
+        "heroImage": "/images/portfolio/evolution-championship-series/evolution-championship-series-hero.webp"
     },
     {
         "id": "overwatch-league-in-game-sprays",
@@ -928,22 +928,22 @@
             "outcome": "The project was a hit. The sprays were successfully launched and became coveted items, claimed by fans at in-person events throughout the year. We successfully set the precedent for agency collaboration on in-game assets, delivering a product that enhanced the player experience."
         },
         "images": [
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Ghangzhou.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Hangzhou.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Houston.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-London.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_G.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_V.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-NewYork.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Paris.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Philadelphia.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-SanFrancisco.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Seoul.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Shanghai.png",
-            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Toronto.png"
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Ghangzhou.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Hangzhou.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Houston.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-London.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_G.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_V.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-NewYork.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Paris.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Philadelphia.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-SanFrancisco.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Seoul.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Shanghai.webp",
+            "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-Toronto.webp"
         ],
-        "image": "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_V.png",
-        "heroImage": "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_V.png"
+        "image": "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_V.webp",
+        "heroImage": "/images/portfolio/overwatch-league-in-game-sprays/overwatch-league-in-game-sprays-LosAngeles_V.webp"
     },
     {
         "id": "immortal-gates-of-pyre-web-development",
@@ -961,33 +961,33 @@
             "outcome": "The site launched successfully alongside the Kickstarter, serving as the perfect complement to the campaign. It effectively answered user questions, educated players on mechanics, and solidified the game's identity. The platform stands as a scalable foundation for the game's future growth."
         },
         "images": [
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Careers_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Faction_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Investor_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop_Planet.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Mobile.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Youtube_IllustrationBG.jpg",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still-1.png",
-            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still.png"
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Basics_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Careers_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Contact_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Faction_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Home_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Immortals_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Investor_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Media_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-NewsPage_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-News_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Desktop_Planet.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Universe_Mobile.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-Youtube_IllustrationBG.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still-1.webp",
+            "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-still.webp"
         ],
-        "image": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.png",
-        "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.png"
+        "image": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.webp",
+        "heroImage": "/images/portfolio/immortal-gates-of-pyre-web-development/immortal-gates-of-pyre-web-development-ImmortalSelect_Desktop.webp"
     },
     {
         "id": "fancurve",
@@ -1005,21 +1005,21 @@
             "outcome": "Technical & Trust Signals: Each item is verified on the Blockchain and minted as a unique NFT, ensuring authenticity and ownership. The user journey flows from high-impact visual discovery to personal ownership, underpinned by clear calls to action and value statements regarding digital ownership and metaverse utility."
         },
         "images": [
-            "/images/portfolio/fancurve/a98b0b148098559.633de8a434d5d.jpg",
-            "/images/portfolio/fancurve/483601148098559.62cf238aa6c68.png",
-            "/images/portfolio/fancurve/ed5391148098559.633dcf24d9015.jpg",
-            "/images/portfolio/fancurve/71b570148098559.62cf241f19315.png",
-            "/images/portfolio/fancurve/3a3179148098559.62cf241f16c76.png",
-            "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
-            "/images/portfolio/fancurve/94ba46148098559.62cf241f1aae8.png",
-            "/images/portfolio/fancurve/2ee648148098559.62cf241f17b06.png",
-            "/images/portfolio/fancurve/85c476148098559.62cf241f18ad8.png",
-            "/images/portfolio/fancurve/a23fb3148098559.62cf241f173c8.png",
-            "/images/portfolio/fancurve/1d27b2148098559.633c6618f0a00.jpg",
-            "/images/portfolio/fancurve/b7ff50148098559.633c4deb02e14.jpg"
+            "/images/portfolio/fancurve/a98b0b148098559.633de8a434d5d.webp",
+            "/images/portfolio/fancurve/483601148098559.62cf238aa6c68.webp",
+            "/images/portfolio/fancurve/ed5391148098559.633dcf24d9015.webp",
+            "/images/portfolio/fancurve/71b570148098559.62cf241f19315.webp",
+            "/images/portfolio/fancurve/3a3179148098559.62cf241f16c76.webp",
+            "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.mp4",
+            "/images/portfolio/fancurve/94ba46148098559.62cf241f1aae8.webp",
+            "/images/portfolio/fancurve/2ee648148098559.62cf241f17b06.webp",
+            "/images/portfolio/fancurve/85c476148098559.62cf241f18ad8.webp",
+            "/images/portfolio/fancurve/a23fb3148098559.62cf241f173c8.webp",
+            "/images/portfolio/fancurve/1d27b2148098559.633c6618f0a00.webp",
+            "/images/portfolio/fancurve/b7ff50148098559.633c4deb02e14.webp"
         ],
-        "image": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
-        "heroImage": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.gif",
+        "image": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.mp4",
+        "heroImage": "/images/portfolio/fancurve/548e93148098559.62cf2db690ac2.mp4",
         "videoUrl": "https://player.vimeo.com/video/756886607"
     },
     {
@@ -1038,17 +1038,17 @@
             "outcome": "Interface Design: The interface uses a \"Glassmorphism\" inspired aesthetic with deep dark modes and subtle transparencies. Content cards float on top of the black background, giving the feed a sense of depth.\n\nInteraction: Motion principles are fluid, snappy, and continuous. As the user scrolls, the header elements smoothly collapse, and content cards enter the viewport with a subtle upward fade, creating a smooth, cascading effect."
         },
         "images": [
-            "/images/portfolio/alloy/bd9572145873245.62b2abf55f5ad.gif",
-            "/images/portfolio/alloy/0c5d09145873245.62ceddb218cbb.jpg",
-            "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif",
-            "/images/portfolio/alloy/924b1e145873245.62a6aa34cfe3d.jpg",
-            "/images/portfolio/alloy/496a51145873245.62a6aa34cef9a.jpg",
-            "/images/portfolio/alloy/38f94e145873245.62a6aa34cf74a.jpg",
-            "/images/portfolio/alloy/8b2ea6145873245.62a6aa34ce7a4.jpg",
-            "/images/portfolio/alloy/a8c826145873245.62a6aa34ce23f.jpg"
+            "/images/portfolio/alloy/bd9572145873245.62b2abf55f5ad.mp4",
+            "/images/portfolio/alloy/0c5d09145873245.62ceddb218cbb.webp",
+            "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.mp4",
+            "/images/portfolio/alloy/924b1e145873245.62a6aa34cfe3d.webp",
+            "/images/portfolio/alloy/496a51145873245.62a6aa34cef9a.webp",
+            "/images/portfolio/alloy/38f94e145873245.62a6aa34cf74a.webp",
+            "/images/portfolio/alloy/8b2ea6145873245.62a6aa34ce7a4.webp",
+            "/images/portfolio/alloy/a8c826145873245.62a6aa34ce23f.webp"
         ],
-        "image": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif",
-        "heroImage": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.gif"
+        "image": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.mp4",
+        "heroImage": "/images/portfolio/alloy/c04e90145873245.62b2ae888893a.mp4"
     },
     {
         "id": "tourney-locator",
@@ -1066,12 +1066,12 @@
             "outcome": "The trailer was a smash hit. Within hours of the announcement and trailer launch, the tournament reached its maximum capacity. The marketing successfully conveyed the unique experience, driving immediate and overwhelming demand."
         },
         "images": [
-            "/images/portfolio/tourney-locator/tourney-locator-LTC.png",
-            "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.jpg",
-            "/images/portfolio/tourney-locator/tourney-locator-LowTierCityad28129.jpg"
+            "/images/portfolio/tourney-locator/tourney-locator-LTC.webp",
+            "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.webp",
+            "/images/portfolio/tourney-locator/tourney-locator-LowTierCityad28129.webp"
         ],
-        "image": "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.jpg",
-        "heroImage": "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.jpg"
+        "image": "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.webp",
+        "heroImage": "/images/portfolio/tourney-locator/tourney-locator-Low-Tier-City-5.webp"
     },
     {
         "id": "newbreed",

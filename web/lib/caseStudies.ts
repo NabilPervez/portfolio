@@ -97,3 +97,15 @@ export const caseStudies: CaseStudy[] = [
 
 export const bySlug = (slug: string) => caseStudies.find((c) => c.slug === slug);
 export const isImg = (m: Media): m is Img => "src" in m;
+
+/** Media helpers: GIFs were converted to MP4 (+ .poster.webp); local images have a -640.webp thumbnail. */
+export const isVideo = (src?: string) => !!src && /\.mp4($|\?)/i.test(src);
+export const posterOf = (src: string) => (src.startsWith("/images/") ? src.replace(/\.mp4$/i, ".poster.webp") : undefined);
+export const thumbOf = (src: string) => (src.startsWith("/images/") && src.endsWith(".webp") ? src.replace(/\.webp$/, "-640.webp") : src);
+/** Card visual for a case: prefers a small card video, then a converted GIF, then a 640px still. */
+export const cardVisual = (c: CaseStudy) => {
+  const t = c.thumb.src;
+  if (c.cardVideo) return { video: c.cardVideo, image: isVideo(t) ? posterOf(t) ?? "" : thumbOf(t) };
+  if (isVideo(t)) return { video: t, image: posterOf(t) ?? "" };
+  return { video: undefined, image: thumbOf(t) };
+};

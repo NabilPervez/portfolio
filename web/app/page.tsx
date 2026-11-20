@@ -4,7 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
-import { caseStudies } from "@/lib/caseStudies";
+import { caseStudies, cardVisual } from "@/lib/caseStudies";
+import { LazyVideo } from "@/components/LazyVideo";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import Image from "next/image";
 import { BentoGrid } from "@/components/BentoGrid";
@@ -58,7 +59,7 @@ export default function Home() {
   // Filter valid projects
   const validProjects = caseStudies
     .filter(p => p.thumb.src && !p.thumb.src.includes("default.jpg"))
-    .map(p => ({ slug: p.slug, title: p.title, image: p.thumb.src, video: p.cardVideo }));
+    .map(p => ({ slug: p.slug, title: p.title, ...cardVisual(p) }));
 
   const midPoint = Math.ceil(validProjects.length / 2);
   const projectRow1 = validProjects.slice(0, midPoint);
@@ -73,16 +74,7 @@ export default function Home() {
       {/* Video Section Below Hero */}
       <section className="bg-black py-0">
         <div className="w-full h-[600px] relative">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="object-cover w-full h-full opacity-80"
-            src="/media/home-reel.mp4"
-            poster="/media/home-reel-poster.webp"
-            aria-label="Showreel"
-          />
+          <LazyVideo src="/media/home-reel.mp4" poster="/media/home-reel-poster.webp" label="Showreel" className="object-cover w-full h-full opacity-80" />
           <div className="absolute inset-0 bg-black/20" />
         </div>
       </section>
@@ -230,7 +222,7 @@ export default function Home() {
             {[...projectRow1, ...projectRow1].map((project, i) => (
               <Link href={`/portfolio/${project.slug}`} key={`p-row1-${i}`} aria-label={project.title} className="relative w-[320px] h-[200px] md:w-[560px] md:h-[350px] flex-shrink-0 bg-black rounded-sm overflow-hidden group shadow-sm">
                 {project.video ? (
-                  <video src={project.video} poster={project.image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <LazyVideo src={project.video} poster={project.image} className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 ) : (
                   <ImageWithFallback src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 )}
@@ -253,7 +245,7 @@ export default function Home() {
             {[...projectRow2, ...projectRow2].map((project, i) => (
               <Link href={`/portfolio/${project.slug}`} key={`p-row2-${i}`} aria-label={project.title} className="relative w-[320px] h-[200px] md:w-[560px] md:h-[350px] flex-shrink-0 bg-black rounded-sm overflow-hidden group shadow-sm">
                 {project.video ? (
-                  <video src={project.video} poster={project.image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <LazyVideo src={project.video} poster={project.image} className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 ) : (
                   <ImageWithFallback src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 )}

@@ -4,6 +4,8 @@ import type { CaseStudy as CS, Img } from "@/lib/caseStudies";
 import { CaseImage } from "./CaseImage";
 import { MediaItem } from "./MediaItem";
 import { Reveal } from "./Reveal";
+import { LazyVideo } from "@/components/LazyVideo";
+import { isVideo, posterOf } from "@/lib/caseStudies";
 
 const wrap = "mx-auto w-full max-w-7xl px-6 md:px-12";
 
@@ -38,7 +40,7 @@ function Gallery({ images }: { images: Img[] }) {
   return (
     <ul className={`${wrap} mt-14 grid grid-cols-2 gap-4 md:mt-20 md:gap-6 ${cols}`}>
       {images.map((img) => (
-        <li key={img.src} className="reveal"><CaseImage img={img} sizes="(min-width: 768px) 33vw, 50vw" /></li>
+        <li key={img.src} className="reveal">{isVideo(img.src) ? <LazyVideo src={img.src} poster={posterOf(img.src)} label={img.alt} className="h-auto w-full" /> : <CaseImage img={img} sizes="(min-width: 768px) 33vw, 50vw" />}</li>
       ))}
     </ul>
   );
@@ -66,7 +68,7 @@ export function CaseStudy({ p, next }: { p: CS; next: { slug: string; title: str
     <article className="case bg-midnight text-white">
       <Reveal />
       <header className="relative flex min-h-[78svh] flex-col justify-end overflow-hidden bg-black">
-        <CaseImage img={p.thumb} eager className="absolute inset-0 h-full w-full object-cover" />
+        {isVideo(p.thumb.src) ? <LazyVideo src={p.thumb.src} poster={posterOf(p.thumb.src)} eager className="absolute inset-0 h-full w-full object-cover" /> : <CaseImage img={p.thumb} eager className="absolute inset-0 h-full w-full object-cover" />}
         <div className="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/50 to-midnight/20" aria-hidden="true" />
         <div className={`${wrap} relative pb-14 pt-40 md:pb-20`}>
           <p className="eyebrow"><Link href="/portfolio" className="hover:text-white">Portfolio</Link> // {p.client}</p>

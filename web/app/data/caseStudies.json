@@ -207,7 +207,7 @@
    }
   },
   "org": "AOE Creative",
-  "cardVideo": "/media/aoe/2026-09-3-mobile-splash.mp4"
+  "cardVideo": "/media/aoe/2026-09-3-mobile-splash-card.mp4"
  },
  {
   "slug": "immortal-gates-of-pyre",
@@ -406,7 +406,7 @@
    }
   },
   "org": "AOE Creative",
-  "cardVideo": "/media/aoe/2026-09-desktop-gif.mp4"
+  "cardVideo": "/media/aoe/2026-09-desktop-gif-card.mp4"
  },
  {
   "slug": "paramount-players",
@@ -595,21 +595,21 @@
   },
   "org": "AOE Creative",
   "extraImages": [
-   "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.gif",
-   "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.gif",
-   "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.png",
-   "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.png",
-   "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.gif",
-   "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.png",
-   "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.png",
-   "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.png",
-   "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.png",
-   "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.png",
-   "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.gif",
-   "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.png",
-   "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.gif"
+   "/images/portfolio/team-fugitive/0047b5131606503.6198059752cfe.mp4",
+   "/images/portfolio/team-fugitive/07a6ba131606503.62acc8c8f1f07.mp4",
+   "/images/portfolio/team-fugitive/38c8e3131606503.62acd163db9bd.webp",
+   "/images/portfolio/team-fugitive/753cfb131606503.62acd67db9090.webp",
+   "/images/portfolio/team-fugitive/7d0055131606503.62a77f7166648.mp4",
+   "/images/portfolio/team-fugitive/893312131606503.629fae6b138b7.webp",
+   "/images/portfolio/team-fugitive/9ff83f131606503.61980ad8723a4.webp",
+   "/images/portfolio/team-fugitive/b5a9c2131606503.62ac99e6c00ff.webp",
+   "/images/portfolio/team-fugitive/ba4fa4131606503.62accc51865b9.webp",
+   "/images/portfolio/team-fugitive/bd2db5131606503.629fae6b120f3.webp",
+   "/images/portfolio/team-fugitive/ca8b93131606503.629e54b6785bd.mp4",
+   "/images/portfolio/team-fugitive/cde8d7131606503.62accc5186b73.webp",
+   "/images/portfolio/team-fugitive/e975d4131606503.62acba1931539.mp4"
   ],
-  "cardVideo": "/media/aoe/2026-09-fug-logoanimation.mp4"
+  "cardVideo": "/media/aoe/2026-09-fug-logoanimation-card.mp4"
  },
  {
   "slug": "call-of-duty-league",
@@ -774,7 +774,7 @@
    "image": null
   },
   "org": "AOE Creative",
-  "cardVideo": "/media/aoe/2025-10-adobe-express-cdl-championsanimation-dallas.mp4"
+  "cardVideo": "/media/aoe/2025-10-adobe-express-cdl-championsanimation-dallas-card.mp4"
  },
  {
   "slug": "overwatch-league",
@@ -965,7 +965,7 @@
    }
   },
   "org": "AOE Creative",
-  "cardVideo": "/media/aoe/2025-10-ow-grandfinalswinnersshd-ani-2.mp4"
+  "cardVideo": "/media/aoe/2025-10-ow-grandfinalswinnersshd-ani-2-card.mp4"
  },
  {
   "slug": "coca-cola",
@@ -1281,20 +1281,20 @@
   },
   "org": "AOE Creative",
   "extraImages": [
-   "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.png",
-   "/images/portfolio/lego_27/406806126553707.615376f58f116.png",
-   "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.gif",
-   "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.png",
-   "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.png",
-   "/images/portfolio/lego_27/96866c126553707.6153625602cd4.gif",
-   "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.gif",
-   "/images/portfolio/lego_27/b0024b126553707.613144231265b.gif",
-   "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.gif",
-   "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.png",
-   "/images/portfolio/lego_27/df5548126553707.614b7baabf837.png",
-   "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.png"
+   "/images/portfolio/lego_27/3a0cd0126553707.6144fbfa301e0.webp",
+   "/images/portfolio/lego_27/406806126553707.615376f58f116.webp",
+   "/images/portfolio/lego_27/78f8b1126553707.6148e3d13030f.mp4",
+   "/images/portfolio/lego_27/7b809b126553707.6153416a0df78.webp",
+   "/images/portfolio/lego_27/8d4d98126553707.612fa9c116e3b.webp",
+   "/images/portfolio/lego_27/96866c126553707.6153625602cd4.mp4",
+   "/images/portfolio/lego_27/984696126553707.6144eaa19f05d.mp4",
+   "/images/portfolio/lego_27/b0024b126553707.613144231265b.mp4",
+   "/images/portfolio/lego_27/c585fa126553707.6153416a0ebb1.mp4",
+   "/images/portfolio/lego_27/d1d75d126553707.6153416a0e645.webp",
+   "/images/portfolio/lego_27/df5548126553707.614b7baabf837.webp",
+   "/images/portfolio/lego_27/fdb310126553707.615376f58e9ef.webp"
   ],
-  "cardVideo": "/media/aoe/2025-09-lego-logo-reveal.mp4"
+  "cardVideo": "/media/aoe/2025-09-lego-logo-reveal-card.mp4"
  },
  {
   "slug": "metal-umbrella",
@@ -1424,29 +1424,29 @@
   },
   "org": "AOE Creative",
   "extraImages": [
-   "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-57bcd8124334787-610b28163acc1.png",
-   "/images/portfolio/metal-umbrella/metal-umbrella-6b8b6c124334787-Y3JvcCw4MDgsNjMyLDAsMA.png",
-   "/images/portfolio/metal-umbrella/metal-umbrella-83550d124334787-610b28163a7ef.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-928639124334787-610b281639525.png",
-   "/images/portfolio/metal-umbrella/metal-umbrella-MU_Sypher.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-MU_Violet.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_01.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_02.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_03.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_04.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_05.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_06.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_07.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_08.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_09.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_10.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_11.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.jpg",
-   "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.jpg"
+   "/images/portfolio/metal-umbrella/metal-umbrella-345c2b124334787-610b281638be3.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-57bcd8124334787-610b28163acc1.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-6b8b6c124334787-Y3JvcCw4MDgsNjMyLDAsMA.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-83550d124334787-610b28163a7ef.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-928639124334787-610b281639525.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-MU_Sypher.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-MU_Violet.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_01.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_02.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_03.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_04.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_05.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_06.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_07.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_08.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_09.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_10.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_11.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ONI_InstaCollage_12.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-ad9b86124334787-6101b294bb504.webp",
+   "/images/portfolio/metal-umbrella/metal-umbrella-fe1d12124334787-6101b294bbaff.webp"
   ],
-  "cardVideo": "/media/aoe/2025-10-mu-behance-animation-12.mp4"
+  "cardVideo": "/media/aoe/2025-10-mu-behance-animation-12-card.mp4"
  },
  {
   "slug": "houston-outlaws",
@@ -1607,6 +1607,6 @@
    }
   },
   "org": "AOE Creative",
-  "cardVideo": "/media/aoe/2025-09-bandtogetherclip.mp4"
+  "cardVideo": "/media/aoe/2025-09-bandtogetherclip-card.mp4"
  }
 ]
