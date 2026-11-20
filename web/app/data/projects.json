@@ -1088,6 +1088,17 @@
             "outcome": "<p>NEWBREED launched with a complete brand system: strategy, identity, packaging, 3D and motion assets, including patch animations and a stop-motion piece for social. It was ready to sit next to the category leaders and to show up in gaming spaces.</p>"
         },
         "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d7c7d5189215887.65a80f1074525.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cca21e189215887.65a80f1070fa7.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/720ecb189215887.65a80f1071a98.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e3350c189215887.65a80f1070198.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/56bd66189215887.65a80f1073777.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/fa3405189215887.65a81351e47c8.gif",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/98a38f189215887.65a80f10752dc.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/42f32e189215887.65a80f1072870.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4ce949189215887.65a81351e3820.gif",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/001336189215887.65a93f6c4e323.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8d19d6189215887.65a846c941d58.png",
             "https://aoecreative.com/uploads/nb-2.png",
             "https://aoecreative.com/uploads/nb-3.png",
             "https://aoecreative.com/uploads/animation_patches.gif",
@@ -1096,10 +1107,10 @@
             "https://aoecreative.com/uploads/stopmotion-thebodyguard-ezgif.com-optimize.gif",
             "https://aoecreative.com/uploads/nb-6.png"
         ],
-        "image": "https://aoecreative.com/uploads/nb-2.png",
-        "heroImage": "https://aoecreative.com/uploads/nb-2.png"
+        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d7c7d5189215887.65a80f1074525.png",
+        "heroImage": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d7c7d5189215887.65a80f1074525.png"
     },
-{
+    {
         "id": "oxg-esports",
         "title": "OXG Esports",
         "slug": "oxg-esports",
@@ -1114,6 +1125,13 @@
             "outcome": "<p>Oxygen and Boston Breach consistently ranked at or near the top of their competitors month over month for engagement, impressions and sentiment. The unified system made every team instantly recognizable as OXG.</p>"
         },
         "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/57c412162750755.64aec9826480d.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2a10de162750755.64ad816267d63.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ee856a162750755.64aec98263a9c.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7b42c4162750755.64aed5a7eb580.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/5c629c162750755.64aed5a7ec332.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0efe68162750755.63da994c8a4dc.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f1a8c8162750755.63da9d84c8efa.png",
             "https://aoecreative.com/uploads/oxg02-website-header-1.png",
             "https://aoecreative.com/uploads/logo-oxg.png",
             "https://aoecreative.com/uploads/oxg02-watchparty-3.png",
@@ -1124,7 +1142,7 @@
             "https://aoecreative.com/uploads/t-shirt2.png",
             "https://aoecreative.com/uploads/screen_shot_2023-02-01_at_10.38.18_am.png"
         ],
-        "image": "https://aoecreative.com/uploads/oxg02-website-header-1.png",
-        "heroImage": "https://aoecreative.com/uploads/oxg02-website-header-1.png"
+        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/57c412162750755.64aec9826480d.png",
+        "heroImage": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/57c412162750755.64aec9826480d.png"
     }
 ]

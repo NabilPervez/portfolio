@@ -64,7 +64,7 @@ export function MediaItem({ item, wide }: { item: Media; wide?: boolean }) {
   const span = portrait ? "col-span-3 md:col-span-2" : wide ? "col-span-6" : "col-span-6 md:col-span-3";
   return (
     <figure className={`reveal ${span}`}>
-      {"youtube" in item ? <YouTube id={item.youtube} title={item.title} /> : "video" in item ? <Video m={item} /> : <CaseImage img={item} sizes="50vw" />}
+      {"embed" in item ? <iframe className="aspect-video w-full bg-black" src={item.embed} title={item.title} loading="lazy" allow="autoplay; fullscreen" allowFullScreen /> : "youtube" in item ? <YouTube id={item.youtube} title={item.title} /> : "video" in item ? <Video m={item} /> : <CaseImage img={item} sizes="50vw" />}
       {"title" in item && <figcaption className="mt-2 text-sm text-white/50">{item.title}</figcaption>}
     </figure>
   );
