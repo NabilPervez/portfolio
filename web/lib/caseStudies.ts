@@ -54,11 +54,6 @@ const BORROW_MEDIA: Record<string, string> = {
   "overwatch-league-in-game-sprays": "overwatch-league",
 };
 
-// Legacy pages with an Adobe-hosted Behance video.
-const EMBEDS: Record<string, Media> = {
-  newbreed: { embed: "https://www-ccv.adobe.io/v1/player/ccv/DL73Ia7W3B6/embed", title: "NEWBREED launch video" },
-  "oxg-esports": { embed: "https://www-ccv.adobe.io/v1/player/ccv/PwvfuEC3mvI/embed", title: "Oxygen Esports video" },
-};
 
 const strip = (s?: string) => (s ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 const sentences = (s: string) => s.match(/[^.!?]+[.!?]+/g)?.map((x) => x.trim()) ?? (s ? [s] : []);
@@ -83,7 +78,7 @@ function adapt(p: LegacyProject): CaseStudy {
     design: [],
     challenge: { heading: ["The", "Challenge"], body: strip(p.content.challenge) },
     approach: { heading: ["The", "Approach"], bullets: sentences(solution) },
-    work: { heading: ["The", "Work"], blocks: [], media: EMBEDS[p.slug] ? [EMBEDS[p.slug]] : borrowed },
+    work: { heading: ["The", "Work"], blocks: [], media: borrowed },
     results: { heading: ["The", "Outcome"], stats: [], notes: [], body: strip(p.content.outcome) },
     cardVideo: BORROW_MEDIA[p.slug]?.startsWith("immortal") ? rich.find((c) => c.slug === "immortal-gates-of-pyre")?.cardVideo : undefined,
     extraImages: (p.images ?? []).filter((i) => i !== (p.heroImage || p.image)),
