@@ -51,7 +51,7 @@ const IconMap: { [key: string]: React.ElementType } = {
     Utensils, Dumbbell, Refrigerator, Music, Crown, Spade, Sun, Code, Sparkles, Brain, CreditCard, Vote
 };
 
-const PLAY = "https://play.google.com/store/search?q=Nabil%20Pervez&c=apps";
+const PLAY = "https://play.google.com/store/apps/dev?id=7829300357127754405";
 
 export default function ProductsContent() {
     // Transform data to include React Nodes for icons

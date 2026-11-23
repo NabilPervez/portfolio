@@ -95,7 +95,7 @@ export function Navbar() {
                             { label: "LinkedIn", link: "https://www.linkedin.com/in/perveznabil" },
                             { label: "GitHub", link: "https://github.com/NabilPervez" },
                             { label: "Behance", link: "https://www.behance.net/aoecreative" },
-                            { label: "Google Play", link: "https://play.google.com/store/search?q=Nabil%20Pervez&c=apps" },
+                            { label: "Google Play", link: "https://play.google.com/store/apps/dev?id=7829300357127754405" },
                         ]}
                         displaySocials
                         displayItemNumbering

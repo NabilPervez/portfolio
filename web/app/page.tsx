@@ -121,7 +121,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-2 mt-8">
             <Link href="/products" className={pillLine}>See all products <ArrowRight className="w-4 h-4" /></Link>
             <a href="https://github.com/NabilPervez" target="_blank" className={pillLine}>GitHub</a>
-            <a href="https://play.google.com/store/search?q=Nabil%20Pervez&c=apps" target="_blank" rel="noopener" className={pillLine}>Google Play</a>
+            <a href="https://play.google.com/store/apps/dev?id=7829300357127754405" target="_blank" rel="noopener" className={pillLine}>Google Play</a>
           </div>
         </div>
       </section>
