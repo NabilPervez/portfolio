@@ -15,6 +15,8 @@ const navLinks: { name: string; href: string; target?: string }[] = [
     { name: "Speaker", href: "/speaker" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Products", href: "/products" },
+    { name: "Personal Branding", href: "/personal-branding" },
+    { name: "Career", href: "/career-consulting" },
     { name: "Resume", href: "https://nabilpervez.github.io/resume/", target: "_blank" },
 ];
 
