@@ -77,4 +77,5 @@ export const aoeWins = [
   { c: "Immortal: Gates of Pyre", t: "$151K on Kickstarter.", d: "Brand, lore, UI and web for an indie RTS, end to end." },
   { c: "LEGO Games", t: "A new global identity.", d: "Brand work for a household name." },
   { c: "World Series of Warzone", t: "+40% social impressions.", d: "Event marketing for Activision's flagship Warzone tournament." },
+  { c: "Paramount Pictures", t: "+25% trailer views.", d: "Branding for the mockumentary Players, from key art to social." },
 ];

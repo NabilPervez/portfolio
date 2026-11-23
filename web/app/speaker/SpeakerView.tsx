@@ -132,7 +132,7 @@ export default function SpeakerView() {
           {results.map((r) => (
             <figure key={r.c} className="h-voice h-fade">
               <figcaption><span className="h-mono">{r.c}</span></figcaption>
-              <blockquote><strong className="h-display h-win-t">{r.m}</strong><br />{r.w}</blockquote>
+              <blockquote><strong className="h-display h-win-t" data-count>{r.m}</strong><br />{r.w}</blockquote>
             </figure>
           ))}
         </div>

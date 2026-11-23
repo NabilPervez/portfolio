@@ -269,7 +269,7 @@ export default function Home() {
             {aoeWins.map((w) => (
               <figure key={w.c} className="h-voice h-fade">
                 <figcaption><span className="h-mono">{w.c}</span></figcaption>
-                <blockquote><strong className="h-display h-win-t">{w.t}</strong><br />{w.d}</blockquote>
+                <blockquote><strong className="h-display h-win-t" data-count>{w.t}</strong><br />{w.d}</blockquote>
               </figure>
             ))}
           </div>
