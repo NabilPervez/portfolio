@@ -83,7 +83,6 @@ export default function AboutView() {
         <figure className="h-portrait h-fade">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/nabil-headshot.jpg" alt="Nabil Pervez" width={800} height={1000} fetchPriority="high" />
-          <figcaption className="h-mono">Fig. 02 — Help desk → CTO → AI SME</figcaption>
         </figure>
         <div className="h-hero-foot">
           <div className="h-fade">

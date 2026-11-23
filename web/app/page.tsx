@@ -1,7 +1,7 @@
 "use client";
 
 // Editorial home (Nabil 2026-11-23): miguelrecio.es layout grammar + GSAP, carrying the
-// 2026-11-22 story from main: help desk → agency CTO → AI SME, Zipline, AOE, apps, the path.
+// Nabil 2026-11-23: win interest first. Why → How → What, then proof (work, AOE, apps, voices). The journey lives on /about.
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ArrowUpRight, Plus } from "lucide-react";
@@ -43,20 +43,20 @@ const list = [
   { slug: "immortal-gates-of-pyre", name: "Immortal: Gates of Pyre", tag: "Product", sector: "Sunspear Games" },
 ];
 
-const flow = [
-  { n: "01", t: "AI intake form", d: "Requesters describe the change in plain words. The form asks the follow-up questions a good producer would." },
-  { n: "02", t: "Jira + Rovo AI", d: "Rovo turns the request into a complete, verbose ticket: page, component, copy, asset, CTA." },
-  { n: "03", t: "Gradial", d: "Jira hands the ticket to Gradial. My skills and rules teach it to author the change correctly in AEM." },
-  { n: "04", t: "Live in production", d: "Copy, CTAs, image swaps and experience fragments go live. A human checks; nobody retypes." },
+const how = [
+  { n: "01", t: "Find what repeats.", d: "I map the work before I touch it: where requests stall, where people retype, where handoffs break. The real problem is usually one layer below the one in the ticket.", proof: "Ticket time cut from 24h to 8h" },
+  { n: "02", t: "Make it simple.", d: "One plan everyone can read. Short sprints, honest check-ins, and scope cut into moves a team can finish this week. Designers, engineers and execs all know what happens next.", proof: "95% milestone adherence, teams of 30" },
+  { n: "03", t: "Make it run itself.", d: "Then I automate the boring parts with AI: intake, tickets, authoring, reporting. People get their time back for the work only they can do.", proof: "Request to live page, no retyping" },
 ];
 
-const arc = [
-  { y: "2011", t: "Help desk", d: "Fujitsu, then T-Mobile. Tier 1 to Functional Analyst." },
-  { y: "2014", t: "Esports", d: "MutualMind, PVP Live, Infinite Esports. 3M+ monthly users." },
-  { y: "2018", t: "Agency", d: "Co-founded AOE Creative. CTO and senior PM, $5M+ portfolio." },
-  { y: "2024", t: "AI & IT", d: "Prospera Financial and NPC. RAG on Copilot, automation everywhere." },
-  { y: "2025", t: "Back to T-Mobile", d: "Content producer and AI SME. Automating Zipline." },
-];
+const what: Record<string, string> = {
+  "Product & delivery": "Roadmaps, scoping and go-live ownership. I take an idea to launch and keep it on time.",
+  "AI & automation": "Practical AI adoption: workflows people actually use, built on the tools you already pay for.",
+  "Content & MarTech": "AEM, Target and the content stack, set up so marketing can move without waiting on IT.",
+  "Brand & marketing": "Brands, campaigns and go-to-market for audiences that can smell inauthentic from a mile away.",
+  "Leadership": "Teams of designers, engineers and marketers who ship together, and get better while they do it.",
+  "Build & IT": "I build the thing too: web apps, prototypes and automation, so ideas get tested in days, not quarters.",
+};
 
 const appPicks = ["halal-passport", "chess-roguelite", "iqra", "noor"];
 const marqueeA = ["Product management", "Agile / Scrum", "AI workflow design", "Gradial", "Adobe Experience Manager", "Jira + Rovo", "RAG", "Go-to-market"];
@@ -90,13 +90,12 @@ export default function Home() {
             <span className="ln"><span className="li">things</span></span>
             <span className="ln"><span className="li a-gold">simple.</span></span>
           </h1>
-          <p className="h-mono h-fade">■ Product manager · Scrum master · AI SME — then I make them run themselves</p>
+          <p className="h-mono h-fade">■ Product manager · Scrum master · AI SME</p>
         </div>
 
         <figure className="h-portrait h-fade">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/nabil-headshot.jpg" alt="Nabil Pervez" width={800} height={1000} fetchPriority="high" />
-          <figcaption className="h-mono">Fig. 01 — Nabil, Dallas–Fort Worth</figcaption>
         </figure>
 
         <div className="h-hero-foot">
@@ -133,47 +132,65 @@ export default function Home() {
       </div>
 
       {/* ── Why ── */}
-      <section className="h-sec wrap" aria-labelledby="why-h">
-        <p id="why-h" className="h-mono h-label">Why I do this</p>
+      <section className="h-sec wrap h-why" aria-labelledby="why-h">
+        <p id="why-h" className="h-mono h-label">01 · Why</p>
         <p className="h-words a-statement" data-words>
-          I started on T-Mobile&rsquo;s help desk, fixing the same problems over and over. That&rsquo;s where I learned the rule I still work by: if a task repeats, it should be simple, and then it should run itself.
+          Great ideas rarely die from a lack of talent. They die in the gaps: between design and engineering, between the brief and the build, between what the business wants and what actually ships.
         </p>
-        <p className="h-intro h-fade">Thirteen years, one agency and a lot of shipped products later, I came back to T-Mobile to do exactly that, with AI.</p>
+        <p className="h-intro h-fade">I&rsquo;ve spent fourteen years working in those gaps, for teams at Riot Games, Activision Blizzard, LEGO, Coca-Cola and T-Mobile. I speak every side&rsquo;s language, so the work keeps moving.</p>
       </section>
 
-      {/* ── Zipline (ink) ── */}
-      <section className="h-ink" aria-labelledby="zip-h">
+      {/* ── How (ink) ── */}
+      <section className="h-ink" aria-labelledby="how-h">
         <div className="h-sec wrap">
           <header className="h-sec-head h-split">
             <div>
-              <p className="h-mono h-label">Now · T-Mobile</p>
-              <h2 id="zip-h" className="h-display h-h2" data-lines>I automated Zipline. End to end, with AI.</h2>
+              <p className="h-mono h-label">02 · How</p>
+              <h2 id="how-h" className="h-display h-h2" data-lines>Simple first. Then it runs itself.</h2>
             </div>
-            <p className="h-intro h-fade">Zipline is how T-Mobile ships fast, simple website updates: copy, CTAs, image swaps and experience fragments, straight to production in Adobe Experience Manager. I&rsquo;m its lead content author.</p>
+            <p className="h-intro h-fade">The same three moves, whether it&rsquo;s a game launch, a brand campaign or an enterprise AI rollout.</p>
           </header>
-          <div className="a-principles">
-            {[
-              { n: "The reality", t: "Half-written requests.", d: "Every request arrived half-written. Producers chased missing details, retyped tickets, then authored each change by hand in AEM. Small updates, big drag." },
-              { n: "My move", t: "Rebuilt the pipe.", d: "An AI intake form, Jira with Rovo AI to write complete tickets, and Jira connected to Gradial, with the skills and rules that tell Gradial how to author each ticket correctly." },
-              { n: "The payoff", t: "It runs itself.", d: "Zipline runs from request to live page. And my feedback shaped Gradial's roadmap: real-time ticket feedback and a ticket-refinement chatbot." },
-            ].map((b) => (
-              <article key={b.n} className="a-principle h-fade">
-                <span className="h-mono">{b.n}</span>
-                <h3 className="h-display">{b.t}</h3>
-                <p>{b.d}</p>
-              </article>
-            ))}
-          </div>
-          <ol className="h-flow">
-            {flow.map((f) => (
-              <li key={f.n} className="h-fade">
-                <span className="h-mono">{f.n}</span>
-                <strong>{f.t}</strong>
-                <p>{f.d}</p>
+          <ol className="h-how">
+            {how.map((s) => (
+              <li key={s.n} className="h-fade">
+                <span className="h-display">{s.n}</span>
+                <h3 className="h-display">{s.t}</h3>
+                <p>{s.d}</p>
+                <span className="h-mono">{s.proof}</span>
               </li>
             ))}
           </ol>
-          <ul className="h-chips h-fade">{["AI SME, digital content org", "Gradial Practitioner", "12+ Gradial rules shipped", "Adobe Experience Manager", "Jira + Rovo"].map((c) => <li key={c} className="h-mono">{c}</li>)}</ul>
+        </div>
+      </section>
+
+      {/* ── What (accordion) ── */}
+      <section className="h-sec wrap" id="skills" aria-labelledby="skills-h">
+        <header className="h-sec-head h-split">
+          <div>
+            <p className="h-mono h-label">03 · What</p>
+            <h2 id="skills-h" className="h-display h-h2" data-lines>What you get. Six disciplines, one person.</h2>
+          </div>
+          <p className="h-intro h-fade">Most teams hire separately for product, AI, MarTech, brand, leadership and engineering. I bring all six, so nothing gets lost in the handoff.</p>
+        </header>
+        <div className="h-panels h-panels-paper">
+          {skillset.map((g, i) => {
+            const isOpen = open === i;
+            return (
+              <article key={g.k} className={`h-panel${isOpen ? " open" : ""}`}>
+                <button type="button" className="h-panel-btn" aria-expanded={isOpen} aria-controls={`sk-${i}`} onClick={() => setOpen(isOpen ? -1 : i)}>
+                  <span className="h-mono">0{i + 1}</span>
+                  <span className="h-display h-panel-title">{g.k}</span>
+                  <span className="h-plus"><Plus size={20} /></span>
+                </button>
+                <div id={`sk-${i}`} className="h-panel-body" role="region">
+                  <div className="h-panel-in">
+                    {what[g.k] && <p className="h-what-out">{what[g.k]}</p>}
+                    <ul className="h-chips">{g.v.map((x) => <li key={x} className="h-mono">{x}</li>)}</ul>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -259,36 +276,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── What I bring (accordion) ── */}
-      <section className="h-sec wrap" id="skills" aria-labelledby="skills-h">
-        <header className="h-sec-head h-split">
-          <div>
-            <p className="h-mono h-label">What I bring</p>
-            <h2 id="skills-h" className="h-display h-h2" data-lines>Six disciplines. One person.</h2>
-          </div>
-          <p className="h-intro h-fade">Most teams hire separately for product, AI, MarTech, brand, leadership and engineering. I&rsquo;ve done all six for real clients.</p>
-        </header>
-        <div className="h-panels h-panels-paper">
-          {skillset.map((g, i) => {
-            const isOpen = open === i;
-            return (
-              <article key={g.k} className={`h-panel${isOpen ? " open" : ""}`}>
-                <button type="button" className="h-panel-btn" aria-expanded={isOpen} aria-controls={`sk-${i}`} onClick={() => setOpen(isOpen ? -1 : i)}>
-                  <span className="h-mono">0{i + 1}</span>
-                  <span className="h-display h-panel-title">{g.k}</span>
-                  <span className="h-plus"><Plus size={20} /></span>
-                </button>
-                <div id={`sk-${i}`} className="h-panel-body" role="region">
-                  <div className="h-panel-in">
-                    <ul className="h-chips">{g.v.map((x) => <li key={x} className="h-mono">{x}</li>)}</ul>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
       {/* ── After hours: apps ── */}
       <section className="h-sec wrap h-about" aria-labelledby="apps-h">
         <div>
@@ -312,31 +299,6 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </section>
-
-      {/* ── The path ── */}
-      <section className="h-ink" aria-labelledby="path-h">
-        <div className="h-sec wrap">
-          <header className="h-sec-head h-split">
-            <div>
-              <p className="h-mono h-label">The path</p>
-              <h2 id="path-h" className="h-display h-h2" data-lines>From help desk to AI.</h2>
-            </div>
-            <p className="h-intro h-fade">Support taught me users. Esports taught me audiences. The agency taught me teams and clients. AI ties them together.</p>
-          </header>
-          <ol className="h-path">
-            {arc.map((a) => (
-              <li key={a.y} className="h-fade">
-                <span className="h-display">{a.y}</span>
-                <strong>{a.t}</strong>
-                <p>{a.d}</p>
-              </li>
-            ))}
-          </ol>
-          <div className="h-ctas h-fade">
-            <Link className="h-btn h-btn-gold" href="/about"><span className="dot"><ArrowRight size={16} /></span> Read the full story</Link>
-          </div>
-        </div>
       </section>
 
       {/* ── Voices ── */}

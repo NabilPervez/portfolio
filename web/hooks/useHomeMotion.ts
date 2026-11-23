@@ -39,7 +39,7 @@ export function useHomeMotion(root: RefObject<HTMLElement | null>) {
           ease: EASE,
           stagger: explicit.length ? 0.09 : 0.04,
           delay: inHero ? 0.15 + idx * 0.05 : 0,
-          scrollTrigger: inHero ? undefined : { trigger: h, start: "top 85%", once: true },
+          scrollTrigger: inHero ? undefined : { trigger: h, start: "top 97%", once: true },
         });
         if (explicit.length) rise(Array.from(explicit));
         // Per-word masks: same rising-through-a-slot look, wraps naturally at any width
@@ -50,16 +50,16 @@ export function useHomeMotion(root: RefObject<HTMLElement | null>) {
       gsap.utils.toArray<HTMLElement>(".h-fade").forEach((f) => {
         const inHero = !!f.closest(".h-hero");
         gsap.from(f, {
-          autoAlpha: 0, y: 28, duration: 1, ease: EASE,
+          autoAlpha: 0, y: 20, duration: 0.8, ease: EASE,
           delay: inHero ? 0.55 : 0,
-          scrollTrigger: inHero ? undefined : { trigger: f, start: "top 90%", once: true },
+          scrollTrigger: inHero ? undefined : { trigger: f, start: "top 100%", once: true },
         });
       });
 
       // ── Image reveal: clean wipe up, image settles from a slight zoom ──
       el.querySelectorAll<HTMLElement>("[data-reveal]").forEach((box) => {
         const img = box.querySelector("img");
-        gsap.timeline({ scrollTrigger: { trigger: box, start: "top 85%", once: true } })
+        gsap.timeline({ scrollTrigger: { trigger: box, start: "top 97%", once: true } })
           .fromTo(box, { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 1.2, ease: "expo.inOut" })
           .from(img, { scale: 1.18, duration: 1.6, ease: EASE }, 0);
       });
@@ -80,7 +80,7 @@ export function useHomeMotion(root: RefObject<HTMLElement | null>) {
         const o = { v: 0 };
         gsap.to(o, {
           v: end, duration: 1.6, ease: "power3.out",
-          scrollTrigger: { trigger: dd, start: "top 90%", once: true },
+          scrollTrigger: { trigger: dd, start: "top 100%", once: true },
           onUpdate: () => { dd.textContent = Math.round(o.v) + suffix; },
         });
       });

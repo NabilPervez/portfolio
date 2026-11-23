@@ -89,7 +89,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#0F2A20",
+  themeColor: "#111111",
 };
 
 // --- STRUCTURED DATA (JSON-LD) ---

@@ -4,16 +4,16 @@
   /* Nabil, 2026-11-21: friendly offshoot of NPC — white ground, green ramp, NPC gold as the highlight.
      Old navy (midnight) now maps to deep green so legacy pages pick up the new brand. */
   --color-background: #ffffff;
-  --color-foreground: #0F1A15;
-  --color-secondary: #56625C;
-  --color-accent: #1F6B4A;
-  --color-gold: #B8955E;
-  --color-midnight: #0F2A20;
-  --color-g1: #EDF5F0;
-  --color-g2: #C5DFD0;
-  --color-g3: #74AE8E;
-  --color-g4: #1F6B4A;
-  --color-g5: #133F2C;
+  --color-foreground: #111111;
+  --color-secondary: #5E5A54;
+  --color-accent: #A88A5E;
+  --color-gold: #C6A87C;
+  --color-midnight: #111111;
+  --color-g1: #F6F2EA;
+  --color-g2: #E9DDC8;
+  --color-g3: #C6A87C;
+  --color-g4: #8A6D44;
+  --color-g5: #111111;
   --color-hair: #E7E9E7;
 
   --font-sans: var(--font-outfit), system-ui, sans-serif;

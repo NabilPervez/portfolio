@@ -1,6 +1,6 @@
 /* Portfolio hero, ported from the NPC homepage hero motion: pattern ripples outward in two rings,
    headline shimmers, sheen follows the pointer on desktop. No consulting branding. */
-.phero{--ease:cubic-bezier(.16,1,.3,1);--ink:#0F2A20;position:relative;overflow:hidden;isolation:isolate;min-height:92svh;width:100%;display:grid;place-items:center;text-align:center;color:#fff;
+.phero{--ease:cubic-bezier(.16,1,.3,1);--ink:#111111;position:relative;overflow:hidden;isolation:isolate;min-height:92svh;width:100%;display:grid;place-items:center;text-align:center;color:#fff;
   background:radial-gradient(ellipse 70% 60% at 50% 45%,#1A4232 0%,var(--ink) 70%)}
 .phero .pattern{position:absolute;inset:0;background:url(/img/hero-pattern.png) 0 0/56px}
 .phero .dim{filter:grayscale(1) brightness(.85);opacity:.12}
@@ -22,8 +22,8 @@
 .phero .lede{font-size:18px;color:rgb(255 255 255/.72);max-width:38ch;text-wrap:pretty}
 .phero .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 .phero .btn{display:inline-flex;align-items:center;height:44px;padding:0 24px;border-radius:999px;font-weight:500;font-size:14px;transition:background .3s,color .3s}.phero .btn:active{transform:scale(.97)}
-.phero .btn-gold{background:#D9BE8E;color:#0F2A20}.phero .btn-gold:hover{background:#fff}
-.phero .btn-line{border:1px solid rgb(255 255 255/.3)}.phero .btn-line:hover{background:#fff;color:#0F2A20}
+.phero .btn-gold{background:#D9BE8E;color:#111111}.phero .btn-gold:hover{background:#fff}
+.phero .btn-line{border:1px solid rgb(255 255 255/.3)}.phero .btn-line:hover{background:#fff;color:#111111}
 @media (min-width:760px){.phero .pattern{background-size:80px}}
 @media (prefers-reduced-motion:no-preference){
   .phero .enter{animation:penter 1.2s var(--ease) .1s both}
