@@ -12,7 +12,7 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { caseStudies, cardVisual } from "@/lib/caseStudies";
 import testimonials from "@/app/data/testimonials.json";
 import products from "@/app/data/products.json";
-import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Stat, Chip, certs, skillset, aoeStats, aoeWins } from "@/components/qp";
+import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Chip, skillset, aoeStats, aoeWins } from "@/components/qp";
 
 const flow = [
   { n: "01", t: "AI intake form", d: "Requesters describe the change in plain words. The form asks the follow-up questions a good producer would." },
@@ -29,7 +29,7 @@ const arc = [
   { y: "2025", t: "Back to T-Mobile", d: "Content producer and AI SME. Automating Zipline." },
 ];
 
-const appPicks = ["kinkeep", "quran-reflections", "serenity-daily", "islamic-rag-quran-and-hadith", "babysync", "islamic-estate-calculator", "recurr", "lexilink"];
+const appPicks = ["kinkeep", "islamic-rag-quran-and-hadith", "serenity-daily", "babysync"];
 const quoteIds = [3, 5, 10];
 
 export default function Home() {
@@ -105,26 +105,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3 · Numbers */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head title="By the numbers." rest="Ten-plus years of shipping." />
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
-            <Stat v="10+" l="Years in tech, product and marketing" />
-            <Stat v="$5M+" l="Agency portfolio managed" />
-            <Stat v="35+" l="Apps built and shipped" dark />
-            <Stat v="100+" l="GitHub repositories" />
-            <Stat v="90%" l="Client referral rate at AOE" />
-            <Stat v="3×" l="Agency of the Year finalist" />
-          </div>
-        </div>
-      </section>
-
       {/* 4 · Builder */}
       <section className={section}>
         <div className={wrap}>
           <Head eb="After hours" title="I build to think." rest="Then I ship it.">
-            Most product managers write the spec. I also build the thing, with AI as my pair. Faith tools, fitness trackers, games, a RAG over the Quran and Hadith. Every one taught me something I bring to work.
+            Most product managers write the spec. I also build the thing, with AI as my pair: 35+ apps shipped and 100+ GitHub repos, from faith tools to games to a RAG over the Quran and Hadith.
           </Head>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
             {apps.map((a) => (
@@ -281,14 +266,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* 7 · Certifications */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head title="Certified." rest="AI, AEM and delivery." />
-          <div className="flex flex-wrap gap-2">{certs.map((c) => <Chip key={c}>{c}</Chip>)}</div>
         </div>
       </section>
 

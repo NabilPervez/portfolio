@@ -82,11 +82,9 @@ export function Navbar() {
                             { label: "Work", ariaLabel: "Work", link: "/portfolio" },
                             { label: "About", ariaLabel: "About", link: "/about" },
                             { label: "Speaking", ariaLabel: "Speaking", link: "/speaker" },
-                            { label: "Personal Branding", ariaLabel: "Personal branding", link: "/personal-branding" },
-                            { label: "Career", ariaLabel: "Career consulting", link: "/career-consulting" },
                             { label: "Resume", ariaLabel: "Resume", link: RESUME, target: "_blank" },
                         ]}
-                        ctaItems={[{ label: "Let's talk", link: CONTACT }, { label: "NPC", link: "https://nabilpervezconsulting.com/", target: "_blank" }]}
+                        ctaItems={[{ label: "Let's talk", link: CONTACT }]}
                         socialItems={[
                             { label: "LinkedIn", link: "https://www.linkedin.com/in/perveznabil" },
                             { label: "GitHub", link: "https://github.com/NabilPervez" },

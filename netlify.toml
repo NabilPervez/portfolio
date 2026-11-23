@@ -3,6 +3,17 @@
   command = "npm run build"
   publish = "out"
 
+# Services moved to NPC (Nabil, 2026-11-22).
+[[redirects]]
+  from = "/personal-branding"
+  to = "https://nabilpervezconsulting.com/personal-branding"
+  status = 301
+
+[[redirects]]
+  from = "/career-consulting"
+  to = "https://nabilpervezconsulting.com/career-consulting"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/404.html"

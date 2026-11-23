@@ -20,8 +20,6 @@ export function Footer() {
                     <Link className={link} href="/portfolio">Work</Link>
                     <Link className={link} href="/about">About</Link>
                     <Link className={link} href="/speaker">Speaking</Link>
-                    <Link className={link} href="/personal-branding">Personal Branding</Link>
-                    <Link className={link} href="/career-consulting">Career</Link>
                 </div>
                 <div>
                     <p className={col}>Elsewhere</p>
