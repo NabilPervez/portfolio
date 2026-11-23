@@ -1,320 +1,236 @@
+// About v2, Nabil 2026-11-22: the full story told in five chapters, then how I work, toolbox, credentials, voices.
 import Image from "next/image";
 import Link from "next/link";
-import { FadeIn } from "@/components/FadeIn";
-import { TestimonialCarousel } from "@/components/TestimonialCarousel";
-import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
+import testimonials from "@/app/data/testimonials.json";
+import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Chip, certs, skillset, aoeStats, aoeWins } from "@/components/qp";
 
 export const metadata = {
-    title: "About | Nabil Pervez",
-    description: "My journey, philosophy, and experience."
+  title: "About",
+  description: "From T-Mobile's help desk to agency CTO to AI SME: the story of a nerd translator who makes complex things simple.",
 };
 
-const workHistory = [
-    {
-        year: "2024 - Present",
-        role: "Founder, Principal Consultant",
-        company: "Nabil Pervez Consulting (NPC)",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Consulted on brand marketing, strategy, RFPs, and operations for agencies and businesses.</li>
-                <li>Measured and analyzed business processes, identified gaps, and suggested improvements to align solutions with organizational goals.</li>
-                <li>Developed and delivered high-quality, customer-facing deliverables and presentations.</li>
-                <li>Engaged in a full solution lifecycle, from initial scoping to post-implementation support.</li>
-                <li>Led the process of scope of work creation, contract negotiation, billing, and reconciliation for new partnerships and RFPs.</li>
-            </ul>
-        )
-    },
-    {
-        year: "2018 - 2024",
-        role: "Co-Founder, Chief Technical Officer, Senior Product Manager",
-        company: "AOE Creative",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li><strong>Leadership:</strong> Led multidisciplinary teams of 30+ (designers, marketers, developers) to launch digital products, websites, SaaS, mobile apps, and marketing campaigns.</li>
-                <li><strong>Growth:</strong> Contributed to a 20% YOY revenue growth by upselling and cross-selling, generating an additional $1M in annual revenue.</li>
-                <li><strong>Impact:</strong> Managed a portfolio of over $5M for global clients like Riot Games, LEGO, Coca-Cola, Paramount Pictures, and Activision Blizzard.</li>
-                <li><strong>Results:</strong> Reduced customer churn rate by 30% over three years through proactive support and customer success strategies.</li>
-                <li><strong>Strategy:</strong> Utilized Agile methodologies to define roadmaps, sprint planning, and product requirements, improving productivity by 20%.</li>
-            </ul>
-        )
-    },
-    {
-        year: "2024 - 2024",
-        role: "Chief Marketing Officer",
-        company: "Devhouse Agency (Video Game Studio)",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Managed the day-to-day marketing operations and administration for the agency, focused on driving brand growth and recognition.</li>
-                <li>Developed and implemented processes... boosting social media visibility by 30% and improving SEO performance by 20%.</li>
-                <li>Facilitated the process of scope of work creation, contract negotiation, billing, and reconciliation for new partnerships and RFPs.</li>
-                <li>Led brand positioning and executed customer-centric marketing campaigns, achieving a 15% increase in engagement and customer satisfaction.</li>
-                <li>Acted as brand manager, producer, and video editor for a self published video game - Our Tribe Above All (OTAA).</li>
-            </ul>
-        )
-    },
-    // ... previous entries ...
-    {
-        year: "2017 - 2018",
-        role: "Marketing Project Manager",
-        company: "Infinite Esports",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Directed the marketing efforts of an award-winning campaign that boosted brand visibility and engagement by 10M+ impressions.</li>
-                <li>Created and executed distinctive events, including block parties and pop-up shops, each attracting 10K+ attendees.</li>
-                <li>Spearheaded initiatives resulting in a 25% increase in social media followers and a 20% rise in event participation.</li>
-                <li>Led the project management team, overseeing daily standups and sprint planning to ensure adherence to Agile methodologies.</li>
-            </ul>
-        )
-    },
-    {
-        year: "2016 - 2017",
-        role: "Marketing Project Manager",
-        company: "PVP Live",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Developed comprehensive marketing strategies to increase monthly active users (MAU) to 3M+ and enhance social media following.</li>
-                <li>Scouted and signed an influencer roster, implementing targeted marketing that generated massive community engagement.</li>
-                <li>Collaborated with cross-functional teams to launch successful esports tournaments and leagues.</li>
-                <li>Implemented strategies that drove a 15% increase in sales and a 20% boost in overall revenue.</li>
-            </ul>
-        )
-    },
-    {
-        year: "2014 - 2015",
-        role: "Technical Support Engineer",
-        company: "MutualMind",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Provided expert support across multiple operating systems (Windows, macOS, Linux) while leading the ITSM team.</li>
-                <li>Achieved a 95% first-contact resolution rate and boosted customer satisfaction scores by 20%.</li>
-                <li>Conducted training sessions increasing client self-sufficiency; optimized workflows saving the company $50K annually.</li>
-            </ul>
-        )
-    },
-    {
-        year: "2012 - 2014",
-        role: "Functional Analyst",
-        company: "T-Mobile",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Led the ITSM team, achieving 98% SLA compliance by streamlining support processes.</li>
-                <li>Decreased average ticket resolution time from 24 hours to 8 hours, resulting in a 50% increase in customer satisfaction scores.</li>
-                <li>Developed training programs that improved support, reducing onboarding time for new hires by 20%.</li>
-            </ul>
-        )
-    },
-    {
-        year: "2011 - 2012",
-        role: "Service Desk Analyst",
-        company: "Fujitsu",
-        description: (
-            <ul className="list-disc pl-5 space-y-2">
-                <li>Administered user accounts in Active Directory, improving access efficiency.</li>
-                <li>Managed endpoint security and firewall maintenance, resulting in a 15% reduction in security incidents.</li>
-                <li>Provided timely support achieving a 90% first-contact resolution rate.</li>
-            </ul>
-        )
-    }
+const chapters = [
+  {
+    n: "01", years: "2011 – 2014", title: "The help desk.", org: "Fujitsu · T-Mobile",
+    story: "I started where every user problem lands first. At T-Mobile I was promoted from Tier 1 through Tier 3, then trainer, then Functional Analyst. I learned to listen, to write things down, and to hate fixing the same problem twice.",
+    wins: ["Cut average ticket resolution from 24 hours to 8", "98% SLA compliance, 90% first-call resolution", "Training that shortened onboarding by 20%"],
+  },
+  {
+    n: "02", years: "2014 – 2018", title: "The esports years.", org: "MutualMind · PVP Live · Infinite Esports",
+    story: "I followed my love of games into esports, first in support, then in marketing and project management. This is where I learned audiences: what makes people show up, share and stay.",
+    wins: ["Grew PVP Live to 3M+ monthly active users", "Award-winning Houston Outlaws campaign, 10M+ impressions", "Events of 10K+ attendees each"],
+  },
+  {
+    n: "03", years: "2018 – 2024", title: "Building an agency.", org: "AOE Creative · Co-founder, CTO & Senior PM",
+    story: "We co-founded AOE and grew it into a multi-million-dollar, award-winning agency. I ran product, tech and delivery: websites, SaaS, AR/VR filters, campaigns and brands for the biggest names in games.",
+    wins: ["$5M+ portfolio for LEGO, Riot, Activision Blizzard, Coca-Cola, Red Bull", "Teams of up to 30, 95% milestone adherence", "90% referral rate, 3× Agency of the Year finalist"],
+  },
+  {
+    n: "04", years: "2024 – 2025", title: "Going all in on AI.", org: "Prospera Financial · Nabil Pervez Consulting",
+    story: "I saw where things were heading and got my hands dirty. I built a RAG system on Microsoft Copilot, automated PC builds end to end, and started consulting on AI strategy and MarTech for other businesses.",
+    wins: ["RAG on Microsoft Copilot across company knowledge", "PC build time cut by 90% with PowerShell, Autopilot and Intune", "15% fewer security incidents"],
+  },
+  {
+    n: "05", years: "2025 – now", title: "Back to T-Mobile.", org: "Content Producer · AI SME",
+    story: "Thirteen years after the help desk, I came back to automate the repetitive work I used to fight. I'm the AI SME for our digital content org, a Gradial practitioner, and lead content author on Zipline, where I connected an AI intake form, Jira with Rovo, and Gradial so simple site updates run themselves in AEM.",
+    wins: ["Zipline automated from request to live page", "12+ Gradial rules built and deployed", "Shaped Gradial's roadmap: real-time ticket feedback, ticket-refinement chatbot"],
+  },
 ];
 
-const expertise = [
-    "Branding & Identity", "Agile Project Management", "Go-to-Market Strategy",
-    "Product Management", "UI/UX Design", "Digital Marketing",
-    "Team Leadership", "Data-Driven Decision Making", "Operations Strategy",
-    "Cloud Engineering", "Full Stack Development", "Vendor Management"
+const principles = [
+  { t: "People first.", d: "No manager wins alone. My results are tied to the people I work with, so I invest in them." },
+  { t: "Short and honest.", d: "Weekly burn-downs, rapid scrums and real check-ins instead of long meetings." },
+  { t: "Big picture, small steps.", d: "Hold the goal, cut the plan into moves people can finish this week." },
+  { t: "Fill the gap.", d: "If something important has no owner, I'll own it, even when it's outside my lane." },
 ];
 
-
-const clients = [
-    "Riot Games", "Activision Blizzard", "Nacon", "LEGO", "Paramount Pictures",
-    "Amazon", "Red Bull", "Coca-Cola", "Team Liquid", "Cloud 9",
-    "OpTic Gaming", "Houston Outlaws",
-    "PVP Live", "Infinite Esports", "MutualMind", "T-Mobile", "Fujitsu",
-    "Viz Media"
+const _unusedToolbox = [
+  { k: "AI & automation", v: ["Gradial", "Claude", "Jira Rovo", "Microsoft Copilot", "n8n", "RAG", "Prompt engineering", "AI-assisted coding"] },
+  { k: "Content & MarTech", v: ["Adobe Experience Manager", "AEM Assets", "Adobe Target", "WordPress", "Google Ads"] },
+  { k: "Build", v: ["React", "Next.js", "Python", "PowerShell", "GitHub", "Netlify", "Firebase"] },
+  { k: "Delivery", v: ["Agile / Scrum", "Jira", "Confluence", "Smartsheet", "UAT / QA", "Roadmaps"] },
 ];
+
+const awards = [
+  "Winner, Best Social Experience: Band Together (Houston Outlaws)",
+  "Finalist, Esports Organization of the Year (OpTic Gaming / Houston Outlaws)",
+  "3× Finalist, Best Esports Agency of the Year (AOE Creative)",
+];
+
+const quoteIds = [10, 3, 6, 5];
 
 export default function AboutPage() {
-    return (
-        <FadeIn className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-
-            {/* Intro Section */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-start mb-32">
-                {/* Left Column: Bio */}
-                {/* Left Column: Bio */}
-                <div className="md:col-span-7 space-y-8 animate-fade-in-up">
-                    <div className="space-y-4">
-                        <span className="text-sm font-bold tracking-[0.2em] uppercase text-gold">About Me</span>
-                        <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground leading-tight">
-                            Hey - I&apos;m Nabil
-                        </h1>
-                        <div className="h-1 w-20 bg-black/10" />
-                    </div>
-
-                    <div className="prose prose-lg text-secondary leading-relaxed space-y-6 font-light">
-                        <p>
-                            I&apos;m a seasoned product manager - I’ve led teams of designers, marketers, and developers to create award-winning marketing campaigns, memorable brands, and enjoyable video games.
-                        </p>
-                        <p>
-                            Throughout my career, I&apos;ve operated on my feet, maintaining a big-picture perspective while prioritizing immediate goals. I believe in leveraging individual strengths within a team to foster a happier, more productive collective.
-                        </p>
-                        <p>
-                            My work style can be described as <strong className="text-gold">creative, relentless, and efficient</strong>. I consistently strive to enhance myself, my projects, and the individuals I work with.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mt-8">
-                            <a
-                                href="https://www.linkedin.com/in/perveznabil"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-white rounded-full font-medium hover:bg-gold transition-colors"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
-                                LinkedIn
-                            </a>
-                            <a
-                                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 text-foreground rounded-full font-medium hover:border-gold hover:text-gold transition-colors"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>
-                                Book A Meeting
-                            </a>
-                            <a
-                                href="mailto:nabilpervezconsulting@gmail.com"
-                                className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 text-foreground rounded-full font-medium hover:border-gold hover:text-gold transition-colors"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Right Column: Image */}
-                <div className="md:col-span-5 space-y-12 animate-fade-in-up [animation-delay:200ms]">
-                    <div className="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden shadow-xl rounded-sm">
-                        <Image
-                            src="/images/nabil-headshot.jpg"
-                            alt="Nabil Pervez"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                </div>
+  const quotes = quoteIds.map((id) => testimonials.find((t) => t.id === id)).filter(Boolean) as typeof testimonials;
+  return (
+    <div className="overflow-x-hidden pt-[72px]">
+      {/* Intro */}
+      <section className="py-[clamp(64px,12vh,140px)]">
+        <div className={`${wrap} grid md:grid-cols-[7fr_5fr] gap-10 md:gap-16 items-end`}>
+          <div className="min-w-0">
+            <p className={eyebrow}>About</p>
+            <h1 className="mt-4 text-[clamp(34px,4.4vw,62px)] leading-[1.05] font-semibold tracking-[-0.027em] text-foreground [text-wrap:balance]">
+              I&apos;m Nabil. <span className="text-secondary">I&apos;m a nerd translator.</span>
+            </h1>
+            <p className={`${lede} mt-6`}>
+              Designers, engineers and the business all speak different languages. I speak all three, and I turn them into one plan people can ship. Lately, I turn that plan into automation, too.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-8">
+              <a href="mailto:nabilpervezgg@gmail.com" className={pillDark}>Let&apos;s talk</a>
+              <a href="https://nabilpervez.github.io/resume/" target="_blank" className={pillLine}>Resume</a>
             </div>
+          </div>
+          <div className="relative aspect-[4/5] w-full max-w-[420px] md:justify-self-end rounded-2xl overflow-hidden border border-hair">
+            <Image src="/images/nabil-headshot.jpg" alt="Nabil Pervez" fill className="object-cover" />
+          </div>
+        </div>
+      </section>
 
-            {/* Bento Grid Layout for Curiosity, Philosophy, Approach */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
-                {/* Visual / Curiosity Block - Spans full width on mobile, 1 col on desktop? Or maybe make it specific. 
-                    Let's utilize a 2-col layout where one side has [Curiosity] and other has [Philosophy + Approach] stacked?
-                    Or a 3-block layout. I'll do a custom grid for visual interest.
-                */}
-                <div className="md:col-span-2 bg-gray-50 p-10 md:p-14 rounded-3xl border border-gray-100 relative overflow-hidden">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight relative z-10">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-purple-800 to-blue-900 animate-gradient-x">Curiosity</span> is my <span className="text-gold">Operating System</span>.
-                    </h2>
-                    <div className="prose prose-lg text-secondary leading-relaxed font-light max-w-4xl relative z-10 space-y-6">
-                        <p>
-                            I’ve always refused to stay in a single lane. To me, a great product isn't just code, and it isn't just a pretty design—it's the seamless integration of both. That curiosity led me to master the spectrum: from the logic of Python to the psychology of Marketing, and the structure of Product Management.
-                        </p>
-                        <p>
-                            This polymath approach allows me to sit in any room—with engineers, creatives, or executives—and speak their language. I don't just manage teams; I align them. I ensure the 'nerd' details support the business goals, delivering complex projects that are as joyfully creative as they are technically sound.
-                        </p>
-                    </div>
-                    {/* Decorative element */}
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+      {/* Chapters */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="The story" title="Five chapters." rest="One thread.">
+            Every job taught me a new language: users, audiences, teams, machines. The thread is the same: find what repeats, make it simple, then make it run itself.
+          </Head>
+          <div className="border-t border-hair">
+            {chapters.map((c, i) => (
+              <article key={c.n} className="grid md:grid-cols-[1fr_2fr_1.4fr] gap-4 md:gap-10 py-10 border-b border-hair [&>*]:min-w-0">
+                <div>
+                  <p className={`text-[13px] font-medium ${i === chapters.length - 1 ? "text-g4" : "text-gold"}`}>{c.n} · {c.years}</p>
+                  <h3 className="mt-2 text-[22px] font-semibold tracking-[-0.027em] text-foreground">{c.title}</h3>
+                  <p className="mt-1 text-[14px] text-secondary">{c.org}</p>
                 </div>
+                <p className="text-[16px] leading-relaxed text-foreground/80">{c.story}</p>
+                <ul className="space-y-2">
+                  {c.wins.map((w) => (
+                    <li key={w} className="text-[14px] text-secondary pl-4 relative before:absolute before:left-0 before:top-[9px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-g3">{w}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <div className="bg-gray-900 text-white p-10 rounded-3xl relative overflow-hidden">
-                    <h2 className="text-3xl font-display font-bold mb-6 text-gold">My Philosophy</h2>
-                    <p className="text-gray-300 leading-relaxed text-lg">
-                        Above all, I acknowledge that my success is intricately tied to the teams and individuals I collaborate with. Recognizing that no manager thrives in isolation, I attribute my growth and accomplishments to the people in my professional and personal life. To foster effective communication, I embrace strategies like weekly burn downs, rapid-fire scrums, and regular personal check-ins.
-                    </p>
+      {/* AOE deep dive (Nabil 2026-11-22) */}
+      <section className="bg-midnight text-white py-[clamp(72px,14vh,160px)]">
+        <div className={wrap}>
+          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold">Chapter 03, up close</p>
+          <h2 className="mt-4 text-[clamp(28px,3.6vw,44px)] leading-[1.1] font-semibold tracking-[-0.027em] max-w-[20ch] [text-wrap:balance]">
+            AOE Creative made my career. <span className="text-white/55">And a lot of other people&apos;s.</span>
+          </h2>
+          <div className="mt-10 grid md:grid-cols-2 gap-10 [&>*]:min-w-0">
+            <div className="space-y-5 text-[16px] leading-relaxed text-white/75">
+              <p>We started AOE in 2018 with a simple idea: games and esports deserved an agency that actually understood them. Six years later we were working with Riot Games, Activision Blizzard, LEGO, Coca-Cola, Red Bull and Paramount+, and we were a three-time finalist for Best Esports Agency of the Year.</p>
+              <p>As CTO and senior product manager, I owned how the work got made: websites, SaaS, mobile apps, AR/VR filters, campaigns, brands and even apparel. I ran the sprints, the standups and the retros, managed 10 to 15 direct reports, and led teams of up to 30 across design, engineering and marketing.</p>
+              <p>The best part was the people. For a lot of our team, AOE meant their first credits on brands this big. I mentored our project managers and made the team about 20% more efficient, and that&apos;s still the work I&apos;m proudest of.</p>
+            </div>
+            <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden h-fit">
+              {aoeStats.map((s) => (
+                <div key={s.l} className="bg-midnight p-6 min-w-0">
+                  <p className="text-[32px] font-semibold tracking-[-0.027em] text-gold">{s.v}</p>
+                  <p className="mt-1 text-[14px] text-white/65">{s.l}</p>
                 </div>
-
-                <div className="bg-white border border-gray-200 p-10 rounded-3xl relative overflow-hidden shadow-sm">
-                    <h2 className="text-3xl font-display font-bold mb-6 text-foreground">My Approach</h2>
-                    <p className="text-secondary leading-relaxed text-lg">
-                        Engaging in constructive debate is a vital part of my work, as it sharpens minds and broadens perspectives. With high expectations, I readily assume responsibility, even outside my typical scope, to address voids or gaps. Each day, person, and project holds unique significance, and I am committed to treating them with the attention and respect they deserve.
-                    </p>
-                </div>
+              ))}
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Core Competencies - Grid */}
-            <div className="mb-32 animate-fade-in-up [animation-delay:400ms]">
-                <h2 className="text-3xl font-display font-bold mb-10">Core Competencies</h2>
-                <MobileAutoCarousel
-                    desktopGridClassName="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4"
-                >
-                    {expertise.map((skill, i) => (
-                        <div key={i} className="h-full p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:bg-[#FFF9EA] hover:border-gold/30 flex items-center justify-center text-center group">
-                            <span className="font-medium text-secondary group-hover:text-foreground transition-colors">
-                                {skill}
-                            </span>
-                        </div>
-                    ))}
-                </MobileAutoCarousel>
-            </div>
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="Agency wins" title="The headlines." rest="What we delivered." />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {aoeWins.map((w) => (
+              <div key={w.c} className="bg-white p-6 min-w-0">
+                <p className="text-[13px] font-medium text-g4">{w.c}</p>
+                <p className="mt-2 text-[18px] font-semibold tracking-[-0.02em] text-foreground">{w.t}</p>
+                <p className="mt-2 text-[14px] text-secondary">{w.d}</p>
+              </div>
+            ))}
+          </div>
+          <Link href="/portfolio" className={`${pillLine} mt-10`}>See the case studies</Link>
+        </div>
+      </section>
 
-            {/* Leadership & Teams */}
-            <div className="mb-32 animate-fade-in-up [animation-delay:500ms] bg-gray-50 p-12 rounded-sm border border-gray-100">
-                <h2 className="text-3xl font-display font-bold mb-8">Leadership & Management</h2>
-                <div className="space-y-6 text-secondary text-lg leading-relaxed">
-                    <p>
-                        I have managed <strong>cross-functional teams of up to 30 people</strong>, including designers, marketers, developers, and videographers. My leadership experience spans from co-founding an agency to leading ITSM teams at major corporations.
-                    </p>
-                    <p>
-                        I focus on mentoring and coaching, having fostered cultures of learning that resulted in measurable efficiency increases. Colleagues and direct reports have noted my ability to "immediately improve the team" and my "supportive approach."
-                    </p>
-                </div>
-            </div>
+      {/* How I work */}
+      <section className={`${section} bg-g1/60`}>
+        <div className={wrap}>
+          <Head eb="How I work" title="Four rules." rest="I don't bend them." />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {principles.map((p) => (
+              <div key={p.t} className="bg-white p-8 min-w-0">
+                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground">{p.t}</p>
+                <p className="mt-2 text-[14px] text-secondary">{p.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Testimonials */}
-            <div className="mb-32 animate-fade-in-up [animation-delay:550ms]">
-                <h2 className="text-3xl font-display font-bold mb-10">What People Say</h2>
-                <div className="-mx-6 md:-mx-0">
-                    <TestimonialCarousel />
-                </div>
-            </div>
+      {/* Toolbox */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="Skillset" title="What I bring." rest="Six disciplines, one person." />
+          <div className="border-t border-hair">
+            {skillset.map((t) => (
+              <div key={t.k} className="grid md:grid-cols-[1fr_3fr] gap-3 md:gap-10 py-6 border-b border-hair [&>*]:min-w-0">
+                <p className="text-[14px] font-medium text-foreground">{t.k}</p>
+                <div className="flex flex-wrap gap-2">{t.v.map((x) => <Chip key={x}>{x}</Chip>)}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Past Clients */}
-            <div className="mb-32 animate-fade-in-up [animation-delay:600ms]">
-                <h2 className="text-3xl font-display font-bold mb-10">Past Clients</h2>
-                <MobileAutoCarousel
-                    desktopGridClassName="hidden md:grid grid-cols-2 md:grid-cols-4 gap-8"
-                >
-                    {clients.map((client, i) => (
-                        <div key={i} className="h-24 flex items-center justify-center bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all hover:bg-[#FFF9EA] w-full">
-                            <span className="text-lg font-display font-bold text-gray-400 uppercase tracking-wider">{client}</span>
-                        </div>
-                    ))}
-                </MobileAutoCarousel>
-            </div>
+      {/* Credentials */}
+      <section className={section}>
+        <div className={`${wrap} grid md:grid-cols-3 gap-10 [&>*]:min-w-0`}>
+          <div>
+            <p className={eyebrow}>Certifications</p>
+            <ul className="mt-4 space-y-2 text-[14px] text-foreground/80">{certs.map((c) => <li key={c}>{c}</li>)}</ul>
+          </div>
+          <div>
+            <p className={eyebrow}>Awards</p>
+            <ul className="mt-4 space-y-2 text-[14px] text-foreground/80">{awards.map((a) => <li key={a}>{a}</li>)}</ul>
+          </div>
+          <div>
+            <p className={eyebrow}>Education</p>
+            <ul className="mt-4 space-y-2 text-[14px] text-foreground/80">
+              <li>Full Stack Web Development, NuCamp Coding Bootcamp</li>
+              <li>Computer Science, University of Texas at Dallas</li>
+              <li>A.S., Computer Science, Collin College</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            {/* Timeline Section */}
-            <div className="w-full border-t border-gray-200 pt-24 animate-fade-in-up [animation-delay:400ms]">
-                <h2 className="text-3xl md:text-4xl font-display font-bold mb-16">My Career</h2>
+      {/* Voices */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head title="In their words." rest="Teammates and clients." />
+          <div className="grid md:grid-cols-2 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {quotes.map((q) => (
+              <figure key={q.id} className="bg-white p-8 flex flex-col justify-between gap-8 min-w-0">
+                <blockquote className="text-[18px] leading-[1.5] text-foreground [text-wrap:pretty]">&ldquo;{q.quote}&rdquo;</blockquote>
+                <figcaption><p className="text-[14px] font-medium text-foreground">{q.author}</p><p className="text-[13px] text-secondary">{q.role}</p></figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <div className="space-y-8">
-                    {workHistory.map((job, index) => (
-                        <div key={index} className="group bg-white p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gold/30">
-                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
-                                <div className="md:col-span-3">
-                                    <span className="text-sm font-medium text-gold tracking-wider uppercase bg-gold/5 px-3 py-1 rounded-full">{job.year}</span>
-                                </div>
-                                <div className="md:col-span-9">
-                                    <h3 className="text-2xl font-display font-medium mb-2 group-hover:text-gold transition-colors">{job.company}</h3>
-                                    <p className="text-foreground font-medium mb-4 text-lg">{job.role}</p>
-                                    <div className="text-secondary font-light leading-relaxed">
-                                        {job.description}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-        </FadeIn>
-    );
+      {/* Close */}
+      <section className="border-t border-hair">
+        <div className={`${wrap} py-[clamp(72px,12vh,140px)] flex flex-col md:flex-row md:items-end justify-between gap-8`}>
+          <h2 className="text-[clamp(28px,3.6vw,44px)] leading-[1.1] font-semibold tracking-[-0.027em] text-foreground max-w-[18ch] [text-wrap:balance]">
+            That&apos;s my story. <span className="text-g4">What&apos;s yours?</span>
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            <a href="mailto:nabilpervezgg@gmail.com" className={pillDark}>Let&apos;s talk</a>
+            <Link href="/portfolio" className={pillLine}>See my work</Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }

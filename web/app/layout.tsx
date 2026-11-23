@@ -1,17 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Syne } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const syne = Syne({
-  variable: "--font-syne",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"], // Bold weights for display
+// Quiet Precision: one family, three weights with fixed jobs (600 display, 500 UI, 400 prose).
+// Self-hosted (no third-party calls on load).
+const outfit = localFont({
+  variable: "--font-outfit",
+  display: "swap",
+  src: [
+    { path: "./fonts/outfit-latin-400-normal.woff2", weight: "400" },
+    { path: "./fonts/outfit-latin-500-normal.woff2", weight: "500" },
+    { path: "./fonts/outfit-latin-600-normal.woff2", weight: "600" },
+  ],
 });
 
 // --- SEO CONFIGURATION ---
@@ -19,7 +21,7 @@ const siteUrl = "https://nabilpervez.com";
 const siteName = "Nabil Pervez";
 const contactEmail = "nabilpervezconsulting@gmail.com";
 const defaultTitle = "Nabil Pervez | Product Manager & Strategist";
-const defaultDescription = "Senior Product Manager, Strategist, and Designer specializing in gaming, esports, and digital innovation. Helping businesses bridge the gap between technical complexity and creative vision.";
+const defaultDescription = "Product manager who makes complex things simple. Enterprise AI adoption at T-Mobile, and brand, product and web for LEGO, Riot Games, Activision Blizzard and Coca-Cola.";
 const ogImage = `${siteUrl}/images/nabil-headshot.jpg`;
 
 export const metadata: Metadata = {
@@ -88,7 +90,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: "cover",
-  themeColor: "#000000",
+  themeColor: "#0F2A20",
 };
 
 // --- STRUCTURED DATA (JSON-LD) ---
@@ -129,7 +131,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={outfit.variable}>
       <head>
         <script
           type="application/ld+json"
@@ -150,11 +152,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${syne.variable} antialiased font-sans bg-background text-foreground overflow-x-hidden selection:bg-black selection:text-white`}>
+      <body className={`${outfit.variable} antialiased font-sans bg-background text-foreground overflow-x-hidden selection:bg-g2 selection:text-foreground`}>
         <Navbar />
         <main className="min-h-screen">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

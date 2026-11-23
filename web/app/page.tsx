@@ -1,207 +1,216 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+// Homepage v2, Nabil 2026-11-22: story-first (Why → How → What).
+// hero → why (the help-desk origin) → Zipline case → numbers → builder → career arc → AOE work → certs → voices → close.
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { useRef } from "react";
-import { caseStudies, cardVisual } from "@/lib/caseStudies";
+import MotionHero from "@/components/MotionHero";
 import { LazyVideo } from "@/components/LazyVideo";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import Image from "next/image";
-import { BentoGrid } from "@/components/BentoGrid";
-import { TestimonialCarousel } from "@/components/TestimonialCarousel";
-import { MobileAutoCarousel } from "@/components/MobileAutoCarousel";
-import MotionHero from "@/components/MotionHero";
+import { caseStudies, cardVisual } from "@/lib/caseStudies";
+import testimonials from "@/app/data/testimonials.json";
+import products from "@/app/data/products.json";
+import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Stat, Chip, certs, skillset, aoeStats, aoeWins } from "@/components/qp";
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2
-    }
-  }
-};
-
-const specializations = [
-  { title: "Brand Strategy", description: "Crafting unique identities and narratives that resonate with global audiences." },
-  { title: "Product Management", description: "Leading cross-functional teams to build and ship exceptional digital products and games." },
-  { title: "Creative Direction", description: "Guiding visual and interactive experiences from concept to award-winning execution." },
-  { title: "Marketing Campaigns", description: "Designing and executing go-to-market strategies that drive engagement and growth." },
-  { title: "Agile Leadership", description: "Ensuring on-time delivery through Agile methodologies and clear barrier-busting communication." },
-  { title: "User Research", description: "Uncovering user needs and behaviors to inform product decisions and design tailored solutions." },
-  { title: "Data Analysis", description: "Leveraging analytics to measure performance, identify trends, and drive data-informed improvements." },
-  { title: "Go-to-Market", description: "Orchestrating successful product launches with integrated marketing and sales strategies." },
+const flow = [
+  { n: "01", t: "AI intake form", d: "Requesters describe the change in plain words. The form asks the follow-up questions a good producer would." },
+  { n: "02", t: "Jira + Rovo AI", d: "Rovo turns the request into a complete, verbose ticket: page, component, copy, asset, CTA." },
+  { n: "03", t: "Gradial", d: "Jira hands the ticket to Gradial. My skills and rules teach it to author the change correctly in AEM." },
+  { n: "04", t: "Live in production", d: "Copy, CTAs, image swaps and experience fragments go live. A human checks; nobody retypes." },
 ];
 
+const arc = [
+  { y: "2011", t: "Help desk", d: "Fujitsu, then T-Mobile. Tier 1 to Functional Analyst." },
+  { y: "2014", t: "Esports", d: "MutualMind, PVP Live, Infinite Esports. 3M+ monthly users." },
+  { y: "2018", t: "Agency", d: "Co-founded AOE Creative. CTO and senior PM, $5M+ portfolio." },
+  { y: "2024", t: "AI & IT", d: "Prospera Financial and NPC. RAG on Copilot, automation everywhere." },
+  { y: "2025", t: "Back to T-Mobile", d: "Content producer and AI SME. Automating Zipline." },
+];
+
+const appPicks = ["kinkeep", "quran-reflections", "serenity-daily", "islamic-rag-quran-and-hadith", "babysync", "islamic-estate-calculator", "recurr", "lexilink"];
+const quoteIds = [3, 5, 10];
+
 export default function Home() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"]
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-
-  // Clients logic for static grid (keep if used by MobileAutoCarousel in clients section)
-  // Actually, MobileAutoCarousel takes children, so we probably just map clientsData there directly in the JSX?
-  // Checking original file: Lines 179 maps clientsData slice.
-  // Lines 52-54 defined row1/row2 which were ONLY used in the bottom section I just replaced.
-  // So I can replace row1/row2 definition with project logic.
-
-  // Filter valid projects
+  const apps = appPicks.map((id) => products.find((p) => p.id === id)).filter(Boolean) as typeof products;
   const validProjects = caseStudies
-    .filter(p => p.thumb.src && !p.thumb.src.includes("default.jpg"))
-    .map(p => ({ slug: p.slug, title: p.title, ...cardVisual(p) }));
-
+    .filter((p) => p.thumb.src && !p.thumb.src.includes("default.jpg"))
+    .map((p) => ({ slug: p.slug, title: p.title, ...cardVisual(p) }));
   const midPoint = Math.ceil(validProjects.length / 2);
   const projectRow1 = validProjects.slice(0, midPoint);
   const projectRow2 = validProjects.slice(midPoint);
+  const quotes = quoteIds.map((id) => testimonials.find((t) => t.id === id)).filter(Boolean) as typeof testimonials;
 
   return (
-    <div ref={containerRef} className="relative overflow-x-hidden">
-
-      {/* Hero Section */}
+    <div className="overflow-x-hidden">
       <MotionHero />
 
-      {/* Video Section Below Hero */}
-      <section className="bg-black py-0">
-        <div className="w-full h-[600px] relative">
-          <LazyVideo src="/media/home-reel.mp4" poster="/media/home-reel-poster.webp" label="Showreel" className="object-cover w-full h-full opacity-80" />
-          <div className="absolute inset-0 bg-black/20" />
-        </div>
-      </section>
-
-      {/* Nerd Translator Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end mb-12">
-            {/* Left Column: All Text */}
-            <div className="order-2 md:order-1 flex flex-col justify-center">
-              <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">Who Am I</span>
-              <h3 className="text-4xl md:text-6xl font-display font-bold leading-[1.1] mb-8">
-                I&apos;m Nabil - I&apos;m a <br />
-                <span className="text-gold">Nerd Translator</span>.
-              </h3>
-              <div className="text-lg text-secondary font-light leading-relaxed max-w-lg space-y-6">
-                <p>
-                  My unique ability to bridge the gap between <strong>technical complexity</strong> and <strong>creative vision</strong> allows me to translate these different languages (marketing, design, development) into &quot;business success&quot;.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column: Headshot */}
-            <div className="order-1 md:order-2 flex justify-end items-end">
-              <div className="relative h-[500px] w-full max-w-md rounded-lg overflow-hidden border border-gray-200 shadow-xl">
-                <Image
-                  src="/images/nabil-headshot.jpg"
-                  alt="Nabil Pervez"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Bento Grid */}
-          <BentoGrid />
-
-
-        </div>
-      </section>
-
-      {/* Previous Clients - logo lockup */}
-      <section className="py-24 bg-black">
-        <div className="max-w-6xl mx-auto px-6 md:px-12">
-          <div className="mb-12 text-center">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">My Previous Clients</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Trusted by industry leaders.</p>
-          </div>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/client-logos.webp"
-            width={1116}
-            height={569}
-            loading="lazy"
-            alt="Client logos: The Story Mob, Kraft Group, Team Liquid, Sansar, Paramount+, Red Bull, Sunspear Games, Overwatch League, OpTic Gaming, Oni Studios, Nerd Street Gamers, McCown Evans, LEGO, Houston Outlaws, Funny or Die, Freshcut, Flashpoint, FCFL, EVO, Ellevens, Cloud9, Call of Duty League, Axiomatic, Activision Blizzard"
-            className="w-full h-auto"
-          />
-        </div>
-      </section>
-
-      {/* The Integration Section */}
-      {/* 
-      <section className="py-24 bg-background border-y border-gray-100">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-6">The Intersection</span>
-          <h3 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-8">The Integration</h3>
-
-          <div className="space-y-8 text-xl md:text-2xl font-light leading-relaxed text-secondary">
-            <p>
-              &quot;The designers want art, the developers want efficiency, and the business wants ROI.
-              Most projects fail at the intersection because of a failure to communicate expectations&quot;
+      {/* 1 · Why — the origin story */}
+      <section className="py-[clamp(72px,14vh,160px)]">
+        <div className={`${wrap} grid md:grid-cols-[7fr_5fr] gap-10 md:gap-16 items-center`}>
+          <div className="min-w-0">
+            <p className={eyebrow}>Why I do this</p>
+            <p className="mt-6 text-[clamp(22px,2.4vw,32px)] leading-[1.3] font-semibold tracking-[-0.027em] text-foreground [text-wrap:balance]">
+              I started on T-Mobile&apos;s help desk in 2012, fixing the same problems over and over.{" "}
+              <span className="text-secondary">That&apos;s where I learned the rule I still work by: if a task repeats, it should be simple, and then it should run itself.</span>
             </p>
-            <p className="font-medium text-foreground">
-              I live at that intersection.
-            </p>
-            <p>
-              I am the translator who ensures your creative vision survives the technical build, and your business goals aren&apos;t lost in the code. I make the complex simple, and the simple powerful.
+            <p className={`${lede} mt-8`}>
+              Thirteen years, one agency and a lot of shipped products later, I came back to T-Mobile to do exactly that, with AI.
             </p>
           </div>
+          <div className="relative aspect-[4/5] w-full max-w-[420px] md:justify-self-end rounded-2xl overflow-hidden border border-hair">
+            <Image src="/images/nabil-headshot.jpg" alt="Nabil Pervez" fill className="object-cover" />
+          </div>
         </div>
       </section>
-      */}
 
-      {/* Specializations Section */}
-      <section className="py-24 bg-gray-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="mb-16">
-            <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">My Core Skills</span>
-            <h3 className="text-4xl md:text-5xl font-display font-semibold text-foreground">What I Specialize In</h3>
-          </div>
+      {/* 2 · Zipline — the flagship story */}
+      <section className={`${section} bg-g1/60`}>
+        <div className={wrap}>
+          <Head eb="Now · T-Mobile" title="I automated Zipline." rest="End to end, with AI.">
+            Zipline is how T-Mobile ships fast, simple website updates: copy, CTAs, image swaps and experience fragments, straight to production in Adobe Experience Manager. I&apos;m its lead content author.
+          </Head>
 
-          <MobileAutoCarousel
-            desktopGridClassName="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {specializations.map((spec, idx) => (
-              <div key={idx} className="h-full group bg-white p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-[#FFF9EA] hover:border-gold/30 rounded-sm">
-                <h4 className="text-xl font-display font-bold mb-4 group-hover:text-gold transition-colors">{spec.title}</h4>
-                <p className="text-secondary text-sm leading-relaxed">{spec.description}</p>
+          <div className="grid md:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {[
+              { k: "The reality", v: "Every request arrived half-written. Producers chased missing details, retyped tickets, then authored each change by hand in AEM. Small updates, big drag." },
+              { k: "My move", v: "I rebuilt the pipe: an AI intake form, Jira with Rovo AI to write complete tickets, and Jira connected to Gradial, with the skills and rules that tell Gradial how to author each ticket correctly." },
+              { k: "The payoff", v: "Zipline runs itself, from request to live page. And my feedback shaped Gradial's roadmap: real-time ticket feedback and a ticket-refinement chatbot." },
+            ].map((b, i) => (
+              <div key={b.k} className={`p-8 min-w-0 ${i === 2 ? "bg-g5 text-white" : "bg-white"}`}>
+                <p className={`text-[13px] font-medium uppercase tracking-[.16em] ${i === 2 ? "text-gold" : "text-g4"}`}>{b.k}</p>
+                <p className={`mt-4 text-[16px] leading-relaxed ${i === 2 ? "text-white/85" : "text-secondary"}`}>{b.v}</p>
               </div>
             ))}
-          </MobileAutoCarousel>
-        </div>
-      </section>
+          </div>
 
+          {/* Flow */}
+          <ol className="mt-12 grid md:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {flow.map((f) => (
+              <li key={f.n} className="bg-white p-6 min-w-0">
+                <p className="text-[13px] font-medium text-gold">{f.n}</p>
+                <p className="mt-2 text-[18px] font-semibold tracking-[-0.02em] text-foreground">{f.t}</p>
+                <p className="mt-2 text-[14px] text-secondary">{f.d}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-6 text-[16px] text-secondary max-w-[60ch]">
+            Think of it like a restaurant. Before, every order came in on a napkin. Now the order writes itself, goes straight to the kitchen, and the cook already knows the recipe.
+          </p>
 
-
-      {/* Testimonials Section - Carousel */}
-      <section className="py-24 bg-gray-50 border-t border-gray-200 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12 flex flex-col items-center text-center">
-          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">What People Say</span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">Testimonials</h2>
-        </div>
-
-        {/* Full Width Carousel */}
-        <div className="w-full">
-          <div className="max-w-[1400px] mx-auto">
-            {/* Actually BentoGrid is above, this is TestimonialCarousel */}
-            <div className="mt-12">
-              {/* Dynamic Import or direct usage if client component */}
-              <TestimonialCarousel />
-            </div>
+          <div className="flex flex-wrap gap-2 mt-8">
+            <Chip>AI SME, digital content org</Chip><Chip>Gradial Practitioner</Chip><Chip>12+ Gradial rules shipped</Chip><Chip>Adobe Experience Manager</Chip><Chip>Jira + Rovo</Chip>
           </div>
         </div>
       </section>
 
-      {/* Moving Rows + View My Work Section */}
+      {/* 3 · Numbers */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head title="By the numbers." rest="Ten-plus years of shipping." />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            <Stat v="10+" l="Years in tech, product and marketing" />
+            <Stat v="$5M+" l="Agency portfolio managed" />
+            <Stat v="35+" l="Apps built and shipped" dark />
+            <Stat v="100+" l="GitHub repositories" />
+            <Stat v="90%" l="Client referral rate at AOE" />
+            <Stat v="3×" l="Agency of the Year finalist" />
+          </div>
+        </div>
+      </section>
+
+      {/* 4 · Builder */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="After hours" title="I build to think." rest="Then I ship it.">
+            Most product managers write the spec. I also build the thing, with AI as my pair. Faith tools, fitness trackers, games, a RAG over the Quran and Hadith. Every one taught me something I bring to work.
+          </Head>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {apps.map((a) => (
+              <a key={a.id} href={a.url} target="_blank" className="group bg-white p-6 min-w-0 flex flex-col gap-3 hover:bg-g1 transition-colors">
+                <span className="w-8 h-8 rounded-lg" style={{ background: a.bgColor }} aria-hidden />
+                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground">{a.title}</p>
+                <p className="text-[14px] text-secondary line-clamp-2">{a.description}</p>
+              </a>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2 mt-8">
+            <Link href="/products" className={pillLine}>See all products <ArrowRight className="w-4 h-4" /></Link>
+            <a href="https://github.com/NabilPervez" target="_blank" className={pillLine}>GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      {/* 5 · Career arc */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="The path" title="From help desk to AI." rest="Every stop added a language." >
+            Support taught me users. Esports taught me audiences. The agency taught me teams and clients. AI ties them together.
+          </Head>
+          <ol className="grid md:grid-cols-5 border-t border-hair">
+            {arc.map((a, i) => (
+              <li key={a.y} className="py-6 md:pr-6 border-b md:border-b-0 border-hair min-w-0">
+                <p className={`text-[13px] font-medium ${i === arc.length - 1 ? "text-g4" : "text-gold"}`}>{a.y}</p>
+                <p className="mt-2 text-[18px] font-semibold tracking-[-0.02em] text-foreground">{a.t}</p>
+                <p className="mt-1 text-[14px] text-secondary">{a.d}</p>
+              </li>
+            ))}
+          </ol>
+          <Link href="/about" className={`${pillLine} mt-10`}>Read the full story <ArrowRight className="w-4 h-4" /></Link>
+        </div>
+      </section>
+
+      {/* 6a · AOE — the agency years (Nabil 2026-11-22: "these made careers") */}
+      <section className="bg-midnight text-white pt-[clamp(72px,14vh,160px)] pb-12">
+        <div className={wrap}>
+          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold">2018 – 2024 · AOE Creative</p>
+          <h2 className="mt-4 text-[clamp(34px,4.4vw,62px)] leading-[1.05] font-semibold tracking-[-0.027em] max-w-[16ch] [text-wrap:balance]">
+            We built the agency the biggest names in games called. <span className="text-white/55">I was its CTO.</span>
+          </h2>
+          <p className="mt-6 text-[18px] text-white/70 max-w-[52ch] [text-wrap:pretty]">
+            I co-founded AOE Creative and grew it into a multi-million-dollar, award-winning agency. As CTO and senior product manager I ran product, tech and delivery for Riot Games, Activision Blizzard, LEGO, Coca-Cola, Red Bull, Paramount+ and the Call of Duty and Overwatch leagues. Work that launched careers, including a few of mine.
+          </p>
+          <div className="mt-14 grid grid-cols-2 md:grid-cols-3 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
+            {aoeStats.map((s) => (
+              <div key={s.l} className="bg-midnight p-6 md:p-8 min-w-0">
+                <p className="text-[32px] font-semibold tracking-[-0.027em] text-gold">{s.v}</p>
+                <p className="mt-1 text-[14px] text-white/65">{s.l}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6a+ · Highlight reel (Markel's site reel, self-hosted) */}
+      <section className="bg-midnight pb-[clamp(72px,14vh,160px)]">
+        <div className={wrap}>
+          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold mb-6">Highlight reel</p>
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-black">
+            <LazyVideo src="/media/home-reel.mp4" poster="/media/home-reel-poster.webp" label="AOE Creative highlight reel" className="absolute inset-0 h-full w-full object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* 6b · AOE — headline wins */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="Agency wins" title="Results people still talk about." rest="Eight of them.">
+            Each one was a team effort I led from scope to launch: the strategy, the build and the people.
+          </Head>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {aoeWins.map((w, i) => (
+              <div key={w.c} className={`p-6 min-w-0 ${i === 0 ? "bg-g5 text-white" : "bg-white"}`}>
+                <p className={`text-[13px] font-medium ${i === 0 ? "text-gold" : "text-g4"}`}>{w.c}</p>
+                <p className={`mt-2 text-[18px] font-semibold tracking-[-0.02em] ${i === 0 ? "text-white" : "text-foreground"}`}>{w.t}</p>
+                <p className={`mt-2 text-[14px] ${i === 0 ? "text-white/75" : "text-secondary"}`}>{w.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6c · View My Work (kept as-is, Nabil 2026-11-22) */}
       <section className="bg-background overflow-hidden py-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 flex flex-col items-center text-center">
           <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">Portfolio</span>
@@ -258,6 +267,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 7a · Skillset */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head eb="Skillset" title="What I bring." rest="Six disciplines, one person.">
+            Most teams hire separately for product, AI, MarTech, brand, leadership and engineering. I&apos;ve done all six for real clients.
+          </Head>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {skillset.map((g) => (
+              <div key={g.k} className="bg-white p-6 md:p-8 min-w-0">
+                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground">{g.k}</p>
+                <div className="flex flex-wrap gap-2 mt-4">{g.v.map((x) => <Chip key={x}>{x}</Chip>)}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7 · Certifications */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head title="Certified." rest="AI, AEM and delivery." />
+          <div className="flex flex-wrap gap-2">{certs.map((c) => <Chip key={c}>{c}</Chip>)}</div>
+        </div>
+      </section>
+
+      {/* 8 · Voices */}
+      <section className={section}>
+        <div className={wrap}>
+          <Head title="In their words." rest="People I've worked with." />
+          <div className="grid md:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+            {quotes.map((q) => (
+              <figure key={q.id} className="bg-white p-8 flex flex-col justify-between gap-8 min-w-0">
+                <blockquote className="text-[18px] leading-[1.5] text-foreground [text-wrap:pretty]">&ldquo;{q.quote}&rdquo;</blockquote>
+                <figcaption><p className="text-[14px] font-medium text-foreground">{q.author}</p><p className="text-[13px] text-secondary">{q.role}</p></figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 9 · Close */}
+      <section className="border-t border-hair">
+        <div className={`${wrap} py-[clamp(72px,12vh,140px)] flex flex-col md:flex-row md:items-end justify-between gap-8`}>
+          <h2 className="text-[clamp(28px,3.6vw,44px)] leading-[1.1] font-semibold tracking-[-0.027em] text-foreground max-w-[18ch] [text-wrap:balance]">
+            Got a process that repeats? <span className="text-g4">Let&apos;s make it run itself.</span>
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            <a href="mailto:nabilpervezgg@gmail.com" className={pillDark}>Let&apos;s talk</a>
+            <a href="https://nabilpervez.github.io/resume/" target="_blank" className={pillLine}>Resume</a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

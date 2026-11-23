@@ -1,163 +1,107 @@
 "use client";
 
+// Nabil, 2026-11-21: nav cut from 9 items to 4 + one CTA (Quiet Precision: logo · centred links · one CTA).
+// Consulting / Products / Book Me move to the agency brand. Transparent over the dark hero, frosted white after scroll.
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChevronDown } from "lucide-react";
-import { useState, useEffect } from "react";
-import StarBorder from "./StarBorder";
 import { StaggeredMenu } from "./StaggeredMenu";
 
+const RESUME = "https://nabilpervez.github.io/resume/";
+const CONTACT = "mailto:nabilpervezgg@gmail.com";
+
 const navLinks: { name: string; href: string; target?: string }[] = [
-    { name: "Home", href: "/" },
+    { name: "Work", href: "/portfolio" },
     { name: "About", href: "/about" },
-    { name: "Speaker", href: "/speaker" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Products", href: "/products" },
-    { name: "Personal Branding", href: "/personal-branding" },
-    { name: "Career", href: "/career-consulting" },
-    { name: "Resume", href: "https://nabilpervez.github.io/resume/", target: "_blank" },
+    { name: "Speaking", href: "/speaker" },
+    { name: "Resume", href: RESUME, target: "_blank" },
 ];
 
 export function Navbar() {
     const pathname = usePathname();
-    const [isOpen, setIsOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-    const { scrollY } = useScroll();
+    const [scrolled, setScrolled] = useState(false);
+    const onDark = pathname === "/" && !scrolled;
 
-    // Handle initial state and route changes
     useEffect(() => {
-        if (pathname === "/") {
-            setIsScrolled(window.scrollY > 50);
-        } else {
-            setIsScrolled(true);
-        }
+        const on = () => setScrolled(window.scrollY > 40);
+        on();
+        window.addEventListener("scroll", on, { passive: true });
+        return () => window.removeEventListener("scroll", on);
     }, [pathname]);
 
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        if (pathname === "/") {
-            setIsScrolled(latest > 50);
-        } else {
-            setIsScrolled(true);
-        }
-    });
-
     return (
-        <>
-            <header
-                className={cn(
-                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
-                    isScrolled
-                        ? "bg-white text-black border-gray-100"
-                        : "bg-transparent text-white border-transparent"
-                )}
-            >
-                <div className="mx-auto max-w-7xl px-6 md:px-12 h-24 flex items-center justify-between">
+        <header
+            className={cn(
+                "fixed top-0 inset-x-0 z-50 border-b transition-colors duration-500",
+                onDark ? "bg-transparent border-transparent text-white" : "bg-white/85 backdrop-blur-xl border-hair text-foreground"
+            )}
+        >
+            <div className="mx-auto max-w-[1200px] px-[clamp(16px,5vw,64px)] h-[72px] grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
+                <Link href="/" className="text-[16px] font-semibold tracking-[-0.02em] min-w-0">
+                    Nabil Pervez
+                </Link>
 
-                    {/* Logo / Brand Name */}
-                    <Link href="/" className="text-lg font-display font-bold tracking-tighter hover:opacity-70 transition-opacity z-50 pointer-events-auto">
-                        NABIL PERVEZ
-                    </Link>
-
-                    {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8 lg:gap-12 pointer-events-auto">
-                        {navLinks.map((link) => {
-                            const isActive = pathname === link.href;
-
-                            return (
-                                <Link
-                                    key={link.href}
-                                    href={link.href}
-                                    target={link.target}
-                                    className={cn(
-                                        "text-sm font-medium tracking-wide transition-all duration-300 relative group",
-                                        isActive ? "text-gold" : "opacity-70 hover:opacity-100 hover:text-gold"
-                                    )}
-                                >
-                                    {link.name}
-                                    <span className={cn(
-                                        "absolute -bottom-1 left-0 h-px bg-gold transition-all duration-300",
-                                        isActive ? "w-full" : "w-0 group-hover:w-full"
-                                    )} />
-                                </Link>
-                            );
-                        })}
-                        <div className="flex items-center gap-4">
-                            {/* Social Icons */}
-                            <Link href="https://www.linkedin.com/in/perveznabil" target="_blank" className="hover:text-gold transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
-                            </Link>
-                            <Link href="https://github.com/NabilPervez" target="_blank" className="hover:text-gold transition-colors mr-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></svg>
-                            </Link>
-                            <Link href="https://www.behance.net/aoecreative" target="_blank" className="hover:text-gold transition-colors mr-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-presentation"><path d="M2 3h20" /><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" /><path d="M7 21h10" /></svg>
-                            </Link>
-
+                <nav className="hidden md:flex items-center gap-8">
+                    {navLinks.map((l) => {
+                        const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
+                        return (
                             <Link
-                                href="https://nabilpervezconsulting.com/"
-                                target="_blank"
-                                className="px-6 py-2 border border-current rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all hover:border-gold"
+                                key={l.href}
+                                href={l.href}
+                                target={l.target}
+                                className={cn(
+                                    "text-[14px] font-medium transition-opacity",
+                                    active ? "opacity-100" : "opacity-60 hover:opacity-100"
+                                )}
                             >
-                                NPC
+                                {l.name}
                             </Link>
-                            <Link
-                                href="mailto:nabilpervezconsulting@gmail.com"
-                                className="px-6 py-2 border border-current rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all hover:border-gold"
-                            >
-                                Contact
-                            </Link>
-                            <StarBorder
-                                as={Link}
-                                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-"
-                                target="_blank"
-                                color="cyan"
-                                speed="5s"
-                            >
-                                Book Me
-                            </StarBorder>
-                        </div>
-                    </nav>
+                        );
+                    })}
+                </nav>
 
-
-                    {/* Mobile Menu - StaggeredMenu */}
-                    <div className="md:hidden z-[60] fixed top-0 right-0 w-full h-full pointer-events-none">
-                        <div className="h-full pointer-events-none">
-                            <StaggeredMenu
-                                position="right"
-                                items={[
-                                    { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-                                    { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
-                                    { label: 'Speaker', ariaLabel: 'Speaker page', link: '/speaker' },
-                                    { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
-                                    { label: 'Products', ariaLabel: 'View our products', link: '/products' },
-                                    { label: 'Personal Branding', ariaLabel: 'Personal branding', link: '/personal-branding' },
-                                    { label: 'Career', ariaLabel: 'Career consulting', link: '/career-consulting' },
-                                    { label: 'Resume', ariaLabel: 'View resume', link: 'https://nabilpervez.github.io/resume/', target: '_blank' }
-                                ]}
-                                ctaItems={[
-                                    { label: 'NPC', link: 'https://nabilpervezconsulting.com/', target: '_blank' },
-                                    { label: 'Contact', link: 'mailto:nabilpervezconsulting@gmail.com' },
-                                    { label: 'Book Me', link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-', target: '_blank' }
-                                ]}
-                                socialItems={[
-                                    { label: 'LinkedIn', link: 'https://www.linkedin.com/in/perveznabil' },
-                                    { label: 'GitHub', link: 'https://github.com/NabilPervez' },
-                                    { label: 'Behance', link: 'https://www.behance.net/aoecreative' }
-                                ]}
-                                displaySocials
-                                displayItemNumbering={true}
-                                menuButtonColor={isScrolled ? "#000000" : "#ffffff"}
-                                openMenuButtonColor="#000000"
-                                changeMenuColorOnOpen={true}
-                                colors={['#FFD700', '#FFFFFF']} // Gold and White
-                                accentColor="#FFD700"
-                            />
-                        </div>
-                    </div>
+                <div className="hidden md:flex justify-end">
+                    <a
+                        href={CONTACT}
+                        className={cn(
+                            "inline-flex items-center h-10 px-5 rounded-full text-[14px] font-medium transition-colors active:scale-[.97]",
+                            "focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-g4",
+                            onDark ? "bg-white text-g5 hover:bg-g1" : "bg-g4 text-white hover:bg-g5"
+                        )}
+                    >
+                        Let&apos;s talk
+                    </a>
                 </div>
-            </header>
-        </>
+
+                <div className="md:hidden z-[60] fixed top-0 right-0 w-full h-full pointer-events-none">
+                    <StaggeredMenu
+                        position="right"
+                        items={[
+                            { label: "Home", ariaLabel: "Home", link: "/" },
+                            { label: "Work", ariaLabel: "Work", link: "/portfolio" },
+                            { label: "About", ariaLabel: "About", link: "/about" },
+                            { label: "Speaking", ariaLabel: "Speaking", link: "/speaker" },
+                            { label: "Personal Branding", ariaLabel: "Personal branding", link: "/personal-branding" },
+                            { label: "Career", ariaLabel: "Career consulting", link: "/career-consulting" },
+                            { label: "Resume", ariaLabel: "Resume", link: RESUME, target: "_blank" },
+                        ]}
+                        ctaItems={[{ label: "Let's talk", link: CONTACT }, { label: "NPC", link: "https://nabilpervezconsulting.com/", target: "_blank" }]}
+                        socialItems={[
+                            { label: "LinkedIn", link: "https://www.linkedin.com/in/perveznabil" },
+                            { label: "GitHub", link: "https://github.com/NabilPervez" },
+                            { label: "Behance", link: "https://www.behance.net/aoecreative" },
+                        ]}
+                        displaySocials
+                        displayItemNumbering
+                        menuButtonColor={onDark ? "#ffffff" : "#0F1A15"}
+                        openMenuButtonColor="#0F1A15"
+                        changeMenuColorOnOpen
+                        colors={["#C5DFD0", "#FFFFFF"]}
+                        accentColor="#1F6B4A"
+                    />
+                </div>
+            </div>
+        </header>
     );
 }
