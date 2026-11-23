@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Anton, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -15,6 +16,11 @@ const outfit = localFont({
     { path: "./fonts/outfit-latin-600-normal.woff2", weight: "600" },
   ],
 });
+
+// Editorial home/about: Anton display + JetBrains Mono labels (self-hosted by next/font at build),
+// Switzer body from Fontshare.
+const anton = Anton({ variable: "--font-anton", subsets: ["latin"], weight: "400", display: "swap" });
+const mono = JetBrains_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "500"], display: "swap" });
 
 // --- SEO CONFIGURATION ---
 const siteUrl = "https://nabilpervez.com";
@@ -130,6 +136,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={outfit.variable}>
       <head>
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
+        <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -149,7 +157,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${outfit.variable} antialiased font-sans bg-background text-foreground overflow-x-hidden selection:bg-g2 selection:text-foreground`}>
+      <body className={`${outfit.variable} ${anton.variable} ${mono.variable} antialiased font-sans bg-background text-foreground overflow-x-hidden selection:bg-g2 selection:text-foreground`}>
         <Navbar />
         <main className="min-h-screen">
           {children}

@@ -1,20 +1,47 @@
 "use client";
 
-// Homepage v2, Nabil 2026-11-22: story-first (Why → How → What).
-// hero → why (the help-desk origin) → Zipline case → numbers → builder → career arc → AOE work → certs → voices → close.
+// Editorial home (Nabil 2026-11-23): miguelrecio.es layout grammar + GSAP, carrying the
+// 2026-11-22 story from main: help desk → agency CTO → AI SME, Zipline, AOE, apps, the path.
 import Link from "next/link";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
-import MotionHero from "@/components/MotionHero";
-import dynamic from "next/dynamic";
-const AoeCrystal = dynamic(() => import("@/components/AoeCrystal"), { ssr: false });
+import { useEffect, useRef, useState } from "react";
+import { ArrowRight, ArrowUpRight, Plus } from "lucide-react";
+import testimonialsData from "./data/testimonials.json";
+import products from "./data/products.json";
+import { bySlug, cardVisual } from "@/lib/caseStudies";
+import { skillset, aoeStats, aoeWins } from "@/components/qp";
 import { LazyVideo } from "@/components/LazyVideo";
-import { ImageWithFallback } from "@/components/ImageWithFallback";
-import { caseStudies, cardVisual } from "@/lib/caseStudies";
-import products from "@/app/data/products.json";
-import { TestimonialCarousel } from "@/components/TestimonialCarousel";
-import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Chip, skillset, aoeStats, aoeWins } from "@/components/qp";
+import { useHomeMotion } from "@/hooks/useHomeMotion";
+import "./home.css";
+
+const CONTACT = "mailto:nabilpervezgg@gmail.com";
+const RESUME = "https://nabilpervez.github.io/resume/";
+
+const still = (slug: string) => {
+  const c = bySlug(slug);
+  return c ? { title: c.title, image: cardVisual(c).image } : { title: slug, image: "" };
+};
+
+// Work, ordered by client size (largest first). Three cards, then the list.
+const featured = [
+  { slug: "coca-cola", name: "Coca-Cola", kind: "Campaign", sector: "Gaming campaign" },
+  { slug: "paramount-players", name: "Paramount", kind: "Campaign", sector: "Funny or Die · Players" },
+  { slug: "redbull", name: "Red Bull", kind: "Experiential", sector: "Arcade activation" },
+];
+const list = [
+  { slug: "lego_27", name: "LEGO", tag: "Brand", sector: "LEGO Games" },
+  { slug: "call-of-duty-league", name: "Call of Duty League", tag: "Social", sector: "Activision Blizzard" },
+  { slug: "overwatch-league", name: "Overwatch League", tag: "Campaign", sector: "Activision Blizzard" },
+  { slug: "emea-championships", name: "Riot Games", tag: "Event", sector: "EMEA Championships" },
+  { slug: "session", name: "NACON", tag: "Key art", sector: "Session: Skate Sim" },
+  { slug: "one-piece-x-cloud9", name: "Cloud9 × One Piece", tag: "Brand collab", sector: "Esports × Anime" },
+  { slug: "optic-gaming", name: "OpTic Gaming", tag: "Brand", sector: "Esports" },
+  { slug: "evolution-championship-series", name: "EVO", tag: "Web", sector: "Fighting games" },
+  { slug: "stay-plugged-in", name: "Stay Plugged In", tag: "Campaign", sector: "Brand" },
+  { slug: "houston-outlaws", name: "Houston Outlaws", tag: "Award winner", sector: "Overwatch League" },
+  { slug: "boston-breach", name: "Boston Breach", tag: "Brand", sector: "Call of Duty League" },
+  { slug: "ellevens", name: "Ellevens", tag: "Brand", sector: "Esports" },
+  { slug: "immortal-gates-of-pyre", name: "Immortal: Gates of Pyre", tag: "Product", sector: "Sunspear Games" },
+];
 
 const flow = [
   { n: "01", t: "AI intake form", d: "Requesters describe the change in plain words. The form asks the follow-up questions a good producer would." },
@@ -32,265 +59,324 @@ const arc = [
 ];
 
 const appPicks = ["halal-passport", "chess-roguelite", "iqra", "noor"];
+const marqueeA = ["Product management", "Agile / Scrum", "AI workflow design", "Gradial", "Adobe Experience Manager", "Jira + Rovo", "RAG", "Go-to-market"];
+const marqueeB = ["Riot Games", "Activision Blizzard", "LEGO", "Coca-Cola", "Red Bull", "Paramount+", "T-Mobile", "Call of Duty League"];
+const clients = ["Coca-Cola", "Paramount+", "Red Bull", "LEGO", "Activision Blizzard", "Riot Games", "T-Mobile", "Call of Duty League", "Overwatch League", "NACON", "Cloud9", "OpTic Gaming", "EVO", "Houston Outlaws"];
 
 export default function Home() {
+  const root = useRef<HTMLDivElement>(null);
+  const [open, setOpen] = useState(0);
+  const [proof, setProof] = useState(0);
+  const proofs = testimonialsData.slice(0, 3);
   const apps = appPicks.map((id) => products.find((p) => p.id === id)).filter(Boolean) as typeof products;
-  const validProjects = caseStudies
-    .filter((p) => p.thumb.src && !p.thumb.src.includes("default.jpg"))
-    .map((p) => ({ slug: p.slug, title: p.title, ...cardVisual(p) }));
-  const midPoint = Math.ceil(validProjects.length / 2);
-  const projectRow1 = validProjects.slice(0, midPoint);
-  const projectRow2 = validProjects.slice(midPoint);
+  useHomeMotion(root);
+
+  // Hero quote rotator with progress bars (pauses on hover)
+  const paused = useRef(false);
+  useEffect(() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = setInterval(() => !paused.current && !document.hidden && setProof((i) => (i + 1) % proofs.length), 6500);
+    return () => clearInterval(id);
+  }, [proofs.length]);
 
   return (
-    <div className="overflow-x-hidden">
-      <MotionHero />
+    <div ref={root} className="home">
+      {/* ── Hero ── */}
+      <section className="h-hero wrap" aria-labelledby="h1">
+        <div className="h-hero-copy">
+          <h1 id="h1" className="h-display" data-lines>
+            <span className="ln"><span className="li">I make</span></span>
+            <span className="ln"><span className="li">complex</span></span>
+            <span className="ln"><span className="li">things</span></span>
+            <span className="ln"><span className="li a-gold">simple.</span></span>
+          </h1>
+          <p className="h-mono h-fade">■ Product manager · Scrum master · AI SME — then I make them run themselves</p>
+        </div>
 
-      {/* 1 · Why — the origin story */}
-      <section className="py-[clamp(72px,14vh,160px)]">
-        <div className={`${wrap} grid md:grid-cols-[7fr_5fr] gap-10 md:gap-16 items-center`}>
-          <div className="min-w-0">
-            <p className={eyebrow}>Why I do this</p>
-            <p className="mt-6 text-[clamp(22px,2.4vw,32px)] leading-[1.3] font-semibold tracking-[-0.027em] text-foreground [text-wrap:balance]">
-              I started on T-Mobile&apos;s help desk in 2012, fixing the same problems over and over.{" "}
-              <span className="text-secondary">That&apos;s where I learned the rule I still work by: if a task repeats, it should be simple, and then it should run itself.</span>
+        <figure className="h-portrait h-fade">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/nabil-headshot.jpg" alt="Nabil Pervez" width={800} height={1000} fetchPriority="high" />
+          <figcaption className="h-mono">Fig. 01 — Nabil, Dallas–Fort Worth</figcaption>
+        </figure>
+
+        <div className="h-hero-foot">
+          <div className="h-fade">
+            <p className="h-lede">
+              Former CTO and co-founder of AOE Creative, a multi-million-dollar, award-winning agency trusted by Riot Games, Activision Blizzard, LEGO and Coca-Cola. Today I lead AI adoption at enterprise scale.
             </p>
-            <p className={`${lede} mt-8`}>
-              Thirteen years, one agency and a lot of shipped products later, I came back to T-Mobile to do exactly that, with AI.
-            </p>
+            <div className="h-ctas">
+              <a className="h-btn h-btn-ink" href={CONTACT}><span className="dot"><ArrowRight size={16} /></span> Let&rsquo;s talk</a>
+              <Link className="h-btn h-btn-line" href="/portfolio"><span className="dot"><ArrowUpRight size={16} /></span> View portfolio</Link>
+            </div>
           </div>
-          <div className="relative aspect-[4/5] w-full max-w-[420px] md:justify-self-end rounded-2xl overflow-hidden border border-hair">
-            <Image src="/images/nabil-headshot.jpg" alt="Nabil Pervez" fill className="object-cover" />
+
+          <div className="h-proof h-fade" onPointerEnter={() => (paused.current = true)} onPointerLeave={() => (paused.current = false)}>
+            {proofs.map((t, i) => (
+              <figure key={t.id} className={i === proof ? "on" : ""} aria-hidden={i !== proof}>
+                <blockquote>&ldquo;{t.quote.split(". ")[0].replace(/\.$/, "")}.&rdquo;</blockquote>
+                <figcaption className="h-mono">{t.author} — {t.role}</figcaption>
+              </figure>
+            ))}
+            <div className="pbar">
+              {proofs.map((t, i) => (
+                <button key={t.id} type="button" aria-label={`Show quote ${i + 1}`} className={i === proof ? "on" : ""} onClick={() => setProof(i)}><i /></button>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 2 · Zipline — the flagship story */}
-      <section className={`${section} bg-g1/60`}>
-        <div className={wrap}>
-          <Head eb="Now · T-Mobile" title="I automated Zipline." rest="End to end, with AI.">
-            Zipline is how T-Mobile ships fast, simple website updates: copy, CTAs, image swaps and experience fragments, straight to production in Adobe Experience Manager. I&apos;m its lead content author.
-          </Head>
+      {/* ── Marquees (speed + skew follow scroll velocity) ── */}
+      <div className="h-marquees" aria-hidden="true">
+        <div className="mq" data-marquee="-1"><ul>{[...marqueeA, ...marqueeA].map((s, i) => <li key={i}>{s}<b>✦</b></li>)}</ul></div>
+        <div className="mq mq-ink" data-marquee="1"><ul>{[...marqueeB, ...marqueeB].map((s, i) => <li key={i}>{s}<b>✦</b></li>)}</ul></div>
+      </div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+      {/* ── Why ── */}
+      <section className="h-sec wrap" aria-labelledby="why-h">
+        <p id="why-h" className="h-mono h-label">Why I do this</p>
+        <p className="h-words a-statement" data-words>
+          I started on T-Mobile&rsquo;s help desk, fixing the same problems over and over. That&rsquo;s where I learned the rule I still work by: if a task repeats, it should be simple, and then it should run itself.
+        </p>
+        <p className="h-intro h-fade">Thirteen years, one agency and a lot of shipped products later, I came back to T-Mobile to do exactly that, with AI.</p>
+      </section>
+
+      {/* ── Zipline (ink) ── */}
+      <section className="h-ink" aria-labelledby="zip-h">
+        <div className="h-sec wrap">
+          <header className="h-sec-head h-split">
+            <div>
+              <p className="h-mono h-label">Now · T-Mobile</p>
+              <h2 id="zip-h" className="h-display h-h2" data-lines>I automated Zipline. End to end, with AI.</h2>
+            </div>
+            <p className="h-intro h-fade">Zipline is how T-Mobile ships fast, simple website updates: copy, CTAs, image swaps and experience fragments, straight to production in Adobe Experience Manager. I&rsquo;m its lead content author.</p>
+          </header>
+          <div className="a-principles">
             {[
-              { k: "The reality", v: "Every request arrived half-written. Producers chased missing details, retyped tickets, then authored each change by hand in AEM. Small updates, big drag." },
-              { k: "My move", v: "I rebuilt the pipe: an AI intake form, Jira with Rovo AI to write complete tickets, and Jira connected to Gradial, with the skills and rules that tell Gradial how to author each ticket correctly." },
-              { k: "The payoff", v: "Zipline runs itself, from request to live page. And my feedback shaped Gradial's roadmap: real-time ticket feedback and a ticket-refinement chatbot." },
-            ].map((b, i) => (
-              <div key={b.k} className={`p-8 min-w-0 ${i === 2 ? "bg-g5 text-white" : "bg-white"}`}>
-                <p className={`text-[13px] font-medium uppercase tracking-[.16em] ${i === 2 ? "text-gold" : "text-g4"}`}>{b.k}</p>
-                <p className={`mt-4 text-[16px] leading-relaxed ${i === 2 ? "text-white/85" : "text-secondary"}`}>{b.v}</p>
-              </div>
+              { n: "The reality", t: "Half-written requests.", d: "Every request arrived half-written. Producers chased missing details, retyped tickets, then authored each change by hand in AEM. Small updates, big drag." },
+              { n: "My move", t: "Rebuilt the pipe.", d: "An AI intake form, Jira with Rovo AI to write complete tickets, and Jira connected to Gradial, with the skills and rules that tell Gradial how to author each ticket correctly." },
+              { n: "The payoff", t: "It runs itself.", d: "Zipline runs from request to live page. And my feedback shaped Gradial's roadmap: real-time ticket feedback and a ticket-refinement chatbot." },
+            ].map((b) => (
+              <article key={b.n} className="a-principle h-fade">
+                <span className="h-mono">{b.n}</span>
+                <h3 className="h-display">{b.t}</h3>
+                <p>{b.d}</p>
+              </article>
             ))}
           </div>
-
-          {/* Flow */}
-          <ol className="mt-12 grid md:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
+          <ol className="h-flow">
             {flow.map((f) => (
-              <li key={f.n} className="bg-white p-6 min-w-0">
-                <p className="text-[13px] font-medium text-gold">{f.n}</p>
-                <p className="mt-2 text-[18px] font-semibold tracking-[-0.02em] text-foreground">{f.t}</p>
-                <p className="mt-2 text-[14px] text-secondary">{f.d}</p>
+              <li key={f.n} className="h-fade">
+                <span className="h-mono">{f.n}</span>
+                <strong>{f.t}</strong>
+                <p>{f.d}</p>
               </li>
             ))}
           </ol>
-          <p className="mt-6 text-[16px] text-secondary max-w-[60ch]">
-            Think of it like a restaurant. Before, every order came in on a napkin. Now the order writes itself, goes straight to the kitchen, and the cook already knows the recipe.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mt-8">
-            <Chip>AI SME, digital content org</Chip><Chip>Gradial Practitioner</Chip><Chip>12+ Gradial rules shipped</Chip><Chip>Adobe Experience Manager</Chip><Chip>Jira + Rovo</Chip>
-          </div>
+          <ul className="h-chips h-fade">{["AI SME, digital content org", "Gradial Practitioner", "12+ Gradial rules shipped", "Adobe Experience Manager", "Jira + Rovo"].map((c) => <li key={c} className="h-mono">{c}</li>)}</ul>
         </div>
       </section>
 
-      {/* 4 · Builder */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head eb="After hours" title="I build to think." rest="Then I ship it.">
-            Most product managers write the spec. I also build the thing, with AI as my pair: 35+ apps shipped and 100+ GitHub repos, from faith tools to games to a RAG over the Quran and Hadith.
-          </Head>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
-            {apps.map((a) => (
-              <a key={a.id} href={a.url} target="_blank" className="group bg-white p-6 min-w-0 flex flex-col gap-3 hover:bg-g1 transition-colors">
-                <span className="w-8 h-8 rounded-lg" style={{ background: a.bgColor }} aria-hidden />
-                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground">{a.title}</p>
-                <p className="text-[14px] text-secondary line-clamp-2">{a.description}</p>
-              </a>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-2 mt-8">
-            <Link href="/products" className={pillLine}>See all products <ArrowRight className="w-4 h-4" /></Link>
-            <a href="https://github.com/NabilPervez" target="_blank" className={pillLine}>GitHub</a>
-            <a href="https://play.google.com/store/apps/dev?id=7829300357127754405" target="_blank" rel="noopener" className={pillLine}>Google Play</a>
-          </div>
-        </div>
-      </section>
+      {/* ── Selected work ── */}
+      <section className="h-sec wrap" id="work" aria-labelledby="work-h">
+        <header className="h-sec-head">
+          <p className="h-mono h-label">Selected work</p>
+          <h2 id="work-h" className="h-display h-h2" data-lines>The biggest names in games called us.</h2>
+          <p className="h-intro h-fade">Six years at AOE Creative as co-founder, CTO and senior product manager. Ordered by client, largest first.</p>
+        </header>
 
-      {/* 5 · Career arc */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head eb="The path" title="From help desk to AI." rest="Every stop added a language." >
-            Support taught me users. Esports taught me audiences. The agency taught me teams and clients. AI ties them together.
-          </Head>
-          <ol className="grid md:grid-cols-5 border-t border-hair">
-            {arc.map((a, i) => (
-              <li key={a.y} className="py-6 md:pr-6 border-b md:border-b-0 border-hair min-w-0">
-                <p className={`text-[13px] font-medium ${i === arc.length - 1 ? "text-g4" : "text-gold"}`}>{a.y}</p>
-                <p className="mt-2 text-[18px] font-semibold tracking-[-0.02em] text-foreground">{a.t}</p>
-                <p className="mt-1 text-[14px] text-secondary">{a.d}</p>
+        <div className="h-cards">
+          {featured.map((f, i) => {
+            const c = still(f.slug);
+            return (
+              <Link key={f.slug} href={`/portfolio/${f.slug}`} className="h-card h-fade">
+                <div className="h-pix" data-reveal>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={c.image} alt={c.title} loading="lazy" />
+                  <span className="h-mono h-chip-abs">● {f.kind}</span>
+                </div>
+                <div className="h-card-meta">
+                  <div>
+                    <h3>{f.name}</h3>
+                    <p className="h-mono">{f.sector} · 0{i + 1}</p>
+                  </div>
+                  <span className="h-arrow"><ArrowUpRight size={18} /></span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+
+        <ul className="h-rows">
+          {list.map((r) => {
+            const c = still(r.slug);
+            return (
+              <li key={r.slug} className="h-row-li">
+                <Link href={`/portfolio/${r.slug}`} className="h-row">
+                  <span className="h-mono h-row-sector">{r.sector}</span>
+                  <span className="h-row-title">{r.name}</span>
+                  <span className="h-mono h-tag">{r.tag}</span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <span className="h-row-peek" aria-hidden="true"><img src={c.image} alt="" loading="lazy" /></span>
+                  <ArrowRight className="h-row-arrow" size={22} />
+                </Link>
               </li>
-            ))}
-          </ol>
-          <Link href="/about" className={`${pillLine} mt-10`}>Read the full story <ArrowRight className="w-4 h-4" /></Link>
+            );
+          })}
+        </ul>
+
+        <div className="h-center h-fade">
+          <Link className="h-btn h-btn-ink" href="/portfolio"><span className="dot"><ArrowRight size={16} /></span> View all work</Link>
         </div>
       </section>
 
-      {/* 6a · AOE — the agency years (Nabil 2026-11-22: "these made careers") */}
-      <section className="relative overflow-hidden bg-midnight text-white pt-[clamp(72px,14vh,160px)] pb-12">
-        <AoeCrystal className="pointer-events-none absolute -right-[20%] top-0 w-[90vw] h-[90vw] opacity-40 md:right-[-4%] md:top-[2%] md:w-[min(46vw,640px)] md:h-[min(46vw,640px)] md:opacity-90" />
-        <div className={`${wrap} relative`}>
-          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold">2018 – 2024 · AOE Creative</p>
-          <h2 className="mt-4 text-[clamp(34px,4.4vw,62px)] leading-[1.05] font-semibold tracking-[-0.027em] max-w-[16ch] [text-wrap:balance]">
-            We built the agency the biggest names in games called. <span className="text-white/55">I was its CTO.</span>
-          </h2>
-          <p className="mt-6 text-[18px] text-white/70 max-w-[52ch] [text-wrap:pretty]">
-            I co-founded AOE Creative and grew it into a multi-million-dollar, award-winning agency. As CTO and senior product manager I ran product, tech and delivery for Riot Games, Activision Blizzard, LEGO, Coca-Cola, Red Bull, Paramount+ and the Call of Duty and Overwatch leagues. Work that launched careers, including a few of mine.
-          </p>
-          <div className="mt-14 grid grid-cols-2 md:grid-cols-3 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
+      {/* ── AOE (ink): stats, reel, wins ── */}
+      <section className="h-ink" aria-labelledby="aoe-h">
+        <div className="h-sec wrap">
+          <header className="h-sec-head h-split">
+            <div>
+              <p className="h-mono h-label">2018 – 2024 · AOE Creative</p>
+              <h2 id="aoe-h" className="h-display h-h2" data-lines>We built the agency. I was its CTO.</h2>
+            </div>
+            <p className="h-intro h-fade">I co-founded AOE Creative and grew it into a multi-million-dollar, award-winning agency, running product, tech and delivery for Riot Games, Activision Blizzard, LEGO, Coca-Cola, Red Bull, Paramount+ and the Call of Duty and Overwatch leagues.</p>
+          </header>
+          <dl className="h-aoe-stats">
             {aoeStats.map((s) => (
-              <div key={s.l} className="bg-midnight/80 backdrop-blur-sm p-6 md:p-8 min-w-0 transition-colors duration-300 hover:bg-[#163a2d]">
-                <p className="text-[32px] font-semibold tracking-[-0.027em] text-gold">{s.v}</p>
-                <p className="mt-1 text-[14px] text-white/65">{s.l}</p>
-              </div>
+              <div key={s.l} className="h-fade"><dd className="h-display">{s.v}</dd><dt className="h-mono">{s.l}</dt></div>
+            ))}
+          </dl>
+          <div className="h-reel h-fade">
+            <LazyVideo src="/media/home-reel.mp4" poster="/media/home-reel-poster.webp" label="AOE Creative highlight reel" className="h-reel-v" />
+          </div>
+          <div className="h-voices h-wins">
+            {aoeWins.map((w) => (
+              <figure key={w.c} className="h-voice h-fade">
+                <figcaption><span className="h-mono">{w.c}</span></figcaption>
+                <blockquote><strong className="h-display h-win-t">{w.t}</strong><br />{w.d}</blockquote>
+              </figure>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 6a+ · Highlight reel (Markel's site reel, self-hosted) */}
-      <section className="bg-midnight pb-[clamp(72px,14vh,160px)]">
-        <div className={wrap}>
-          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold mb-6">Highlight reel</p>
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-black">
-            <LazyVideo src="/media/home-reel.mp4" poster="/media/home-reel-poster.webp" label="AOE Creative highlight reel" className="absolute inset-0 h-full w-full object-cover" />
+      {/* ── What I bring (accordion) ── */}
+      <section className="h-sec wrap" id="skills" aria-labelledby="skills-h">
+        <header className="h-sec-head h-split">
+          <div>
+            <p className="h-mono h-label">What I bring</p>
+            <h2 id="skills-h" className="h-display h-h2" data-lines>Six disciplines. One person.</h2>
           </div>
-        </div>
-      </section>
-
-      {/* 6b · AOE — headline wins */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head eb="Agency wins" title="Results people still talk about." rest="Eight of them.">
-            Each one was a team effort I led from scope to launch: the strategy, the build and the people.
-          </Head>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
-            {aoeWins.map((w, i) => (
-              <div key={w.c} className={`p-6 min-w-0 transition-colors duration-300 ${i === 0 ? "bg-g5 text-white hover:bg-g4" : "bg-white hover:bg-g1"}`}>
-                <p className={`text-[13px] font-medium ${i === 0 ? "text-gold" : "text-g4"}`}>{w.c}</p>
-                <p className={`mt-2 text-[18px] font-semibold tracking-[-0.02em] ${i === 0 ? "text-white" : "text-foreground"}`}>{w.t}</p>
-                <p className={`mt-2 text-[14px] ${i === 0 ? "text-white/75" : "text-secondary"}`}>{w.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6c · View My Work (kept as-is, Nabil 2026-11-22) */}
-      <section className="bg-background overflow-hidden py-32">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 flex flex-col items-center text-center">
-          <span className="block text-sm font-medium tracking-[0.2em] uppercase text-gold mb-4">Portfolio</span>
-          <h3 className="text-5xl md:text-7xl font-display font-bold text-foreground mb-8">View My Work</h3>
-
-          <Link href="/portfolio" className="inline-flex items-center gap-3 px-12 py-6 bg-foreground text-white rounded-full text-xl font-bold tracking-wide transition-all hover:bg-gold hover:text-white transform hover:scale-105 shadow-xl">
-            See Full Portfolio <ArrowRight className="w-6 h-6" />
-          </Link>
-        </div>
-
-        {/* Row 1 - Moving Left */}
-        <div className="flex overflow-hidden mb-8">
-          <motion.div
-            className="flex gap-6 px-6"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ ease: "linear", duration: 120, repeat: Infinity }}
-          >
-            {[...projectRow1, ...projectRow1].map((project, i) => (
-              <Link href={`/portfolio/${project.slug}`} key={`p-row1-${i}`} aria-label={project.title} className="relative w-[320px] h-[200px] md:w-[560px] md:h-[350px] flex-shrink-0 bg-black rounded-sm overflow-hidden group shadow-sm">
-                {project.video ? (
-                  <LazyVideo src={project.video} poster={project.image} className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                ) : (
-                  <ImageWithFallback src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                )}
-                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <span className="font-display font-bold text-white text-lg md:text-2xl">{project.title}</span>
+          <p className="h-intro h-fade">Most teams hire separately for product, AI, MarTech, brand, leadership and engineering. I&rsquo;ve done all six for real clients.</p>
+        </header>
+        <div className="h-panels h-panels-paper">
+          {skillset.map((g, i) => {
+            const isOpen = open === i;
+            return (
+              <article key={g.k} className={`h-panel${isOpen ? " open" : ""}`}>
+                <button type="button" className="h-panel-btn" aria-expanded={isOpen} aria-controls={`sk-${i}`} onClick={() => setOpen(isOpen ? -1 : i)}>
+                  <span className="h-mono">0{i + 1}</span>
+                  <span className="h-display h-panel-title">{g.k}</span>
+                  <span className="h-plus"><Plus size={20} /></span>
+                </button>
+                <div id={`sk-${i}`} className="h-panel-body" role="region">
+                  <div className="h-panel-in">
+                    <ul className="h-chips">{g.v.map((x) => <li key={x} className="h-mono">{x}</li>)}</ul>
+                  </div>
                 </div>
-              </Link>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* Row 2 - Moving Right */}
-        <div className="flex overflow-hidden">
-          <motion.div
-            className="flex gap-6 px-6"
-            initial={{ x: "-50%" }}
-            animate={{ x: ["-50%", "0%"] }}
-            transition={{ ease: "linear", duration: 120, repeat: Infinity }}
-          >
-            {[...projectRow2, ...projectRow2].map((project, i) => (
-              <Link href={`/portfolio/${project.slug}`} key={`p-row2-${i}`} aria-label={project.title} className="relative w-[320px] h-[200px] md:w-[560px] md:h-[350px] flex-shrink-0 bg-black rounded-sm overflow-hidden group shadow-sm">
-                {project.video ? (
-                  <LazyVideo src={project.video} poster={project.image} className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                ) : (
-                  <ImageWithFallback src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                )}
-                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <span className="font-display font-bold text-white text-lg md:text-2xl">{project.title}</span>
-                </div>
-              </Link>
-            ))}
-          </motion.div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
-      {/* 7a · Skillset */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head eb="Skillset" title="What I bring." rest="Six disciplines, one person.">
-            Most teams hire separately for product, AI, MarTech, brand, leadership and engineering. I&apos;ve done all six for real clients.
-          </Head>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
-            {skillset.map((g) => (
-              <div key={g.k} className="group bg-white p-6 md:p-8 min-w-0 transition-colors duration-300 hover:bg-g1">
-                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground transition-colors group-hover:text-g4">{g.k}</p>
-                <div className="flex flex-wrap gap-2 mt-4 transition-transform duration-300 group-hover:translate-x-1">{g.v.map((x) => <Chip key={x}>{x}</Chip>)}</div>
-              </div>
+      {/* ── After hours: apps ── */}
+      <section className="h-sec wrap h-about" aria-labelledby="apps-h">
+        <div>
+          <p className="h-mono h-label">After hours</p>
+          <h2 id="apps-h" className="h-display h-h2" data-lines>I build to think. Then I ship it.</h2>
+          <p className="h-intro h-fade">Most product managers write the spec. I also build the thing, with AI as my pair: 35+ apps shipped and 100+ GitHub repos, from faith tools to games to a RAG over the Quran and Hadith.</p>
+          <div className="h-ctas h-fade">
+            <Link className="h-btn h-btn-ink" href="/products"><span className="dot"><ArrowRight size={16} /></span> See all products</Link>
+            <a className="h-btn h-btn-line" href="https://github.com/NabilPervez" target="_blank" rel="noopener"><span className="dot"><ArrowUpRight size={16} /></span> GitHub</a>
+          </div>
+        </div>
+        <ul className="h-apps">
+          {apps.map((a) => (
+            <li key={a.id} className="h-fade">
+              <a href={a.url} target="_blank" rel="noopener">
+                <span className="h-app-dot" style={{ background: a.bgColor }} aria-hidden="true" />
+                <strong className="h-display">{a.title}</strong>
+                <span>{a.description}</span>
+                <ArrowUpRight className="h-row-arrow" size={18} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* ── The path ── */}
+      <section className="h-ink" aria-labelledby="path-h">
+        <div className="h-sec wrap">
+          <header className="h-sec-head h-split">
+            <div>
+              <p className="h-mono h-label">The path</p>
+              <h2 id="path-h" className="h-display h-h2" data-lines>From help desk to AI.</h2>
+            </div>
+            <p className="h-intro h-fade">Support taught me users. Esports taught me audiences. The agency taught me teams and clients. AI ties them together.</p>
+          </header>
+          <ol className="h-path">
+            {arc.map((a) => (
+              <li key={a.y} className="h-fade">
+                <span className="h-display">{a.y}</span>
+                <strong>{a.t}</strong>
+                <p>{a.d}</p>
+              </li>
             ))}
+          </ol>
+          <div className="h-ctas h-fade">
+            <Link className="h-btn h-btn-gold" href="/about"><span className="dot"><ArrowRight size={16} /></span> Read the full story</Link>
           </div>
         </div>
       </section>
 
-      {/* 8 · Voices */}
-      <section className={section}>
-        <div className={wrap}>
-          <Head title="In their words." rest="People I've worked with." />
-          <TestimonialCarousel />
+      {/* ── Voices ── */}
+      <section className="h-sec wrap" aria-labelledby="voices-h">
+        <header className="h-sec-head">
+          <p className="h-mono h-label">In their words</p>
+          <h2 id="voices-h" className="h-display h-h2" data-lines>People I&rsquo;ve worked with.</h2>
+        </header>
+        <div className="h-voices a-voices">
+          {testimonialsData.slice(0, 6).map((t) => (
+            <figure key={t.id} className="h-voice h-fade">
+              <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
+              <figcaption><strong>{t.author}</strong><span className="h-mono">{t.role}</span></figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 
-      {/* 9 · Close */}
-      <section className="border-t border-hair">
-        <div className={`${wrap} py-[clamp(72px,12vh,140px)] flex flex-col md:flex-row md:items-end justify-between gap-8`}>
-          <h2 className="text-[clamp(28px,3.6vw,44px)] leading-[1.1] font-semibold tracking-[-0.027em] text-foreground max-w-[18ch] [text-wrap:balance]">
-            Got a process that repeats? <span className="text-g4">Let&apos;s make it run itself.</span>
+      {/* ── Logos ── */}
+      <section className="h-logos wrap" aria-labelledby="logos-lb">
+        <p id="logos-lb" className="h-mono h-label">Trusted by</p>
+        <ul>{clients.map((c) => <li key={c} className="h-fade">{c}</li>)}</ul>
+      </section>
+
+      {/* ── Close band (gold) ── */}
+      <section className="h-close" aria-labelledby="close-h">
+        <div className="wrap">
+          <p className="h-mono h-label">Got a process that repeats?</p>
+          <h2 id="close-h" className="h-display h-close-title" data-lines>
+            <span className="ln"><span className="li">Let&rsquo;s make it</span></span>
+            <span className="ln"><span className="li">run itself.</span></span>
           </h2>
-          <div className="flex flex-wrap gap-2">
-            <a href="mailto:nabilpervezgg@gmail.com" className={pillDark}>Let&apos;s talk</a>
-            <a href="https://nabilpervez.github.io/resume/" target="_blank" className={pillLine}>Resume</a>
+          <div className="h-ctas">
+            <a className="h-btn h-btn-ink" href={CONTACT}><span className="dot"><ArrowRight size={16} /></span> Let&rsquo;s talk</a>
+            <a className="h-btn h-btn-line" href={RESUME} target="_blank" rel="noopener"><span className="dot"><ArrowUpRight size={16} /></span> Resume</a>
           </div>
         </div>
       </section>
+
+      <a className="h-float h-mono" href={CONTACT}>● Let&rsquo;s talk</a>
     </div>
   );
 }

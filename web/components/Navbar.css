@@ -1,0 +1,59 @@
+/* Site header — full width, transparent at top, compact divided bar on scroll. */
+.np-hdr {
+  --np-ink: #111;
+  --np-gold: #C6A87C;
+  --np-hair: rgba(17, 17, 17, .12);
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  color: var(--np-ink);
+  font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+  font-size: 13px; letter-spacing: .06em; text-transform: uppercase;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color .4s ease;
+}
+.np-row { display: flex; align-items: stretch; height: 88px; padding-inline: clamp(16px, 2vw, 28px); transition: height .4s cubic-bezier(.16, 1, .3, 1), padding .4s; }
+
+.np-cell { display: inline-flex; align-items: center; gap: 8px; padding-inline: 16px; white-space: nowrap; transition: background .25s ease, color .25s ease; }
+/* Hover: gold fill, text stays black */
+.np-link:hover, .np-link:focus-visible, .np-pill:hover, .np-book:hover { background: var(--np-gold); color: var(--np-ink); }
+
+/* logo: wordmark at top, N mark once compact */
+.np-logo { position: relative; padding-left: 0; padding-right: 24px; margin-right: 8px; }
+.np-word { height: 52px; width: auto; transition: opacity .3s, transform .4s cubic-bezier(.16, 1, .3, 1); }
+.np-mark { position: absolute; left: 0; top: 50%; width: 40px; height: 40px; object-fit: contain;
+  opacity: 0; transform: translateY(-50%) scale(.8); transition: opacity .3s, transform .4s cubic-bezier(.16, 1, .3, 1); }
+
+.np-links { display: none; align-items: stretch; }
+.np-link { position: relative; }
+.np-link[aria-current="page"]::after { content: ""; position: absolute; left: 16px; right: 16px; bottom: 26px; height: 1px; background: currentColor; transition: bottom .4s; }
+
+.np-right { display: none; margin-left: auto; align-items: center; gap: 10px; }
+.np-pill { height: 36px; background: rgba(17, 17, 17, .06); }
+.np-pill i { width: 7px; height: 7px; border-radius: 50%; background: #7BC47F; box-shadow: 0 0 0 3px rgba(123, 196, 127, .25); }
+.np-book { height: 36px; background: var(--np-ink); color: #fff; }
+
+.np-mobile { margin-left: auto; display: flex; align-items: center; }
+
+/* ── compact (scrolled) ── */
+.np-hdr.is-compact { border-bottom-color: var(--np-hair); }
+/* blur lives on a pseudo-layer so the header never becomes a containing block for the fixed mobile sheet */
+.np-hdr::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(244, 244, 244, .82);
+  backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); opacity: 0; transition: opacity .4s; }
+.np-hdr.is-compact::before { opacity: 1; }
+.is-compact .np-row { height: 64px; }
+.is-compact .np-word { opacity: 0; transform: scale(.85); transform-origin: left center; }
+.is-compact .np-mark { opacity: 1; transform: translateY(-50%) scale(1); }
+.is-compact .np-logo { width: 62px; padding-right: 0; margin-right: 0; border-right: 1px solid var(--np-hair); }
+.is-compact .np-link { padding-inline: 24px; border-right: 1px solid var(--np-hair); }
+.is-compact .np-link[aria-current="page"]::after { bottom: 18px; left: 24px; right: 24px; }
+.is-compact .np-right { padding-left: 12px; }
+
+@media (min-width: 1180px) {
+  .np-links, .np-right { display: flex; }
+  .np-mobile { display: none; }
+}
+
+/* The staggered sheet positions itself fixed; keep its toggle aligned with this bar */
+.np-mobile-layer { position: fixed; inset: 0; z-index: 60; pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) { .np-hdr, .np-hdr * { transition: none !important; } }

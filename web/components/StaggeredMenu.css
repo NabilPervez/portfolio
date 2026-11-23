@@ -27,7 +27,7 @@
     padding: 2em;
     background: transparent;
     pointer-events: none;
-    z-index: 10000;
+    z-index: 10001; /* above the open panel so the close toggle stays reachable */
 }
 
 .staggered-menu-panel {
