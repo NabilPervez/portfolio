@@ -21,8 +21,9 @@ const siteUrl = "https://nabilpervez.com";
 const siteName = "Nabil Pervez";
 const contactEmail = "nabilpervezconsulting@gmail.com";
 const defaultTitle = "Nabil Pervez | Product Manager, Scrum Master & AI SME";
-const defaultDescription = "Product manager, scrum master and AI subject-matter expert. Former CTO and co-founder of award-winning agency AOE Creative (Riot Games, Activision Blizzard, LEGO, Coca-Cola). Dallas-Fort Worth.";
-const ogImage = `${siteUrl}/images/nabil-headshot.jpg`;
+const defaultDescription = "Product manager, scrum master and AI SME in Dallas–Fort Worth. Former CTO of AOE Creative, shipping work for Riot Games, LEGO and Coca-Cola.";
+const ogImage = `${siteUrl}/images/og.jpg`; // 1200x630
+const headshot = `${siteUrl}/images/nabil-headshot.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Nabil Pervez - Product Manager & Strategist",
+        alt: "Nabil Pervez, Product Manager, Scrum Master & AI SME",
       },
     ],
   },
@@ -72,7 +73,6 @@ export const metadata: Metadata = {
     title: defaultTitle,
     description: defaultDescription,
     images: [ogImage],
-    creator: "@nabilpervez", // Update if specific handle exists
   },
   alternates: {
     canonical: siteUrl,
@@ -82,8 +82,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: "cover",
   themeColor: "#0F2A20",
 };
@@ -95,12 +93,16 @@ const personJsonLd = {
   "@id": `${siteUrl}/#person`,
   name: siteName,
   url: siteUrl,
-  image: ogImage,
+  image: headshot,
   jobTitle: "Product Manager, Scrum Master & AI SME",
   worksFor: {
     "@type": "Organization",
     name: "Nabil Pervez Consulting",
+    url: "https://nabilpervezconsulting.com/",
   },
+  address: { "@type": "PostalAddress", addressLocality: "Dallas–Fort Worth", addressRegion: "TX", addressCountry: "US" },
+  alumniOf: { "@type": "Organization", name: "AOE Creative" },
+  knowsAbout: ["Product management", "Scrum", "Enterprise AI adoption", "Adobe Experience Manager", "Gradial", "MarTech"],
   sameAs: [
     "https://www.linkedin.com/in/perveznabil/",
     "https://nabilpervezconsulting.com/",

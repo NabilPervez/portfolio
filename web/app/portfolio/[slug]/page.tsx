@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { bySlug, caseStudies } from "@/lib/caseStudies";
 import { CaseStudy } from "@/components/case/CaseStudy";
 
@@ -11,13 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const p = bySlug((await params).slug);
   if (!p) return { title: "Project Not Found" };
   const description = (p.task || p.role || p.challenge.body).slice(0, 160);
-  const url = `https://nabilpervez.com/portfolio/${p.slug}`;
-  return {
-    title: p.title,
-    description,
-    alternates: { canonical: url },
-    openGraph: { title: `${p.title} | Nabil Pervez`, description, url, images: [{ url: p.thumb.src }] },
-  };
+  return pageMeta(`/portfolio/${p.slug}`, p.title, description, p.thumb.src);
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {

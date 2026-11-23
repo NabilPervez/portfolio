@@ -1,17 +1,9 @@
 
+import { pageMeta } from "@/lib/seo";
 import PortfolioContent from "@/components/portfolio/PortfolioContent";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Portfolio",
-    description: "A showcase of selected works in product management, branding, and digital strategy.",
-    alternates: { canonical: "/portfolio" },
-    openGraph: {
-        title: "Portfolio | Nabil Pervez",
-        description: "Explore my work in product strategy, branding, and digital innovation.",
-        url: "https://nabilpervez.com/portfolio",
-    },
-};
+export const metadata: Metadata = pageMeta("/portfolio", "Portfolio", "Case studies in product management, brand and digital strategy for Riot Games, Activision Blizzard, LEGO, Coca-Cola and more.");
 
 export default function PortfolioPage() {
     return <PortfolioContent />;

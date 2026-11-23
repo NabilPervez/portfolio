@@ -1,17 +1,9 @@
 
+import { pageMeta } from "@/lib/seo";
 import SpeakerContent from "@/components/speaker/SpeakerContent";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Speaker",
-    description: "Book Nabil Pervez for keynotes on agile creativity, esports culture, and marketing strategy.",
-    alternates: { canonical: "/speaker" },
-    openGraph: {
-        title: "Speaker | Nabil Pervez",
-        description: "Keynotes on scaling creativity, understanding gamer culture, and bridging tech with marketing.",
-        url: "https://nabilpervez.com/speaker",
-    },
-};
+export const metadata: Metadata = pageMeta("/speaker", "Speaker", "Book Nabil Pervez for keynotes on agile creativity, esports and gamer culture, AI adoption and marketing strategy.");
 
 export default function SpeakerPage() {
     return <SpeakerContent />;

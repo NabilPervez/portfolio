@@ -1,4 +1,6 @@
 // About v2, Nabil 2026-11-22: the full story told in five chapters, then how I work, toolbox, credentials, voices.
+import { pageMeta } from "@/lib/seo";
+import type { Metadata } from "next";
 import { BadgeCheck, Trophy, GraduationCap } from "lucide-react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -6,12 +8,7 @@ import Link from "next/link";
 import testimonials from "@/app/data/testimonials.json";
 import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Chip, certs, skillset, aoeStats, aoeWins } from "@/components/qp";
 
-export const metadata = {
-  title: "About",
-  description: "From T-Mobile's help desk to agency CTO to AI SME: the story of a nerd translator who makes complex things simple.",
-  alternates: { canonical: "/about" },
-  openGraph: { title: "About | Nabil Pervez", url: "https://nabilpervez.com/about" },
-};
+export const metadata: Metadata = pageMeta("/about", "About", "From T-Mobile’s help desk to agency CTO to AI SME: the story of a nerd translator who makes complex things simple.");
 
 const AoeCrystal = dynamic(() => import("@/components/AoeCrystal"));
 

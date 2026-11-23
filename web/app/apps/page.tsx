@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/seo";
 import { Metadata } from "next";
 import Image from "next/image";
 import {
@@ -19,16 +20,7 @@ import {
     type LucideIcon,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-    title: "Apps",
-    description: "Free, private Islamic and productivity apps for the Ummah, built by Nabil Pervez.",
-    alternates: { canonical: "/apps" },
-    openGraph: {
-        title: "Apps | Nabil Pervez",
-        description: "Free, private Islamic and productivity apps for the Ummah, built by Nabil Pervez.",
-        url: "https://nabilpervez.com/apps",
-    },
-};
+export const metadata: Metadata = pageMeta("/apps", "Apps", "Free, private Islamic and productivity apps for the Ummah, built by Nabil Pervez.");
 
 // Jewel tones, one per app.
 const jewel = {
