@@ -17,7 +17,19 @@ import {
     HelpCircle,
     Link as LinkIcon,
     Calculator,
-    Video
+    Video,
+    Utensils,
+    Dumbbell,
+    Refrigerator,
+    Music,
+    Crown,
+    Spade,
+    Sun,
+    Code,
+    Sparkles,
+    Brain,
+    CreditCard,
+    Vote
 } from "lucide-react";
 import React from "react";
 
@@ -35,8 +47,11 @@ const IconMap: { [key: string]: React.ElementType } = {
     "HelpCircle": HelpCircle,
     "LinkIcon": LinkIcon,
     "Calculator": Calculator,
-    "Video": Video
+    "Video": Video,
+    Utensils, Dumbbell, Refrigerator, Music, Crown, Spade, Sun, Code, Sparkles, Brain, CreditCard, Vote
 };
+
+const PLAY = "https://play.google.com/store/search?q=Nabil%20Pervez&c=apps";
 
 export default function ProductsContent() {
     // Transform data to include React Nodes for icons
@@ -57,8 +72,9 @@ export default function ProductsContent() {
                     <span className="text-gold">Digital Tools</span>.
                 </h1>
                 <p className="text-xl text-secondary font-light max-w-2xl leading-relaxed">
-                    A collection of digital products, apps, and tools I&apos;ve built to solve problems, enhance spirituality, and boost productivity.
+                    Apps, games and tools I&apos;ve built and shipped, from faith and fitness to roguelites and RAG.
                 </p>
+                <a href={PLAY} target="_blank" rel="noopener" className="mt-8 inline-flex items-center gap-2 h-11 px-6 rounded-full bg-g4 text-white text-[14px] font-medium hover:bg-g5 transition-colors">My apps on Google Play &rarr;</a>
             </div>
 
             <div className="w-full">

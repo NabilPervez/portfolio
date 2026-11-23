@@ -1,5 +1,155 @@
 [
     {
+        "id": "halal-passport",
+        "title": "Halal Passport",
+        "name": "Halal Passport",
+        "description": "Find halal food across DFW. Verified spots, filters, maps, now on Google Play.",
+        "url": "https://halal-passport.netlify.app/",
+        "iconName": "Utensils",
+        "bgColor": "#1F6B4A",
+        "height": 300
+    },
+    {
+        "id": "lift-more",
+        "title": "Lift More",
+        "name": "Lift More",
+        "description": "A fast, offline lift tracker. Log sets, beat PRs, celebrate wins.",
+        "url": "https://lift-more.netlify.app/",
+        "iconName": "Dumbbell",
+        "bgColor": "#0F2A20",
+        "height": 330
+    },
+    {
+        "id": "lift-more-bodyweight",
+        "title": "Lift More Bodyweight",
+        "name": "Lift More Bodyweight",
+        "description": "No gym, no excuses. Guided bodyweight training that progresses with you.",
+        "url": "https://lift-more-bodyweight.netlify.app/",
+        "iconName": "Activity",
+        "bgColor": "#2F855A",
+        "height": 290
+    },
+    {
+        "id": "fridge-follower",
+        "title": "Fridge Follower",
+        "name": "Fridge Follower",
+        "description": "Know what's in your fridge and what to cook before it goes bad.",
+        "url": "https://fridge-follower.netlify.app/",
+        "iconName": "Refrigerator",
+        "bgColor": "#0EA5E9",
+        "height": 310
+    },
+    {
+        "id": "beat-block",
+        "title": "Beat Block",
+        "name": "Beat Block",
+        "description": "A rhythm puzzle game. Drop blocks on the beat and chain combos.",
+        "url": "https://beat-block-game.netlify.app/",
+        "iconName": "Music",
+        "bgColor": "#7C3AED",
+        "height": 350
+    },
+    {
+        "id": "chess-roguelite",
+        "title": "Chess Roguelite",
+        "name": "Chess Roguelite",
+        "description": "Chess meets Slay the Spire. Draft pieces and passives, climb the map, beat the boss.",
+        "url": "https://chess-roguelite.netlify.app/",
+        "iconName": "Crown",
+        "bgColor": "#B8955E",
+        "height": 300
+    },
+    {
+        "id": "pile-up-poker",
+        "title": "Pile Up Poker",
+        "name": "Pile Up Poker",
+        "description": "A mobile card puzzle. Stack poker hands on a grid before the board fills.",
+        "url": "https://pileuppoker.netlify.app/",
+        "iconName": "Spade",
+        "bgColor": "#B91C1C",
+        "height": 320
+    },
+    {
+        "id": "iqra",
+        "title": "Iqra",
+        "name": "Iqra",
+        "description": "Learn Quranic Arabic word by word, with a patient AI teacher.",
+        "url": "https://iqra-quran-arabic.netlify.app/",
+        "iconName": "BookOpen",
+        "bgColor": "#0F766E",
+        "height": 290
+    },
+    {
+        "id": "sakinah",
+        "title": "Sakinah",
+        "name": "Sakinah",
+        "description": "A calm daily space: a hopeful verse, prayer times and focus sessions.",
+        "url": "https://sakinah-np.netlify.app/",
+        "iconName": "Sun",
+        "bgColor": "#D9BE8E",
+        "height": 310
+    },
+    {
+        "id": "3am-coder",
+        "title": "3 AM Coder",
+        "name": "3 AM Coder",
+        "description": "For the late-night builders. Focus, flow and lo-fi for shipping code.",
+        "url": "https://3am-coder.netlify.app/",
+        "iconName": "Code",
+        "bgColor": "#111827",
+        "height": 280
+    },
+    {
+        "id": "driftglass",
+        "title": "Driftglass",
+        "name": "Driftglass",
+        "description": "An ambient, glassy visual experience for winding down.",
+        "url": "https://driftglass.netlify.app/",
+        "iconName": "Sparkles",
+        "bgColor": "#6366F1",
+        "height": 340
+    },
+    {
+        "id": "noor",
+        "title": "Noor",
+        "name": "Noor",
+        "description": "My personal RAG assistant: ask questions across my whole book library. Python, ChromaDB, Ollama and Claude.",
+        "url": "https://github.com/NabilPervez",
+        "iconName": "Brain",
+        "bgColor": "#CA8A04",
+        "height": 300
+    },
+    {
+        "id": "digital-business-card",
+        "title": "Digital Business Card",
+        "name": "Digital Business Card",
+        "description": "Tap-to-share contact card with links, socials and save-to-contacts.",
+        "url": "https://github.com/NabilPervez",
+        "iconName": "CreditCard",
+        "bgColor": "#334155",
+        "height": 280
+    },
+    {
+        "id": "democracy-fc",
+        "title": "Democracy FC",
+        "name": "Democracy FC",
+        "description": "A football club run by its fans. Vote on every decision and watch the results.",
+        "url": "https://democracy-fc.netlify.app/",
+        "iconName": "Vote",
+        "bgColor": "#2563EB",
+        "height": 320
+    },
+    {
+        "id": "blastball",
+        "title": "Blastball",
+        "name": "Blastball",
+        "description": "A fast arcade ball sim. Aim, blast, rack up chaos.",
+        "url": "https://blastball-sim.netlify.app/",
+        "iconName": "Zap",
+        "bgColor": "#EA580C",
+        "height": 300
+    },
+    {
         "id": "kinkeep",
         "title": "KinKeep",
         "name": "KinKeep",
@@ -73,7 +223,7 @@
         "id": "sublime-habits",
         "title": "Sublime Character",
         "name": "Sublime Character",
-        "description": "Discover the daily habits, manners, and emotional wisdom of Prophet Muhammad \ufdfa \u2014 verified from classical Islamic sources.",
+        "description": "Discover the daily habits, manners, and emotional wisdom of Prophet Muhammad ﷺ — verified from classical Islamic sources.",
         "url": "https://sublime-habits.netlify.app/",
         "iconName": "Star",
         "bgColor": "#f59e0b",
@@ -108,16 +258,6 @@
         "iconName": "Activity",
         "bgColor": "#ef4444",
         "height": 310
-    },
-    {
-        "id": "serenity-daily",
-        "title": "Serenity Daily",
-        "name": "Serenity Daily",
-        "description": "A progressive web app to manage anxiety, build positive routines, and practice daily mindfulness.",
-        "url": "https://serenity-daily.netlify.app/",
-        "iconName": "Heart",
-        "bgColor": "#3b82f6",
-        "height": 330
     },
     {
         "id": "babysync",

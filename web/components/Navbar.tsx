@@ -31,6 +31,7 @@ export function Navbar() {
     }, [pathname]);
 
     return (
+        <>
         <header
             className={cn(
                 "fixed top-0 inset-x-0 z-50 border-b transition-colors duration-500",
@@ -38,7 +39,9 @@ export function Navbar() {
             )}
         >
             <div className="mx-auto max-w-[1200px] px-[clamp(16px,5vw,64px)] h-[72px] grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
-                <Link href="/" className="text-[16px] font-semibold tracking-[-0.02em] min-w-0">
+                <Link href="/" className="flex items-center gap-2.5 text-[16px] font-semibold tracking-[-0.02em] min-w-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/n-logo.svg" alt="" width={32} height={32} className="w-8 h-8 rounded-lg" />
                     Nabil Pervez
                 </Link>
 
@@ -74,7 +77,10 @@ export function Navbar() {
                     </a>
                 </div>
 
-                <div className="md:hidden z-[60] fixed top-0 right-0 w-full h-full pointer-events-none">
+            </div>
+        </header>
+        {/* Outside <header>: its backdrop-blur would trap this fixed overlay (Nabil 2026-11-22 nav bug). */}
+        <div className="md:hidden z-[60] fixed top-0 right-0 w-full h-full pointer-events-none">
                     <StaggeredMenu
                         position="right"
                         items={[
@@ -89,6 +95,7 @@ export function Navbar() {
                             { label: "LinkedIn", link: "https://www.linkedin.com/in/perveznabil" },
                             { label: "GitHub", link: "https://github.com/NabilPervez" },
                             { label: "Behance", link: "https://www.behance.net/aoecreative" },
+                            { label: "Google Play", link: "https://play.google.com/store/search?q=Nabil%20Pervez&c=apps" },
                         ]}
                         displaySocials
                         displayItemNumbering
@@ -99,7 +106,6 @@ export function Navbar() {
                         accentColor="#1F6B4A"
                     />
                 </div>
-            </div>
-        </header>
+        </>
     );
 }

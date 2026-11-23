@@ -10,8 +10,8 @@ import MotionHero from "@/components/MotionHero";
 import { LazyVideo } from "@/components/LazyVideo";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { caseStudies, cardVisual } from "@/lib/caseStudies";
-import testimonials from "@/app/data/testimonials.json";
 import products from "@/app/data/products.json";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Chip, skillset, aoeStats, aoeWins } from "@/components/qp";
 
 const flow = [
@@ -29,8 +29,7 @@ const arc = [
   { y: "2025", t: "Back to T-Mobile", d: "Content producer and AI SME. Automating Zipline." },
 ];
 
-const appPicks = ["kinkeep", "islamic-rag-quran-and-hadith", "serenity-daily", "babysync"];
-const quoteIds = [3, 5, 10];
+const appPicks = ["halal-passport", "chess-roguelite", "iqra", "noor"];
 
 export default function Home() {
   const apps = appPicks.map((id) => products.find((p) => p.id === id)).filter(Boolean) as typeof products;
@@ -40,7 +39,6 @@ export default function Home() {
   const midPoint = Math.ceil(validProjects.length / 2);
   const projectRow1 = validProjects.slice(0, midPoint);
   const projectRow2 = validProjects.slice(midPoint);
-  const quotes = quoteIds.map((id) => testimonials.find((t) => t.id === id)).filter(Boolean) as typeof testimonials;
 
   return (
     <div className="overflow-x-hidden">
@@ -123,6 +121,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-2 mt-8">
             <Link href="/products" className={pillLine}>See all products <ArrowRight className="w-4 h-4" /></Link>
             <a href="https://github.com/NabilPervez" target="_blank" className={pillLine}>GitHub</a>
+            <a href="https://play.google.com/store/search?q=Nabil%20Pervez&c=apps" target="_blank" rel="noopener" className={pillLine}>Google Play</a>
           </div>
         </div>
       </section>
@@ -273,14 +272,7 @@ export default function Home() {
       <section className={section}>
         <div className={wrap}>
           <Head title="In their words." rest="People I've worked with." />
-          <div className="grid md:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
-            {quotes.map((q) => (
-              <figure key={q.id} className="bg-white p-8 flex flex-col justify-between gap-8 min-w-0">
-                <blockquote className="text-[18px] leading-[1.5] text-foreground [text-wrap:pretty]">&ldquo;{q.quote}&rdquo;</blockquote>
-                <figcaption><p className="text-[14px] font-medium text-foreground">{q.author}</p><p className="text-[13px] text-secondary">{q.role}</p></figcaption>
-              </figure>
-            ))}
-          </div>
+          <TestimonialCarousel />
         </div>
       </section>
 
