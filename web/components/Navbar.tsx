@@ -100,7 +100,7 @@ export function Navbar() {
                                 target="_blank"
                                 className="px-6 py-2 border border-current rounded-full text-sm font-medium hover:bg-gold hover:text-white transition-all hover:border-gold"
                             >
-                                Consulting
+                                NPC
                             </Link>
                             <Link
                                 href="mailto:nabilpervezconsulting@gmail.com"
@@ -132,10 +132,12 @@ export function Navbar() {
                                     { label: 'Speaker', ariaLabel: 'Speaker page', link: '/speaker' },
                                     { label: 'Portfolio', ariaLabel: 'View our portfolio', link: '/portfolio' },
                                     { label: 'Products', ariaLabel: 'View our products', link: '/products' },
+                                    { label: 'Personal Branding', ariaLabel: 'Personal branding', link: '/personal-branding' },
+                                    { label: 'Career', ariaLabel: 'Career consulting', link: '/career-consulting' },
                                     { label: 'Resume', ariaLabel: 'View resume', link: 'https://nabilpervez.github.io/resume/', target: '_blank' }
                                 ]}
                                 ctaItems={[
-                                    { label: 'Consulting', link: 'https://nabilpervezconsulting.com/', target: '_blank' },
+                                    { label: 'NPC', link: 'https://nabilpervezconsulting.com/', target: '_blank' },
                                     { label: 'Contact', link: 'mailto:nabilpervezconsulting@gmail.com' },
                                     { label: 'Book Me', link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kZar29aYDXn9vfvL2JZVskJndufzirA6liCU2CDAtOy8WH6iAmvJj_05lGjat4NuH2U-QO_4-', target: '_blank' }
                                 ]}
