@@ -355,3 +355,11 @@
 .home .s-form input:focus, .home .s-form textarea:focus { border-bottom-color: var(--gold-d); }
 .home .s-form .h-mono { font-size: 11px; color: rgba(17,17,17,.6); }
 button.h-btn { border: 0; font: inherit; cursor: pointer; }
+
+/* 2026-11-23: selected (gold text) + hovered (gold fill) -> black text */
+@media (hover: hover) {
+  .home .h-panel .h-panel-btn:hover .h-panel-title,
+  .home .h-panel.open .h-panel-btn:hover .h-panel-title,
+  .home .h-panel .h-panel-btn:hover .h-mono { color: var(--ink); }
+}
+@media (min-width: 600px) { .home .a-hero .h-display { font-size: clamp(56px, 8.6vw, 150px); } }

@@ -59,7 +59,7 @@ const awards = [
 ];
 
 const education = ["Full Stack Web Development, NuCamp Coding Bootcamp", "Computer Science, University of Texas at Dallas", "A.S., Computer Science, Collin College"];
-const quoteIds = [10, 3, 6, 5];
+const quoteIds = [10, 3, 6, 5, 8, 1];
 
 export default function AboutView() {
   const root = useRef<HTMLDivElement>(null);
@@ -95,8 +95,8 @@ export default function AboutView() {
             </div>
           </div>
           <dl className="h-stats a-stats h-fade">
-            <div><dt className="h-mono">Years</dt><dd className="h-display" data-count="14">14+</dd></div>
-            <div><dt className="h-mono">Team size led</dt><dd className="h-display" data-count="30">30</dd></div>
+            <div><dt className="h-mono">Years</dt><dd className="h-display" data-count>14+</dd></div>
+            <div><dt className="h-mono">Team size led</dt><dd className="h-display" data-count>30</dd></div>
             <div><dt className="h-mono">Portfolio</dt><dd className="h-display">$5M+</dd></div>
           </dl>
         </div>
@@ -158,7 +158,7 @@ export default function AboutView() {
         </header>
         <dl className="h-aoe-stats a-aoe-stats">
           {aoeStats.map((s) => (
-            <div key={s.l} className="h-fade"><dd className="h-display">{s.v}</dd><dt className="h-mono">{s.l}</dt></div>
+            <div key={s.l} className="h-fade"><dd className="h-display" data-count>{s.v}</dd><dt className="h-mono">{s.l}</dt></div>
           ))}
         </dl>
         <div className="h-voices h-wins">

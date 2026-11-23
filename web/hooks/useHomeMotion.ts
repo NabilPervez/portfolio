@@ -73,15 +73,21 @@ export function useHomeMotion(root: RefObject<HTMLElement | null>) {
         });
       });
 
-      // ── Count-ups ──
+      // ── Count-ups: any [data-count] counts from 0 to the number in its own text ($5M+, 90%, 3×, 2.2M) ──
       el.querySelectorAll<HTMLElement>("[data-count]").forEach((dd) => {
-        const end = Number(dd.dataset.count);
-        const suffix = (dd.textContent || "").replace(/[0-9]/g, "");
+        const txt = dd.textContent || "";
+        const m = txt.match(/^(\D*)(\d+(?:\.\d+)?)([\s\S]*)$/);
+        if (!m) return;
+        const [, pre, num, suf] = m;
+        const end = parseFloat(num);
+        const dec = (num.split(".")[1] || "").length;
         const o = { v: 0 };
+        dd.textContent = pre + (0).toFixed(dec) + suf;
         gsap.to(o, {
-          v: end, duration: 1.6, ease: "power3.out",
+          v: end, duration: 1.8, ease: "power3.out",
           scrollTrigger: { trigger: dd, start: "top 100%", once: true },
-          onUpdate: () => { dd.textContent = Math.round(o.v) + suffix; },
+          onUpdate: () => { dd.textContent = pre + o.v.toFixed(dec) + suf; },
+          onComplete: () => { dd.textContent = txt; },
         });
       });
 

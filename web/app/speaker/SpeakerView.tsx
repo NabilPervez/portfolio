@@ -22,6 +22,7 @@ const results = [
   { c: "Houston Outlaws", w: "Award-winning campaign with pop-up shops", m: "10M+ impressions, 10K+ attendees" },
   { c: "Coca-Cola", w: "High-impact social ad campaign", m: "2.2M reach at half the industry cost" },
   { c: "Riot Games", w: "Interactive map of EMEA", m: "+40% user interaction" },
+  { c: "World Series of Warzone", w: "Content production for the tournament", m: "+40% social impressions" },
   { c: "Boston Breach", w: "Go-to-market for a CDL team", m: "#1 most engaged team in the league" },
   { c: "Immortal: Gates of Pyre", w: "Kickstarter launch strategy", m: "5× the funding goal" },
   { c: "Paramount Pictures", w: "Branding for the mockumentary Players", m: "+25% trailer views" },
@@ -72,8 +73,8 @@ export default function SpeakerView() {
           </div>
           <dl className="h-stats a-stats h-fade">
             <div><dt className="h-mono">Events</dt><dd className="h-display">100s</dd></div>
-            <div><dt className="h-mono">Largest crowd</dt><dd className="h-display" data-count="70">70K</dd></div>
-            <div><dt className="h-mono">Topics</dt><dd className="h-display">{topics.length}</dd></div>
+            <div><dt className="h-mono">Largest crowd</dt><dd className="h-display" data-count>70K</dd></div>
+            <div><dt className="h-mono">Topics</dt><dd className="h-display" data-count>{topics.length}</dd></div>
           </dl>
         </div>
       </section>

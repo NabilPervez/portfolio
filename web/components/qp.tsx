@@ -64,6 +64,8 @@ export const aoeStats = [
   { v: "3×", l: "Best Esports Agency of the Year finalist" },
   { v: "30", l: "People led at peak" },
   { v: "90%", l: "Client referral rate" },
+  { v: "10M+", l: "Impressions on the award-winning Houston Outlaws campaign" },
+  { v: "5×", l: "Kickstarter goal funded for Immortal: Gates of Pyre" },
 ];
 
 export const aoeWins = [

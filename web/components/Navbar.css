@@ -40,12 +40,10 @@
 .np-hdr::before { content: ""; position: absolute; inset: 0; z-index: -1; background: #fff;
   backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); opacity: 0; transition: opacity .4s; }
 .np-hdr.is-compact::before { opacity: 1; }
-.is-compact .np-row { height: 64px; }
 .is-compact .np-word { opacity: 0; transform: scale(.85); transform-origin: left center; }
 .is-compact .np-mark { opacity: 1; transform: translateY(-50%) scale(1); }
-.is-compact .np-logo { width: 62px; padding-right: 0; margin-right: 0; border-right: 1px solid var(--np-hair); }
-.is-compact .np-link { padding-inline: 24px; border-right: 1px solid var(--np-hair); }
-.is-compact .np-link[aria-current="page"]::after { bottom: 18px; left: 24px; right: 24px; }
+.is-compact .np-logo { width: 62px; padding-right: 0; margin-right: 0; }
+.is-compact .np-link { padding-inline: 24px; }
 .is-compact .np-right { padding-left: 12px; }
 
 @media (min-width: 1180px) {

@@ -44,10 +44,10 @@ const list = [
 ];
 
 const how = [
-  { n: "01", t: "Find what repeats.", d: "I map the work before I touch it: where requests stall, where people retype, where handoffs break. The real problem is usually one layer below the one in the ticket.", proof: "Ticket time cut from 24h to 8h" },
-  { n: "02", t: "Make it simple.", d: "One plan everyone can read. Short sprints, honest check-ins, and scope cut into moves a team can finish this week. Designers, engineers and execs all know what happens next.", proof: "95% milestone adherence, teams of 30" },
-  { n: "03", t: "Make it run itself.", d: "Then I automate the boring parts with AI: intake, tickets, authoring, reporting. People get their time back for the work only they can do.", proof: "Request to live page, no retyping" },
-];
+  { n: "01", t: "Listen.", d: "I listen to people: their problems, their day to day, their hopes and their dreams. The real need is usually one layer below the one in the ticket.", proof: "Help desk to CTO, users first" },
+  { n: "02", t: "Map the road.", d: "Then I figure out the roadmap to get there: one plan everyone can read, cut into steps a team can finish this week.", proof: "95% milestone adherence, teams of 30" },
+  { n: "03", t: "Get there faster.", d: "I use technology better than most, AI included, so the boring parts run themselves and people spend their time on what matters.", proof: "Request to live page, no retyping" },
+]
 
 const what: Record<string, string> = {
   "Product & delivery": "Roadmaps, scoping and go-live ownership. I take an idea to launch and keep it on time.",
@@ -135,9 +135,9 @@ export default function Home() {
       <section className="h-sec wrap h-why" aria-labelledby="why-h">
         <p id="why-h" className="h-mono h-label">01 · Why</p>
         <p className="h-words a-statement" data-words>
-          Great ideas rarely die from a lack of talent. They die in the gaps: between design and engineering, between the brief and the build, between what the business wants and what actually ships.
+          As a practicing Muslim, it&rsquo;s my duty to help people and to leave the world a better place than I found it.
         </p>
-        <p className="h-intro h-fade">I&rsquo;ve spent fourteen years working in those gaps, for teams at Riot Games, Activision Blizzard, LEGO, Coca-Cola and T-Mobile. I speak every side&rsquo;s language, so the work keeps moving.</p>
+        <p className="h-intro h-fade">That&rsquo;s the reason behind every product I ship, every team I lead and every process I automate. Work should make people&rsquo;s lives easier.</p>
       </section>
 
       {/* ── How (ink) ── */}
@@ -146,9 +146,9 @@ export default function Home() {
           <header className="h-sec-head h-split">
             <div>
               <p className="h-mono h-label">02 · How</p>
-              <h2 id="how-h" className="h-display h-h2" data-lines>Simple first. Then it runs itself.</h2>
+              <h2 id="how-h" className="h-display h-h2" data-lines>Listen first. Then find the road.</h2>
             </div>
-            <p className="h-intro h-fade">The same three moves, whether it&rsquo;s a game launch, a brand campaign or an enterprise AI rollout.</p>
+            <p className="h-intro h-fade">I just happen to use technology better than most, so we get there faster.</p>
           </header>
           <ol className="h-how">
             {how.map((s) => (
@@ -259,7 +259,7 @@ export default function Home() {
           </header>
           <dl className="h-aoe-stats">
             {aoeStats.map((s) => (
-              <div key={s.l} className="h-fade"><dd className="h-display">{s.v}</dd><dt className="h-mono">{s.l}</dt></div>
+              <div key={s.l} className="h-fade"><dd className="h-display" data-count>{s.v}</dd><dt className="h-mono">{s.l}</dt></div>
             ))}
           </dl>
           <div className="h-reel h-fade">

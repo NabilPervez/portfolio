@@ -11,8 +11,8 @@ const CONTACT = "mailto:nabilpervezgg@gmail.com";
 
 const navLinks: { name: string; href: string; target?: string }[] = [
     { name: "Work", href: "/portfolio" },
-    { name: "Products", href: "/products" },
     { name: "About", href: "/about" },
+    { name: "Products", href: "/products" },
     { name: "Speaking", href: "/speaker" },
     { name: "Resume", href: RESUME, target: "_blank" },
 ];
@@ -79,8 +79,8 @@ export function Navbar() {
                         items={[
                             { label: "Home", ariaLabel: "Home", link: "/" },
                             { label: "Work", ariaLabel: "Work", link: "/portfolio" },
-                            { label: "Products", ariaLabel: "Products", link: "/products" },
                             { label: "About", ariaLabel: "About", link: "/about" },
+                            { label: "Products", ariaLabel: "Products", link: "/products" },
                             { label: "Speaking", ariaLabel: "Speaking", link: "/speaker" },
                             { label: "Resume", ariaLabel: "Resume", link: RESUME, target: "_blank" },
                         ]}
