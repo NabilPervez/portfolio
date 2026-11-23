@@ -160,7 +160,7 @@ export default function Home() {
           </p>
           <div className="mt-14 grid grid-cols-2 md:grid-cols-3 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
             {aoeStats.map((s) => (
-              <div key={s.l} className="bg-midnight p-6 md:p-8 min-w-0">
+              <div key={s.l} className="bg-midnight/80 backdrop-blur-sm p-6 md:p-8 min-w-0 transition-colors duration-300 hover:bg-[#163a2d]">
                 <p className="text-[32px] font-semibold tracking-[-0.027em] text-gold">{s.v}</p>
                 <p className="mt-1 text-[14px] text-white/65">{s.l}</p>
               </div>
@@ -187,7 +187,7 @@ export default function Home() {
           </Head>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
             {aoeWins.map((w, i) => (
-              <div key={w.c} className={`p-6 min-w-0 ${i === 0 ? "bg-g5 text-white" : "bg-white"}`}>
+              <div key={w.c} className={`p-6 min-w-0 transition-colors duration-300 ${i === 0 ? "bg-g5 text-white hover:bg-g4" : "bg-white hover:bg-g1"}`}>
                 <p className={`text-[13px] font-medium ${i === 0 ? "text-gold" : "text-g4"}`}>{w.c}</p>
                 <p className={`mt-2 text-[18px] font-semibold tracking-[-0.02em] ${i === 0 ? "text-white" : "text-foreground"}`}>{w.t}</p>
                 <p className={`mt-2 text-[14px] ${i === 0 ? "text-white/75" : "text-secondary"}`}>{w.d}</p>

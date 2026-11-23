@@ -1,4 +1,6 @@
 // About v2, Nabil 2026-11-22: the full story told in five chapters, then how I work, toolbox, credentials, voices.
+import { BadgeCheck, Trophy, GraduationCap } from "lucide-react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import testimonials from "@/app/data/testimonials.json";
@@ -11,6 +13,8 @@ export const metadata = {
   openGraph: { title: "About | Nabil Pervez", url: "https://nabilpervez.com/about" },
 };
 
+const AoeCrystal = dynamic(() => import("@/components/AoeCrystal"));
+
 const chapters = [
   {
     n: "01", years: "2011 – 2014", title: "The help desk.", org: "Fujitsu · T-Mobile",
@@ -20,7 +24,7 @@ const chapters = [
   {
     n: "02", years: "2014 – 2016", title: "The startup years.", org: "MutualMind",
     story: "At a startup there's no one to hand things to, so I learned to be self-sufficient: figure it out, own it, ship it. Wearing every hat turned my interest in technology into a love of building things myself.",
-    wins: [],
+    wins: ["Wore every hat: support, ops and product", "Learned to own problems end to end", "Started building my own tools instead of waiting for them"],
   },
   {
     n: "03", years: "2016 – 2018", title: "The esports years.", org: "PVP Live · Infinite Esports",
@@ -100,7 +104,7 @@ export default function AboutPage() {
           </Head>
           <div className="border-t border-hair">
             {chapters.map((c, i) => (
-              <article key={c.n} className="group relative grid md:grid-cols-[1fr_2fr_1.4fr] gap-4 md:gap-10 py-12 border-b border-hair [&>*]:min-w-0">
+              <article key={c.n} className="group relative grid md:grid-cols-[1fr_2fr_1.4fr] gap-4 md:gap-10 py-12 px-4 -mx-4 rounded-2xl border-b border-hair [&>*]:min-w-0 transition-colors duration-300 hover:bg-g1/60">
                 <div>
                   <p className="flex items-baseline gap-3">
                     <span className="text-[12px] font-medium uppercase tracking-[.18em] text-g4">Chapter</span>
@@ -123,9 +127,10 @@ export default function AboutPage() {
       </section>
 
       {/* AOE deep dive (Nabil 2026-11-22) */}
-      <section className="bg-midnight text-white py-[clamp(72px,14vh,160px)]">
-        <div className={wrap}>
-          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold">Chapter 03, up close</p>
+      <section className="relative overflow-hidden bg-midnight text-white py-[clamp(72px,14vh,160px)]">
+        <AoeCrystal className="pointer-events-none absolute -left-[25%] top-[10%] w-[90vw] h-[90vw] opacity-30 md:left-auto md:right-[30%] md:top-[-6%] md:w-[min(48vw,680px)] md:h-[min(48vw,680px)] md:opacity-50" />
+        <div className={`${wrap} relative`}>
+          <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold">Chapter 04, up close</p>
           <h2 className="mt-4 text-[clamp(28px,3.6vw,44px)] leading-[1.1] font-semibold tracking-[-0.027em] max-w-[20ch] [text-wrap:balance]">
             AOE Creative made my career. <span className="text-white/55">And a lot of other people&apos;s.</span>
           </h2>
@@ -137,7 +142,7 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden h-fit">
               {aoeStats.map((s) => (
-                <div key={s.l} className="bg-midnight p-6 min-w-0">
+                <div key={s.l} className="bg-midnight/85 backdrop-blur-sm p-6 min-w-0 transition-colors duration-300 hover:bg-[#163a2d]">
                   <p className="text-[32px] font-semibold tracking-[-0.027em] text-gold">{s.v}</p>
                   <p className="mt-1 text-[14px] text-white/65">{s.l}</p>
                 </div>
@@ -152,7 +157,7 @@ export default function AboutPage() {
           <Head eb="Agency wins" title="The headlines." rest="What we delivered." />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
             {aoeWins.map((w) => (
-              <div key={w.c} className="bg-white p-6 min-w-0">
+              <div key={w.c} className="bg-white p-6 min-w-0 transition-colors duration-300 hover:bg-g1">
                 <p className="text-[13px] font-medium text-g4">{w.c}</p>
                 <p className="mt-2 text-[18px] font-semibold tracking-[-0.02em] text-foreground">{w.t}</p>
                 <p className="mt-2 text-[14px] text-secondary">{w.d}</p>
@@ -169,7 +174,7 @@ export default function AboutPage() {
           <Head eb="How I work" title="Four rules." rest="I don't bend them." />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
             {principles.map((p) => (
-              <div key={p.t} className="bg-white p-8 min-w-0">
+              <div key={p.t} className="bg-white p-8 min-w-0 transition-colors duration-300 hover:bg-g1">
                 <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground">{p.t}</p>
                 <p className="mt-2 text-[14px] text-secondary">{p.d}</p>
               </div>
@@ -184,7 +189,7 @@ export default function AboutPage() {
           <Head eb="Skillset" title="What I bring." rest="Six disciplines, one person." />
           <div className="border-t border-hair">
             {skillset.map((t) => (
-              <div key={t.k} className="grid md:grid-cols-[1fr_3fr] gap-3 md:gap-10 py-6 border-b border-hair [&>*]:min-w-0">
+              <div key={t.k} className="grid md:grid-cols-[1fr_3fr] gap-3 md:gap-10 py-6 px-3 -mx-3 rounded-xl border-b border-hair [&>*]:min-w-0 transition-colors duration-300 hover:bg-g1">
                 <p className="text-[14px] font-medium text-foreground">{t.k}</p>
                 <div className="flex flex-wrap gap-2">{t.v.map((x) => <Chip key={x}>{x}</Chip>)}</div>
               </div>
@@ -193,25 +198,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Credentials */}
+      {/* Credentials (Nabil 2026-11-23: promo cards, icon left, text right) */}
       <section className={section}>
         <div className={`${wrap} grid md:grid-cols-3 gap-10 [&>*]:min-w-0`}>
-          <div>
-            <p className={eyebrow}>Certifications</p>
-            <ul className="mt-4 space-y-2 text-[14px] text-foreground/80">{certs.map((c) => <li key={c}>{c}</li>)}</ul>
-          </div>
-          <div>
-            <p className={eyebrow}>Awards</p>
-            <ul className="mt-4 space-y-2 text-[14px] text-foreground/80">{awards.map((a) => <li key={a}>{a}</li>)}</ul>
-          </div>
-          <div>
-            <p className={eyebrow}>Education</p>
-            <ul className="mt-4 space-y-2 text-[14px] text-foreground/80">
-              <li>Full Stack Web Development, NuCamp Coding Bootcamp</li>
-              <li>Computer Science, University of Texas at Dallas</li>
-              <li>A.S., Computer Science, Collin College</li>
-            </ul>
-          </div>
+          {[
+            { k: "Certifications", Icon: BadgeCheck, items: certs },
+            { k: "Awards", Icon: Trophy, items: awards },
+            { k: "Education", Icon: GraduationCap, items: ["Full Stack Web Development, NuCamp Coding Bootcamp", "Computer Science, University of Texas at Dallas", "A.S., Computer Science, Collin College"] },
+          ].map(({ k, Icon, items }) => (
+            <div key={k}>
+              <p className={eyebrow}>{k}</p>
+              <ul className="mt-4 space-y-3">
+                {items.map((c) => (
+                  <li key={c} className="flex items-center gap-4 p-4 rounded-xl border border-hair bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-g3 hover:bg-g1">
+                    <span className="shrink-0 w-10 h-10 rounded-lg bg-g1 text-g4 grid place-items-center"><Icon className="w-5 h-5" /></span>
+                    <span className="text-[14px] leading-snug text-foreground/85">{c}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -221,7 +227,7 @@ export default function AboutPage() {
           <Head title="In their words." rest="Teammates and clients." />
           <div className="grid md:grid-cols-2 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
             {quotes.map((q) => (
-              <figure key={q.id} className="bg-white p-8 flex flex-col justify-between gap-8 min-w-0">
+              <figure key={q.id} className="bg-white p-8 flex flex-col justify-between gap-8 min-w-0 transition-colors duration-300 hover:bg-g1">
                 <blockquote className="text-[18px] leading-[1.5] text-foreground [text-wrap:pretty]">&ldquo;{q.quote}&rdquo;</blockquote>
                 <figcaption><p className="text-[14px] font-medium text-foreground">{q.author}</p><p className="text-[13px] text-secondary">{q.role}</p></figcaption>
               </figure>
