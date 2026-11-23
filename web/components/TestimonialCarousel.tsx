@@ -48,7 +48,7 @@ export function TestimonialCarousel() {
                 {testimonialsData.map((t) => (
                     <figure
                         key={t.id}
-                        className="snap-start shrink-0 w-full md:w-[calc((100%-32px)/3)] bg-white border border-hair rounded-2xl p-8 flex flex-col justify-between gap-8"
+                        className="snap-start shrink-0 w-full md:w-[calc((100%-32px)/3)] bg-white border border-hair rounded-2xl p-8 flex flex-col justify-between gap-8 transition-all duration-300 hover:-translate-y-1 hover:border-g3 hover:shadow-[0_12px_32px_-12px_rgb(15_42_32/.25)] hover:bg-g1/40 my-2"
                     >
                         <blockquote className="text-[17px] leading-[1.55] text-foreground [text-wrap:pretty] line-clamp-[10]">&ldquo;{t.quote}&rdquo;</blockquote>
                         <figcaption>

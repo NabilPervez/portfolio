@@ -7,6 +7,8 @@ import { wrap, section, eyebrow, lede, pillDark, pillLine, Head, Chip, certs, sk
 export const metadata = {
   title: "About",
   description: "From T-Mobile's help desk to agency CTO to AI SME: the story of a nerd translator who makes complex things simple.",
+  alternates: { canonical: "/about" },
+  openGraph: { title: "About | Nabil Pervez", url: "https://nabilpervez.com/about" },
 };
 
 const chapters = [
@@ -16,22 +18,27 @@ const chapters = [
     wins: ["Cut average ticket resolution from 24 hours to 8", "98% SLA compliance, 90% first-call resolution", "Training that shortened onboarding by 20%"],
   },
   {
-    n: "02", years: "2014 – 2018", title: "The esports years.", org: "MutualMind · PVP Live · Infinite Esports",
+    n: "02", years: "2014 – 2016", title: "The startup years.", org: "MutualMind",
+    story: "At a startup there's no one to hand things to, so I learned to be self-sufficient: figure it out, own it, ship it. Wearing every hat turned my interest in technology into a love of building things myself.",
+    wins: [],
+  },
+  {
+    n: "03", years: "2016 – 2018", title: "The esports years.", org: "PVP Live · Infinite Esports",
     story: "I followed my love of games into esports, first in support, then in marketing and project management. This is where I learned audiences: what makes people show up, share and stay.",
     wins: ["Grew PVP Live to 3M+ monthly active users", "Award-winning Houston Outlaws campaign, 10M+ impressions", "Events of 10K+ attendees each"],
   },
   {
-    n: "03", years: "2018 – 2024", title: "Building an agency.", org: "AOE Creative · Co-founder, CTO & Senior PM",
+    n: "04", years: "2018 – 2024", title: "Building an award-winning agency.", org: "AOE Creative · Co-founder, CTO & Senior PM",
     story: "We co-founded AOE and grew it into a multi-million-dollar, award-winning agency. I ran product, tech and delivery: websites, SaaS, AR/VR filters, campaigns and brands for the biggest names in games.",
     wins: ["$5M+ portfolio for LEGO, Riot, Activision Blizzard, Coca-Cola, Red Bull", "Teams of up to 30, 95% milestone adherence", "90% referral rate, 3× Agency of the Year finalist"],
   },
   {
-    n: "04", years: "2024 – 2025", title: "Going all in on AI.", org: "Prospera Financial · Nabil Pervez Consulting",
+    n: "05", years: "2024 – 2025", title: "Going all in on AI.", org: "Prospera Financial · Nabil Pervez Consulting",
     story: "I saw where things were heading and got my hands dirty. I built a RAG system on Microsoft Copilot, automated PC builds end to end, and started consulting on AI strategy and MarTech for other businesses.",
     wins: ["RAG on Microsoft Copilot across company knowledge", "PC build time cut by 90% with PowerShell, Autopilot and Intune", "15% fewer security incidents"],
   },
   {
-    n: "05", years: "2025 – now", title: "Back to T-Mobile.", org: "Content Producer · AI SME",
+    n: "06", years: "2025 – now", title: "Back to T-Mobile.", org: "Content Producer · AI SME",
     story: "Thirteen years after the help desk, I came back to automate the repetitive work I used to fight. I'm the AI SME for our digital content org, a Gradial practitioner, and lead content author on Zipline, where I connected an AI intake form, Jira with Rovo, and Gradial so simple site updates run themselves in AEM.",
     wins: ["Zipline automated from request to live page", "12+ Gradial rules built and deployed", "Shaped Gradial's roadmap: real-time ticket feedback, ticket-refinement chatbot"],
   },
@@ -69,7 +76,7 @@ export default function AboutPage() {
           <div className="min-w-0">
             <p className={eyebrow}>About</p>
             <h1 className="mt-4 text-[clamp(34px,4.4vw,62px)] leading-[1.05] font-semibold tracking-[-0.027em] text-foreground [text-wrap:balance]">
-              I&apos;m Nabil. <span className="text-secondary">I&apos;m a nerd translator.</span>
+              I&apos;m Nabil. <span className="text-secondary">I&apos;m a </span><span className="relative inline-block px-2 -mx-1 rounded-md bg-gold/25 text-g5 [box-decoration-break:clone]">nerd translator</span><span className="text-secondary">.</span>
             </h1>
             <p className={`${lede} mt-6`}>
               Designers, engineers and the business all speak different languages. I speak all three, and I turn them into one plan people can ship. Lately, I turn that plan into automation, too.
@@ -88,19 +95,23 @@ export default function AboutPage() {
       {/* Chapters */}
       <section className={section}>
         <div className={wrap}>
-          <Head eb="The story" title="Five chapters." rest="One thread.">
+          <Head eb="The story" title="Six chapters." rest="One thread.">
             Every job taught me a new language: users, audiences, teams, machines. The thread is the same: find what repeats, make it simple, then make it run itself.
           </Head>
           <div className="border-t border-hair">
             {chapters.map((c, i) => (
-              <article key={c.n} className="grid md:grid-cols-[1fr_2fr_1.4fr] gap-4 md:gap-10 py-10 border-b border-hair [&>*]:min-w-0">
+              <article key={c.n} className="group relative grid md:grid-cols-[1fr_2fr_1.4fr] gap-4 md:gap-10 py-12 border-b border-hair [&>*]:min-w-0">
                 <div>
-                  <p className={`text-[13px] font-medium ${i === chapters.length - 1 ? "text-g4" : "text-gold"}`}>{c.n} · {c.years}</p>
-                  <h3 className="mt-2 text-[22px] font-semibold tracking-[-0.027em] text-foreground">{c.title}</h3>
+                  <p className="flex items-baseline gap-3">
+                    <span className="text-[12px] font-medium uppercase tracking-[.18em] text-g4">Chapter</span>
+                    <span className={`text-[56px] leading-none font-semibold tracking-[-0.04em] ${i === chapters.length - 1 ? "text-g4" : "text-gold"}`}>{c.n}</span>
+                  </p>
+                  <p className="mt-3 text-[13px] font-medium text-secondary">{c.years}</p>
+                  <h3 className="mt-1 text-[24px] font-semibold tracking-[-0.027em] text-foreground">{c.title}</h3>
                   <p className="mt-1 text-[14px] text-secondary">{c.org}</p>
                 </div>
-                <p className="text-[16px] leading-relaxed text-foreground/80">{c.story}</p>
-                <ul className="space-y-2">
+                <p className="text-[16px] leading-relaxed text-foreground/80 md:pt-2">{c.story}</p>
+                <ul className="space-y-2 md:pt-2">
                   {c.wins.map((w) => (
                     <li key={w} className="text-[14px] text-secondary pl-4 relative before:absolute before:left-0 before:top-[9px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-g3">{w}</li>
                   ))}

@@ -22,6 +22,7 @@ import {
 export const metadata: Metadata = {
     title: "Apps",
     description: "Free, private Islamic and productivity apps for the Ummah, built by Nabil Pervez.",
+    alternates: { canonical: "/apps" },
     openGraph: {
         title: "Apps | Nabil Pervez",
         description: "Free, private Islamic and productivity apps for the Ummah, built by Nabil Pervez.",

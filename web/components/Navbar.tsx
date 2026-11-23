@@ -13,6 +13,7 @@ const CONTACT = "mailto:nabilpervezgg@gmail.com";
 
 const navLinks: { name: string; href: string; target?: string }[] = [
     { name: "Work", href: "/portfolio" },
+    { name: "Products", href: "/products" },
     { name: "About", href: "/about" },
     { name: "Speaking", href: "/speaker" },
     { name: "Resume", href: RESUME, target: "_blank" },
@@ -41,7 +42,7 @@ export function Navbar() {
             <div className="mx-auto max-w-[1200px] px-[clamp(16px,5vw,64px)] h-[72px] grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
                 <Link href="/" className="flex items-center gap-2.5 text-[16px] font-semibold tracking-[-0.02em] min-w-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/n-logo.svg" alt="" width={32} height={32} className="w-8 h-8 rounded-lg" />
+                    <span className="w-8 h-8 rounded-lg bg-g5 grid place-items-center"><img src="/n-logo.png" alt="" width={24} height={24} className="w-6 h-6" /></span>
                     Nabil Pervez
                 </Link>
 
@@ -86,6 +87,7 @@ export function Navbar() {
                         items={[
                             { label: "Home", ariaLabel: "Home", link: "/" },
                             { label: "Work", ariaLabel: "Work", link: "/portfolio" },
+                            { label: "Products", ariaLabel: "Products", link: "/products" },
                             { label: "About", ariaLabel: "About", link: "/about" },
                             { label: "Speaking", ariaLabel: "Speaking", link: "/speaker" },
                             { label: "Resume", ariaLabel: "Resume", link: RESUME, target: "_blank" },

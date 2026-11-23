@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import MotionHero from "@/components/MotionHero";
+import dynamic from "next/dynamic";
+const AoeCrystal = dynamic(() => import("@/components/AoeCrystal"), { ssr: false });
 import { LazyVideo } from "@/components/LazyVideo";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { caseStudies, cardVisual } from "@/lib/caseStudies";
@@ -146,8 +148,9 @@ export default function Home() {
       </section>
 
       {/* 6a · AOE — the agency years (Nabil 2026-11-22: "these made careers") */}
-      <section className="bg-midnight text-white pt-[clamp(72px,14vh,160px)] pb-12">
-        <div className={wrap}>
+      <section className="relative overflow-hidden bg-midnight text-white pt-[clamp(72px,14vh,160px)] pb-12">
+        <AoeCrystal className="pointer-events-none absolute -right-[20%] top-0 w-[90vw] h-[90vw] opacity-40 md:right-[-4%] md:top-[2%] md:w-[min(46vw,640px)] md:h-[min(46vw,640px)] md:opacity-90" />
+        <div className={`${wrap} relative`}>
           <p className="text-[13px] font-medium uppercase tracking-[.16em] text-gold">2018 – 2024 · AOE Creative</p>
           <h2 className="mt-4 text-[clamp(34px,4.4vw,62px)] leading-[1.05] font-semibold tracking-[-0.027em] max-w-[16ch] [text-wrap:balance]">
             We built the agency the biggest names in games called. <span className="text-white/55">I was its CTO.</span>
@@ -259,9 +262,9 @@ export default function Home() {
           </Head>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-hair border border-hair rounded-2xl overflow-hidden">
             {skillset.map((g) => (
-              <div key={g.k} className="bg-white p-6 md:p-8 min-w-0">
-                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground">{g.k}</p>
-                <div className="flex flex-wrap gap-2 mt-4">{g.v.map((x) => <Chip key={x}>{x}</Chip>)}</div>
+              <div key={g.k} className="group bg-white p-6 md:p-8 min-w-0 transition-colors duration-300 hover:bg-g1">
+                <p className="text-[18px] font-semibold tracking-[-0.02em] text-foreground transition-colors group-hover:text-g4">{g.k}</p>
+                <div className="flex flex-wrap gap-2 mt-4 transition-transform duration-300 group-hover:translate-x-1">{g.v.map((x) => <Chip key={x}>{x}</Chip>)}</div>
               </div>
             ))}
           </div>

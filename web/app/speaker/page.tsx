@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Speaker",
     description: "Book Nabil Pervez for keynotes on agile creativity, esports culture, and marketing strategy.",
+    alternates: { canonical: "/speaker" },
     openGraph: {
         title: "Speaker | Nabil Pervez",
         description: "Keynotes on scaling creativity, understanding gamer culture, and bridging tech with marketing.",

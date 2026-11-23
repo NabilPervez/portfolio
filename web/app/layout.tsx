@@ -20,8 +20,8 @@ const outfit = localFont({
 const siteUrl = "https://nabilpervez.com";
 const siteName = "Nabil Pervez";
 const contactEmail = "nabilpervezconsulting@gmail.com";
-const defaultTitle = "Nabil Pervez | Product Manager & Strategist";
-const defaultDescription = "Product manager who makes complex things simple. Enterprise AI adoption at T-Mobile, and brand, product and web for LEGO, Riot Games, Activision Blizzard and Coca-Cola.";
+const defaultTitle = "Nabil Pervez | Product Manager, Scrum Master & AI SME";
+const defaultDescription = "Product manager, scrum master and AI subject-matter expert. Former CTO and co-founder of award-winning agency AOE Creative (Riot Games, Activision Blizzard, LEGO, Coca-Cola). Dallas-Fort Worth.";
 const ogImage = `${siteUrl}/images/nabil-headshot.jpg`;
 
 export const metadata: Metadata = {
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   description: defaultDescription,
   keywords: [
-    "Product Manager", "Strategist", "Designer", "Gaming", "Esports",
-    "Digital Innovation", "Nabil Pervez", "Consultant", "Brand Strategy",
-    "Creative Direction", "Agile Leadership", "User Research"
+    "Nabil Pervez", "Product Manager", "Scrum Master", "AI SME", "AI Product Manager",
+    "Enterprise AI adoption", "Gradial", "Adobe Experience Manager", "MarTech",
+    "AOE Creative", "Agency CTO", "Esports agency", "Dallas product manager"
   ],
   authors: [{ name: "Nabil Pervez", url: siteUrl }],
   creator: "Nabil Pervez",
@@ -50,12 +50,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.png', // Ensure this exists in public/
-    shortcut: '/favicon.ico', // Ensure this exists in public/
-    apple: '/apple-touch-icon.png', // Ensure this exists in public/
-  },
-  manifest: '/site.webmanifest', // Ensure this exists in public/
+  icons: { icon: '/n-logo.png', apple: '/n-logo.png' },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -101,7 +96,7 @@ const personJsonLd = {
   name: siteName,
   url: siteUrl,
   image: ogImage,
-  jobTitle: "Product Manager & Strategist",
+  jobTitle: "Product Manager, Scrum Master & AI SME",
   worksFor: {
     "@type": "Organization",
     name: "Nabil Pervez Consulting",
